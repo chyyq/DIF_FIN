@@ -1,0 +1,76 @@
+name: Update LBR market data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC; preserve the original BIG A GO_super cadence (China time is UTC+8).
+    - cron: "26 1 * * 1-5"
+    - cron: "29 1 * * 1-5"
+    - cron: "32 1 * * 1-5"
+    - cron: "35 1 * * 1-5"
+    - cron: "38 1 * * 1-5"
+    - cron: "40 1 * * 1-5"
+    - cron: "30 5 * * 1-5"
+    - cron: "45 5 * * 1-5"
+    - cron: "0 6 * * 1-5"
+    - cron: "10 6 * * 1-5"
+    - cron: "20 6 * * 1-5"
+    - cron: "30 6 * * 1-5"
+    - cron: "35 6 * * 1-5"
+    - cron: "50 6 * * 1-5"
+    - cron: "0 12 * * 1-5"
+    - cron: "0 16 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-lbr-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate market snapshot and maintain candidate batches
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          import subprocess
+          import sys
+
+          snapshot = Path("data/latest.json")
+          previous_mtime = snapshot.stat().st_mtime_ns if snapshot.exists() else None
+          result = subprocess.run([sys.executable, "-u", "scripts/update_data.py"])
+          if result.returncode == 0:
+              raise SystemExit(0)
+          # The updater uses exit 2 after writing a safe cached/no-data snapshot.
+          # Publish that warning state rather than leaving the prior site looking healthy.
+          if result.returncode == 2 and snapshot.exists() and snapshot.stat().st_mtime_ns != previous_mtime:
+              metadata = json.loads(snapshot.read_text(encoding="utf-8"))["meta"]
+              if metadata.get("stale") is True and metadata.get("mode") in ("cached-fallback", "no-current-data"):
+                  print("::warning::Public market sources unavailable; publishing the explicit stale-data state.")
+                  raise SystemExit(0)
+          raise SystemExit(result.returncode)
+
+      - name: Commit public market data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No market data changes."
+          else
+            git commit -m "Update LBR market data"
+            git push
+          fi

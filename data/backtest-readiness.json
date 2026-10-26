@@ -1,0 +1,36 @@
+{
+  "status": "BLOCKED_MISSING_DATA",
+  "eventCount": 102,
+  "checks": {
+    "eventUniverse": true,
+    "timestampedFiveMinuteBaselines": false,
+    "decisionTimeHistoricalMetadata": false,
+    "executableFillAndFeeModel": false,
+    "timeOrderedSplit": true
+  },
+  "methods": [
+    {
+      "id": "A",
+      "definition": "Price touch only; research baseline, no auto orders",
+      "metrics": null
+    },
+    {
+      "id": "B",
+      "definition": "A + same-slot volume contraction + no new low",
+      "metrics": null
+    },
+    {
+      "id": "C",
+      "definition": "B + VWAP/rebound reclaim within entry cap",
+      "metrics": null
+    }
+  ],
+  "requiredGroups": [
+    "T0 / T1-T6",
+    "8-10 / 10-12 / 12-14 / 14-16 / 16-18 / 18+%",
+    "sector",
+    "1/2/3/5/7 holding sessions"
+  ],
+  "parameterOptimization": false,
+  "message": "No A/B/C performance metrics are published without verified intraday, point-in-time metadata and executable fill assumptions. This is a data-readiness report, not a completed backtest."
+}

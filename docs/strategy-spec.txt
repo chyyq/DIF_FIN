@@ -1,0 +1,667 @@
+LBR  ·  量化策略规范 v1.0
+涨停强势股深度回撤低吸与 2—5 日修复波段策略
+自然语言规则  ·  数据字段  ·  状态机  ·  每日报表  ·  回测验收
+
+使用定位  交付给 Codex 的可实现策略需求说明；独立于现有早盘打板与尾盘 T+1 模块。每日输出不超过10只候选、2档低吸价与2档止盈价，支持最长5个交易日的监控，不保证一定成交。
+
+策略范围：默认沪深主板、正常涨跌幅限制、非ST；明确排除创业板。科创板和北交所默认关闭，可单独启用独立参数模型，不混入主板样本。
+参数状态：所有百分比、分数与持有期限是可回测的初始假设，不是收益保证或统计最优值。
+版本日期：2026-10-23。交易规则以交易所当时生效文本及券商可用接口为准。
+
+0. 一页执行摘要｜用户只看什么
+用户真正需要的不是复杂评分明细，而是一份每天可操作的“候选—买价—卖价—失效”清单。系统应负责全部筛选、状态判断和风险提示；用户只需要确认哪只可交易、参考挂单价与计划止盈价。
+用户每天看到
+输出口径
+候选数量
+0—10只；不得为了凑满10只而降低筛选门槛；优先显示当天新触及涨停的股票。
+买入参考
+默认两档：第一低吸触发价/最高可接受买价；第二低吸触发价/最高可接受买价。按事件互斥，不自动越跌越买。
+卖出参考
+预估第一止盈价（默认卖50%）、第二止盈价（默认卖余下50%）；另给计划失效价与最迟退出日。
+状态标识
+待触发 WATCH / 可激活 ARMED / 允许买入 BUY_READY / 持仓 HOLD / 作废 CANCEL / 已完成 DONE。
+时间
+每天交易前/盘中更新状态；每日收盘形成正式候选清单；最长监控T0—T4共5个交易日。
+
+核心限制  普通限价委托通常只在提交当日有效；“一周挂单”应由券商条件单或本地监控服务按日重新评估并重新提交。若缺少“缩量止跌”的盘中数据与撤单能力，不得把低吸价格直接视作可无条件挂出的买单。
+
+1. 策略定位、范围与模块隔离
+1.1 策略假设：处于中期上升趋势的沪深主板股票，触及涨停后可能出现资金集中兑现、短期流动性冲击或深度换手；在其关键趋势结构未失效、抛压减弱并重新获得承接后，未来2—5个交易日可能出现一定幅度修复。该假设必须被完整事件回测验证。
+1.2 交易动作：每天筛选不超过10只，给出预先计算的价格阶梯，等待回撤落入区间并通过缩量/承接触发器后入场；未触发不交易；买入后根据事先锁定的两档止盈价、结构止损和时间止损管理。
+1.3 严格隔离：LBR不得修改既有早盘抓涨停板策略与尾盘T+1策略。三者应有独立strategy_id、资金预算、候选池、交易日志、收益与回撤统计，避免同一标的策略重复占用风险。
+1.4 交易标的：默认主板A股（交易所instrument_segment识别为SSE_MAIN/SZSE_MAIN），排除创业板、科创板、北交所、ST/*ST、退市整理、上市初期无涨跌幅限制、停牌、无有效交易数据、流动性过低或异常风险证券。科创板仅作为未来可配置独立实验组，不应套主板10%限制。
+1.5 不以“次日必须高开”为目标，不承诺涨停后必然回补；本策略允许T0当天买入，但当天买入的股票通常最早T+1才可卖出。
+2. 时间体系｜每天出单与一周有效如何兼容
+时点
+系统工作
+用户操作
+T0首次触及涨停（盘中）
+触发事件、冻结事件编号；实时识别后续炸板与深度回撤；如具备数据/券商条件单，可当日触发。
+只看“可买/不可买”及买入限价；不要求盯逐笔。
+T0收盘后
+发布当日新增样本与下一交易日有效的触发价、入场价和止盈预案。
+选择最多关注10只，可建立有效至T4的“策略监控计划”。
+T1—T4每日09:00前
+检查停复牌、重大公告、交易日限价与事件是否失效；更新当日价格、状态、候选排序。
+确认当天计划；若券商不支持自动条件单，按当天状态处理。
+盘中有缩量确认
+事件状态切换为BUY_READY；仅当条件且执行价格同时满足时才发买单/提醒。
+按系统输出的上限价挂单，不追超过买入上限的反弹。
+T4结束
+全部未成交的原事件计划失效，撤销未触发条件与剩余委托。
+没有成交就接受错过，不顺延旧事件。
+E至E+5
+E是实际成交日；执行两档止盈与风险管理，不受候选一周期限截断。
+通常可卖出的最早日为E+1；最迟E+5清理持仓。
+
+关键冲突处理：收盘后才推送的“当日涨停板名单”，无法供用户在当日盘中执行T0买单。若业务需要T0入场，系统必须增加实时扫描/自动提醒或受控条件交易能力；若只做每日收盘报告，就自然从T1开始等待。
+券商多日条件单如不支持多条件组合、撤销与账户同步，则回退为“监控提醒 + 人工确认”模式；不得假定普通交易所委托天然具有GTC（一周持续有效）能力。
+3. 数据要求与基础定义
+3.1 数据粒度和时间一致性
+字段组
+最低要求
+缺失处理
+证券静态/交易日历
+证券代码、交易所板块、ST/退市状态、上市日、复权因子、交易日、涨跌停价、停复牌、公司行动。
+关键字段缺失：不推荐。
+日线历史
+≥120交易日 OHLCV、成交额、换手、MA5/10/20/60、ATR14、行业板块、前收盘。
+不足60交易日原则上不参与主策略。
+盘中行情
+至少1分钟OHLCV与分时成交额；优选5秒/逐笔与买卖盘深度。
+无法计算实时缩量时：只给WATCH参考价，不触发自动买入。
+板块/市场
+板块日线及盘中强度、板块广度、同板块涨跌、领涨股状态、重大公告。
+无法核验板块：降级或禁止自动买。
+券商/成交
+挂单价、委托状态、撤单状态、实际成交量/均价、费用、仓位、可卖数量。
+成交状态不同步：暂停新单，避免重复。
+
+只使用决策时点已公布的数据。复权价仅用于历史趋势，涨跌停、挂单及实际盈亏必须用当时非复权可交易价格；重大除权除息发生时更新锚定基准并重新发行方案，不得机械沿用老价格。
+3.2 事件与回撤的精确定义
+event_id = symbol + first_limit_touch_trade_date + event_sequence
+T0 = first intraday touch of actual exchange upper_limit_price
+H_asof(t) = max(actual traded high observed since T0 through t)
+drawdown(t) = (H_asof(t) - last_price(t)) / H_asof(t)
+D0...D4 = five trading sessions including T0; calendar days do not count
+若T0之后再次创出事件新高，在尚未持仓时旧参考价格需要取消并重新生成新版本（version++）；不允许事后用未来最高价回填历史信号。买入后冻结该笔交易的入场时事件高点H_entry与确认低点L_entry，以防卖点无限随行情漂移。若T1—T4期间再次涨停，可定义新事件，但同一股票仅保留一个有效的、最新且结构合理的事件；旧未成交订单须先撤销确认。
+4. 完整候选过滤：硬否决、五道Gate与评分
+4.1 硬否决（高分也不得突破）
+代码
+触发条件
+输出
+HV01
+创业板、非目标板块、ST/*ST、退市整理、无涨跌幅限制日、新股风险特殊期。
+REJECT
+HV02
+停牌、长期成交不足、买卖盘价差异常、盘口缺失。
+REJECT / NO_AUTO_ORDER
+HV03
+重大负面事项：处罚、财务重大风险、退市实质风险、重要公告不能核验。
+MANUAL_REVIEW，默认不自动
+HV04
+涨停前已明显下降趋势；关键中期平台有效跌破且持续无法收复。
+REJECT
+HV05
+板块出现系统性崩塌、连续极端负反馈；或市场流动性显著恶化。
+REJECT / HALT
+HV06
+同一标的已被其他策略占用风险预算、资金不足、订单状态不一致。
+NO_NEW_ORDER
+HV07
+该事件已过T4、价格锚重算未完成、买入计划价格低于当日跌停价。
+EXPIRE / RECALC
+HV08
+市场价格持续创新低且无缩量承接、跌停无法成交、下跌主要由重大负面信息驱动。
+BLOCK_ENTRY
+
+4.2 五道Gate
+Gate
+初始规则
+失败处置
+TrendGate
+T0前MA20过去5日斜率>0；MA20>MA60或最近两组日线波段低点抬升；至少2/3；距MA20过大需降级。
+REJECT/WATCH
+LimitEventGate
+T0确实触及交易所计算的涨停价；区分首次触板、实际封板、开板、尾盘秒触。
+REJECT/WATCH
+RiskStructureGate
+回撤时中期关键支撑未持续失守；未进入公告驱动的系统性再定价；短期连续跌停单列。
+REJECT
+LiquidityAbsorptionGate
+有“先放量抛售、后缩量止跌”或“温和缩量回踩”的可解释成交结构；满足确认指标。
+WATCH，不自动买
+PayoffGate
+实际预计买价到目标价的预期价差能覆盖参考止损、费用与最低1.5倍风险收益比；估计路径可在2—5日内实现。
+REJECT/WATCH
+
+4.3 100分候选排序（研究初值）
+评分
+权重
+核心特征
+趋势质量
+25
+MA20斜率、MA10/20/60排列、趋势波段低点、距中长期压力距离
+涨停事件质量
+15
+触板时间、封板质量、前排地位、非末端连续加速
+回撤/筹码释放
+15
+回撤相对ATR、成交高峰与后续缩量、支撑位贴近程度
+承接/修复确定性
+25
+低点稳定、单位成交额冲击减弱、局部VWAP收复、成交适度恢复
+板块/市场
+10
+同板块资金扩散、指数稳定、涨停及炸板生态
+流动性/可执行性
+10
+盘口深度、成交额、预估滑点、价格笼子与券商下单能力
+合计
+100
+仅全部Gate通过者排序；初始>=80优先、70—79普通、<70只观察。
+
+每日展示数量按“合格候选综合评分 + 组合相关性约束”排序；同一板块最多2只（可调）、同一个股不重复、已有仓位优先从新入场名单移除。最多10只而非每天强制10只。没有数据支撑时不显示“预测成功概率87%”等伪精度。
+5. 回撤价格阶梯｜8%—16%与一周监控
+从事件最高价H计算价格带，而不是从前收盘价计算百分点。下表均为主板10%涨跌幅标的的研究性初始参数，正式上线前需按波动率、流动性和事件日龄进行回测调整。
+区间
+模型状态
+用户可能看到的价格
+风险动作
+0—8%
+OUTSIDE
+不产生低吸买入价
+不参与
+8—10%
+EARLY_WATCH
+提前观察价（不激活下单）
+判断是否出现卖压转弱
+10—12%
+BUY_ZONE_A
+买点A触达价+可接受最高成交价
+优先研究，等待缩量与重新转强
+12—14%
+BUY_ZONE_B
+买点B触达价+可接受最高成交价
+更深回撤，独立确认
+14—16%
+DEEP_ZONE
+第3档仅作为极端观察；需要高等级确认才可能启用
+默认减少而非加大风险预算
+>16%
+EXTREME
+不新开被动抄底单
+尤其T0接近跌停者转独立事件组
+
+默认只向用户展示两档可研究低吸参考：A档触发回撤11%，B档触发回撤13%（用户界面可见精确数值），14%—16%设为高风险观察区。8%—10%只预警；这并非断言11%、13%最优。
+5.1 固定买入价和动态确认的区分
+trigger_A = round_tick_down(H * (1 - 0.11))
+trigger_B = round_tick_down(H * (1 - 0.13))
+entry_cap_A = round_tick_down(min(trigger_A * 1.015, H * 0.905))
+entry_cap_B = round_tick_down(min(trigger_B * 1.015, H * 0.885))
+# EntryCap is a MAX acceptable limit, NOT a guarantee of fill.
+# Only send buy after intraday gating; if rebound crosses cap, SKIP.
+两档规则：默认“择一入场（OCO）”，不是同时向交易所长期挂两张越来越低的普通买单。A档先形成成交后，B档自动禁用；若A档未成交，价格进一步下跌至B档，则重新验证并允许B档触发。无法保证撤单同步时，只允许一档处于已提交状态。
+可选分批模式（默认关闭）：A档已成交后，B档仅能在新的独立止跌信号、原低点未再被有效击穿、累计风险预算仍有余额时获准；严禁只因“跌到B价”便加仓摊薄成本。
+5.2 价格锚与支撑过滤
+纯回撤比例决定初步价格，历史支撑决定该价格是否合理。计算并记录：近20日平台突破位、MA10/MA20、最近有效波段低点、过去20日成交密集带、ATR14和最近事件高低点。若预测买价下方缺少有效结构支撑，或关键支撑已被有效跌破，该档降级/作废，而非强行把买价移动到支撑位。
+6. “缩量抄底”的可计算定义与确认机制
+6.1 两种认可的成交结构
+1.  PANIC_ABSORPTION：先出现显著放量下杀，随后5分钟成交量与负向价格冲击下降；价格连续10—20分钟不再创新低，形成初步承接。
+2.  ORDERLY_PULLBACK：回调过程较平缓，成交量相对于该股历史同一时段基准缩小，同时跌幅进入目标区，低点结构未破；没有“放量恐慌”仍可作为缩量回踩候选。
+两种结构分开打标签，不能强迫所有样本先放量恐慌再缩量。T0真正天地板往往是异常风险事件，不可简单以“成交量减少”推断安全。
+6.2 数学口径、阈值与分数
+变量
+计算或初始准则
+数据要求
+time_adj_rvol
+当期5min成交额 / 过去20日相同时段5min成交额中位数；低于0.65记缩量，>1.5记异常放量。
+5分钟历史分时
+sell_climax
+下跌阶段某5min time_adj_rvol≥1.8，同时负收益明显且卖压扩大。
+5min逐段
+vol_contraction_after_climax
+后续2个完整5min成交额均值 / 最强下跌5min成交额≤0.65。
+只比较完整区间
+price_impact
+abs(该窗口价格收益)/max(该窗口成交额,eps)；与前一抛售阶段相同比较，降幅≥30%加分。
+价格、成交额
+no_new_low
+至少连续3个完整5min周期未创更低有效低点（允许1最小跳动价差噪声）。
+T0极端日可加严
+higher_low
+确认最近两个局部有效低点抬升或持平；局部低点须为当前可确认的过去式，不允许未来K线倒填。
+5min K线
+local_vwap_reclaim
+连续2根5min收盘价站上近10—20min滚动VWAP；或有效突破确认反弹高点。
+滚动VWAP
+liquidity_floor
+回撤末端虽然缩量，但日均成交额、盘口深度不得低于可成交底线。
+盘口或日线代理
+
+AbsorptionScore初始100分：无新低20、负冲击衰减20、异常抛售后相对缩量20、局部低点稳定15、局部VWAP/反弹高点重新收复15、板块无破位10。推荐≥70进入确认；深回撤14%—16%提高至≥80。它是结构评分而不是获利概率。
+6.3 信号激活与买单发送
+BUY_READY iff:
+  UniversePass & TrendGate & EventGate & StructureGate
+  & event_age <= 4 sessions
+  & price_has_touched(BUY_ZONE_A or BUY_ZONE_B)
+  & absorption_score >= threshold_for_zone
+  & (reclaimed_local_vwap OR broke_confirmed_rebound_high)
+  & price <= current_entry_cap
+  & expected_rr >= 1.50
+  & no_hard_veto
+  & sufficient_liquidity
+  & broker_and_account_state_synced
+else: WATCH / CANCEL, never unconditional passive BUY
+只具备日线数据时，无法在“触价前”证明随后会缩量：应给出预测参考价和待确认状态，不得自动把候选改成BUY_READY。若用户必须使用普通静态限价单，应清楚显示“该单不具备缩量确认保护，可能在持续下跌时成交”，系统默认不提供自动发送此种单的权限。
+7. 预计买价、卖价与止损价的计算方法
+7.1 买点两档与实际执行上限
+每个买档包括：价格触发价 P_touch（最低必须曾触达），最大买入限价 P_cap（承接确认后允许的最高成交价），确认标志 Confirm。为了把用户展示压缩为具体数字，日报显示“跌到多少开始观察、确认后最多多少钱买”。若实际反弹时超出P_cap，本笔不追。
+7.2 两档止盈价（预估与成交后冻结）
+For each candidate buy zone j:
+  H = event_peak_asof_report
+  L_ref_j = trigger_price_j  # pre-trade proxy, not future actual bottom
+  raw_TP1 = L_ref_j + 0.382 * (H - L_ref_j)
+  raw_TP2 = L_ref_j + 0.618 * (H - L_ref_j)
+  TP1 = round_tick_down(raw_TP1)
+  TP2 = round_tick_down(raw_TP2)
+ 
+After actual fill:
+  E = actual_weighted_average_fill
+  L_entry = confirmed_pivot_low_known_at_fill
+  freeze_trade_targets_using(H_entry, L_entry, E)
+  flag_exit_review_if_target1 <= E or payoff_deteriorates
+  stop_ref = min(confirmed_structural_support, L_entry)              - max(0.5*ATR14, 0.01*L_entry)
+止盈分档比例初始50%/50%；若第一目标接近历史密集套牢区或平台阻力，允许将其下调到该阻力前一档报价，但若因此使收益风险比不足则不发买入信号。回撤0.382/0.618仅是便于统一比较的参考网格，后续应与ATR倍数及结构阻力法做严格样本外对照，不视为自然规律。
+7.3 仓位与尾部风险
+planned_loss_pct = max(0, entry_cap - stop_ref) / entry_cap
+RR = (0.5*(TP1-entry_cap)+0.5*(TP2-entry_cap)) /      max(entry_cap-stop_ref, tick)
+position_value = min(
+    account_equity * per_trade_risk_budget / max(planned_loss_pct,eps),
+    account_equity * stress_risk_budget / max(stress_loss_pct,eps),
+    portfolio_remaining_risk_capacity,
+    symbol_liquidity_cap
+)
+# If stop_ref cannot be reliably estimated, entry is blocked.
+初始可研究风险预算为账户权益的单笔计划止损风险0.3%—0.5%，与独立的更严苛隔夜压力风险预算同时生效。买入当日无法卖出的实际尾部亏损可能明显超过计划止损，尤其天地板、连续跌停或停牌情形；价格止损不能视为已锁定的最大亏损。
+8. 持有2—5日的卖出引擎
+触发事件
+优先级
+动作
+重大事件、交易状态异常、结构性失效/计划止损触发
+最高
+只要该批股票已可卖，优先退出可成交部分；跌停/停牌则记录未成交风险与持续处理。
+TP1触及且交易条件允许
+高
+卖出当时可卖持仓的50%；不因等待TP2而撤销已满足的TP1。
+TP2触及
+高
+退出剩余可卖持仓，交易关闭。
+E+2仍无修复且低于局部VWAP/趋势转弱
+中
+时间健康检查，可提前退出，非一律强制保有2天。
+E+3未接近TP1、反弹疲弱
+中
+优先卖出或减仓，输出原因；不得无限期待回到涨停价。
+E+5收盘前
+硬期限
+原则上清空已可卖仓位；若跌停无法成交则标记未完成，不虚报已经平仓。
+
+严格区分“触价”与“成交”：达标但卖出挂单未成交，应保持未成交余量并依优先级处理；若当天买入且不可卖，即使立即触及止损，系统仅能报警并预设下一可卖交易日的退出计划。卖出委托不得在同一可卖股票数量上重复占用。
+8.1 预设止盈单的交易日有效性
+持仓后系统在E+1起按实际持仓股数生成TP1/TP2卖出条件。若券商支持OCO、分批止盈和止损优先，应以实际能力绑定；若不支持，则通过系统维护订单状态后逐笔发送。必须先确认撤单成功，再以新的净持仓重新提交，不能根据“已发送撤单指令”直接认定订单已撤销。
+9. 用户每天看到的标准清单（最多10只）
+9.1 极简汇总表
+实际部署时，首页只保留下列字段。每行均显示事件日、有效期、触达价、买入上限、两档止盈和状态；其余算法细节折叠到详情页。
+排名 / 标的
+涨停事件
+买档A 触发→上限
+买档B 触发→上限
+TP1 / TP2
+状态/有效期
+1 示例甲 600XXX
+T0 10/23
+9.79 → 9.93
+9.57 → 9.71
+10.25 / 10.53
+WATCH / 至10/29
+2 示例乙 000XXX
+T0 10/23
+14.24 →14.45
+13.92 →14.13
+14.88 /15.24
+WAIT_CONFIRM / 至10/29
+
+重要：本表股票名称、代码及价格均为虚构示例，仅演示排版字段；不得将示例中的买卖价用于真实交易。实际程序应使用实时可核验数据计算，每张候选卡对应B档有独立的TP1/TP2预估；汇总行默认展示排名最高的有效买档。
+9.2 单只候选卡应输出的完整字段
+字段
+规则/显示范例
+股票与理由
+代码、简称、行业/主线、趋势分、事件T0、当前最高价、首次触板时间。
+风险等级
+NORMAL / DEEP / EXTREME；是否T0天地板、昨日连续涨停数、公告风险。
+A档报价
+触发价、确认后可接受最高买价、默认份额/独占入场模式、状态。
+B档报价
+触发价、确认后可接受最高买价、默认份额/独占入场模式、状态。
+止盈价
+按A/B档分别生成TP1、TP2，注明计划卖出比例；实际成交后重算并冻结。
+保护价
+结构失效参考价、当日涨跌停价、账户压力亏损指标。
+有效期
+事件起止交易日、最后下单日、最新更新戳、待撤单及订单同步状态。
+核心理由
+不超过3条：趋势、缩量/承接、板块；同时展示最高优先级风险原因。
+允许动作
+WATCH / ARM_CONDITIONAL / BUY_READY / HOLD / CANCEL / EXPIRE。
+
+9.3 日报调度
+1.  盘前：检查全部在有效期的旧事件，先作废失效订单，再重新核验价格带、交易状态、公告与风险预算；发布当日可用方案。
+2.  盘中：捕获新涨停事件与回撤触价，按分钟频率（或数据源支持频率）更新确认信号；无法实时运行则仅发送收盘候选。
+3.  收盘：按质量评分与分散化约束，从当天新触板及仍有效旧事件中选不超过10只“活跃展示候选”。另可保留不自动挂单的历史研究池。
+4.  每日过期检查：事件有效期结束后即停止新买单；已有仓位进入独立的持仓管理状态。
+10. 订单安全、撤单与一周期限
+10.1 强制执行规则
+规则
+必须实现的技术语义
+有效期
+监控计划有效5个交易日（含T0），不等于向交易所提交一个5日仍有效的普通限价委托。
+报单守卫
+提交前二次检查：最新涨跌停价、价格笼子、买入资格、确认信号是否新鲜、撤单/成交状态。
+状态时效
+实时确认信号TTL初值3分钟；超过需重新计算；用于挂单的报价版本必须与当前event_version一致。
+撤单优先
+触发硬风险后优先撤销所有未成交买单；若已部分成交，余量撤单并创建持仓管理记录。
+防重复
+order_key=strategy_id+event_id+level+version；同档仅允许一个活跃买单。
+价格不可达
+本交易日目标价格在涨跌停价之外：显示UNREACHABLE_TODAY，不自动钳制到跌停价后买。
+券商能力差异
+可选1：支持复合条件、撤单及多日监控的券商条件单；可选2：Codex生成提醒，由用户每天手动授权委托。
+失败闭锁
+网络中断、成交未知、数据过旧、券商拒单、订单同步失败时暂停新买单，不得假定未成交。
+
+价格笼子、买卖申报数量与临时停牌等应适配上交所和深交所现行规则；委托价有效不等于一定进入撮合或一定成交。两地规则在2026年7月6日进行了修订，应通过交易所官方规则的当前有效版本配置，而不是把旧制度参数写死。
+11. Codex 字段字典与 JSON 合同
+11.1 核心输入/衍生字段
+字段
+类型
+含义与计算口径
+strategy_id
+str
+固定 LBR_MAIN_V1，与原有策略严格区分。
+event_id / event_version
+str / int
+真实涨停事件唯一号，锚点或交易限制改变时递增版本。
+symbol / instrument_segment
+str
+证券及交易所板块，不以字符串前缀单独判断创业板。
+event_day_index / expires_on
+int/date
+T0=0，T4=4；使用交易日历。
+limit_up_price / limit_down_price
+decimal
+交易所标准的实际非复权报价与价格步长。
+event_peak_asof / drawdown_pct
+decimal
+仅过去可观测的事件最高价与截至当前真实回撤。
+trend_score / sector_score
+0..100
+事前趋势、板块分数。
+absorption_score / reclaim_flag
+int/bool
+承接得分和重新转强状态。
+price_touch_A/B / entry_cap_A/B
+decimal
+两档触发价及最高可接受成交价。
+tp1_A/B / tp2_A/B
+decimal
+每一档预计两级止盈；成交后以实际信息冻结。
+planned_stop / RR / position_risk
+decimal
+计划风险参考、收益风险比、账户风险占用。
+status / reason_codes
+enum/list
+单一可行动作和可审计原因。
+orders / fills / sellable_qty
+objects
+真实委托、成交与可卖数量。
+
+11.2 单只候选的标准JSON示例（虚构演示）
+{
+  "strategy_id": "LBR_MAIN_V1",
+  "symbol": "600XXX.SH",
+  "is_synthetic_example": true,
+  "event_id": "600XXX.SH:2026-10-23:01",
+  "event_version": 1,
+  "event_day_index": 0,
+  "monitor_sessions": 5,
+  "segment": "SSE_MAIN",
+  "today_limit_touched": true,
+  "trend_score": 82,
+  "composite_score": 84,
+  "candidate_status": "WATCH",
+  "reference_peak": 11.00,
+  "drawdown_watches": [0.08,0.10,0.12,0.14,0.16],
+  "buy_levels": [
+    {"id":"A", "trigger_price":9.79,
+     "max_buy_price":9.93, "entry_status":"WAIT_CONFIRM",
+     "tp1_preview":10.25, "tp2_preview":10.53},
+    {"id":"B", "trigger_price":9.57,
+     "max_buy_price":9.71, "entry_status":"WAIT_CONFIRM",
+     "tp1_preview":10.11, "tp2_preview":10.45}
+  ],
+  "entry_mode": "OCO_ONE_LEVEL_ONLY",
+  "profit_split": [0.5,0.5],
+  "exit_max_trading_days_after_fill": 5,
+  "hard_veto_reasons": [],
+  "reason_codes": ["UPTREND_VALID", "LIMIT_EVENT_CONFIRMED"],
+  "quote_timestamp": "<EXCHANGE_LOCAL_TIMESTAMP>",
+  "action": "WATCH_NO_BROKER_ORDER"
+}
+JSON示例为演示合同：tp1/tp2仅为事前预估，不是由当前真实行情计算的数据，也不应被解释为收益承诺。实施时应自动按公式复算所有数值，禁止把上述示例硬编码到系统。
+12. 计算流程与状态机（提供给Codex）
+DAILY_UNIVERSE -> LIMIT_UP_EVENT -> TREND_PASS ->
+  WATCH_DRAWDOWN -> TOUCH_ZONE_A_OR_B ->
+  VOLUME_CONTRACTION_CHECK -> ABSORPTION_CHECK ->
+  RECLAIM_CHECK -> PAYOFF_AND_RISK_CHECK ->
+  BUY_READY -> SUBMIT_ORDER -> PARTIAL_FILL / FILLED ->
+  HOLD_POSITION -> TP1 / TP2 / RISK_EXIT / TIME_EXIT
+  Any hard veto -> CANCEL_PENDING_ORDERS -> EXPIRED_OR_REJECTED
+12.1 决策伪代码
+def daily_lbr(snapshot, portfolio, broker):
+    events = find_limitup_events(snapshot, allowed_segments=['SSE_MAIN','SZSE_MAIN'])
+    pool = merge_active_events_with_new(events, max_age=4)
+    eligible = []
+    for e in pool:
+        if hard_veto(e, snapshot, portfolio):
+            cancel_or_disable_pending(e)
+            continue
+        if not all_gates(e, snapshot):
+            set_status(e, 'WATCH')
+            continue
+        issue_precomputed_price_plan(e)  # A/B trigger + cap + TP1/2
+        eligible.append(e)
+ 
+    visible = rank_and_diversify(eligible, limit=10, max_per_sector=2)
+    for e in eligible:
+        if not realtime_confirmation_available(e):
+            set_action(e, 'WATCH_NO_BROKER_ORDER')
+        elif is_broker_state_unknown(broker):
+            set_action(e, 'PAUSE_NEW_ORDERS')
+        elif triggered_and_absorbed_and_reclaimed(e) and payoff_ok(e):
+            set_action(e, 'BUY_READY')  # authorize broker action separately
+        else:
+            set_action(e, 'WAIT_CONFIRM')
+    return visible
+ 
+# After filling, entry date E starts the E+1..E+5 exit counter.
+# All sell decisions must use sellable_qty and actual fills.
+12.2 动作枚举
+动作
+唯一意义
+WATCH_NO_BROKER_ORDER
+发布精确参考价，但成交确认尚未具备，禁止实际委托。
+ARM_CONDITIONAL
+允许在受支持券商布置经回撤/缩量/承接三条件约束的条件单。
+BUY_READY
+实时入场条件满足，允许在买入上限价以内提交订单。
+CANCEL_PENDING_BUY
+已失效/有风险/已成交互斥单；请求撤单并等待确认。
+HOLD_TP1_TP2
+入场成交且当前持仓有效，提供两档卖价。
+SELL_TP1 / SELL_TP2
+达到目标且有可卖持仓，按分段价卖出。
+SELL_RISK / SELL_TIME
+结构风险或最长持有到期，优先安排退出。
+EXPIRE_UNFILLED
+T4结束未成交，关闭本次涨停事件。
+
+13. 回测、数据回灌与评估框架
+13.1 不允许只喂成功成交的股票
+必须保存每天全部触及涨停的合格/不合格候选，不得只把最后成交的赢家喂给模型。包括：从未回落到目标、触价但卖压未衰竭、触发条件后未成交、当天买入并次日连续下跌、2—5日成功修复以及券商成交失败。
+样本标签
+定义/用途
+touch_A/B
+事件在5交易日内是否真实触达对应价格，评价挂单触发率。
+confirm_A/B
+触价后是否出现合规缩量、止跌、修复确认，评价入场率。
+fill_A/B
+条件触发后是否实际成交；区分触价与真实成交。
+post_fill_max_adverse_excursion
+成交后到退出前最大不利波动。
+tp1_reached / tp2_reached
+目标触及与可成交卖出分别记录，不得用最高价假设成交。
+exit_day / net_return
+真实退出交易日、净收益、手续费和冲击成本。
+T0_vs_T1_T4
+破板当日交易与后续确认交易分组检验。
+panic_vs_orderly
+恐慌放量后缩量与有序缩量回踩的差异。
+drawdown_bin
+8—10、10—12、12—14、14—16、16—18、18+的独立结果。
+nonfill_opportunity_cost
+没有成交不记作亏损，也不把未成交价格当成实际交易；另统计机会成本。
+
+13.2 必须比较的三组买入方法
+1.  A基准：只按“价格触达8%—16%”挂普通被动限价单（研究基准，不默认实盘启用）。
+2.  B：价格触达 + 相同时段归一化缩量 + 不创新低，满足时发条件买单。
+3.  C：B + 局部VWAP重新收复或突破短反弹高点，但成交价格不得超过EntryCap。
+分别比较T0与T1—T4、回撤档位、板块风格以及持有E+1/E+2/E+3/E+5的历史净收益中位数、正收益比例、尾部亏损、最大回撤、成交比例、资金使用效率。不得只优化胜率、单次最大盈利或事后最低点成交。
+13.3 回测分割及防止过拟合
+样本<30个独立事件：仅检查代码、成交语义、数据完整性；不推断稳定胜率。
+30—99事件：允许描述统计、敏感性分析，不自动改变核心门槛。
+≥100事件且覆盖不同市场阶段：使用按时间前推的训练/验证/样本外测试；同一股票相邻事件按组隔离，避免泄漏。
+版本保留参数快照：每次门槛更改须记录生效时间、训练范围、验证收益、最大回撤、淘汰条件；上线后采用影子交易/小规模真实成交校正滑点。
+14. 边界情景与验收用例
+用例
+预期行为
+每天仅3只合格
+只给3只，不凑满10只。
+T0收盘后才首次启动
+只给未来可执行T1—T4方案，不伪造当天买入。
+T0先触涨停后直线跌停
+进入极端风险，没能确认缩量/承接则不发买单。
+T1触达A后继续急跌B
+若A未成交需独立重新确认B；若A已成交默认禁用B；不得连续机械加仓。
+买单挂出后市场出现重大利空
+发撤单、等待撤单确认；可能发生在途成交，成交后立即建立风险持仓。
+旧计划尚有效但股价再创新高
+取消旧报价版本后重锚价格，禁止老低价单继续自动生效。
+第5交易日仍未触发
+结束事件，撤销一切条件与订单，不继续挂单。
+E+1一字跌停不可卖
+记录止损无法成交，持续警报与后续卖出计划；不得假设按止损价成交。
+卖出TP1仅成交一部分
+剩余未成交数量仍在持仓，TP2与止损仅针对实际可卖数量。
+创业板300/301代码或创业板segment
+硬性排除；其它业务规则不变。
+券商不支持缩量/结构复合条件单
+退化为提醒+人工确认，不允许裸价自动挂五天。
+
+15. Codex交付任务与验收清单
+建立与既有策略相互独立的LBR_MAIN_V1模块，使用明确的segment分类排除创业板，默认主板非ST范围；可通过配置新增未来研究板块但不能混用10%参数。
+实现交易日历、实际涨跌停价、滚动事件锚与T0—T4事件生命周期；所有事件与订单版本可回放。
+实现Trend/Event/Structure/Absorption/Payoff五道Gate、硬否决、100分排序和每板块最多2只/每天最多10只列表。
+实现精确的两档价格：touch、entry_cap、预估TP1/TP2、结构止损与持仓风险预算；实际成交后更新最终止盈、止损与最长持有日。
+实现“缩量+止跌+承接”的实时确认；实时数据不足只能输出参考价/观察提示，不得自动放出买入指令。
+实现券商条件单适配层、成交回报同步、幂等、撤单确认、一周过期及网络异常暂停；不能在未确认撤单时叠加新订单。
+输出前端简洁日报与独立JSON；用户不必查看分钟K线或综合评分即可理解“买价、卖价、期限、状态”。
+提供30+单元/集成测试覆盖15节边界用例、回测脚本、全量事件表、委托与成交表及参数版本审计表。
+完成A/B/C三组买入方法、不同回撤区间和持有天数的回测对照报告；没有统计有效优势之前只运行影子交易或经用户明确授权的小额度测试。
+16. 初始参数清单（全部配置化）
+参数名
+初始值
+备注
+STRATEGY_ID
+LBR_MAIN_V1
+与既有模块隔离
+MAX_DAILY_CANDIDATES
+10
+允许0只
+EVENT_MONITOR_SESSIONS
+5（T0—T4）
+一周是监控有效期，不是交易所委托生命周期
+EXCLUDE_CHINEXT
+true
+用户明确要求
+ENABLE_STAR_MARKET / ENABLE_BSE
+false / false
+避免将20%、30%涨跌幅混入主板研究
+EXCLUDE_ST
+true
+排除特殊风险标的
+WATCH_DRAWDOWN
+0.08—0.10
+提前观察
+TRIGGER_A / TRIGGER_B
+0.11 / 0.13
+从事件最高实际价回撤
+DEEP_WATCH_RANGE
+0.14—0.16
+默认不机械挂单
+ENTRY_CAP_BUFFER
+0.015
+最大允许买价上浮（并受另一上限限制）
+TIME_ADJ_RVOL_SHRINK
+0.65
+相同交易时段归一化
+PANIC_RVOL_MIN
+1.8
+恐慌阶段参考值
+NO_NEW_LOW_5MIN_BARS
+3
+连续完成K线
+ABSORPTION_SCORE_MIN
+70；深区80
+非胜率
+MIN_REWARD_RISK
+1.5
+价格风险比，不是数学期望收益
+TP1_FRACTION / TP2_FRACTION
+0.382 / 0.618
+均为研究参考，不是斐波那契有效性断言
+SELL_SPLIT
+0.50 / 0.50
+实际成交后执行
+MAX_HOLD_SESSIONS
+5
+自实际成交日E起算
+ENABLE_SCALE_IN
+false
+默认买档互斥、不亏损加仓
+SIGNAL_TTL_MINUTES
+3
+过期重新核验
+ORDER_MODE
+CONDITIONAL_OR_ALERT
+不裸挂多日普通限价买单
+
+17. 外部规则依据与实施说明
+以下链接用于交易规则、订单有效性与交易限制实现时核验。它们支撑交易制度约束，不构成LBR涨跌幅阶梯及赢利性的实证依据；策略阈值均来自本次建模假设。
+《上海证券交易所交易规则（2026年修订）》，上交所2026-04-24发布、2026-07-06施行：https://www.sse.com.cn/lawandrules/sselawsrules2025/fund/trading/c/c_20260424_10817739.shtml
+《深圳证券交易所交易规则（2026年修订）》发布通知及附件，深交所2026-04-24发布、2026-07-06施行：https://investor.szse.cn/lawrules/rule/trade/t20260424_620190.html
+中国证监会深圳监管局《当日委托未成交，冻结资金或股份次日可用》，说明当日委托未成交的后续清算处理：https://www.csrc.gov.cn/shenzhen/c105614/c7602022/content.shtml
+上交所交易规则修订说明（主板风险警示股票涨跌幅变化等）：https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260424_10816474.shtml
+深交所《证券委托方式的国际比较及借鉴》（研究材料，用于区分当日有效和撤销前有效等委托概念；不意味着A股交易所当前支持这些委托类型）：https://www.szse.cn/aboutus/research/secuities/documents/t20040106_531434.html
+最后的实施纪律  系统可以每天提供具体买卖报价，但无法提前保证股价会缩量、止跌或到达止盈价。“有价格”与“符合当下买入条件”必须分别存储。没有足够的实时数据、条件委托和撤单保障时，只能提供监控参考价，不应把价位自动变成持续有效的裸限价买单。

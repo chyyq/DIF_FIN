@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LBR涨停深度回撤研究台：七日备选池、实际成交监控与可追溯交易样本。">
+  <meta name="color-scheme" content="light">
+  <title>LBR · 低吸波段研究台</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#workspace" aria-label="LBR首页"><span class="brand-icon">lbr<span>↗</span></span><div><b>LBR WAVE</b><small>低吸波段研究台</small></div></a>
+      <div class="workspace-label">我的交易空间 <span>个人版</span></div>
+      <nav aria-label="主导航">
+        <button class="nav-item active" data-page="workspace"><span>▦</span>策略工作台 <i class="nav-dot"></i></button>
+        <button class="nav-item" data-page="journal"><span>≡</span>成交与样本 <em id="journal-count">0</em></button>
+        <button class="nav-item" data-page="learning"><span>◴</span>学习观察室</button>
+        <button class="nav-item" data-page="settings"><span>⚙</span>策略与设置</button>
+      </nav>
+      <div class="sidebar-rule"><span class="rule-tag">LBR_MAIN_V1</span><h3>等待回撤，确认承接。</h3><p>让价格回到计划内，<br>让每一笔成交留下证据。</p><div class="sidebar-wave" aria-hidden="true"><svg viewBox="0 0 180 58"><path d="M0 38 15 35 27 39 42 24 54 28 68 10 81 17 93 31 107 43 122 48 135 41 150 35 164 19 180 12"/></svg></div></div>
+      <div class="sidebar-bottom"><span class="connection-dot"></span><div>浏览器本地账本<small>定期导出，跨设备手动同步</small></div></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><div class="breadcrumb">研究空间 <span>/</span> <b id="breadcrumb-name">策略工作台</b></div><div class="top-actions"><button id="demo-toggle" class="text-button">体验演示</button><span class="top-divider"></span><button id="export-button" class="text-button"><span aria-hidden="true">↥</span> 导出账本</button><button id="import-button" class="text-button"><span aria-hidden="true">↧</span> 导入</button><span class="avatar">L</span></div></header>
+      <main id="main-content">
+        <div id="demo-banner" class="banner demo-banner" hidden>演示空间 · 股票、价格和成交均为虚构，数据与正式账本完全隔离。<button id="exit-demo">退出演示 ↗</button></div>
+        <div id="global-notice" class="banner" role="status" hidden></div>
+        <section id="workspace-page" class="page">
+          <div class="page-heading"><div><p class="eyebrow">LIMIT-UP · PULLBACK · REBOUND</p><h1>把握回撤，跟踪每一程<span class="heading-dot">.</span></h1><p class="subtitle">从涨停事件到七日跟踪，让每笔决策有迹可循。</p></div><div class="heading-actions"><span class="date-chip" id="today-label"></span><button class="button primary" id="refresh-button">↻ <span>刷新行情</span></button></div></div>
+          <div class="overview-grid">
+            <article class="metric"><div>本期备选 <span class="metric-icon">▤</span></div><strong id="pool-count">0<small>/ 10</small></strong><p id="pool-description">等待有效数据</p></article>
+            <article class="metric"><div>监控中 <span class="metric-icon">◎</span></div><strong id="position-count">0<small>只</small></strong><p>同股多笔合并，期限独立于换池</p></article>
+            <article class="metric"><div>持仓浮动盈亏 <span class="metric-icon">↗</span></div><strong id="floating-pnl">—</strong><p id="pnl-description">按已观测行情估算 · 含已录买入费</p></article>
+            <article class="metric"><div>待处理提醒 <span class="metric-icon">♧</span></div><strong id="alert-count">0<small>项</small></strong><p id="alert-description">止盈、止损与第七日检查</p></article>
+          </div>
+          <div class="data-strip"><span><i class="connection-dot" id="data-dot"></i><b id="data-status">等待数据</b><span id="data-time">尚未生成行情快照</span></span><span id="refresh-status">盘中每60秒检查 · 上海时间</span></div>
+          <div class="workspace-columns">
+            <div class="workspace-main">
+              <section class="panel" id="pool-section">
+                <div class="panel-header"><div><div class="section-kicker"><span class="module-index">01</span> EVENT WATCHLIST</div><h2>七日备选池 <span class="count-pill" id="pool-badge">0</span></h2></div><div class="panel-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="stock-search" type="search" placeholder="搜索名称 / 代码" aria-label="搜索备选股票"></label><select id="pool-filter" aria-label="筛选备选状态"><option value="all">全部状态</option><option value="ready">确认就绪</option><option value="watch">观察中</option></select></div></div>
+                <div class="pool-cycle"><span class="cycle-label">本期周期</span><b id="cycle-range">等待交易日历</b><span id="cycle-note">七个交易日换池，报价持续更新</span><div class="cycle-dots" id="cycle-dots" aria-label="备选池周期"></div></div>
+                <div id="candidate-list" class="candidate-list"></div>
+                <div class="panel-footnote"><span>ⓘ</span> A / B 为回撤价位；30% / 30% / 40% 为计划资金份额。点击后确认实际成交，不直接下单。</div>
+              </section>
+              <section class="panel positions-panel" id="positions-section">
+                <div class="panel-header"><div><div class="section-kicker"><span class="module-index">02</span> POSITION MONITOR</div><h2>买入后监控 <span class="count-pill" id="holdings-badge">0</span></h2></div><button class="text-button" id="manual-buy">＋ 补录成交</button></div>
+                <div id="position-list" class="position-list"></div>
+                <div class="panel-footnote"><span>◷</span> 首次买入为第1日，第7日提醒；加仓不延长期限。到期后保留记录，直到你确认实际卖出。</div>
+              </section>
+            </div>
+            <aside class="insights-column">
+              <section class="panel daily-panel"><div class="small-heading"><span class="green-line"></span><h3>执行节奏</h3><span class="tiny-tag">7 DAY</span></div><div class="rhythm-visual" aria-hidden="true"><svg viewBox="0 0 240 90"><defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#107566" stop-opacity=".13"/><stop offset="1" stop-color="#107566" stop-opacity="0"/></linearGradient></defs><path fill="url(#area)" d="M0 50 25 40 43 14 62 27 84 48 103 63 123 67 146 60 166 44 187 38 208 24 240 8V90H0Z"/><path fill="none" stroke="#137868" stroke-width="2" d="M0 50 25 40 43 14 62 27 84 48 103 63 123 67 146 60 166 44 187 38 208 24 240 8"/><circle cx="123" cy="67" r="4" fill="#df9b45"/><path d="M0 78H240" stroke="#e8ece8" stroke-dasharray="3 5"/></svg><span>触及涨停</span><span>缩量承接</span><span>分段退出</span></div><ol class="rhythm-list"><li><i>1</i><div><b>涨停后，等待深度回撤</b><span>A档 −11% · B档 −13%</span></div></li><li><i>2</i><div><b>确认后，记录真实成交</b><span>低吸价位与买入确认分开</span></div></li><li><i>3</i><div><b>七日内，跟踪风险与修复</b><span>TP1 / TP2 各50% · 止损优先</span></div></li></ol></section>
+              <section class="panel alert-panel"><div class="small-heading"><h3>监控提醒</h3><span class="tiny-tag" id="alerts-total">0 项</span></div><div id="alerts-list"></div><button class="text-button notify-button" id="notify-button">♧ 开启浏览器提醒</button><p class="aside-note">页面打开时检查；关闭页面后不会推送。报价触及不等于实际成交。</p></section>
+              <section class="learning-teaser"><div class="section-kicker">EVERY TRADE COUNTS</div><h3>每一笔，都成为下一步的证据。</h3><p>记录成交、费用与结果，按独立事件积累样本，再验证规则。</p><div class="sample-progress"><span id="sample-progress-bar"></span></div><div class="sample-count"><b id="sample-count">0 个已完成事件</b><span>首阶段 / 30</span></div><button class="text-button" data-page="learning">查看学习记录 <span>↗</span></button></section>
+            </aside>
+          </div>
+        </section>
+        <section id="journal-page" class="page" hidden><div class="page-heading"><div><p class="eyebrow">FILLS & EVIDENCE</p><h1>每笔成交，都可追溯<span class="heading-dot">.</span></h1><p class="subtitle">实际成交才进入账本；未平仓样本保留，不计入已实现胜率。</p></div><button class="button primary" id="journal-export">导出全部样本 ↥</button></div><div class="panel"><div class="panel-header"><h2>成交日志</h2><span class="muted">按成交时间排列 · 不以提醒替代成交</span></div><div id="journal-content"></div></div></section>
+        <section id="learning-page" class="page" hidden><div class="page-heading"><div><p class="eyebrow">EVIDENCE BEFORE OPTIMIZATION</p><h1>用样本，验证下一步<span class="heading-dot">.</span></h1><p class="subtitle">积累全量事件与真实成交，按时间检验，不自动改写核心策略。</p></div></div><div id="learning-content"></div></section>
+        <section id="settings-page" class="page" hidden><div class="page-heading"><div><p class="eyebrow">PLAN & PARAMETERS</p><h1>让交易遵循同一份计划<span class="heading-dot">.</span></h1><p class="subtitle">价格按Word规格计算；本次七日监控要求优先。</p></div></div><div class="settings-grid"><section class="panel"><div class="panel-header"><h2>账户计划</h2></div><form id="settings-form" class="settings-form"><label>账户研究资金（元）<input type="number" id="account-equity" min="1000" step="100" required></label><label>每只股票计划资金上限（元）<input type="number" id="symbol-budget" min="100" step="100" required></label><label>本次默认买入手续费（元）<input type="number" id="default-fee" min="0" step="0.01" required></label><p class="muted">快捷比例只计算参考股数，实际价、股数、费用以你的成交确认值为准。计划资金不等同于经过风险预算核准的仓位。</p><button class="button primary" type="submit">保存计划</button></form></section><section class="panel"><div class="panel-header"><h2>策略参数</h2></div><dl class="parameter-list"><div><dt>独立策略</dt><dd>LBR_MAIN_V1</dd></div><div><dt>研究范围</dt><dd>沪深主板 · 非ST</dd></div><div><dt>候选 / 持仓周期</dt><dd>7个交易日</dd></div><div><dt>买入观察档</dt><dd>−11% / −13%</dd></div><div><dt>修复止盈网格</dt><dd>0.382 / 0.618</dd></div><div><dt>参考卖出份额</dt><dd>50% / 50%</dd></div><div><dt>自动委托</dt><dd>未接入 · 仅手动记录</dd></div><div><dt>学习规则更新</dt><dd>样本外验证后人工核准</dd></div></dl></section><section class="panel wide"><div class="panel-header"><h2>刷新与数据边界</h2></div><div class="settings-copy"><p>沿用原站16次工作日GitHub Actions调度。网站打开后，每60秒检查行情和最新文件；七日换池与日常报价刷新分开。GitHub调度可能延迟，页面始终展示来源时间，旧报价不会被标为实时。</p><p>公开接口不足以核验完整盘中承接、公告或交易日历时，股票保留观察状态。观察到的峰谷仅覆盖本页面收到的行情，离线缺口会保留提示，不当作完整行情路径。</p><p>本地账本保存在当前浏览器；换设备、清理浏览器或隐私模式可能影响保存。导出JSON可跨设备合并，也可放入 <code>reference/</code> 供离线学习脚本分析。学习统计不代表未来收益。</p><p>交易限制参考 <a href="https://www.sse.com.cn/lawandrules/sselawsrules2025/fund/trading/c/c_20260424_10817739.shtml" target="_blank" rel="noopener noreferrer">上交所规则</a>；自动调度说明见 <a href="https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule" target="_blank" rel="noopener noreferrer">GitHub官方文档</a>。</p></div></section></div></section>
+        <footer><span><b>LBR</b> 低吸波段研究台</span><span>研究参数需要验证 · 触价与成交分别记录</span><span>LBR_MAIN_V1 · v1.0</span></footer>
+      </main>
+    </div>
+  </div>
+  <dialog id="trade-dialog" aria-labelledby="trade-title"><form id="trade-form"><div class="dialog-header"><div><p class="eyebrow" id="trade-kicker">MANUAL FILL</p><h2 id="trade-title">记录实际买入</h2></div><button class="icon-button" type="button" data-close aria-label="关闭弹窗">×</button></div><p id="trade-context" class="dialog-context"></p><div class="form-grid"><label id="symbol-field">股票代码<input id="trade-symbol" required pattern="[0-9]{6}" placeholder="6位代码" maxlength="6"></label><label id="name-field">股票名称<input id="trade-name" required maxlength="30"></label><label>实际成交价（元）<input id="trade-price" type="number" min="0.01" max="99999" step="0.01" required></label><label>实际成交股数<input id="trade-quantity" type="number" min="1" step="1" required></label><label>实际成交时间（上海）<input id="trade-time" type="datetime-local" required></label><label>本次全部费用（元）<input id="trade-fee" type="number" min="0" step="0.01" required></label><label class="full-width" id="sell-reason-field" hidden>卖出原因<select id="trade-reason"><option value="TP1">第一止盈</option><option value="TP2">第二止盈</option><option value="STOP">止损处理</option><option value="TIME">七日到期处理</option><option value="MANUAL">其他手动卖出</option></select></label><label class="full-width">备注（可选）<input id="trade-note" maxlength="240" placeholder="记录成交或操作原因"></label></div><div class="form-estimate" id="trade-estimate"></div><p class="form-warning" id="trade-warning"></p><p class="form-error" id="trade-error" role="alert"></p><div class="dialog-actions"><button class="button" type="button" data-close>取消</button><button class="button primary" id="trade-submit" type="submit">确认已成交，记入账本</button></div></form></dialog>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-header"><div><p class="eyebrow">EVENT DETAILS</p><h2 id="detail-title">事件与价格计划</h2></div><button class="icon-button" type="button" data-close aria-label="关闭详情">×</button></div><div id="detail-content"></div></dialog>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

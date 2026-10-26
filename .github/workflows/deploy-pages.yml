@@ -1,0 +1,69 @@
+name: Deploy LBR Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # A GITHUB_TOKEN data commit does not trigger another push workflow.
+  # Deploy after successful data generation, checking out main to include that commit.
+  workflow_run:
+    workflows: ["Update LBR market data"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout current main with the latest generated data
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Stage public site files
+        shell: python
+        run: |
+          from pathlib import Path
+          import shutil
+
+          destination = Path("_site")
+          destination.mkdir(exist_ok=True)
+          for pattern in ("*.html", "*.css", "*.js", "*.mjs", "*.svg"):
+              for source in Path(".").glob(pattern):
+                  shutil.copy2(source, destination / source.name)
+          for name in ("assets", "src", "data"):
+              source = Path(name)
+              if source.is_dir():
+                  excluded = shutil.ignore_patterns("learning.json", "*-trades-*.json", "*ledger*.json") if name == "data" else None
+                  shutil.copytree(source, destination / name, dirs_exist_ok=True, ignore=excluded)
+          (destination / ".nojekyll").touch()
+          required = ("index.html", "app.js", "portfolio.js", "styles.css", "favicon.svg")
+          missing = [name for name in required if not (destination / name).is_file()]
+          if missing:
+              raise SystemExit("Missing site files; refusing to deploy: " + ", ".join(missing))
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

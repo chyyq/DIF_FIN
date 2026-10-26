@@ -1,0 +1,14 @@
+{
+  "name": "lbr-wave",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LBR limit-up pullback research and manual position monitoring",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "npm run test:js && npm run test:py",
+    "test:js": "node --test tests/*.test.mjs",
+    "test:py": "python -m unittest discover -s tests -p test_*.py",
+    "update": "python scripts/update_data.py"
+  }
+}

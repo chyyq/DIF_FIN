@@ -1,0 +1,60 @@
+{
+  "versions": [
+    {
+      "hash": "6ad318cf5331e444",
+      "effectiveAt": "2026-10-24T21:17:32.078779+08:00",
+      "config": {
+        "strategyId": "LBR_MAIN_V1",
+        "parameterVersion": "1.0.0",
+        "candidateSessions": 7,
+        "holdingSessions": 7,
+        "holdingIncludesEntryDay": true,
+        "maxCandidates": 10,
+        "maxPerSector": 2,
+        "allowedSegments": [
+          "SSE_MAIN",
+          "SZSE_MAIN"
+        ],
+        "excludeST": true,
+        "minimumHistorySessions": 120,
+        "minimumAmount": 100000000,
+        "triggerA": 0.11,
+        "triggerB": 0.13,
+        "entryCapBuffer": 0.015,
+        "entryCapPeakA": 0.905,
+        "entryCapPeakB": 0.885,
+        "tp1Fraction": 0.382,
+        "tp2Fraction": 0.618,
+        "sellSplit": [
+          0.5,
+          0.5
+        ],
+        "buyPortions": [
+          0.3,
+          0.3,
+          0.4
+        ],
+        "tick": 0.01,
+        "minimumRewardRisk": 1.5,
+        "absorptionScoreMin": 70,
+        "deepAbsorptionScoreMin": 80,
+        "noNewLowBars": 3,
+        "shrinkThreshold": 0.65,
+        "panicRvolMinimum": 1.8,
+        "signalTtlSeconds": 180,
+        "enableScaleIn": false,
+        "orderMode": "MANUAL_RECORD_ONLY",
+        "maxRuntimeSeconds": 210,
+        "httpTimeoutSeconds": 7,
+        "minimumLearningEvents": 30,
+        "walkForwardMinimumEvents": 100,
+        "learningAutoApply": false,
+        "calendarConvention": "Seven actual trading sessions inclusive of event/first fill; no weekday fallback",
+        "note": "User request overrides the Word specification's original five-session window. Price parameters are research assumptions, not estimated win probabilities."
+      },
+      "trainingRange": null,
+      "validation": null,
+      "autoOptimized": false
+    }
+  ]
+}
