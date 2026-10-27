@@ -2,38 +2,41 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-27T18:46:18.584254+08:00",
-    "lastSuccessfulAt": "2026-10-27T18:46:18.584254+08:00",
-    "quoteTimestamp": "2026-10-27T16:12:01+08:00",
+    "generatedAt": "2026-10-27T19:00:06.481862+08:00",
+    "lastSuccessfulAt": "2026-10-27T19:00:06.481862+08:00",
+    "quoteTimestamp": "2026-10-27T16:15:00+08:00",
     "tradingDate": "2026-10-27",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
-      },
       {
         "name": "Eastmoney",
         "ok": true,
         "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Eastmoney-universe",
+        "name": "Sina-universe",
+        "ok": false,
+        "note": "Public fallback enumeration unavailable"
+      },
+      {
+        "name": "Tencent",
         "ok": true,
-        "note": "196 symbols received; pagination can be partial and is reported separately"
+        "note": "5224 requested symbols received with reported daily limits; security/account metadata unverified"
+      },
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
     "errors": [
-      "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 3: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
-      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response",
+      "Sina node hs_a: <urlopen error _ssl.c:999: The handshake operation timed out>",
+      "Daily history 603758.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
-    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -797,7 +800,7 @@
       "2026-10-26",
       "2026-10-27"
     ],
-    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-10-27",
     "futureDatesEstimated": false
@@ -832,21 +835,27 @@
       "price": 163.34,
       "high": 177.6,
       "low": 163.34,
-      "quoteTimestamp": "2026-10-27T14:29:18+08:00",
-      "limitDownPrice": 170.91,
+      "quoteTimestamp": "2026-10-27T16:14:43+08:00",
+      "limitDownPrice": 163.34,
       "eventDayIndex": 2,
       "expiresOn": null,
       "drawdownPct": 21.805735,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 207.4745,
+        "ma60": 179.647667,
+        "atr14": 17.152143,
+        "support": 169.75,
+        "score": 33.33,
+        "ma20Slope": -0.04997080876881699,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -866,8 +875,8 @@
           "tp2": 200.11,
           "tp1Pct": 3.174519,
           "tp2Pct": 6.052255,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 161.17,
+          "rewardRisk": 0.316315,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -886,8 +895,8 @@
           "tp2": 198.51,
           "tp1Pct": 4.147465,
           "tp2Pct": 7.622662,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 161.17,
+          "rewardRisk": 0.46628,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -900,18 +909,18 @@
       ],
       "riskLevel": "EXTREME",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -920,11 +929,10 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -950,7 +958,7 @@
       "price": 193.0,
       "high": 208.99,
       "low": 192.18,
-      "quoteTimestamp": "2026-10-27T16:11:35+08:00",
+      "quoteTimestamp": "2026-10-27T16:14:39+08:00",
       "limitDownPrice": 189.18,
       "eventDayIndex": 2,
       "expiresOn": null,
@@ -1051,9 +1059,9 @@
   ],
   "stats": {
     "candidateCount": 2,
-    "eventCount": 124,
-    "quoteCount": 196,
-    "watchCount": 2,
+    "eventCount": 176,
+    "quoteCount": 5224,
+    "watchCount": 1,
     "readyCount": 0
   },
   "learning": {
