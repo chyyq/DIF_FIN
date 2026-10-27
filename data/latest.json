@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-27T20:01:40.142845+08:00",
-    "lastSuccessfulAt": "2026-10-27T20:01:40.142845+08:00",
+    "generatedAt": "2026-10-27T20:25:21.033091+08:00",
+    "lastSuccessfulAt": "2026-10-27T20:25:21.033091+08:00",
     "quoteTimestamp": "2026-10-27T16:12:01+08:00",
     "tradingDate": "2026-10-27",
     "stale": false,
@@ -17,7 +17,7 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "296 symbols received; pagination can be partial and is reported separately"
+        "note": "394 symbols received; pagination can be partial and is reported separately"
       },
       {
         "name": "Tencent-history",
@@ -26,17 +26,36 @@
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 5: Remote end closed connection without response",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 603728.SH: Remote end closed connection without response",
-      "Daily limits 603713.SH: Remote end closed connection without response",
+      "Daily limits 603626.SH: Remote end closed connection without response",
+      "Daily limits 603565.SH: Remote end closed connection without response",
+      "Daily history 603626.SH: Remote end closed connection without response",
+      "Daily limits 603489.SH: Remote end closed connection without response",
+      "Daily limits 605488.SH: Remote end closed connection without response",
+      "Daily limits 603528.SH: Remote end closed connection without response",
+      "Daily limits 603838.SH: Remote end closed connection without response",
+      "Daily limits 603600.SH: Remote end closed connection without response",
+      "Daily limits 603721.SH: Remote end closed connection without response",
+      "Daily limits 603466.SH: Remote end closed connection without response",
+      "Daily limits 603559.SH: Remote end closed connection without response",
+      "Daily limits 603448.SH: Remote end closed connection without response",
       "Daily limits 603893.SH: Remote end closed connection without response",
-      "Daily limits 603859.SH: Remote end closed connection without response",
       "Daily limits 603677.SH: Remote end closed connection without response",
+      "Daily limits 605333.SH: Remote end closed connection without response",
+      "Daily limits 603843.SH: Remote end closed connection without response",
+      "Daily limits 603813.SH: Remote end closed connection without response",
+      "Daily limits 603658.SH: Remote end closed connection without response",
+      "Daily limits 605179.SH: Remote end closed connection without response",
+      "Daily limits 603767.SH: Remote end closed connection without response",
+      "Daily limits 603758.SH: Remote end closed connection without response",
+      "Daily limits 605287.SH: Remote end closed connection without response",
+      "Daily limits 603687.SH: Remote end closed connection without response",
+      "Daily limits 603716.SH: Remote end closed connection without response",
       "Daily limits 605068.SH: Remote end closed connection without response",
-      "Daily limits 605287.SH: Remote end closed connection without response"
+      "Daily limits 605118.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -1065,7 +1084,7 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 176,
-    "quoteCount": 296,
+    "quoteCount": 394,
     "watchCount": 2,
     "readyCount": 0
   },
