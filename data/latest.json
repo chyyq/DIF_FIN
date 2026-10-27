@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-27T20:37:56.671941+08:00",
-    "lastSuccessfulAt": "2026-10-27T20:37:56.671941+08:00",
+    "generatedAt": "2026-10-27T20:41:52.561989+08:00",
+    "lastSuccessfulAt": "2026-10-27T20:41:52.561989+08:00",
     "quoteTimestamp": "2026-10-27T16:12:01+08:00",
     "tradingDate": "2026-10-27",
     "stale": false,
@@ -22,12 +22,12 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "98 symbols received; pagination can be partial and is reported separately"
+        "note": "196 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 3: Remote end closed connection without response",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response"
@@ -1046,8 +1046,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1059,7 +1058,7 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 176,
-    "quoteCount": 98,
+    "quoteCount": 196,
     "watchCount": 2,
     "readyCount": 0
   },
