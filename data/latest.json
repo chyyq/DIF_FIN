@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-28T01:19:13.308033+08:00",
-    "lastSuccessfulAt": "2026-10-28T01:19:13.308033+08:00",
-    "quoteTimestamp": "2026-10-27T16:12:01+08:00",
+    "generatedAt": "2026-10-28T04:27:26.520942+08:00",
+    "lastSuccessfulAt": "2026-10-28T04:27:26.520942+08:00",
+    "quoteTimestamp": "2026-10-27T16:15:00+08:00",
     "tradingDate": "2026-10-27",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,9 +15,14 @@
         "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Eastmoney-universe",
+        "name": "Tencent",
         "ok": true,
-        "note": "196 symbols received; pagination can be partial and is reported separately"
+        "note": "5223 requested symbols received with reported daily limits; security/account metadata unverified"
+      },
+      {
+        "name": "Sina-universe",
+        "ok": true,
+        "note": "Enumerated 5576 symbols; complete=True; explicit board exclusions complete=True"
       },
       {
         "name": "Tencent-history",
@@ -26,13 +31,8 @@
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 3: HTTP Error 502: Bad Gateway",
-      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
-      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 605089.SH: Remote end closed connection without response",
-      "Daily limits 605068.SH: Remote end closed connection without response",
-      "Daily limits 605118.SH: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response",
+      "Daily history 300504.SZ: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -928,11 +928,10 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -958,7 +957,7 @@
       "price": 193.0,
       "high": 208.99,
       "low": 192.18,
-      "quoteTimestamp": "2026-10-27T16:11:35+08:00",
+      "quoteTimestamp": "2026-10-27T16:14:39+08:00",
       "limitDownPrice": 189.18,
       "eventDayIndex": 2,
       "expiresOn": null,
@@ -1060,8 +1059,8 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 176,
-    "quoteCount": 196,
-    "watchCount": 2,
+    "quoteCount": 5223,
+    "watchCount": 1,
     "readyCount": 0
   },
   "learning": {
