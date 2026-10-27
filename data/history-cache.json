@@ -41532,10 +41532,10 @@
     {
       "date": "2026-10-27",
       "open": 20.37,
-      "close": 19.82,
+      "close": 20.11,
       "high": 21.15,
       "low": 19.7,
-      "volume": 222770.0,
+      "volume": 238768.0,
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
@@ -71455,10 +71455,10 @@
     {
       "date": "2026-10-27",
       "open": 44.7,
-      "close": 42.19,
+      "close": 41.94,
       "high": 44.75,
-      "low": 42.14,
-      "volume": 221913.0,
+      "low": 41.91,
+      "volume": 235954.0,
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
@@ -89740,7 +89740,7 @@
       "close": 15.02,
       "high": 15.75,
       "low": 15.02,
-      "volume": 66911.0,
+      "volume": 67648.0,
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
@@ -100061,7 +100061,7 @@
       "close": 18.33,
       "high": 19.19,
       "low": 18.33,
-      "volume": 219843.0,
+      "volume": 221083.0,
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
@@ -183551,10 +183551,10 @@
     {
       "date": "2026-10-27",
       "open": 15.81,
-      "close": 16.42,
+      "close": 16.53,
       "high": 17.48,
       "low": 15.76,
-      "volume": 337954.0,
+      "volume": 351001.0,
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
@@ -186877,10 +186877,10 @@
     {
       "date": "2026-10-27",
       "open": 15.25,
-      "close": 16.3,
+      "close": 16.43,
       "high": 16.99,
       "low": 15.19,
-      "volume": 222580.0,
+      "volume": 240378.0,
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
@@ -188540,10 +188540,10 @@
     {
       "date": "2026-10-27",
       "open": 11.88,
-      "close": 12.08,
+      "close": 11.98,
       "high": 12.89,
       "low": 11.76,
-      "volume": 239769.0,
+      "volume": 256435.0,
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
