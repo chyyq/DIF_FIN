@@ -1,6 +1,6 @@
 {
   "strategyId": "LBR_MAIN_V1",
-  "generatedAt": "2026-10-27T14:46:43.460024+08:00",
+  "generatedAt": "2026-10-27T14:48:46.048515+08:00",
   "events": [
     {
       "strategyId": "LBR_MAIN_V1",
@@ -4127,7 +4127,8 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "SUPERSEDED_LIMIT_EVENT"
+        "SUPERSEDED_LIMIT_EVENT",
+        "QUOTE_MISSING"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -4251,10 +4252,11 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -4375,10 +4377,11 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -4499,10 +4502,11 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -4622,10 +4626,11 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -4744,10 +4749,11 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -4864,7 +4870,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -4988,10 +4995,11 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -5112,10 +5120,11 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -10376,7 +10385,7 @@
       "price": 15.02,
       "high": 15.75,
       "low": 15.02,
-      "quoteTimestamp": "2026-10-27T14:35:12+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:54+08:00",
       "limitDownPrice": 15.02,
       "eventDayIndex": 2,
       "expiresOn": null,
@@ -10466,8 +10475,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -10493,14 +10501,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 270560000.0,
-      "price": 68.09,
+      "price": 67.79,
       "high": 70.37,
       "low": 67.15,
-      "quoteTimestamp": "2026-10-27T14:35:13+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:52+08:00",
       "limitDownPrice": 61.83,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 3.240017,
+      "drawdownPct": 3.666335,
       "trendScore": 33.33,
       "metrics": {
         "historySessions": 148,
@@ -10589,11 +10597,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "reanchoredFrom": 66.66,
@@ -10618,14 +10625,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 476290000.0,
-      "price": 19.95,
+      "price": 19.86,
       "high": 21.15,
-      "low": 19.82,
-      "quoteTimestamp": "2026-10-27T14:35:12+08:00",
+      "low": 19.7,
+      "quoteTimestamp": "2026-10-27T14:48:54+08:00",
       "limitDownPrice": 19.44,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 8.360129,
+      "drawdownPct": 8.773542,
       "trendScore": 100.0,
       "metrics": {
         "historySessions": 148,
@@ -10711,8 +10718,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -10738,14 +10744,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 1599460000.0,
-      "price": 55.64,
+      "price": 55.27,
       "high": 58.18,
-      "low": 55.23,
-      "quoteTimestamp": "2026-10-27T14:35:14+08:00",
+      "low": 55.0,
+      "quoteTimestamp": "2026-10-27T14:48:53+08:00",
       "limitDownPrice": 50.32,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 7.142857,
+      "drawdownPct": 7.760347,
       "trendScore": 33.33,
       "metrics": {
         "historySessions": 148,
@@ -10834,11 +10840,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -10861,14 +10866,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 164860000.0,
-      "price": 14.34,
+      "price": 14.22,
       "high": 14.89,
       "low": 14.02,
-      "quoteTimestamp": "2026-10-27T14:35:13+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:52+08:00",
       "limitDownPrice": 13.1,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 3.693754,
+      "drawdownPct": 4.499664,
       "trendScore": 66.67,
       "metrics": {
         "historySessions": 148,
@@ -10954,9 +10959,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -10984,14 +10987,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 938940000.0,
-      "price": 42.55,
+      "price": 42.21,
       "high": 44.75,
-      "low": 42.46,
-      "quoteTimestamp": "2026-10-27T14:35:14+08:00",
+      "low": 42.14,
+      "quoteTimestamp": "2026-10-27T14:48:53+08:00",
       "limitDownPrice": 40.55,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 4.916201,
+      "drawdownPct": 5.675978,
       "trendScore": 33.33,
       "metrics": {
         "historySessions": 148,
@@ -11080,11 +11083,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "reanchoredFrom": 43.56,
@@ -11109,14 +11111,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 4461790000.0,
-      "price": 195.15,
+      "price": 194.32,
       "high": 208.99,
-      "low": 195.1,
-      "quoteTimestamp": "2026-10-27T14:35:10+08:00",
+      "low": 194.32,
+      "quoteTimestamp": "2026-10-27T14:48:53+08:00",
       "limitDownPrice": 189.18,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 9.853104,
+      "drawdownPct": 10.236511,
       "trendScore": 66.67,
       "metrics": {
         "historySessions": 148,
@@ -11202,8 +11204,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -11229,14 +11230,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 228820000.0,
-      "price": 10.52,
+      "price": 10.46,
       "high": 11.1,
       "low": 10.24,
-      "quoteTimestamp": "2026-10-27T14:35:10+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:52+08:00",
       "limitDownPrice": 9.57,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 5.225225,
+      "drawdownPct": 5.765766,
       "trendScore": 0.0,
       "metrics": {
         "historySessions": 148,
@@ -11325,11 +11326,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "reanchoredFrom": 9.66,
@@ -11357,7 +11357,7 @@
       "price": 18.33,
       "high": 19.19,
       "low": 18.33,
-      "quoteTimestamp": "2026-10-27T14:35:11+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:50+08:00",
       "limitDownPrice": 18.33,
       "eventDayIndex": 2,
       "expiresOn": null,
@@ -11450,11 +11450,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -11477,14 +11476,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 271960000.0,
-      "price": 20.62,
+      "price": 20.6,
       "high": 21.75,
       "low": 20.1,
-      "quoteTimestamp": "2026-10-27T14:46:47+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:50+08:00",
       "limitDownPrice": 19.83,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 21.086873,
+      "drawdownPct": 21.163414,
       "trendScore": 100.0,
       "metrics": {
         "historySessions": 148,
@@ -11596,14 +11595,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 1251970000.0,
-      "price": 44.53,
+      "price": 44.44,
       "high": 45.78,
       "low": 41.98,
-      "quoteTimestamp": "2026-10-27T14:46:47+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:50+08:00",
       "limitDownPrice": 37.77,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 2.73045,
+      "drawdownPct": 2.927042,
       "trendScore": 66.67,
       "metrics": {
         "historySessions": 148,
@@ -12463,14 +12462,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Eastmoney reported daily upper/lower limit",
       "amount": 312301208.0,
-      "price": 19.56,
+      "price": 19.91,
       "high": 19.91,
       "low": 17.81,
-      "quoteTimestamp": "2026-10-27T14:46:45+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:48+08:00",
       "limitDownPrice": 16.29,
       "eventDayIndex": 0,
       "expiresOn": null,
-      "drawdownPct": 1.757911,
+      "drawdownPct": 0.0,
       "trendScore": 33.33,
       "metrics": {
         "historySessions": 150,
@@ -12587,7 +12586,7 @@
       "price": 4.97,
       "high": 4.97,
       "low": 4.44,
-      "quoteTimestamp": "2026-10-27T14:35:10+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:55+08:00",
       "limitDownPrice": 4.07,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -12682,11 +12681,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -12712,7 +12710,7 @@
       "price": 24.2,
       "high": 24.2,
       "low": 21.97,
-      "quoteTimestamp": "2026-10-27T14:35:06+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:45+08:00",
       "limitDownPrice": 19.8,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -12798,7 +12796,6 @@
       ],
       "reasonCodes": [
         "TREND_FAILED",
-        "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
         "SECTOR_UNVERIFIED",
@@ -12806,11 +12803,10 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -12836,7 +12832,7 @@
       "price": 10.73,
       "high": 10.73,
       "low": 9.51,
-      "quoteTimestamp": "2026-10-27T14:35:12+08:00",
+      "quoteTimestamp": "2026-10-27T14:48:54+08:00",
       "limitDownPrice": 8.78,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -12929,11 +12925,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -14029,12 +14024,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -14147,12 +14144,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -14268,12 +14267,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -14389,12 +14390,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -14509,12 +14512,14 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -14627,12 +14632,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -14748,12 +14755,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -14869,12 +14878,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -14992,12 +15003,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -15110,12 +15123,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     }
   ]
 }

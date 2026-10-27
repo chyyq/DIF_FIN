@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-27T14:46:43.460024+08:00",
-    "lastSuccessfulAt": "2026-10-27T14:46:43.460024+08:00",
-    "quoteTimestamp": "2026-10-27T14:47:03+08:00",
+    "generatedAt": "2026-10-27T14:48:46.048515+08:00",
+    "lastSuccessfulAt": "2026-10-27T14:48:46.048515+08:00",
+    "quoteTimestamp": "2026-10-27T14:48:55+08:00",
     "tradingDate": "2026-10-27",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -22,13 +22,13 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "389 symbols received; pagination can be partial and is reported separately"
+        "note": "296 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 4: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response"
     ],
@@ -947,14 +947,14 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 4461790000.0,
-      "price": 195.15,
+      "price": 194.32,
       "high": 208.99,
-      "low": 195.1,
-      "quoteTimestamp": "2026-10-27T14:35:10+08:00",
+      "low": 194.32,
+      "quoteTimestamp": "2026-10-27T14:48:53+08:00",
       "limitDownPrice": 189.18,
       "eventDayIndex": 2,
       "expiresOn": null,
-      "drawdownPct": 9.853104,
+      "drawdownPct": 10.236511,
       "trendScore": 66.67,
       "metrics": {
         "historySessions": 148,
@@ -1040,8 +1040,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1053,7 +1052,7 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 124,
-    "quoteCount": 389,
+    "quoteCount": 296,
     "watchCount": 2,
     "readyCount": 0
   },
