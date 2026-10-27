@@ -1,6 +1,6 @@
 {
   "strategyId": "LBR_MAIN_V1",
-  "generatedAt": "2026-10-27T20:41:52.561989+08:00",
+  "generatedAt": "2026-10-28T01:19:13.308033+08:00",
   "events": [
     {
       "strategyId": "LBR_MAIN_V1",
@@ -11287,7 +11287,7 @@
       "drawdownPct": 10.846268,
       "trendScore": 66.67,
       "metrics": {
-        "historySessions": 148,
+        "historySessions": 147,
         "available": true,
         "passed": true,
         "ma20": 199.073,
@@ -11404,22 +11404,16 @@
       "eventDayIndex": 2,
       "expiresOn": null,
       "drawdownPct": 5.855856,
-      "trendScore": 0.0,
+      "trendScore": null,
       "metrics": {
-        "historySessions": 148,
-        "available": true,
+        "historySessions": 0,
+        "available": false,
         "passed": false,
-        "ma20": 9.084,
-        "ma60": 9.317,
-        "atr14": 0.296429,
-        "support": 8.4,
-        "score": 0.0,
-        "ma20Slope": -0.010565297897832449,
-        "checks": [
-          false,
-          false,
-          false
-        ]
+        "ma20": null,
+        "ma60": null,
+        "atr14": null,
+        "support": null,
+        "score": null
       },
       "absorption": {
         "available": false,
@@ -11439,8 +11433,8 @@
           "tp2": 10.63,
           "tp1Pct": 3.196803,
           "tp2Pct": 6.193806,
-          "plannedStop": 8.25,
-          "rewardRisk": 0.267045,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -11459,8 +11453,8 @@
           "tp2": 10.54,
           "tp1Pct": 4.187947,
           "tp2Pct": 7.660878,
-          "plannedStop": 8.25,
-          "rewardRisk": 0.376623,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -11473,18 +11467,18 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": false,
+        "universe": true,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [
-        "TREND_FAILED"
-      ],
+      "hardVetoReasons": [],
       "reasonCodes": [
-        "TREND_FAILED",
+        "INSUFFICIENT_HISTORY",
+        "TREND_UNAVAILABLE",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -11494,8 +11488,8 @@
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "reanchoredFrom": 9.66,
@@ -11528,22 +11522,16 @@
       "eventDayIndex": 2,
       "expiresOn": null,
       "drawdownPct": 12.464183,
-      "trendScore": 0.0,
+      "trendScore": null,
       "metrics": {
-        "historySessions": 148,
-        "available": true,
+        "historySessions": 0,
+        "available": false,
         "passed": false,
-        "ma20": 18.291,
-        "ma60": 18.7945,
-        "atr14": 0.840714,
-        "support": 16.38,
-        "score": 0.0,
-        "ma20Slope": -0.01719413250228341,
-        "checks": [
-          false,
-          false,
-          false
-        ]
+        "ma20": null,
+        "ma60": null,
+        "atr14": null,
+        "support": null,
+        "score": null
       },
       "absorption": {
         "available": false,
@@ -11563,8 +11551,8 @@
           "tp2": 20.05,
           "tp1Pct": 3.227513,
           "tp2Pct": 6.084656,
-          "plannedStop": 15.95,
-          "rewardRisk": 0.298305,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -11583,10 +11571,10 @@
           "tp2": 19.89,
           "tp1Pct": 4.166667,
           "tp2Pct": 7.62987,
-          "plannedStop": 15.95,
-          "rewardRisk": 0.43083,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "plannedStop": null,
+          "rewardRisk": null,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -11597,18 +11585,18 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": false,
+        "universe": true,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [
-        "TREND_FAILED"
-      ],
+      "hardVetoReasons": [],
       "reasonCodes": [
-        "TREND_FAILED",
+        "INSUFFICIENT_HISTORY",
+        "TREND_UNAVAILABLE",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -11618,8 +11606,8 @@
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -11652,7 +11640,7 @@
       "drawdownPct": 21.546116,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 148,
+        "historySessions": 147,
         "available": true,
         "passed": true,
         "ma20": 21.851,
@@ -11771,7 +11759,7 @@
       "drawdownPct": 3.473132,
       "trendScore": 66.67,
       "metrics": {
-        "historySessions": 148,
+        "historySessions": 147,
         "available": true,
         "passed": true,
         "ma20": 29.375,
@@ -12655,7 +12643,7 @@
       "drawdownPct": 0.0,
       "trendScore": 33.33,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": false,
         "ma20": 16.285,

@@ -2,18 +2,13 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-27T20:41:52.561989+08:00",
-    "lastSuccessfulAt": "2026-10-27T20:41:52.561989+08:00",
+    "generatedAt": "2026-10-28T01:19:13.308033+08:00",
+    "lastSuccessfulAt": "2026-10-28T01:19:13.308033+08:00",
     "quoteTimestamp": "2026-10-27T16:12:01+08:00",
     "tradingDate": "2026-10-27",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
-      },
       {
         "name": "Eastmoney",
         "ok": true,
@@ -23,17 +18,24 @@
         "name": "Eastmoney-universe",
         "ok": true,
         "note": "196 symbols received; pagination can be partial and is reported separately"
+      },
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
     "errors": [
-      "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 3: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 3: HTTP Error 502: Bad Gateway",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response"
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily history 605089.SH: Remote end closed connection without response",
+      "Daily limits 605068.SH: Remote end closed connection without response",
+      "Daily limits 605118.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
-    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -797,7 +799,7 @@
       "2026-10-26",
       "2026-10-27"
     ],
-    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-10-27",
     "futureDatesEstimated": false
@@ -963,7 +965,7 @@
       "drawdownPct": 10.846268,
       "trendScore": 66.67,
       "metrics": {
-        "historySessions": 148,
+        "historySessions": 147,
         "available": true,
         "passed": true,
         "ma20": 199.073,
