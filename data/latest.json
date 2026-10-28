@@ -2,42 +2,35 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-28T19:29:13.879728+08:00",
-    "lastSuccessfulAt": "2026-10-28T19:29:13.879728+08:00",
+    "generatedAt": "2026-10-28T19:39:17.783996+08:00",
+    "lastSuccessfulAt": "2026-10-28T19:39:17.783996+08:00",
     "quoteTimestamp": "2026-10-28T16:15:00+08:00",
     "tradingDate": "2026-10-28",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
       {
-        "name": "Eastmoney",
+        "name": "Tencent-history",
         "ok": true,
-        "note": "Public delayed quote endpoint responded; metadata remains unverified"
+        "note": "Actual historical daily bars; no intraday confirmation"
       },
       {
         "name": "Tencent",
         "ok": true,
-        "note": "5142 requested symbols received with reported daily limits; security/account metadata unverified"
+        "note": "5222 requested symbols received with reported daily limits; security/account metadata unverified"
       },
       {
         "name": "Sina-universe",
         "ok": true,
-        "note": "Enumerated 5495 symbols; complete=False; explicit board exclusions complete=True"
-      },
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
+        "note": "Enumerated 5575 symbols; complete=True; explicit board exclusions complete=True"
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response",
-      "Sina node hs_a page: <urlopen error _ssl.c:999: The handshake operation timed out>",
-      "Sina universe incomplete; missing previous symbols remain stale",
-      "Daily history 600715.SH: Remote end closed connection without response"
+      "Daily history 000001.SH: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
     ],
     "automaticOrders": false,
-    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -802,7 +795,7 @@
       "2026-10-27",
       "2026-10-28"
     ],
-    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-10-28",
     "futureDatesEstimated": false
@@ -842,22 +835,16 @@
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 21.614247,
-      "trendScore": 33.33,
+      "trendScore": null,
       "metrics": {
-        "historySessions": 147,
-        "available": true,
+        "historySessions": 0,
+        "available": false,
         "passed": false,
-        "ma20": 207.4745,
-        "ma60": 179.647667,
-        "atr14": 17.152143,
-        "support": 169.75,
-        "score": 33.33,
-        "ma20Slope": -0.04997080876881699,
-        "checks": [
-          false,
-          true,
-          false
-        ]
+        "ma20": null,
+        "ma60": null,
+        "atr14": null,
+        "support": null,
+        "score": null
       },
       "absorption": {
         "available": false,
@@ -877,8 +864,8 @@
           "tp2": 200.11,
           "tp1Pct": 3.174519,
           "tp2Pct": 6.052255,
-          "plannedStop": 161.17,
-          "rewardRisk": 0.316315,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -897,8 +884,8 @@
           "tp2": 198.51,
           "tp1Pct": 4.147465,
           "tp2Pct": 7.622662,
-          "plannedStop": 161.17,
-          "rewardRisk": 0.46628,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -911,18 +898,17 @@
       ],
       "riskLevel": "EXTREME",
       "gates": {
-        "universe": false,
+        "universe": true,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [
-        "TREND_FAILED"
-      ],
+      "hardVetoReasons": [],
       "reasonCodes": [
-        "TREND_FAILED",
+        "INSUFFICIENT_HISTORY",
+        "TREND_UNAVAILABLE",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -933,8 +919,8 @@
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -1062,8 +1048,8 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 317,
-    "quoteCount": 5142,
-    "watchCount": 1,
+    "quoteCount": 5222,
+    "watchCount": 2,
     "readyCount": 0
   },
   "learning": {
