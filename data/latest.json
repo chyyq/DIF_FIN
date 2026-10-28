@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-28T15:17:48.872253+08:00",
-    "lastSuccessfulAt": "2026-10-28T15:17:48.872253+08:00",
-    "quoteTimestamp": "2026-10-28T15:17:57+08:00",
+    "generatedAt": "2026-10-28T15:21:30.760843+08:00",
+    "lastSuccessfulAt": "2026-10-28T15:21:30.760843+08:00",
+    "quoteTimestamp": "2026-10-28T15:22:19+08:00",
     "tradingDate": "2026-10-28",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,27 +15,19 @@
         "note": "Actual historical daily bars; no intraday confirmation"
       },
       {
-        "name": "Eastmoney",
+        "name": "Tencent",
         "ok": true,
-        "note": "Public delayed quote endpoint responded; metadata remains unverified"
+        "note": "5222 requested symbols received with reported daily limits; security/account metadata unverified"
       },
       {
-        "name": "Eastmoney-universe",
+        "name": "Sina-universe",
         "ok": true,
-        "note": "98 symbols received; pagination can be partial and is reported separately"
+        "note": "Enumerated 5575 symbols; complete=True; explicit board exclusions complete=True"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
-      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily limits 605068.SH: Remote end closed connection without response",
-      "Daily limits 605577.SH: Remote end closed connection without response",
-      "Daily limits 605111.SH: Remote end closed connection without response",
-      "Daily limits 605089.SH: Remote end closed connection without response",
-      "Daily limits 605088.SH: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -838,7 +830,7 @@
       "price": 163.74,
       "high": 170.2,
       "low": 156.52,
-      "quoteTimestamp": "2026-10-28T15:05:56+08:00",
+      "quoteTimestamp": "2026-10-28T15:22:11+08:00",
       "limitDownPrice": 147.01,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -932,11 +924,10 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -962,7 +953,7 @@
       "price": 206.32,
       "high": 209.47,
       "low": 192.6,
-      "quoteTimestamp": "2026-10-28T15:05:52+08:00",
+      "quoteTimestamp": "2026-10-28T15:22:04+08:00",
       "limitDownPrice": 173.7,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -1052,8 +1043,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1065,8 +1055,8 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 317,
-    "quoteCount": 98,
-    "watchCount": 2,
+    "quoteCount": 5222,
+    "watchCount": 1,
     "readyCount": 0
   },
   "learning": {
