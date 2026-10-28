@@ -2,18 +2,13 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-28T19:59:54.524049+08:00",
-    "lastSuccessfulAt": "2026-10-28T19:59:54.524049+08:00",
+    "generatedAt": "2026-10-28T20:42:05.088590+08:00",
+    "lastSuccessfulAt": "2026-10-28T20:42:05.088590+08:00",
     "quoteTimestamp": "2026-10-28T16:12:01+08:00",
     "tradingDate": "2026-10-28",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
-      },
       {
         "name": "Eastmoney",
         "ok": true,
@@ -22,52 +17,43 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "394 symbols received; pagination can be partial and is reported separately"
+        "note": "296 symbols received; pagination can be partial and is reported separately"
+      },
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
     "errors": [
-      "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 5: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily limits 603667.SH: Remote end closed connection without response",
-      "Daily limits 603448.SH: Remote end closed connection without response",
-      "Daily limits 603600.SH: Remote end closed connection without response",
-      "Daily limits 603838.SH: Remote end closed connection without response",
-      "Daily limits 603859.SH: Remote end closed connection without response",
-      "Daily limits 603559.SH: Remote end closed connection without response",
-      "Daily limits 603565.SH: Remote end closed connection without response",
-      "Daily limits 603933.SH: Remote end closed connection without response",
-      "Daily limits 603713.SH: Remote end closed connection without response",
-      "Daily limits 603489.SH: Remote end closed connection without response",
-      "Daily limits 603677.SH: Remote end closed connection without response",
-      "Daily limits 605566.SH: Remote end closed connection without response",
-      "Daily limits 603528.SH: Remote end closed connection without response",
-      "Daily limits 605288.SH: Remote end closed connection without response",
-      "Daily limits 603813.SH: Remote end closed connection without response",
+      "Daily history 603992.SH: Remote end closed connection without response",
+      "Daily limits 603721.SH: Remote end closed connection without response",
       "Daily limits 605089.SH: Remote end closed connection without response",
-      "Daily limits 605366.SH: Remote end closed connection without response",
-      "Daily limits 603516.SH: Remote end closed connection without response",
+      "Daily limits 603680.SH: Remote end closed connection without response",
+      "Daily limits 605566.SH: Remote end closed connection without response",
+      "Daily limits 603897.SH: Remote end closed connection without response",
       "Daily limits 603727.SH: Remote end closed connection without response",
-      "Daily limits 605198.SH: Remote end closed connection without response",
-      "Daily limits 603886.SH: Remote end closed connection without response",
-      "Daily limits 605060.SH: Remote end closed connection without response",
-      "Daily limits 603986.SH: Remote end closed connection without response",
-      "Daily limits 603583.SH: Remote end closed connection without response",
       "Daily limits 605003.SH: Remote end closed connection without response",
-      "Daily limits 603579.SH: Remote end closed connection without response",
-      "Daily limits 603836.SH: Remote end closed connection without response",
+      "Daily limits 603986.SH: Remote end closed connection without response",
       "Daily limits 605111.SH: Remote end closed connection without response",
+      "Daily limits 603886.SH: Remote end closed connection without response",
       "Daily limits 603809.SH: Remote end closed connection without response",
+      "Daily limits 603836.SH: Remote end closed connection without response",
       "Daily limits 605577.SH: Remote end closed connection without response",
-      "Daily limits 605068.SH: Remote end closed connection without response",
+      "Daily limits 603997.SH: Remote end closed connection without response",
+      "Daily limits 605088.SH: Remote end closed connection without response",
+      "Daily limits 603758.SH: Remote end closed connection without response",
       "Daily limits 605333.SH: Remote end closed connection without response",
-      "Daily limits 603730.SH: Remote end closed connection without response",
-      "Daily limits 605088.SH: Remote end closed connection without response"
+      "Daily limits 603683.SH: Remote end closed connection without response",
+      "Daily limits 605068.SH: Remote end closed connection without response",
+      "Daily limits 603730.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
-    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -832,7 +818,7 @@
       "2026-10-27",
       "2026-10-28"
     ],
-    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-10-28",
     "futureDatesEstimated": false
@@ -1086,7 +1072,7 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 317,
-    "quoteCount": 394,
+    "quoteCount": 296,
     "watchCount": 2,
     "readyCount": 0
   },
