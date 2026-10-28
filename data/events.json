@@ -1,6 +1,6 @@
 {
   "strategyId": "LBR_MAIN_V1",
-  "generatedAt": "2026-10-28T21:29:05.120670+08:00",
+  "generatedAt": "2026-10-28T21:33:48.744224+08:00",
   "events": [
     {
       "strategyId": "LBR_MAIN_V1",
@@ -9302,7 +9302,7 @@
       "price": 53.92,
       "high": 54.76,
       "low": 52.69,
-      "quoteTimestamp": "2026-10-28T16:15:00+08:00",
+      "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "limitDownPrice": 47.63,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -9381,6 +9381,7 @@
       "reasonCodes": [
         "INSUFFICIENT_HISTORY",
         "TREND_UNAVAILABLE",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -9388,8 +9389,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -9418,7 +9418,7 @@
       "price": 14.39,
       "high": 15.2,
       "low": 14.0,
-      "quoteTimestamp": "2026-10-28T16:14:58+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "limitDownPrice": 12.44,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -9501,6 +9501,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -9509,8 +9510,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "SUPERSEDED_LIMIT_EVENT",
-        "QUOTE_MISSING"
+        "SUPERSEDED_LIMIT_EVENT"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -9541,7 +9541,7 @@
       "price": 8.87,
       "high": 9.54,
       "low": 8.87,
-      "quoteTimestamp": "2026-10-28T16:14:48+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "limitDownPrice": 8.87,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -9583,8 +9583,8 @@
           "tp2Pct": 6.074241,
           "plannedStop": 5.87,
           "rewardRisk": 0.135762,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -9603,8 +9603,8 @@
           "tp2Pct": 7.718894,
           "plannedStop": 5.87,
           "rewardRisk": 0.185053,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -9624,6 +9624,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -9632,8 +9633,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "SUPERSEDED_LIMIT_EVENT",
-        "QUOTE_MISSING"
+        "SUPERSEDED_LIMIT_EVENT"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -9664,21 +9664,27 @@
       "price": 8.08,
       "high": 8.18,
       "low": 7.91,
-      "quoteTimestamp": "2026-10-28T16:14:52+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "limitDownPrice": 7.25,
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 10.520487,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 8.7695,
+        "ma60": 9.086,
+        "atr14": 0.335714,
+        "support": 8.15,
+        "score": 0.0,
+        "ma20Slope": -0.024635746857968988,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -9698,8 +9704,8 @@
           "tp2": 8.64,
           "tp1Pct": 3.190184,
           "tp2Pct": 6.01227,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 7.86,
+          "rewardRisk": 1.293103,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -9718,8 +9724,8 @@
           "tp2": 8.57,
           "tp1Pct": 4.271357,
           "tp2Pct": 7.663317,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 7.68,
+          "rewardRisk": 1.696429,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -9727,22 +9733,24 @@
             0.5
           ],
           "touched": false,
-          "payoffPassed": false
+          "payoffPassed": true
         }
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
-        "payoff": false
+        "payoff": true
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -9750,12 +9758,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "LIQUIDITY_FLOOR_FAILED"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -9781,21 +9787,27 @@
       "price": 11.1,
       "high": 11.18,
       "low": 10.82,
-      "quoteTimestamp": "2026-10-28T16:14:56+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "limitDownPrice": 9.8,
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 1.943463,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 10.169,
+        "ma60": 9.803333,
+        "atr14": 0.26,
+        "support": 9.85,
+        "score": 33.33,
+        "ma20Slope": -0.0008351756325226667,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -9815,8 +9827,8 @@
           "tp2": 10.84,
           "tp1Pct": 3.131115,
           "tp2Pct": 6.066536,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 9.72,
+          "rewardRisk": 0.94,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -9835,8 +9847,8 @@
           "tp2": 10.75,
           "tp1Pct": 4.208417,
           "tp2Pct": 7.715431,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 9.71,
+          "rewardRisk": 2.203704,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -9844,22 +9856,24 @@
             0.5
           ],
           "touched": false,
-          "payoffPassed": false
+          "payoffPassed": true
         }
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
-        "payoff": false
+        "payoff": true
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -9867,12 +9881,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "LIQUIDITY_FLOOR_FAILED"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "reanchoredFrom": 11.13,
@@ -9900,21 +9912,27 @@
       "price": 48.83,
       "high": 48.83,
       "low": 43.72,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "limitDownPrice": 39.95,
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 35.1935,
+        "ma60": 37.885667,
+        "atr14": 1.678571,
+        "support": 30.6,
+        "score": 0.0,
+        "ma20Slope": -0.00621232016039075,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -9934,8 +9952,8 @@
           "tp2": 46.77,
           "tp1Pct": 3.174603,
           "tp2Pct": 6.054422,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 29.76,
+          "rewardRisk": 0.141911,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -9954,8 +9972,8 @@
           "tp2": 46.4,
           "tp1Pct": 4.152169,
           "tp2Pct": 7.63164,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 29.76,
+          "rewardRisk": 0.190262,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -9968,17 +9986,18 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -9987,8 +10006,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "SUPERSEDED_LIMIT_EVENT",
-        "QUOTE_MISSING"
+        "SUPERSEDED_LIMIT_EVENT"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -10019,21 +10037,27 @@
       "price": 40.83,
       "high": 42.42,
       "low": 39.98,
-      "quoteTimestamp": "2026-10-28T16:14:44+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "limitDownPrice": 35.88,
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 7.498867,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 35.9095,
+        "ma60": 36.753,
+        "atr14": 1.59,
+        "support": 31.99,
+        "score": 33.33,
+        "ma20Slope": 0.013562335939484305,
+        "checks": [
+          true,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -10053,8 +10077,8 @@
           "tp2": 42.28,
           "tp1Pct": 3.186152,
           "tp2Pct": 6.071249,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 31.19,
+          "rewardRisk": 0.212803,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -10073,8 +10097,8 @@
           "tp2": 41.94,
           "tp1Pct": 4.157044,
           "tp2Pct": 7.621247,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 31.19,
+          "rewardRisk": 0.294987,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -10087,17 +10111,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -10105,11 +10131,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -10135,7 +10160,7 @@
       "price": 27.83,
       "high": 27.83,
       "low": 25.48,
-      "quoteTimestamp": "2026-10-28T16:14:52+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "limitDownPrice": 22.77,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -10226,8 +10251,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "SUPERSEDED_LIMIT_EVENT",
-        "QUOTE_MISSING"
+        "SUPERSEDED_LIMIT_EVENT"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -10258,7 +10282,7 @@
       "price": 14.46,
       "high": 15.03,
       "low": 13.98,
-      "quoteTimestamp": "2026-10-28T16:14:58+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "limitDownPrice": 13.52,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -10341,6 +10365,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -10348,8 +10373,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -10378,21 +10402,27 @@
       "price": 67.09,
       "high": 68.5,
       "low": 66.28,
-      "quoteTimestamp": "2026-10-28T16:14:56+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "limitDownPrice": 60.69,
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 4.661077,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 64.4715,
+        "ma60": 64.4215,
+        "atr14": 3.236429,
+        "support": 56.68,
+        "score": 33.33,
+        "ma20Slope": -0.021899415914435227,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -10412,8 +10442,8 @@
           "tp2": 67.4,
           "tp1Pct": 3.194335,
           "tp2Pct": 6.058222,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 55.06,
+          "rewardRisk": 0.34629,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -10432,8 +10462,8 @@
           "tp2": 66.87,
           "tp1Pct": 4.152583,
           "tp2Pct": 7.629165,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 55.06,
+          "rewardRisk": 0.51768,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -10446,17 +10476,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -10464,11 +10496,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "reanchoredFrom": 66.66,
@@ -10496,7 +10527,7 @@
       "price": 21.15,
       "high": 22.02,
       "low": 19.23,
-      "quoteTimestamp": "2026-10-28T16:14:41+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "limitDownPrice": 18.1,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -10579,6 +10610,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -10586,8 +10618,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -10618,7 +10649,7 @@
       "price": 58.74,
       "high": 60.54,
       "low": 55.55,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "limitDownPrice": 49.54,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -10712,8 +10743,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "SUPERSEDED_LIMIT_EVENT",
-        "QUOTE_MISSING"
+        "SUPERSEDED_LIMIT_EVENT"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -10744,7 +10774,7 @@
       "price": 14.42,
       "high": 14.75,
       "low": 13.71,
-      "quoteTimestamp": "2026-10-28T16:14:53+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "limitDownPrice": 12.81,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -10827,6 +10857,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -10835,8 +10866,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -10867,21 +10897,27 @@
       "price": 42.35,
       "high": 44.06,
       "low": 40.33,
-      "quoteTimestamp": "2026-10-28T16:14:44+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "limitDownPrice": 37.75,
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 5.363128,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 38.312,
+        "ma60": 38.782167,
+        "atr14": 2.235,
+        "support": 33.34,
+        "score": 33.33,
+        "ma20Slope": 0.008024837529928774,
+        "checks": [
+          true,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -10901,8 +10937,8 @@
           "tp2": 42.86,
           "tp1Pct": 3.192279,
           "tp2Pct": 6.062856,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 32.22,
+          "rewardRisk": 0.228327,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -10921,8 +10957,8 @@
           "tp2": 42.52,
           "tp1Pct": 4.150848,
           "tp2Pct": 7.618324,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 32.22,
+          "rewardRisk": 0.31893,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -10935,17 +10971,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -10953,11 +10991,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "reanchoredFrom": 43.56,
@@ -10985,7 +11022,7 @@
       "price": 206.32,
       "high": 209.47,
       "low": 192.6,
-      "quoteTimestamp": "2026-10-28T16:14:52+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "limitDownPrice": 173.7,
       "eventDayIndex": 3,
       "expiresOn": null,
@@ -11068,6 +11105,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -11075,8 +11113,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -11105,21 +11142,27 @@
       "price": 10.85,
       "high": 11.16,
       "low": 10.2,
-      "quoteTimestamp": "2026-10-28T16:14:55+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "limitDownPrice": 9.41,
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 2.777778,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 9.084,
+        "ma60": 9.317,
+        "atr14": 0.296429,
+        "support": 8.4,
+        "score": 0.0,
+        "ma20Slope": -0.010565297897832449,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -11139,8 +11182,8 @@
           "tp2": 10.69,
           "tp1Pct": 3.177756,
           "tp2Pct": 6.156902,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 8.25,
+          "rewardRisk": 0.258242,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -11159,8 +11202,8 @@
           "tp2": 10.6,
           "tp1Pct": 4.166667,
           "tp2Pct": 7.723577,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 8.25,
+          "rewardRisk": 0.367925,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -11173,17 +11216,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -11191,11 +11236,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "reanchoredFrom": 11.1,
@@ -11223,21 +11267,27 @@
       "price": 18.35,
       "high": 18.72,
       "low": 17.12,
-      "quoteTimestamp": "2026-10-28T16:14:38+08:00",
+      "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "limitDownPrice": 16.5,
       "eventDayIndex": 3,
       "expiresOn": null,
       "drawdownPct": 12.368672,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 18.291,
+        "ma60": 18.7945,
+        "atr14": 0.840714,
+        "support": 16.38,
+        "score": 0.0,
+        "ma20Slope": -0.01719413250228341,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -11257,8 +11307,8 @@
           "tp2": 20.05,
           "tp1Pct": 3.227513,
           "tp2Pct": 6.084656,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 15.95,
+          "rewardRisk": 0.298305,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -11277,8 +11327,8 @@
           "tp2": 19.89,
           "tp1Pct": 4.166667,
           "tp2Pct": 7.62987,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 15.95,
+          "rewardRisk": 0.43083,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -11291,17 +11341,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -11309,11 +11361,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -11422,6 +11473,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -12452,21 +12504,27 @@
       "price": 5.17,
       "high": 5.28,
       "low": 4.92,
-      "quoteTimestamp": "2026-10-28T16:14:59+08:00",
+      "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "limitDownPrice": 4.47,
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 2.083333,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 5.7335,
+        "ma60": 6.612333,
+        "atr14": 0.341429,
+        "support": 4.45,
+        "score": 0.0,
+        "ma20Slope": -0.07224919093851156,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -12486,8 +12544,8 @@
           "tp2": 5.05,
           "tp1Pct": 3.151261,
           "tp2Pct": 6.092437,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 4.27,
+          "rewardRisk": 0.44898,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -12506,8 +12564,8 @@
           "tp2": 5.01,
           "tp1Pct": 4.301075,
           "tp2Pct": 7.741935,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 4.27,
+          "rewardRisk": 0.736842,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -12528,12 +12586,13 @@
         "payoff": false
       },
       "hardVetoReasons": [
-        "SPECIAL_RISK_SECURITY"
+        "SPECIAL_RISK_SECURITY",
+        "TREND_FAILED"
       ],
       "reasonCodes": [
         "SPECIAL_RISK_SECURITY",
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -12541,11 +12600,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -12573,21 +12631,27 @@
       "price": 22.83,
       "high": 24.63,
       "low": 22.21,
-      "quoteTimestamp": "2026-10-28T16:14:55+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "limitDownPrice": 21.78,
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 7.308161,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 24.598,
+        "ma60": 27.87,
+        "atr14": 1.442857,
+        "support": 20.3,
+        "score": 0.0,
+        "ma20Slope": -0.03733562930494683,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -12607,8 +12671,8 @@
           "tp2": 23.59,
           "tp1Pct": 3.192446,
           "tp2Pct": 6.070144,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 19.57,
+          "rewardRisk": 0.385768,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -12627,10 +12691,10 @@
           "tp2": 23.4,
           "tp1Pct": 4.139834,
           "tp2Pct": 7.635695,
-          "plannedStop": null,
-          "rewardRisk": null,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "plannedStop": 19.57,
+          "rewardRisk": 0.589862,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -12641,17 +12705,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -12660,11 +12726,10 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -12692,7 +12757,7 @@
       "price": 11.3,
       "high": 11.8,
       "low": 10.38,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "limitDownPrice": 9.66,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -12786,8 +12851,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "SUPERSEDED_LIMIT_EVENT",
-        "QUOTE_MISSING"
+        "SUPERSEDED_LIMIT_EVENT"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -12818,21 +12882,27 @@
       "price": 12.69,
       "high": 12.88,
       "low": 12.35,
-      "quoteTimestamp": "2026-10-28T16:14:55+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "limitDownPrice": 11.32,
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 1.475155,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 11.843,
+        "ma60": 11.666667,
+        "atr14": 0.472857,
+        "support": 11.11,
+        "score": 33.33,
+        "ma20Slope": -0.0021065048870914094,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -12852,8 +12922,8 @@
           "tp2": 12.33,
           "tp1Pct": 3.181427,
           "tp2Pct": 6.018917,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 10.87,
+          "rewardRisk": 0.703947,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -12872,10 +12942,10 @@
           "tp2": 12.23,
           "tp1Pct": 4.225352,
           "tp2Pct": 7.658451,
-          "plannedStop": null,
-          "rewardRisk": null,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "plannedStop": 10.87,
+          "rewardRisk": 1.377551,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -12886,17 +12956,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -12904,11 +12976,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -12936,7 +13007,7 @@
       "price": 8.87,
       "high": 9.54,
       "low": 8.87,
-      "quoteTimestamp": "2026-10-28T16:14:48+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "limitDownPrice": 8.87,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -12978,8 +13049,8 @@
           "tp2Pct": 6.074241,
           "plannedStop": 5.81,
           "rewardRisk": 0.133117,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -12998,8 +13069,8 @@
           "tp2Pct": 7.718894,
           "plannedStop": 5.81,
           "rewardRisk": 0.181185,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -13019,6 +13090,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -13026,8 +13098,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -13056,21 +13127,27 @@
       "price": 28.8,
       "high": 29.66,
       "low": 28.4,
-      "quoteTimestamp": "2026-10-28T16:14:59+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "limitDownPrice": 26.91,
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 4.318937,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 27.989,
+        "ma60": 27.604167,
+        "atr14": 1.172857,
+        "support": 25.66,
+        "score": 33.33,
+        "ma20Slope": -0.009852303882550872,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -13090,10 +13167,10 @@
           "tp2": 28.83,
           "tp1Pct": 3.164091,
           "tp2Pct": 6.07064,
-          "plannedStop": null,
-          "rewardRisk": null,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "plannedStop": 25.07,
+          "rewardRisk": 0.594787,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -13110,10 +13187,10 @@
           "tp2": 28.6,
           "tp1Pct": 4.140008,
           "tp2Pct": 7.640196,
-          "plannedStop": null,
-          "rewardRisk": null,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "plannedStop": 25.07,
+          "rewardRisk": 1.043333,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -13124,17 +13201,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -13142,11 +13221,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -13172,21 +13250,27 @@
       "price": 10.59,
       "high": 10.73,
       "low": 10.32,
-      "quoteTimestamp": "2026-10-28T16:14:58+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "limitDownPrice": 9.6,
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 4.508566,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 10.587,
+        "ma60": 10.315,
+        "atr14": 0.527857,
+        "support": 9.38,
+        "score": 33.33,
+        "ma20Slope": -0.018131231161604533,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -13206,8 +13290,8 @@
           "tp2": 10.62,
           "tp1Pct": 3.196803,
           "tp2Pct": 6.093906,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 9.11,
+          "rewardRisk": 0.516667,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -13226,8 +13310,8 @@
           "tp2": 10.53,
           "tp1Pct": 4.192229,
           "tp2Pct": 7.668712,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 9.11,
+          "rewardRisk": 0.865672,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -13240,17 +13324,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -13258,11 +13344,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -13288,21 +13373,27 @@
       "price": 25.84,
       "high": 26.59,
       "low": 25.65,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "limitDownPrice": 23.67,
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 2.820609,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 25.8985,
+        "ma60": 26.4245,
+        "atr14": 1.206429,
+        "support": 22.48,
+        "score": 0.0,
+        "ma20Slope": -0.029000449910017823,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -13322,10 +13413,10 @@
           "tp2": 25.47,
           "tp1Pct": 3.165348,
           "tp2Pct": 6.0808,
-          "plannedStop": null,
-          "rewardRisk": null,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "plannedStop": 21.87,
+          "rewardRisk": 0.518692,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -13342,10 +13433,10 @@
           "tp2": 25.26,
           "tp1Pct": 4.175543,
           "tp2Pct": 7.626758,
-          "plannedStop": null,
-          "rewardRisk": null,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "plannedStop": 21.87,
+          "rewardRisk": 0.865625,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -13356,17 +13447,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -13374,11 +13467,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -13406,21 +13498,27 @@
       "price": 31.3,
       "high": 32.89,
       "low": 30.02,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "limitDownPrice": 27.73,
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 4.834296,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 27.302,
+        "ma60": 30.388167,
+        "atr14": 1.312857,
+        "support": 25.0,
+        "score": 33.33,
+        "ma20Slope": 0.0041376266573494025,
+        "checks": [
+          true,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -13440,8 +13538,8 @@
           "tp2": 31.5,
           "tp1Pct": 3.198653,
           "tp2Pct": 6.060606,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 24.34,
+          "rewardRisk": 0.25653,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -13460,8 +13558,8 @@
           "tp2": 31.25,
           "tp1Pct": 4.168102,
           "tp2Pct": 7.647261,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 24.34,
+          "rewardRisk": 0.365672,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -13474,17 +13572,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -13492,11 +13592,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true,
@@ -13524,7 +13623,7 @@
       "price": 7.68,
       "high": 8.0,
       "low": 7.24,
-      "quoteTimestamp": "2026-10-28T16:14:44+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "limitDownPrice": 6.67,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -13607,6 +13706,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -13614,8 +13714,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -13646,21 +13745,27 @@
       "price": 48.83,
       "high": 48.83,
       "low": 43.72,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "limitDownPrice": 39.95,
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 35.7065,
+        "ma60": 37.998833,
+        "atr14": 2.233571,
+        "support": 30.6,
+        "score": 33.33,
+        "ma20Slope": 0.017235730666780746,
+        "checks": [
+          true,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -13680,8 +13785,8 @@
           "tp2": 46.77,
           "tp1Pct": 3.174603,
           "tp2Pct": 6.054422,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 29.48,
+          "rewardRisk": 0.139193,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -13700,8 +13805,8 @@
           "tp2": 46.4,
           "tp1Pct": 4.152169,
           "tp2Pct": 7.63164,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 29.48,
+          "rewardRisk": 0.186354,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -13714,17 +13819,18 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -13733,8 +13839,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "SUPERSEDED_LIMIT_EVENT",
-        "QUOTE_MISSING"
+        "SUPERSEDED_LIMIT_EVENT"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -21302,6 +21407,7 @@
       ],
       "reasonCodes": [
         "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -21785,6 +21891,7 @@
       ],
       "reasonCodes": [
         "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -21942,7 +22049,7 @@
       "price": 12.11,
       "high": 12.66,
       "low": 11.46,
-      "quoteTimestamp": "2026-10-28T16:14:52+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "limitDownPrice": 10.36,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -22028,6 +22135,7 @@
       ],
       "reasonCodes": [
         "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -22035,11 +22143,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -22065,7 +22172,7 @@
       "price": 22.67,
       "high": 22.67,
       "low": 20.53,
-      "quoteTimestamp": "2026-10-28T16:14:43+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "limitDownPrice": 18.55,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -22155,8 +22262,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -22185,7 +22291,7 @@
       "price": 37.85,
       "high": 37.85,
       "low": 34.4,
-      "quoteTimestamp": "2026-10-28T16:14:53+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "limitDownPrice": 30.97,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -22278,11 +22384,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -22308,7 +22413,7 @@
       "price": 26.43,
       "high": 26.43,
       "low": 25.78,
-      "quoteTimestamp": "2026-10-28T16:14:50+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "limitDownPrice": 21.63,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -22402,11 +22507,10 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -22432,7 +22536,7 @@
       "price": 34.22,
       "high": 34.22,
       "low": 31.5,
-      "quoteTimestamp": "2026-10-28T16:14:46+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "limitDownPrice": 28.0,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -22522,8 +22626,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "LIQUIDITY_FLOOR_FAILED",
-        "QUOTE_MISSING"
+        "LIQUIDITY_FLOOR_FAILED"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -22552,7 +22655,7 @@
       "price": 11.3,
       "high": 11.8,
       "low": 10.38,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "limitDownPrice": 9.66,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -22645,11 +22748,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -22675,7 +22777,7 @@
       "price": 38.39,
       "high": 38.4,
       "low": 34.5,
-      "quoteTimestamp": "2026-10-28T16:14:56+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "limitDownPrice": 31.42,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -22768,11 +22870,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -22798,7 +22899,7 @@
       "price": 18.1,
       "high": 19.03,
       "low": 16.84,
-      "quoteTimestamp": "2026-10-28T16:14:52+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "limitDownPrice": 15.57,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -22884,6 +22985,7 @@
       ],
       "reasonCodes": [
         "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -22891,11 +22993,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -22921,7 +23022,7 @@
       "price": 11.33,
       "high": 11.33,
       "low": 10.2,
-      "quoteTimestamp": "2026-10-28T16:14:43+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "limitDownPrice": 9.27,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -23014,11 +23115,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -23044,7 +23144,7 @@
       "price": 49.98,
       "high": 49.98,
       "low": 46.74,
-      "quoteTimestamp": "2026-10-28T16:14:52+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "limitDownPrice": 40.9,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -23137,11 +23237,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -23167,7 +23266,7 @@
       "price": 6.36,
       "high": 6.36,
       "low": 5.76,
-      "quoteTimestamp": "2026-10-28T16:15:00+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "limitDownPrice": 5.2,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -23260,11 +23359,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -23290,7 +23388,7 @@
       "price": 27.83,
       "high": 27.83,
       "low": 25.48,
-      "quoteTimestamp": "2026-10-28T16:14:52+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "limitDownPrice": 22.77,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -23380,8 +23478,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -23410,21 +23507,27 @@
       "price": 15.88,
       "high": 15.88,
       "low": 15.56,
-      "quoteTimestamp": "2026-10-28T16:14:56+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "limitDownPrice": 13.0,
       "eventDayIndex": 0,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 150,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 15.5305,
+        "ma60": 16.476667,
+        "atr14": 0.523571,
+        "support": 14.06,
+        "score": 0.0,
+        "ma20Slope": -0.02995003123048079,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -23444,8 +23547,8 @@
           "tp2": 15.21,
           "tp1Pct": 3.138075,
           "tp2Pct": 6.066946,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 13.79,
+          "rewardRisk": 1.2,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -23464,8 +23567,8 @@
           "tp2": 15.08,
           "tp1Pct": 4.211278,
           "tp2Pct": 7.637402,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 13.54,
+          "rewardRisk": 1.765957,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -23473,34 +23576,34 @@
             0.5
           ],
           "touched": false,
-          "payoffPassed": false
+          "payoffPassed": true
         }
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
-        "payoff": false
+        "payoff": true
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -23526,21 +23629,27 @@
       "price": 18.34,
       "high": 19.25,
       "low": 16.8,
-      "quoteTimestamp": "2026-10-28T16:14:54+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "limitDownPrice": 15.75,
       "eventDayIndex": 0,
       "expiresOn": null,
       "drawdownPct": 4.727273,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 150,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 19.2745,
+        "ma60": 19.441833,
+        "atr14": 1.445,
+        "support": 17.03,
+        "score": 0.0,
+        "ma20Slope": -0.026392887811284904,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -23560,8 +23669,8 @@
           "tp2": 18.44,
           "tp1Pct": 3.164557,
           "tp2Pct": 6.098964,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 16.3,
+          "rewardRisk": 0.74537,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -23580,8 +23689,8 @@
           "tp2": 18.29,
           "tp1Pct": 4.120071,
           "tp2Pct": 7.65156,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 16.01,
+          "rewardRisk": 1.020408,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -23594,17 +23703,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -23612,11 +23723,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -23642,7 +23752,7 @@
       "price": 28.03,
       "high": 28.03,
       "low": 25.15,
-      "quoteTimestamp": "2026-10-28T16:15:00+08:00",
+      "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "limitDownPrice": 22.93,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -23732,8 +23842,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -23762,7 +23871,7 @@
       "price": 14.39,
       "high": 15.2,
       "low": 14.0,
-      "quoteTimestamp": "2026-10-28T16:14:58+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "limitDownPrice": 12.44,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -23845,6 +23954,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -23852,8 +23962,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -36161,21 +36270,27 @@
       "price": 29.76,
       "high": 29.76,
       "low": 26.39,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:45+08:00",
       "limitDownPrice": 24.35,
       "eventDayIndex": 0,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 150,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 27.5917,
+        "ma60": 24.739733,
+        "atr14": 1.422857,
+        "support": 24.48,
+        "score": 33.33,
+        "ma20Slope": -0.00262071558187138,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -36195,8 +36310,8 @@
           "tp2": 28.5,
           "tp1Pct": 3.200595,
           "tp2Pct": 6.066245,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 23.76,
+          "rewardRisk": 0.400322,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -36215,8 +36330,8 @@
           "tp2": 28.28,
           "tp1Pct": 4.14922,
           "tp2Pct": 7.651313,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 23.76,
+          "rewardRisk": 0.61753,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -36229,17 +36344,18 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -36247,11 +36363,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -36277,21 +36392,27 @@
       "price": 48.83,
       "high": 48.83,
       "low": 43.72,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "limitDownPrice": 39.95,
       "eventDayIndex": 0,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 150,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 36.1285,
+        "ma60": 38.108167,
+        "atr14": 2.487857,
+        "support": 30.6,
+        "score": 33.33,
+        "ma20Slope": 0.028437637882691158,
+        "checks": [
+          true,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -36311,8 +36432,8 @@
           "tp2": 46.77,
           "tp1Pct": 3.174603,
           "tp2Pct": 6.054422,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 29.35,
+          "rewardRisk": 0.137966,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -36331,8 +36452,8 @@
           "tp2": 46.4,
           "tp1Pct": 4.152169,
           "tp2Pct": 7.63164,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 29.35,
+          "rewardRisk": 0.184593,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -36345,17 +36466,18 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -36363,11 +36485,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -36393,21 +36514,27 @@
       "price": 18.06,
       "high": 19.17,
       "low": 17.18,
-      "quoteTimestamp": "2026-10-28T16:14:39+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "limitDownPrice": 15.69,
       "eventDayIndex": 0,
       "expiresOn": null,
       "drawdownPct": 5.790297,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 150,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 18.477,
+        "ma60": 19.024667,
+        "atr14": 0.845714,
+        "support": 16.84,
+        "score": 0.0,
+        "ma20Slope": -0.011766593571161277,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -36427,8 +36554,8 @@
           "tp2": 18.36,
           "tp1Pct": 3.177354,
           "tp2Pct": 6.065858,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 16.41,
+          "rewardRisk": 0.888889,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -36447,8 +36574,8 @@
           "tp2": 18.21,
           "tp1Pct": 4.137116,
           "tp2Pct": 7.624113,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 16.24,
+          "rewardRisk": 1.463235,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -36461,17 +36588,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -36480,11 +36609,10 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -36510,21 +36638,27 @@
       "price": 44.99,
       "high": 44.99,
       "low": 40.98,
-      "quoteTimestamp": "2026-10-28T16:14:56+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "limitDownPrice": 36.81,
       "eventDayIndex": 0,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 150,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 47.1845,
+        "ma60": 45.430667,
+        "atr14": 2.931429,
+        "support": 40.9,
+        "score": 33.33,
+        "ma20Slope": -0.0017454037700720404,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -36544,8 +36678,8 @@
           "tp2": 43.09,
           "tp1Pct": 3.174213,
           "tp2Pct": 6.028543,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 38.57,
+          "rewardRisk": 0.903382,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -36564,8 +36698,8 @@
           "tp2": 42.75,
           "tp1Pct": 4.154079,
           "tp2Pct": 7.628399,
-          "plannedStop": null,
-          "rewardRisk": null,
+          "plannedStop": 37.67,
+          "rewardRisk": 1.141463,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -36578,17 +36712,19 @@
       ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
+        "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -36596,11 +36732,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -36626,7 +36761,7 @@
       "price": 58.74,
       "high": 60.54,
       "low": 55.55,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "limitDownPrice": 49.54,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -36716,8 +36851,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -36746,7 +36880,7 @@
       "price": 17.06,
       "high": 17.06,
       "low": 15.45,
-      "quoteTimestamp": "2026-10-28T16:14:53+08:00",
+      "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "limitDownPrice": 13.96,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -36839,11 +36973,10 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -36955,6 +37088,7 @@
       ],
       "reasonCodes": [
         "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -37073,6 +37207,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
