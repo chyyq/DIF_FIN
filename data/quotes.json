@@ -1,7 +1,7 @@
 {
   "meta": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-28T21:33:48.744224+08:00",
+    "generatedAt": "2026-10-29T01:49:12.820989+08:00",
     "quoteTimestamp": "2026-10-28T16:12:01+08:00",
     "tradingDate": "2026-10-28",
     "stale": false,
@@ -136,7 +136,9 @@
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 28.6,
+      "limitDownPrice": 23.4
     },
     "605555.SH": {
       "symbol": "605555.SH",
@@ -216,9 +218,7 @@
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 48.61,
-      "limitDownPrice": 39.77
+      "segment": "SSE_MAIN"
     },
     "605399.SH": {
       "symbol": "605399.SH",
@@ -666,7 +666,9 @@
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 48.4,
+      "limitDownPrice": 39.6
     },
     "605286.SH": {
       "symbol": "605286.SH",
@@ -1386,7 +1388,9 @@
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 22.55,
+      "limitDownPrice": 18.45
     },
     "605088.SH": {
       "symbol": "605088.SH",
@@ -2476,9 +2480,7 @@
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 17.06,
-      "limitDownPrice": 13.96
+      "segment": "SSE_MAIN"
     },
     "603922.SH": {
       "symbol": "603922.SH",
@@ -2752,9 +2754,7 @@
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 26.43,
-      "limitDownPrice": 21.63
+      "segment": "SSE_MAIN"
     },
     "603896.SH": {
       "symbol": "603896.SH",
@@ -3158,6 +3158,1620 @@
       "stale": false,
       "segment": "SSE_MAIN"
     },
+    "003816.SZ": {
+      "symbol": "003816.SZ",
+      "code": "003816",
+      "name": "中国广核",
+      "price": 4.57,
+      "high": 4.68,
+      "low": 4.55,
+      "open": 4.61,
+      "preClose": 4.62,
+      "pct": -1.08,
+      "amount": 771562424.33,
+      "quoteTimestamp": "2026-10-28T15:34:09+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003043.SZ": {
+      "symbol": "003043.SZ",
+      "code": "003043",
+      "name": "华亚智能",
+      "price": 49.69,
+      "high": 49.96,
+      "low": 47.22,
+      "open": 47.88,
+      "preClose": 47.16,
+      "pct": 5.36,
+      "amount": 224944822.2,
+      "quoteTimestamp": "2026-10-28T15:34:45+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003042.SZ": {
+      "symbol": "003042.SZ",
+      "code": "003042",
+      "name": "中农联合",
+      "price": 12.68,
+      "high": 12.87,
+      "low": 12.4,
+      "open": 12.68,
+      "preClose": 12.78,
+      "pct": -0.78,
+      "amount": 32801692.16,
+      "quoteTimestamp": "2026-10-28T15:34:36+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003041.SZ": {
+      "symbol": "003041.SZ",
+      "code": "003041",
+      "name": "真爱美家",
+      "price": 34.04,
+      "high": 34.85,
+      "low": 33.1,
+      "open": 34.85,
+      "preClose": 33.79,
+      "pct": 0.74,
+      "amount": 60089400.0,
+      "quoteTimestamp": "2026-10-28T15:34:42+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003040.SZ": {
+      "symbol": "003040.SZ",
+      "code": "003040",
+      "name": "楚天龙",
+      "price": 12.79,
+      "high": 12.9,
+      "low": 12.54,
+      "open": 12.66,
+      "preClose": 12.75,
+      "pct": 0.31,
+      "amount": 356327729.75,
+      "quoteTimestamp": "2026-10-28T15:34:42+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003039.SZ": {
+      "symbol": "003039.SZ",
+      "code": "003039",
+      "name": "顺控发展",
+      "price": 12.05,
+      "high": 12.18,
+      "low": 11.95,
+      "open": 12.06,
+      "preClose": 12.02,
+      "pct": 0.25,
+      "amount": 47602282.0,
+      "quoteTimestamp": "2026-10-28T15:34:39+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003038.SZ": {
+      "symbol": "003038.SZ",
+      "code": "003038",
+      "name": "鑫铂股份",
+      "price": 10.0,
+      "high": 10.43,
+      "low": 9.7,
+      "open": 9.81,
+      "preClose": 9.79,
+      "pct": 2.15,
+      "amount": 50552007.6,
+      "quoteTimestamp": "2026-10-28T15:34:36+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003037.SZ": {
+      "symbol": "003037.SZ",
+      "code": "003037",
+      "name": "三和管桩",
+      "price": 5.39,
+      "high": 5.45,
+      "low": 5.3,
+      "open": 5.44,
+      "preClose": 5.41,
+      "pct": -0.37,
+      "amount": 51901486.0,
+      "quoteTimestamp": "2026-10-28T15:34:33+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003036.SZ": {
+      "symbol": "003036.SZ",
+      "code": "003036",
+      "name": "泰坦股份",
+      "price": 31.86,
+      "high": 32.8,
+      "low": 31.3,
+      "open": 32.18,
+      "preClose": 31.45,
+      "pct": 1.3,
+      "amount": 196292915.66,
+      "quoteTimestamp": "2026-10-28T15:34:33+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003035.SZ": {
+      "symbol": "003035.SZ",
+      "code": "003035",
+      "name": "南网能源",
+      "price": 4.95,
+      "high": 4.98,
+      "low": 4.85,
+      "open": 4.86,
+      "preClose": 4.82,
+      "pct": 2.7,
+      "amount": 102765069.28,
+      "quoteTimestamp": "2026-10-28T15:34:12+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003033.SZ": {
+      "symbol": "003033.SZ",
+      "code": "003033",
+      "name": "征和工业",
+      "price": 81.42,
+      "high": 83.1,
+      "low": 75.18,
+      "open": 77.55,
+      "preClose": 77.37,
+      "pct": 5.23,
+      "amount": 196517198.8,
+      "quoteTimestamp": "2026-10-28T15:34:30+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003032.SZ": {
+      "symbol": "003032.SZ",
+      "code": "003032",
+      "name": "传智教育",
+      "price": 8.23,
+      "high": 8.36,
+      "low": 7.45,
+      "open": 7.67,
+      "preClose": 7.73,
+      "pct": 6.47,
+      "amount": 244668830.0,
+      "quoteTimestamp": "2026-10-28T15:34:39+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003031.SZ": {
+      "symbol": "003031.SZ",
+      "code": "003031",
+      "name": "中瓷电子",
+      "price": 93.06,
+      "high": 94.38,
+      "low": 90.02,
+      "open": 92.22,
+      "preClose": 90.01,
+      "pct": 3.39,
+      "amount": 482012392.13,
+      "quoteTimestamp": "2026-10-28T15:34:36+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003030.SZ": {
+      "symbol": "003030.SZ",
+      "code": "003030",
+      "name": "祖名股份",
+      "price": 22.32,
+      "high": 22.76,
+      "low": 21.41,
+      "open": 21.5,
+      "preClose": 21.68,
+      "pct": 2.95,
+      "amount": 55342738.0,
+      "quoteTimestamp": "2026-10-28T15:34:33+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003029.SZ": {
+      "symbol": "003029.SZ",
+      "code": "003029",
+      "name": "吉大正元",
+      "price": 18.23,
+      "high": 18.7,
+      "low": 17.7,
+      "open": 18.7,
+      "preClose": 18.81,
+      "pct": -3.08,
+      "amount": 609841666.16,
+      "quoteTimestamp": "2026-10-28T15:34:30+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003028.SZ": {
+      "symbol": "003028.SZ",
+      "code": "003028",
+      "name": "振邦智能",
+      "price": 25.91,
+      "high": 25.91,
+      "low": 23.49,
+      "open": 23.49,
+      "preClose": 23.55,
+      "pct": 10.02,
+      "amount": 105873000.07,
+      "quoteTimestamp": "2026-10-28T15:34:30+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 25.91,
+      "limitDownPrice": 21.2
+    },
+    "003027.SZ": {
+      "symbol": "003027.SZ",
+      "code": "003027",
+      "name": "同兴科技",
+      "price": 14.73,
+      "high": 14.97,
+      "low": 14.48,
+      "open": 14.48,
+      "preClose": 14.48,
+      "pct": 1.73,
+      "amount": 27810510.0,
+      "quoteTimestamp": "2026-10-28T15:34:27+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003026.SZ": {
+      "symbol": "003026.SZ",
+      "code": "003026",
+      "name": "中晶科技",
+      "price": 28.76,
+      "high": 30.61,
+      "low": 28.01,
+      "open": 30.61,
+      "preClose": 27.83,
+      "pct": 3.34,
+      "amount": 869705046.75,
+      "quoteTimestamp": "2026-10-28T15:34:06+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003025.SZ": {
+      "symbol": "003025.SZ",
+      "code": "003025",
+      "name": "思进智能",
+      "price": 11.89,
+      "high": 12.08,
+      "low": 11.6,
+      "open": 11.6,
+      "preClose": 11.57,
+      "pct": 2.77,
+      "amount": 41635061.39,
+      "quoteTimestamp": "2026-10-28T15:34:54+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003023.SZ": {
+      "symbol": "003023.SZ",
+      "code": "003023",
+      "name": "彩虹集团",
+      "price": 20.94,
+      "high": 21.17,
+      "low": 20.5,
+      "open": 20.7,
+      "preClose": 20.69,
+      "pct": 1.21,
+      "amount": 43186680.0,
+      "quoteTimestamp": "2026-10-28T15:34:51+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003022.SZ": {
+      "symbol": "003022.SZ",
+      "code": "003022",
+      "name": "联泓新科",
+      "price": 15.82,
+      "high": 16.04,
+      "low": 15.33,
+      "open": 15.49,
+      "preClose": 15.21,
+      "pct": 4.01,
+      "amount": 165888742.52,
+      "quoteTimestamp": "2026-10-28T15:34:09+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003021.SZ": {
+      "symbol": "003021.SZ",
+      "code": "003021",
+      "name": "兆威机电",
+      "price": 97.41,
+      "high": 101.75,
+      "low": 90.65,
+      "open": 92.5,
+      "preClose": 92.5,
+      "pct": 5.31,
+      "amount": 2082656573.46,
+      "quoteTimestamp": "2026-10-28T15:34:27+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003020.SZ": {
+      "symbol": "003020.SZ",
+      "code": "003020",
+      "name": "立方制药",
+      "price": 15.74,
+      "high": 15.88,
+      "low": 15.55,
+      "open": 15.55,
+      "preClose": 15.52,
+      "pct": 1.42,
+      "amount": 30225536.0,
+      "quoteTimestamp": "2026-10-28T15:34:27+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003019.SZ": {
+      "symbol": "003019.SZ",
+      "code": "003019",
+      "name": "宸展光电",
+      "price": 24.05,
+      "high": 24.18,
+      "low": 23.25,
+      "open": 23.27,
+      "preClose": 23.27,
+      "pct": 3.35,
+      "amount": 50064626.8,
+      "quoteTimestamp": "2026-10-28T15:34:03+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003018.SZ": {
+      "symbol": "003018.SZ",
+      "code": "003018",
+      "name": "金富科技",
+      "price": 38.1,
+      "high": 38.12,
+      "low": 35.08,
+      "open": 35.63,
+      "preClose": 35.22,
+      "pct": 8.18,
+      "amount": 370575659.44,
+      "quoteTimestamp": "2026-10-28T15:34:24+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003017.SZ": {
+      "symbol": "003017.SZ",
+      "code": "003017",
+      "name": "大洋生物",
+      "price": 21.42,
+      "high": 22.84,
+      "low": 19.55,
+      "open": 20.56,
+      "preClose": 20.76,
+      "pct": 3.18,
+      "amount": 227850585.84,
+      "quoteTimestamp": "2026-10-28T15:34:24+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003016.SZ": {
+      "symbol": "003016.SZ",
+      "code": "003016",
+      "name": "欣贺股份",
+      "price": 6.69,
+      "high": 6.8,
+      "low": 6.55,
+      "open": 6.69,
+      "preClose": 6.84,
+      "pct": -2.19,
+      "amount": 47298045.0,
+      "quoteTimestamp": "2026-10-28T15:34:48+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003015.SZ": {
+      "symbol": "003015.SZ",
+      "code": "003015",
+      "name": "日久光电",
+      "price": 12.0,
+      "high": 12.12,
+      "low": 11.55,
+      "open": 11.81,
+      "preClose": 11.63,
+      "pct": 3.18,
+      "amount": 76355802.08,
+      "quoteTimestamp": "2026-10-28T15:34:00+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003013.SZ": {
+      "symbol": "003013.SZ",
+      "code": "003013",
+      "name": "地铁设计",
+      "price": 15.82,
+      "high": 16.05,
+      "low": 14.5,
+      "open": 15.51,
+      "preClose": 15.62,
+      "pct": 1.28,
+      "amount": 163811222.13,
+      "quoteTimestamp": "2026-10-28T15:34:45+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003012.SZ": {
+      "symbol": "003012.SZ",
+      "code": "003012",
+      "name": "东鹏控股",
+      "price": 4.43,
+      "high": 4.47,
+      "low": 4.41,
+      "open": 4.41,
+      "preClose": 4.42,
+      "pct": 0.23,
+      "amount": 25648175.0,
+      "quoteTimestamp": "2026-10-28T15:34:42+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003011.SZ": {
+      "symbol": "003011.SZ",
+      "code": "003011",
+      "name": "海象新材",
+      "price": 16.99,
+      "high": 17.12,
+      "low": 16.58,
+      "open": 16.72,
+      "preClose": 16.72,
+      "pct": 1.61,
+      "amount": 30862829.0,
+      "quoteTimestamp": "2026-10-28T15:34:21+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003010.SZ": {
+      "symbol": "003010.SZ",
+      "code": "003010",
+      "name": "若羽臣",
+      "price": 25.66,
+      "high": 25.93,
+      "low": 24.58,
+      "open": 24.8,
+      "preClose": 24.34,
+      "pct": 5.42,
+      "amount": 182686909.77,
+      "quoteTimestamp": "2026-10-28T15:34:39+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003009.SZ": {
+      "symbol": "003009.SZ",
+      "code": "003009",
+      "name": "中天火箭",
+      "price": 43.27,
+      "high": 43.64,
+      "low": 41.22,
+      "open": 41.9,
+      "preClose": 41.89,
+      "pct": 3.29,
+      "amount": 201601675.67,
+      "quoteTimestamp": "2026-10-28T15:34:36+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003008.SZ": {
+      "symbol": "003008.SZ",
+      "code": "003008",
+      "name": "开普检测",
+      "price": 18.09,
+      "high": 18.35,
+      "low": 17.9,
+      "open": 17.93,
+      "preClose": 17.91,
+      "pct": 1.01,
+      "amount": 22264172.5,
+      "quoteTimestamp": "2026-10-28T15:34:21+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003007.SZ": {
+      "symbol": "003007.SZ",
+      "code": "003007",
+      "name": "直真科技",
+      "price": 37.48,
+      "high": 39.5,
+      "low": 36.97,
+      "open": 37.99,
+      "preClose": 35.91,
+      "pct": 4.37,
+      "amount": 227284575.0,
+      "quoteTimestamp": "2026-10-28T15:34:57+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 39.5,
+      "limitDownPrice": 32.32
+    },
+    "003006.SZ": {
+      "symbol": "003006.SZ",
+      "code": "003006",
+      "name": "百亚股份",
+      "price": 23.09,
+      "high": 23.62,
+      "low": 22.64,
+      "open": 23.29,
+      "preClose": 23.02,
+      "pct": 0.3,
+      "amount": 927581095.34,
+      "quoteTimestamp": "2026-10-28T15:34:18+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003005.SZ": {
+      "symbol": "003005.SZ",
+      "code": "003005",
+      "name": "竞业达",
+      "price": 13.86,
+      "high": 14.05,
+      "low": 13.3,
+      "open": 13.8,
+      "preClose": 14.06,
+      "pct": -1.42,
+      "amount": 129700572.12,
+      "quoteTimestamp": "2026-10-28T15:34:33+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003004.SZ": {
+      "symbol": "003004.SZ",
+      "code": "003004",
+      "name": "声迅股份",
+      "price": 56.48,
+      "high": 56.94,
+      "low": 53.74,
+      "open": 56.0,
+      "preClose": 56.09,
+      "pct": 0.7,
+      "amount": 65008432.0,
+      "quoteTimestamp": "2026-10-28T15:34:06+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003003.SZ": {
+      "symbol": "003003.SZ",
+      "code": "003003",
+      "name": "天元股份",
+      "price": 9.89,
+      "high": 10.0,
+      "low": 9.6,
+      "open": 9.83,
+      "preClose": 9.81,
+      "pct": 0.82,
+      "amount": 29096444.0,
+      "quoteTimestamp": "2026-10-28T15:34:03+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003002.SZ": {
+      "symbol": "003002.SZ",
+      "code": "003002",
+      "name": "壶化股份",
+      "price": 13.27,
+      "high": 13.4,
+      "low": 13.0,
+      "open": 13.12,
+      "preClose": 13.08,
+      "pct": 1.45,
+      "amount": 56201264.76,
+      "quoteTimestamp": "2026-10-28T15:34:24+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003001.SZ": {
+      "symbol": "003001.SZ",
+      "code": "003001",
+      "name": "中岩大地",
+      "price": 14.95,
+      "high": 15.18,
+      "low": 14.7,
+      "open": 14.91,
+      "preClose": 14.94,
+      "pct": 0.07,
+      "amount": 72097262.47,
+      "quoteTimestamp": "2026-10-28T15:34:54+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "003000.SZ": {
+      "symbol": "003000.SZ",
+      "code": "003000",
+      "name": "劲仔食品",
+      "price": 8.99,
+      "high": 9.13,
+      "low": 8.95,
+      "open": 9.07,
+      "preClose": 9.1,
+      "pct": -1.21,
+      "amount": 33630466.0,
+      "quoteTimestamp": "2026-10-28T15:34:21+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002999.SZ": {
+      "symbol": "002999.SZ",
+      "code": "002999",
+      "name": "天禾股份",
+      "price": 5.63,
+      "high": 5.72,
+      "low": 5.57,
+      "open": 5.66,
+      "preClose": 5.62,
+      "pct": 0.18,
+      "amount": 36930451.0,
+      "quoteTimestamp": "2026-10-28T15:34:30+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002998.SZ": {
+      "symbol": "002998.SZ",
+      "code": "002998",
+      "name": "优彩资源",
+      "price": 6.93,
+      "high": 7.06,
+      "low": 6.78,
+      "open": 6.91,
+      "preClose": 6.99,
+      "pct": -0.86,
+      "amount": 58749120.04,
+      "quoteTimestamp": "2026-10-28T15:34:15+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002997.SZ": {
+      "symbol": "002997.SZ",
+      "code": "002997",
+      "name": "瑞鹄模具",
+      "price": 24.55,
+      "high": 24.93,
+      "low": 23.61,
+      "open": 23.61,
+      "preClose": 23.57,
+      "pct": 4.16,
+      "amount": 87346528.21,
+      "quoteTimestamp": "2026-10-28T15:34:18+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002996.SZ": {
+      "symbol": "002996.SZ",
+      "code": "002996",
+      "name": "顺博合金",
+      "price": 5.63,
+      "high": 5.68,
+      "low": 5.56,
+      "open": 5.59,
+      "preClose": 5.56,
+      "pct": 1.26,
+      "amount": 20013286.5,
+      "quoteTimestamp": "2026-10-28T15:34:15+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002995.SZ": {
+      "symbol": "002995.SZ",
+      "code": "002995",
+      "name": "天地在线",
+      "price": 18.51,
+      "high": 18.85,
+      "low": 17.63,
+      "open": 18.34,
+      "preClose": 18.52,
+      "pct": -0.05,
+      "amount": 500961304.84,
+      "quoteTimestamp": "2026-10-28T15:34:27+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002993.SZ": {
+      "symbol": "002993.SZ",
+      "code": "002993",
+      "name": "奥海科技",
+      "price": 28.97,
+      "high": 29.47,
+      "low": 28.47,
+      "open": 28.52,
+      "preClose": 28.32,
+      "pct": 2.3,
+      "amount": 110447603.64,
+      "quoteTimestamp": "2026-10-28T15:34:51+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002992.SZ": {
+      "symbol": "002992.SZ",
+      "code": "002992",
+      "name": "宝明科技",
+      "price": 28.5,
+      "high": 28.9,
+      "low": 27.66,
+      "open": 27.72,
+      "preClose": 27.7,
+      "pct": 2.89,
+      "amount": 46719587.0,
+      "quoteTimestamp": "2026-10-28T15:34:12+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002991.SZ": {
+      "symbol": "002991.SZ",
+      "code": "002991",
+      "name": "甘源食品",
+      "price": 38.71,
+      "high": 38.97,
+      "low": 38.23,
+      "open": 38.36,
+      "preClose": 38.66,
+      "pct": 0.13,
+      "amount": 33759163.0,
+      "quoteTimestamp": "2026-10-28T15:34:24+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002990.SZ": {
+      "symbol": "002990.SZ",
+      "code": "002990",
+      "name": "盛视科技",
+      "price": 39.75,
+      "high": 41.18,
+      "low": 37.35,
+      "open": 41.09,
+      "preClose": 41.5,
+      "pct": -4.22,
+      "amount": 959053248.19,
+      "quoteTimestamp": "2026-10-28T15:34:18+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002989.SZ": {
+      "symbol": "002989.SZ",
+      "code": "002989",
+      "name": "中天精装",
+      "price": 18.8,
+      "high": 19.25,
+      "low": 17.81,
+      "open": 17.84,
+      "preClose": 17.53,
+      "pct": 7.24,
+      "amount": 132412193.25,
+      "quoteTimestamp": "2026-10-28T15:34:12+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002988.SZ": {
+      "symbol": "002988.SZ",
+      "code": "002988",
+      "name": "豪美新材",
+      "price": 28.22,
+      "high": 28.62,
+      "low": 26.46,
+      "open": 27.44,
+      "preClose": 27.66,
+      "pct": 2.02,
+      "amount": 204597844.86,
+      "quoteTimestamp": "2026-10-28T15:34:15+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 30.43,
+      "limitDownPrice": 24.89
+    },
+    "002987.SZ": {
+      "symbol": "002987.SZ",
+      "code": "002987",
+      "name": "京北方",
+      "price": 10.75,
+      "high": 10.92,
+      "low": 10.6,
+      "open": 10.73,
+      "preClose": 10.71,
+      "pct": 0.37,
+      "amount": 124824094.96,
+      "quoteTimestamp": "2026-10-28T15:34:09+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002986.SZ": {
+      "symbol": "002986.SZ",
+      "code": "002986",
+      "name": "宇新股份",
+      "price": 10.19,
+      "high": 10.4,
+      "low": 10.05,
+      "open": 10.35,
+      "preClose": 10.31,
+      "pct": -1.16,
+      "amount": 75919389.76,
+      "quoteTimestamp": "2026-10-28T15:34:48+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002985.SZ": {
+      "symbol": "002985.SZ",
+      "code": "002985",
+      "name": "北摩高科",
+      "price": 27.71,
+      "high": 28.27,
+      "low": 26.79,
+      "open": 26.84,
+      "preClose": 26.77,
+      "pct": 3.51,
+      "amount": 184770940.14,
+      "quoteTimestamp": "2026-10-28T15:34:45+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002984.SZ": {
+      "symbol": "002984.SZ",
+      "code": "002984",
+      "name": "森麒麟",
+      "price": 11.98,
+      "high": 12.21,
+      "low": 11.74,
+      "open": 11.92,
+      "preClose": 12.04,
+      "pct": -0.5,
+      "amount": 138231720.08,
+      "quoteTimestamp": "2026-10-28T15:34:12+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002983.SZ": {
+      "symbol": "002983.SZ",
+      "code": "002983",
+      "name": "芯瑞达",
+      "price": 22.76,
+      "high": 23.46,
+      "low": 22.57,
+      "open": 22.9,
+      "preClose": 22.78,
+      "pct": -0.09,
+      "amount": 78885480.59,
+      "quoteTimestamp": "2026-10-28T15:34:00+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002982.SZ": {
+      "symbol": "002982.SZ",
+      "code": "002982",
+      "name": "湘佳股份",
+      "price": 13.57,
+      "high": 13.78,
+      "low": 13.38,
+      "open": 13.59,
+      "preClose": 13.59,
+      "pct": -0.15,
+      "amount": 111875359.92,
+      "quoteTimestamp": "2026-10-28T15:34:09+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 14.95,
+      "limitDownPrice": 12.23
+    },
+    "002981.SZ": {
+      "symbol": "002981.SZ",
+      "code": "002981",
+      "name": "朝阳科技",
+      "price": 21.8,
+      "high": 21.98,
+      "low": 20.98,
+      "open": 21.04,
+      "preClose": 20.97,
+      "pct": 3.96,
+      "amount": 66272282.69,
+      "quoteTimestamp": "2026-10-28T15:34:09+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002980.SZ": {
+      "symbol": "002980.SZ",
+      "code": "002980",
+      "name": "华盛昌",
+      "price": 81.69,
+      "high": 83.0,
+      "low": 79.4,
+      "open": 82.0,
+      "preClose": 80.6,
+      "pct": 1.35,
+      "amount": 807545174.82,
+      "quoteTimestamp": "2026-10-28T15:34:42+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002979.SZ": {
+      "symbol": "002979.SZ",
+      "code": "002979",
+      "name": "雷赛智能",
+      "price": 57.03,
+      "high": 60.35,
+      "low": 54.01,
+      "open": 55.54,
+      "preClose": 55.54,
+      "pct": 2.68,
+      "amount": 2179246670.49,
+      "quoteTimestamp": "2026-10-28T15:34:06+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002978.SZ": {
+      "symbol": "002978.SZ",
+      "code": "002978",
+      "name": "安宁股份",
+      "price": 23.93,
+      "high": 24.2,
+      "low": 23.78,
+      "open": 23.92,
+      "preClose": 23.91,
+      "pct": 0.08,
+      "amount": 35094618.0,
+      "quoteTimestamp": "2026-10-28T15:34:57+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002977.SZ": {
+      "symbol": "002977.SZ",
+      "code": "002977",
+      "name": "*ST天箭",
+      "price": 17.95,
+      "high": 18.17,
+      "low": 17.37,
+      "open": 17.8,
+      "preClose": 17.76,
+      "pct": 1.07,
+      "amount": 18173591.0,
+      "quoteTimestamp": "2026-10-28T15:34:06+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002976.SZ": {
+      "symbol": "002976.SZ",
+      "code": "002976",
+      "name": "瑞玛精密",
+      "price": 17.02,
+      "high": 17.25,
+      "low": 16.58,
+      "open": 16.79,
+      "preClose": 16.82,
+      "pct": 1.19,
+      "amount": 85475722.0,
+      "quoteTimestamp": "2026-10-28T15:34:06+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002975.SZ": {
+      "symbol": "002975.SZ",
+      "code": "002975",
+      "name": "博杰股份",
+      "price": 85.12,
+      "high": 85.12,
+      "low": 78.0,
+      "open": 78.98,
+      "preClose": 77.38,
+      "pct": 10.0,
+      "amount": 852060237.12,
+      "quoteTimestamp": "2026-10-28T15:34:03+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 85.12,
+      "limitDownPrice": 69.64
+    },
+    "002973.SZ": {
+      "symbol": "002973.SZ",
+      "code": "002973",
+      "name": "侨银股份",
+      "price": 10.69,
+      "high": 10.99,
+      "low": 10.5,
+      "open": 10.5,
+      "preClose": 10.5,
+      "pct": 1.81,
+      "amount": 75106458.0,
+      "quoteTimestamp": "2026-10-28T15:34:00+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002972.SZ": {
+      "symbol": "002972.SZ",
+      "code": "002972",
+      "name": "科安达",
+      "price": 12.17,
+      "high": 12.34,
+      "low": 11.8,
+      "open": 11.99,
+      "preClose": 11.99,
+      "pct": 1.5,
+      "amount": 52832297.0,
+      "quoteTimestamp": "2026-10-28T15:34:03+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002971.SZ": {
+      "symbol": "002971.SZ",
+      "code": "002971",
+      "name": "和远气体",
+      "price": 33.9,
+      "high": 34.6,
+      "low": 31.65,
+      "open": 32.0,
+      "preClose": 31.87,
+      "pct": 6.37,
+      "amount": 368148199.9,
+      "quoteTimestamp": "2026-10-28T15:34:39+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002970.SZ": {
+      "symbol": "002970.SZ",
+      "code": "002970",
+      "name": "锐明技术",
+      "price": 35.81,
+      "high": 36.6,
+      "low": 35.11,
+      "open": 35.55,
+      "preClose": 35.55,
+      "pct": 0.73,
+      "amount": 116150376.0,
+      "quoteTimestamp": "2026-10-28T15:34:54+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002969.SZ": {
+      "symbol": "002969.SZ",
+      "code": "002969",
+      "name": "嘉美包装",
+      "price": 10.04,
+      "high": 10.4,
+      "low": 9.52,
+      "open": 9.79,
+      "preClose": 9.63,
+      "pct": 4.26,
+      "amount": 448894430.73,
+      "quoteTimestamp": "2026-10-28T15:34:36+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002968.SZ": {
+      "symbol": "002968.SZ",
+      "code": "002968",
+      "name": "新大正",
+      "price": 8.82,
+      "high": 8.95,
+      "low": 8.69,
+      "open": 8.7,
+      "preClose": 8.61,
+      "pct": 2.44,
+      "amount": 33048702.0,
+      "quoteTimestamp": "2026-10-28T15:34:03+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002967.SZ": {
+      "symbol": "002967.SZ",
+      "code": "002967",
+      "name": "广电计量",
+      "price": 17.38,
+      "high": 17.46,
+      "low": 16.89,
+      "open": 17.0,
+      "preClose": 17.0,
+      "pct": 2.24,
+      "amount": 82800307.0,
+      "quoteTimestamp": "2026-10-28T15:34:21+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002966.SZ": {
+      "symbol": "002966.SZ",
+      "code": "002966",
+      "name": "苏州银行",
+      "price": 9.34,
+      "high": 9.58,
+      "low": 9.33,
+      "open": 9.47,
+      "preClose": 9.48,
+      "pct": -1.48,
+      "amount": 391446654.97,
+      "quoteTimestamp": "2026-10-28T15:34:00+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002965.SZ": {
+      "symbol": "002965.SZ",
+      "code": "002965",
+      "name": "祥鑫科技",
+      "price": 24.64,
+      "high": 25.48,
+      "low": 23.29,
+      "open": 23.33,
+      "preClose": 23.22,
+      "pct": 6.12,
+      "amount": 459907163.23,
+      "quoteTimestamp": "2026-10-28T15:34:57+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002963.SZ": {
+      "symbol": "002963.SZ",
+      "code": "002963",
+      "name": "豪尔赛",
+      "price": 16.1,
+      "high": 16.43,
+      "low": 15.77,
+      "open": 16.09,
+      "preClose": 16.02,
+      "pct": 0.5,
+      "amount": 64548614.0,
+      "quoteTimestamp": "2026-10-28T15:34:54+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002962.SZ": {
+      "symbol": "002962.SZ",
+      "code": "002962",
+      "name": "五方光电",
+      "price": 12.83,
+      "high": 12.83,
+      "low": 11.85,
+      "open": 12.0,
+      "preClose": 11.66,
+      "pct": 10.03,
+      "amount": 254109239.98,
+      "quoteTimestamp": "2026-10-28T15:34:51+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 12.83,
+      "limitDownPrice": 10.49
+    },
+    "002961.SZ": {
+      "symbol": "002961.SZ",
+      "code": "002961",
+      "name": "瑞达期货",
+      "price": 11.36,
+      "high": 12.2,
+      "low": 11.36,
+      "open": 12.0,
+      "preClose": 12.62,
+      "pct": -9.98,
+      "amount": 357818617.55,
+      "quoteTimestamp": "2026-10-28T15:34:33+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002960.SZ": {
+      "symbol": "002960.SZ",
+      "code": "002960",
+      "name": "青鸟智控",
+      "price": 8.47,
+      "high": 8.92,
+      "low": 8.43,
+      "open": 8.56,
+      "preClose": 8.56,
+      "pct": -1.05,
+      "amount": 143712449.62,
+      "quoteTimestamp": "2026-10-28T15:34:00+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002959.SZ": {
+      "symbol": "002959.SZ",
+      "code": "002959",
+      "name": "小熊电器",
+      "price": 33.59,
+      "high": 33.84,
+      "low": 32.4,
+      "open": 33.45,
+      "preClose": 33.64,
+      "pct": -0.15,
+      "amount": 79428896.7,
+      "quoteTimestamp": "2026-10-28T15:34:57+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002958.SZ": {
+      "symbol": "002958.SZ",
+      "code": "002958",
+      "name": "青农商行",
+      "price": 2.86,
+      "high": 2.89,
+      "low": 2.85,
+      "open": 2.87,
+      "preClose": 2.88,
+      "pct": -0.69,
+      "amount": 158157888.0,
+      "quoteTimestamp": "2026-10-28T15:34:48+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002957.SZ": {
+      "symbol": "002957.SZ",
+      "code": "002957",
+      "name": "科瑞技术",
+      "price": 27.88,
+      "high": 28.18,
+      "low": 26.7,
+      "open": 27.68,
+      "preClose": 26.8,
+      "pct": 4.03,
+      "amount": 363874441.71,
+      "quoteTimestamp": "2026-10-28T15:34:45+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002956.SZ": {
+      "symbol": "002956.SZ",
+      "code": "002956",
+      "name": "西麦食品",
+      "price": 18.21,
+      "high": 18.96,
+      "low": 17.91,
+      "open": 18.58,
+      "preClose": 18.57,
+      "pct": -1.94,
+      "amount": 137623886.32,
+      "quoteTimestamp": "2026-10-28T15:34:30+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002955.SZ": {
+      "symbol": "002955.SZ",
+      "code": "002955",
+      "name": "鸿合科技",
+      "price": 28.08,
+      "high": 28.34,
+      "low": 27.5,
+      "open": 27.91,
+      "preClose": 27.39,
+      "pct": 2.52,
+      "amount": 99119604.6,
+      "quoteTimestamp": "2026-10-28T15:34:27+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002953.SZ": {
+      "symbol": "002953.SZ",
+      "code": "002953",
+      "name": "日丰股份",
+      "price": 9.55,
+      "high": 9.68,
+      "low": 9.23,
+      "open": 9.3,
+      "preClose": 9.19,
+      "pct": 3.92,
+      "amount": 76745665.8,
+      "quoteTimestamp": "2026-10-28T15:34:57+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002952.SZ": {
+      "symbol": "002952.SZ",
+      "code": "002952",
+      "name": "亚世光电",
+      "price": 17.97,
+      "high": 18.15,
+      "low": 17.55,
+      "open": 17.66,
+      "preClose": 17.56,
+      "pct": 2.33,
+      "amount": 47752834.0,
+      "quoteTimestamp": "2026-10-28T15:34:51+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002951.SZ": {
+      "symbol": "002951.SZ",
+      "code": "002951",
+      "name": "金时科技",
+      "price": 14.86,
+      "high": 14.94,
+      "low": 14.2,
+      "open": 14.2,
+      "preClose": 14.22,
+      "pct": 4.5,
+      "amount": 109122121.0,
+      "quoteTimestamp": "2026-10-28T15:34:18+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002950.SZ": {
+      "symbol": "002950.SZ",
+      "code": "002950",
+      "name": "奥美医疗",
+      "price": 8.39,
+      "high": 8.4,
+      "low": 8.2,
+      "open": 8.27,
+      "preClose": 8.22,
+      "pct": 2.07,
+      "amount": 37006606.0,
+      "quoteTimestamp": "2026-10-28T15:34:48+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002949.SZ": {
+      "symbol": "002949.SZ",
+      "code": "002949",
+      "name": "华阳国际",
+      "price": 12.01,
+      "high": 12.38,
+      "low": 11.7,
+      "open": 11.99,
+      "preClose": 12.24,
+      "pct": -1.88,
+      "amount": 83861000.0,
+      "quoteTimestamp": "2026-10-28T15:34:54+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002948.SZ": {
+      "symbol": "002948.SZ",
+      "code": "002948",
+      "name": "青岛银行",
+      "price": 5.86,
+      "high": 5.88,
+      "low": 5.81,
+      "open": 5.83,
+      "preClose": 5.84,
+      "pct": 0.34,
+      "amount": 160999185.45,
+      "quoteTimestamp": "2026-10-28T15:34:24+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002947.SZ": {
+      "symbol": "002947.SZ",
+      "code": "002947",
+      "name": "恒铭达",
+      "price": 47.55,
+      "high": 48.14,
+      "low": 46.28,
+      "open": 47.02,
+      "preClose": 46.28,
+      "pct": 2.74,
+      "amount": 201957346.0,
+      "quoteTimestamp": "2026-10-28T15:34:42+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002946.SZ": {
+      "symbol": "002946.SZ",
+      "code": "002946",
+      "name": "新乳业",
+      "price": 14.26,
+      "high": 14.46,
+      "low": 14.01,
+      "open": 14.14,
+      "preClose": 14.19,
+      "pct": 0.49,
+      "amount": 134936553.16,
+      "quoteTimestamp": "2026-10-28T15:34:54+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002945.SZ": {
+      "symbol": "002945.SZ",
+      "code": "002945",
+      "name": "华林证券",
+      "price": 14.5,
+      "high": 14.88,
+      "low": 14.23,
+      "open": 14.81,
+      "preClose": 14.76,
+      "pct": -1.76,
+      "amount": 444553241.58,
+      "quoteTimestamp": "2026-10-28T15:34:51+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 16.24,
+      "limitDownPrice": 13.28
+    },
+    "002943.SZ": {
+      "symbol": "002943.SZ",
+      "code": "002943",
+      "name": "宇晶股份",
+      "price": 25.11,
+      "high": 25.11,
+      "low": 22.78,
+      "open": 23.15,
+      "preClose": 22.83,
+      "pct": 9.99,
+      "amount": 211620392.01,
+      "quoteTimestamp": "2026-10-28T15:34:15+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002942.SZ": {
+      "symbol": "002942.SZ",
+      "code": "002942",
+      "name": "新农股份",
+      "price": 15.35,
+      "high": 15.49,
+      "low": 15.0,
+      "open": 15.1,
+      "preClose": 15.07,
+      "pct": 1.86,
+      "amount": 30813741.0,
+      "quoteTimestamp": "2026-10-28T15:34:51+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002941.SZ": {
+      "symbol": "002941.SZ",
+      "code": "002941",
+      "name": "新疆交建",
+      "price": 11.1,
+      "high": 11.16,
+      "low": 10.75,
+      "open": 10.96,
+      "preClose": 10.93,
+      "pct": 1.56,
+      "amount": 226501029.97,
+      "quoteTimestamp": "2026-10-28T15:34:21+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002940.SZ": {
+      "symbol": "002940.SZ",
+      "code": "002940",
+      "name": "昂利康",
+      "price": 23.28,
+      "high": 23.43,
+      "low": 22.1,
+      "open": 23.12,
+      "preClose": 23.05,
+      "pct": 1.0,
+      "amount": 342866197.64,
+      "quoteTimestamp": "2026-10-28T15:34:45+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002939.SZ": {
+      "symbol": "002939.SZ",
+      "code": "002939",
+      "name": "长城证券",
+      "price": 7.3,
+      "high": 7.38,
+      "low": 7.3,
+      "open": 7.38,
+      "preClose": 7.31,
+      "pct": -0.14,
+      "amount": 81581068.04,
+      "quoteTimestamp": "2026-10-28T15:34:18+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002938.SZ": {
+      "symbol": "002938.SZ",
+      "code": "002938",
+      "name": "鹏鼎控股",
+      "price": 68.01,
+      "high": 68.88,
+      "low": 66.5,
+      "open": 66.5,
+      "preClose": 65.52,
+      "pct": 3.8,
+      "amount": 1201574538.31,
+      "quoteTimestamp": "2026-10-28T15:34:15+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
+    "002937.SZ": {
+      "symbol": "002937.SZ",
+      "code": "002937",
+      "name": "兴瑞科技",
+      "price": 20.65,
+      "high": 20.9,
+      "low": 19.82,
+      "open": 19.98,
+      "preClose": 19.9,
+      "pct": 3.77,
+      "amount": 120120617.56,
+      "quoteTimestamp": "2026-10-28T15:34:12+08:00",
+      "source": "Eastmoney",
+      "stale": false,
+      "segment": "SZSE_MAIN"
+    },
     "603859.SH": {
       "symbol": "603859.SH",
       "code": "603859",
@@ -3171,7 +4785,7 @@
       "amount": 1016329615.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603858.SH": {
@@ -3187,7 +4801,7 @@
       "amount": 59501282.0,
       "quoteTimestamp": "2026-10-28T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603856.SH": {
@@ -3203,7 +4817,7 @@
       "amount": 13363703.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603855.SH": {
@@ -3219,7 +4833,7 @@
       "amount": 63672445.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603848.SH": {
@@ -3235,7 +4849,7 @@
       "amount": 19612134.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603843.SH": {
@@ -3251,7 +4865,7 @@
       "amount": 130492375.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603839.SH": {
@@ -3267,7 +4881,7 @@
       "amount": 24801233.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603838.SH": {
@@ -3283,7 +4897,7 @@
       "amount": 99146858.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603836.SH": {
@@ -3299,7 +4913,7 @@
       "amount": 69389718.0,
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603833.SH": {
@@ -3315,7 +4929,7 @@
       "amount": 82936605.0,
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603829.SH": {
@@ -3331,7 +4945,7 @@
       "amount": 30124146.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603828.SH": {
@@ -3347,7 +4961,7 @@
       "amount": 9221720.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603826.SH": {
@@ -3363,7 +4977,7 @@
       "amount": 122305719.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603825.SH": {
@@ -3379,7 +4993,7 @@
       "amount": 3344705.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603823.SH": {
@@ -3395,7 +5009,7 @@
       "amount": 362811852.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603822.SH": {
@@ -3411,7 +5025,7 @@
       "amount": 68439887.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603819.SH": {
@@ -3427,7 +5041,7 @@
       "amount": 62055749.0,
       "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603818.SH": {
@@ -3443,7 +5057,7 @@
       "amount": 109989925.0,
       "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603817.SH": {
@@ -3459,7 +5073,7 @@
       "amount": 44598906.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603816.SH": {
@@ -3475,7 +5089,7 @@
       "amount": 304958941.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603815.SH": {
@@ -3491,7 +5105,7 @@
       "amount": 20971702.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603813.SH": {
@@ -3507,7 +5121,7 @@
       "amount": 89149291.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603811.SH": {
@@ -3523,7 +5137,7 @@
       "amount": 25418422.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603810.SH": {
@@ -3539,7 +5153,7 @@
       "amount": 22231703.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603809.SH": {
@@ -3555,7 +5169,7 @@
       "amount": 257246121.0,
       "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603808.SH": {
@@ -3571,7 +5185,7 @@
       "amount": 26698277.0,
       "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603806.SH": {
@@ -3587,7 +5201,7 @@
       "amount": 345713722.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603803.SH": {
@@ -3603,7 +5217,7 @@
       "amount": 75775428.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603801.SH": {
@@ -3619,7 +5233,7 @@
       "amount": 19830864.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603800.SH": {
@@ -3635,7 +5249,7 @@
       "amount": 125367612.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603799.SH": {
@@ -3651,7 +5265,7 @@
       "amount": 837838480.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603798.SH": {
@@ -3667,7 +5281,7 @@
       "amount": 32872170.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603797.SH": {
@@ -3683,7 +5297,7 @@
       "amount": 28306078.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603790.SH": {
@@ -3699,7 +5313,7 @@
       "amount": 65372368.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603789.SH": {
@@ -3715,7 +5329,7 @@
       "amount": 4588897.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603788.SH": {
@@ -3731,7 +5345,7 @@
       "amount": 20807294.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603787.SH": {
@@ -3747,7 +5361,7 @@
       "amount": 24122774.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603786.SH": {
@@ -3763,7 +5377,7 @@
       "amount": 93972468.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603779.SH": {
@@ -3779,7 +5393,7 @@
       "amount": 45355618.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603778.SH": {
@@ -3795,7 +5409,7 @@
       "amount": 205887460.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603777.SH": {
@@ -3811,7 +5425,7 @@
       "amount": 99166497.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603776.SH": {
@@ -3827,7 +5441,7 @@
       "amount": 28714633.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603773.SH": {
@@ -3843,7 +5457,7 @@
       "amount": 790333245.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603768.SH": {
@@ -3859,7 +5473,7 @@
       "amount": 27867473.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603767.SH": {
@@ -3875,7 +5489,7 @@
       "amount": 494891036.0,
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603766.SH": {
@@ -3891,7 +5505,7 @@
       "amount": 191475527.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603759.SH": {
@@ -3907,7 +5521,7 @@
       "amount": 22894546.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603758.SH": {
@@ -3923,7 +5537,7 @@
       "amount": 519394047.0,
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 11.8,
       "limitDownPrice": 9.66
@@ -3941,7 +5555,7 @@
       "amount": 263979620.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603755.SH": {
@@ -3957,7 +5571,7 @@
       "amount": 60731595.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603739.SH": {
@@ -3973,7 +5587,7 @@
       "amount": 33097291.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603738.SH": {
@@ -3989,7 +5603,7 @@
       "amount": 427380414.0,
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603737.SH": {
@@ -4005,7 +5619,7 @@
       "amount": 125415576.0,
       "quoteTimestamp": "2026-10-28T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603733.SH": {
@@ -4021,7 +5635,7 @@
       "amount": 99791567.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603730.SH": {
@@ -4037,7 +5651,7 @@
       "amount": 767601686.0,
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603729.SH": {
@@ -4053,7 +5667,7 @@
       "amount": 10567965.0,
       "quoteTimestamp": "2026-10-28T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603728.SH": {
@@ -4069,7 +5683,7 @@
       "amount": 1477393648.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 60.54,
       "limitDownPrice": 49.54
@@ -4087,7 +5701,7 @@
       "amount": 214395530.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603726.SH": {
@@ -4103,7 +5717,7 @@
       "amount": 88044680.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603725.SH": {
@@ -4119,7 +5733,7 @@
       "amount": 211847002.0,
       "quoteTimestamp": "2026-10-28T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603722.SH": {
@@ -4135,7 +5749,7 @@
       "amount": 32357760.0,
       "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603721.SH": {
@@ -4151,7 +5765,7 @@
       "amount": 435356929.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603719.SH": {
@@ -4167,7 +5781,7 @@
       "amount": 166272773.0,
       "quoteTimestamp": "2026-10-28T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603718.SH": {
@@ -4183,7 +5797,7 @@
       "amount": 11321965.0,
       "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603717.SH": {
@@ -4199,7 +5813,7 @@
       "amount": 26344420.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603716.SH": {
@@ -4215,7 +5829,7 @@
       "amount": 322756395.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603713.SH": {
@@ -4231,7 +5845,7 @@
       "amount": 138481787.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603712.SH": {
@@ -4247,7 +5861,7 @@
       "amount": 151472596.0,
       "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603711.SH": {
@@ -4263,7 +5877,7 @@
       "amount": 93396519.0,
       "quoteTimestamp": "2026-10-28T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603709.SH": {
@@ -4279,7 +5893,7 @@
       "amount": 19931823.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603708.SH": {
@@ -4295,7 +5909,7 @@
       "amount": 49225386.0,
       "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603707.SH": {
@@ -4311,7 +5925,7 @@
       "amount": 59334100.0,
       "quoteTimestamp": "2026-10-28T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603706.SH": {
@@ -4327,7 +5941,7 @@
       "amount": 14636747.0,
       "quoteTimestamp": "2026-10-28T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603703.SH": {
@@ -4343,7 +5957,7 @@
       "amount": 226854050.0,
       "quoteTimestamp": "2026-10-28T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603701.SH": {
@@ -4359,7 +5973,7 @@
       "amount": 41563224.0,
       "quoteTimestamp": "2026-10-28T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603700.SH": {
@@ -4375,7 +5989,7 @@
       "amount": 115919762.0,
       "quoteTimestamp": "2026-10-28T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603699.SH": {
@@ -4391,7 +6005,7 @@
       "amount": 572660092.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 38.4,
       "limitDownPrice": 31.42
@@ -4409,7 +6023,7 @@
       "amount": 156179703.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603697.SH": {
@@ -4425,7 +6039,7 @@
       "amount": 21724915.0,
       "quoteTimestamp": "2026-10-28T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603696.SH": {
@@ -4441,7 +6055,7 @@
       "amount": 562678137.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603693.SH": {
@@ -4457,7 +6071,7 @@
       "amount": 132325478.0,
       "quoteTimestamp": "2026-10-28T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603690.SH": {
@@ -4473,7 +6087,7 @@
       "amount": 408108770.0,
       "quoteTimestamp": "2026-10-28T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603689.SH": {
@@ -4489,7 +6103,7 @@
       "amount": 25427210.0,
       "quoteTimestamp": "2026-10-28T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603688.SH": {
@@ -4505,7 +6119,7 @@
       "amount": 252490235.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603687.SH": {
@@ -4521,7 +6135,7 @@
       "amount": 308705400.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603686.SH": {
@@ -4537,7 +6151,7 @@
       "amount": 220859625.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603685.SH": {
@@ -4553,7 +6167,7 @@
       "amount": 86479922.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603683.SH": {
@@ -4569,7 +6183,7 @@
       "amount": 1235888869.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603682.SH": {
@@ -4585,7 +6199,7 @@
       "amount": 55738604.0,
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603681.SH": {
@@ -4601,7 +6215,7 @@
       "amount": 66079614.0,
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603680.SH": {
@@ -4617,7 +6231,7 @@
       "amount": 208484807.0,
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 11.33,
       "limitDownPrice": 9.27
@@ -4635,7 +6249,7 @@
       "amount": 95989180.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603678.SH": {
@@ -4651,7 +6265,7 @@
       "amount": 619478959.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603677.SH": {
@@ -4667,7 +6281,7 @@
       "amount": 194723054.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603676.SH": {
@@ -4683,7 +6297,7 @@
       "amount": 12489763.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603669.SH": {
@@ -4699,7 +6313,7 @@
       "amount": 301207981.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603668.SH": {
@@ -4715,7 +6329,7 @@
       "amount": 111926432.0,
       "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603667.SH": {
@@ -4731,7 +6345,7 @@
       "amount": 700242117.0,
       "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 49.98,
       "limitDownPrice": 40.9
@@ -4749,7 +6363,7 @@
       "amount": 208800208.0,
       "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603665.SH": {
@@ -4765,7 +6379,7 @@
       "amount": 41964995.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603663.SH": {
@@ -4781,7 +6395,7 @@
       "amount": 381698420.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603662.SH": {
@@ -4797,7 +6411,7 @@
       "amount": 786153158.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603661.SH": {
@@ -4813,7 +6427,7 @@
       "amount": 67056974.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603660.SH": {
@@ -4829,7 +6443,7 @@
       "amount": 167353904.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603659.SH": {
@@ -4845,7 +6459,7 @@
       "amount": 437276640.0,
       "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603658.SH": {
@@ -4861,7 +6475,7 @@
       "amount": 422435276.0,
       "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603657.SH": {
@@ -4877,7 +6491,7 @@
       "amount": 340328196.0,
       "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603656.SH": {
@@ -4893,7 +6507,7 @@
       "amount": 105636103.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603655.SH": {
@@ -4909,7 +6523,7 @@
       "amount": 58474447.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603650.SH": {
@@ -4925,7 +6539,7 @@
       "amount": 476319697.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603648.SH": {
@@ -4941,7 +6555,7 @@
       "amount": 12972578.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603639.SH": {
@@ -4957,7 +6571,7 @@
       "amount": 13355102.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603638.SH": {
@@ -4973,7 +6587,7 @@
       "amount": 255132904.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603637.SH": {
@@ -4989,7 +6603,7 @@
       "amount": 93358876.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603636.SH": {
@@ -5005,7 +6619,7 @@
       "amount": 440328643.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603633.SH": {
@@ -5021,7 +6635,7 @@
       "amount": 164499272.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 6.36,
       "limitDownPrice": 5.2
@@ -5039,7 +6653,7 @@
       "amount": 64914752.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603629.SH": {
@@ -5055,7 +6669,7 @@
       "amount": 1585505594.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603628.SH": {
@@ -5071,7 +6685,7 @@
       "amount": 19756837.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603626.SH": {
@@ -5087,7 +6701,7 @@
       "amount": 1408640362.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 27.83,
       "limitDownPrice": 22.77
@@ -5105,7 +6719,7 @@
       "amount": 307820276.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603618.SH": {
@@ -5121,7 +6735,7 @@
       "amount": 1281336712.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603617.SH": {
@@ -5137,7 +6751,7 @@
       "amount": 35924031.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603616.SH": {
@@ -5153,7 +6767,7 @@
       "amount": 44465845.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603615.SH": {
@@ -5169,7 +6783,7 @@
       "amount": 37874563.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603613.SH": {
@@ -5185,7 +6799,7 @@
       "amount": 113972281.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603612.SH": {
@@ -5201,7 +6815,7 @@
       "amount": 265281817.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603611.SH": {
@@ -5217,7 +6831,7 @@
       "amount": 43237838.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603610.SH": {
@@ -5233,7 +6847,7 @@
       "amount": 53026279.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603609.SH": {
@@ -5249,7 +6863,7 @@
       "amount": 20336057.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603608.SH": {
@@ -5265,7 +6879,7 @@
       "amount": 453892803.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603607.SH": {
@@ -5281,7 +6895,7 @@
       "amount": 63796856.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603606.SH": {
@@ -5297,7 +6911,7 @@
       "amount": 383832353.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603605.SH": {
@@ -5313,7 +6927,7 @@
       "amount": 182084827.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603602.SH": {
@@ -5329,7 +6943,7 @@
       "amount": 88033208.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603601.SH": {
@@ -5345,7 +6959,7 @@
       "amount": 453644237.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603600.SH": {
@@ -5361,7 +6975,7 @@
       "amount": 91093145.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603599.SH": {
@@ -5377,7 +6991,7 @@
       "amount": 155342893.0,
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603598.SH": {
@@ -5393,7 +7007,7 @@
       "amount": 401177741.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603596.SH": {
@@ -5409,7 +7023,7 @@
       "amount": 475166782.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603595.SH": {
@@ -5425,7 +7039,7 @@
       "amount": 54803017.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603590.SH": {
@@ -5441,7 +7055,7 @@
       "amount": 53115822.0,
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603589.SH": {
@@ -5457,7 +7071,7 @@
       "amount": 78605385.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603588.SH": {
@@ -5473,7 +7087,7 @@
       "amount": 306400294.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603587.SH": {
@@ -5489,7 +7103,7 @@
       "amount": 29815331.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603586.SH": {
@@ -5505,7 +7119,7 @@
       "amount": 33007882.0,
       "quoteTimestamp": "2026-10-28T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603585.SH": {
@@ -5521,7 +7135,7 @@
       "amount": 20178137.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603583.SH": {
@@ -5537,7 +7151,7 @@
       "amount": 333311557.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603580.SH": {
@@ -5553,7 +7167,7 @@
       "amount": 162613460.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603579.SH": {
@@ -5569,7 +7183,7 @@
       "amount": 114073281.0,
       "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603578.SH": {
@@ -5585,7 +7199,7 @@
       "amount": 37498143.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603577.SH": {
@@ -5601,7 +7215,7 @@
       "amount": 14651210.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603569.SH": {
@@ -5617,7 +7231,7 @@
       "amount": 13023458.0,
       "quoteTimestamp": "2026-10-28T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603568.SH": {
@@ -5633,7 +7247,7 @@
       "amount": 75427925.0,
       "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603567.SH": {
@@ -5649,7 +7263,7 @@
       "amount": 52714869.0,
       "quoteTimestamp": "2026-10-28T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603566.SH": {
@@ -5665,7 +7279,7 @@
       "amount": 48980032.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603565.SH": {
@@ -5681,7 +7295,7 @@
       "amount": 779006546.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603559.SH": {
@@ -5697,7 +7311,7 @@
       "amount": 39167942.0,
       "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603558.SH": {
@@ -5713,7 +7327,7 @@
       "amount": 72723270.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603557.SH": {
@@ -5729,7 +7343,7 @@
       "amount": 18030713.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603556.SH": {
@@ -5745,7 +7359,7 @@
       "amount": 53790482.0,
       "quoteTimestamp": "2026-10-28T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603551.SH": {
@@ -5761,7 +7375,7 @@
       "amount": 11978555.0,
       "quoteTimestamp": "2026-10-28T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603538.SH": {
@@ -5777,7 +7391,7 @@
       "amount": 422987799.0,
       "quoteTimestamp": "2026-10-28T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603536.SH": {
@@ -5793,7 +7407,7 @@
       "amount": 62600858.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603535.SH": {
@@ -5809,7 +7423,7 @@
       "amount": 31520419.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603533.SH": {
@@ -5825,7 +7439,7 @@
       "amount": 1358070564.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 28.03,
       "limitDownPrice": 22.93
@@ -5843,7 +7457,7 @@
       "amount": 123123444.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603529.SH": {
@@ -5859,7 +7473,7 @@
       "amount": 81233256.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603528.SH": {
@@ -5875,7 +7489,7 @@
       "amount": 1348303101.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603527.SH": {
@@ -5891,7 +7505,7 @@
       "amount": 48318226.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603520.SH": {
@@ -5907,7 +7521,7 @@
       "amount": 57831610.0,
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603519.SH": {
@@ -5923,7 +7537,7 @@
       "amount": 46549611.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603518.SH": {
@@ -5939,7 +7553,7 @@
       "amount": 30866884.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603517.SH": {
@@ -5955,7 +7569,7 @@
       "amount": 144673052.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603516.SH": {
@@ -5971,7 +7585,7 @@
       "amount": 526743247.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603515.SH": {
@@ -5987,7 +7601,7 @@
       "amount": 15038953.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603511.SH": {
@@ -6003,7 +7617,7 @@
       "amount": 30630346.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603508.SH": {
@@ -6019,7 +7633,7 @@
       "amount": 29921807.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603507.SH": {
@@ -6035,7 +7649,7 @@
       "amount": 117697096.0,
       "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603506.SH": {
@@ -6051,7 +7665,7 @@
       "amount": 27483777.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603505.SH": {
@@ -6067,7 +7681,7 @@
       "amount": 77484826.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603501.SH": {
@@ -6083,7 +7697,7 @@
       "amount": 1667255507.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603500.SH": {
@@ -6099,7 +7713,7 @@
       "amount": 145684448.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603499.SH": {
@@ -6115,7 +7729,7 @@
       "amount": 47464036.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603496.SH": {
@@ -6131,7 +7745,7 @@
       "amount": 131466366.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603489.SH": {
@@ -6147,7 +7761,7 @@
       "amount": 276856577.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603488.SH": {
@@ -6163,7 +7777,7 @@
       "amount": 57355356.0,
       "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603486.SH": {
@@ -6179,7 +7793,7 @@
       "amount": 196475204.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603477.SH": {
@@ -6195,7 +7809,7 @@
       "amount": 113034853.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603468.SH": {
@@ -6211,7 +7825,7 @@
       "amount": 21719473.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603466.SH": {
@@ -6227,7 +7841,7 @@
       "amount": 1773667870.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603459.SH": {
@@ -6243,7 +7857,7 @@
       "amount": 422877155.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603458.SH": {
@@ -6259,7 +7873,7 @@
       "amount": 55058371.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603456.SH": {
@@ -6275,7 +7889,7 @@
       "amount": 199610836.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603448.SH": {
@@ -6291,7 +7905,7 @@
       "amount": 155996744.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603444.SH": {
@@ -6307,7 +7921,7 @@
       "amount": 343827092.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603439.SH": {
@@ -6323,7 +7937,7 @@
       "amount": 153726674.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603435.SH": {
@@ -6339,7 +7953,7 @@
       "amount": 40865489.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603429.SH": {
@@ -6355,7 +7969,7 @@
       "amount": 11016697.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603421.SH": {
@@ -6371,7 +7985,7 @@
       "amount": 48026235.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603418.SH": {
@@ -6387,7 +8001,7 @@
       "amount": 223931454.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603416.SH": {
@@ -6403,7 +8017,7 @@
       "amount": 197746338.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603409.SH": {
@@ -6419,7 +8033,7 @@
       "amount": 49540458.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603408.SH": {
@@ -6435,7 +8049,7 @@
       "amount": 44688847.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603407.SH": {
@@ -6451,7 +8065,7 @@
       "amount": 147525869.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603406.SH": {
@@ -6467,7 +8081,7 @@
       "amount": 20409119.0,
       "quoteTimestamp": "2026-10-28T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603402.SH": {
@@ -6483,7 +8097,7 @@
       "amount": 32409721.0,
       "quoteTimestamp": "2026-10-28T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603400.SH": {
@@ -6499,7 +8113,7 @@
       "amount": 91966943.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603399.SH": {
@@ -6515,7 +8129,7 @@
       "amount": 196978225.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603398.SH": {
@@ -6531,7 +8145,7 @@
       "amount": 38185744.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603396.SH": {
@@ -6547,7 +8161,7 @@
       "amount": 122842495.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603395.SH": {
@@ -6563,7 +8177,7 @@
       "amount": 86963914.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603393.SH": {
@@ -6579,7 +8193,7 @@
       "amount": 101829168.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603392.SH": {
@@ -6595,7 +8209,7 @@
       "amount": 217918978.0,
       "quoteTimestamp": "2026-10-28T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603391.SH": {
@@ -6611,7 +8225,7 @@
       "amount": 374972722.0,
       "quoteTimestamp": "2026-10-28T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603390.SH": {
@@ -6627,7 +8241,7 @@
       "amount": 254293742.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603389.SH": {
@@ -6643,7 +8257,7 @@
       "amount": 51558739.0,
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603387.SH": {
@@ -6659,7 +8273,7 @@
       "amount": 93949824.0,
       "quoteTimestamp": "2026-10-28T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603386.SH": {
@@ -6675,7 +8289,7 @@
       "amount": 351405503.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603385.SH": {
@@ -6691,7 +8305,7 @@
       "amount": 18688305.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603383.SH": {
@@ -6707,7 +8321,7 @@
       "amount": 94445658.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603382.SH": {
@@ -6723,7 +8337,7 @@
       "amount": 94289085.0,
       "quoteTimestamp": "2026-10-28T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603381.SH": {
@@ -6739,7 +8353,7 @@
       "amount": 74724985.0,
       "quoteTimestamp": "2026-10-28T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603380.SH": {
@@ -6755,7 +8369,7 @@
       "amount": 73493061.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603379.SH": {
@@ -6771,7 +8385,7 @@
       "amount": 280927772.0,
       "quoteTimestamp": "2026-10-28T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603378.SH": {
@@ -6787,7 +8401,7 @@
       "amount": 27302007.0,
       "quoteTimestamp": "2026-10-28T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603377.SH": {
@@ -6803,7 +8417,7 @@
       "amount": 4026568.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603376.SH": {
@@ -6819,7 +8433,7 @@
       "amount": 117449113.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603375.SH": {
@@ -6835,7 +8449,7 @@
       "amount": 104175964.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603373.SH": {
@@ -6851,7 +8465,7 @@
       "amount": 57879849.0,
       "quoteTimestamp": "2026-10-28T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603370.SH": {
@@ -6867,7 +8481,7 @@
       "amount": 444191822.0,
       "quoteTimestamp": "2026-10-28T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603369.SH": {
@@ -6883,7 +8497,7 @@
       "amount": 396031356.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603368.SH": {
@@ -6899,7 +8513,7 @@
       "amount": 151020140.0,
       "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603367.SH": {
@@ -6915,7 +8529,7 @@
       "amount": 108735668.0,
       "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603366.SH": {
@@ -6931,7 +8545,7 @@
       "amount": 540897051.0,
       "quoteTimestamp": "2026-10-28T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603365.SH": {
@@ -6947,7 +8561,7 @@
       "amount": 22001991.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603363.SH": {
@@ -6963,7 +8577,7 @@
       "amount": 32560603.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603360.SH": {
@@ -6979,7 +8593,7 @@
       "amount": 192850685.0,
       "quoteTimestamp": "2026-10-28T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603359.SH": {
@@ -6995,7 +8609,7 @@
       "amount": 11047575.0,
       "quoteTimestamp": "2026-10-28T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603358.SH": {
@@ -7011,7 +8625,7 @@
       "amount": 198656806.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603357.SH": {
@@ -7027,7 +8641,7 @@
       "amount": 10683721.0,
       "quoteTimestamp": "2026-10-28T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603356.SH": {
@@ -7043,7 +8657,7 @@
       "amount": 25215028.0,
       "quoteTimestamp": "2026-10-28T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603355.SH": {
@@ -7059,7 +8673,7 @@
       "amount": 83266058.0,
       "quoteTimestamp": "2026-10-28T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603353.SH": {
@@ -7075,7 +8689,7 @@
       "amount": 117920132.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603352.SH": {
@@ -7091,7 +8705,7 @@
       "amount": 18187522.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603351.SH": {
@@ -7107,7 +8721,7 @@
       "amount": 61170106.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603350.SH": {
@@ -7123,7 +8737,7 @@
       "amount": 187983954.0,
       "quoteTimestamp": "2026-10-28T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603348.SH": {
@@ -7139,7 +8753,7 @@
       "amount": 162491248.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603345.SH": {
@@ -7155,7 +8769,7 @@
       "amount": 410009387.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603344.SH": {
@@ -7171,7 +8785,7 @@
       "amount": 59743798.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603341.SH": {
@@ -7187,7 +8801,7 @@
       "amount": 761535024.0,
       "quoteTimestamp": "2026-10-28T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603339.SH": {
@@ -7203,7 +8817,7 @@
       "amount": 59154432.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603338.SH": {
@@ -7219,7 +8833,7 @@
       "amount": 131504716.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603337.SH": {
@@ -7235,7 +8849,7 @@
       "amount": 1598020173.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 48.83,
       "limitDownPrice": 39.95
@@ -7253,7 +8867,7 @@
       "amount": 68616624.0,
       "quoteTimestamp": "2026-10-28T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603335.SH": {
@@ -7269,7 +8883,7 @@
       "amount": 44529116.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603334.SH": {
@@ -7285,7 +8899,7 @@
       "amount": 63992050.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603333.SH": {
@@ -7301,7 +8915,7 @@
       "amount": 59411011.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603332.SH": {
@@ -7317,7 +8931,7 @@
       "amount": 121190775.0,
       "quoteTimestamp": "2026-10-28T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603331.SH": {
@@ -7333,7 +8947,7 @@
       "amount": 359577746.0,
       "quoteTimestamp": "2026-10-28T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603330.SH": {
@@ -7349,7 +8963,7 @@
       "amount": 748008032.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603329.SH": {
@@ -7365,7 +8979,7 @@
       "amount": 61162730.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603328.SH": {
@@ -7381,7 +8995,7 @@
       "amount": 366069344.0,
       "quoteTimestamp": "2026-10-28T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603327.SH": {
@@ -7397,7 +9011,7 @@
       "amount": 70071280.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603326.SH": {
@@ -7413,7 +9027,7 @@
       "amount": 30921099.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603325.SH": {
@@ -7429,7 +9043,7 @@
       "amount": 68744248.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603324.SH": {
@@ -7445,7 +9059,7 @@
       "amount": 56651924.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603323.SH": {
@@ -7461,7 +9075,7 @@
       "amount": 144080875.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603322.SH": {
@@ -7477,7 +9091,7 @@
       "amount": 73668104.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603321.SH": {
@@ -7493,7 +9107,7 @@
       "amount": 41524663.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603320.SH": {
@@ -7509,7 +9123,7 @@
       "amount": 32182311.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603319.SH": {
@@ -7525,7 +9139,7 @@
       "amount": 420024380.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603318.SH": {
@@ -7541,7 +9155,7 @@
       "amount": 181519025.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603317.SH": {
@@ -7557,7 +9171,7 @@
       "amount": 89933528.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603316.SH": {
@@ -7573,7 +9187,7 @@
       "amount": 116520363.0,
       "quoteTimestamp": "2026-10-28T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603315.SH": {
@@ -7589,7 +9203,7 @@
       "amount": 42782803.0,
       "quoteTimestamp": "2026-10-28T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603313.SH": {
@@ -7605,7 +9219,7 @@
       "amount": 41513228.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603312.SH": {
@@ -7621,7 +9235,7 @@
       "amount": 21196106.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603311.SH": {
@@ -7637,7 +9251,7 @@
       "amount": 94833027.0,
       "quoteTimestamp": "2026-10-28T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603310.SH": {
@@ -7653,7 +9267,7 @@
       "amount": 8627550.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603309.SH": {
@@ -7669,7 +9283,7 @@
       "amount": 27074260.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603308.SH": {
@@ -7685,7 +9299,7 @@
       "amount": 500500262.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603307.SH": {
@@ -7701,7 +9315,7 @@
       "amount": 15975388.0,
       "quoteTimestamp": "2026-10-28T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603306.SH": {
@@ -7717,7 +9331,7 @@
       "amount": 834776965.0,
       "quoteTimestamp": "2026-10-28T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603305.SH": {
@@ -7733,7 +9347,7 @@
       "amount": 513847551.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603303.SH": {
@@ -7749,7 +9363,7 @@
       "amount": 207510017.0,
       "quoteTimestamp": "2026-10-28T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN",
       "limitUpPrice": 29.76,
       "limitDownPrice": 24.35
@@ -7767,7 +9381,7 @@
       "amount": 60843703.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603300.SH": {
@@ -7783,7 +9397,7 @@
       "amount": 85176303.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603299.SH": {
@@ -7799,7 +9413,7 @@
       "amount": 27669066.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603298.SH": {
@@ -7815,7 +9429,7 @@
       "amount": 538701279.0,
       "quoteTimestamp": "2026-10-28T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603297.SH": {
@@ -7831,7 +9445,7 @@
       "amount": 108282019.0,
       "quoteTimestamp": "2026-10-28T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603296.SH": {
@@ -7847,7 +9461,7 @@
       "amount": 753262507.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603293.SH": {
@@ -7863,7 +9477,7 @@
       "amount": 29652622.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603291.SH": {
@@ -7879,7 +9493,7 @@
       "amount": 23023009.0,
       "quoteTimestamp": "2026-10-28T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603290.SH": {
@@ -7895,7 +9509,7 @@
       "amount": 284482299.0,
       "quoteTimestamp": "2026-10-28T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603289.SH": {
@@ -7911,7 +9525,7 @@
       "amount": 42728727.0,
       "quoteTimestamp": "2026-10-28T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "603288.SH": {
@@ -7927,7 +9541,7 @@
       "amount": 661067842.0,
       "quoteTimestamp": "2026-10-28T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": false,
+      "stale": true,
       "segment": "SSE_MAIN"
     },
     "000949.SZ": {
@@ -32230,1248 +33844,6 @@
       "limitUpPrice": 14.53,
       "limitDownPrice": 11.89
     },
-    "002971.SZ": {
-      "symbol": "002971.SZ",
-      "code": "002971",
-      "name": "和远气体",
-      "price": 33.9,
-      "high": 34.6,
-      "low": 31.65,
-      "open": 32.0,
-      "preClose": 31.87,
-      "pct": 6.37,
-      "amount": 368150000.0,
-      "quoteTimestamp": "2026-10-28T16:14:39+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 35.06,
-      "limitDownPrice": 28.68
-    },
-    "002972.SZ": {
-      "symbol": "002972.SZ",
-      "code": "002972",
-      "name": "科安达",
-      "price": 12.17,
-      "high": 12.34,
-      "low": 11.8,
-      "open": 11.99,
-      "preClose": 11.99,
-      "pct": 1.5,
-      "amount": 52830000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 13.19,
-      "limitDownPrice": 10.79
-    },
-    "002973.SZ": {
-      "symbol": "002973.SZ",
-      "code": "002973",
-      "name": "侨银股份",
-      "price": 10.69,
-      "high": 10.99,
-      "low": 10.5,
-      "open": 10.5,
-      "preClose": 10.5,
-      "pct": 1.81,
-      "amount": 75110000.0,
-      "quoteTimestamp": "2026-10-28T16:15:00+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 11.55,
-      "limitDownPrice": 9.45
-    },
-    "002975.SZ": {
-      "symbol": "002975.SZ",
-      "code": "002975",
-      "name": "博杰股份",
-      "price": 85.12,
-      "high": 85.12,
-      "low": 78.0,
-      "open": 78.98,
-      "preClose": 77.38,
-      "pct": 10.0,
-      "amount": 852060000.0,
-      "quoteTimestamp": "2026-10-28T16:14:03+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 85.12,
-      "limitDownPrice": 69.64
-    },
-    "002976.SZ": {
-      "symbol": "002976.SZ",
-      "code": "002976",
-      "name": "瑞玛精密",
-      "price": 17.02,
-      "high": 17.25,
-      "low": 16.58,
-      "open": 16.79,
-      "preClose": 16.82,
-      "pct": 1.19,
-      "amount": 85480000.0,
-      "quoteTimestamp": "2026-10-28T16:14:15+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 18.5,
-      "limitDownPrice": 15.14
-    },
-    "002977.SZ": {
-      "symbol": "002977.SZ",
-      "code": "002977",
-      "name": "*ST天箭",
-      "price": 17.95,
-      "high": 18.17,
-      "low": 17.37,
-      "open": 17.8,
-      "preClose": 17.76,
-      "pct": 1.07,
-      "amount": 18170000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 19.54,
-      "limitDownPrice": 15.98
-    },
-    "002978.SZ": {
-      "symbol": "002978.SZ",
-      "code": "002978",
-      "name": "安宁股份",
-      "price": 23.93,
-      "high": 24.2,
-      "low": 23.78,
-      "open": 23.92,
-      "preClose": 23.91,
-      "pct": 0.08,
-      "amount": 35090000.0,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 26.3,
-      "limitDownPrice": 21.52
-    },
-    "002979.SZ": {
-      "symbol": "002979.SZ",
-      "code": "002979",
-      "name": "雷赛智能",
-      "price": 57.03,
-      "high": 60.35,
-      "low": 54.01,
-      "open": 55.54,
-      "preClose": 55.54,
-      "pct": 2.68,
-      "amount": 2179250000.0,
-      "quoteTimestamp": "2026-10-28T16:14:06+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 61.09,
-      "limitDownPrice": 49.99
-    },
-    "002980.SZ": {
-      "symbol": "002980.SZ",
-      "code": "002980",
-      "name": "华盛昌",
-      "price": 81.69,
-      "high": 83.0,
-      "low": 79.4,
-      "open": 82.0,
-      "preClose": 80.6,
-      "pct": 1.35,
-      "amount": 807550000.0,
-      "quoteTimestamp": "2026-10-28T16:14:42+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 88.66,
-      "limitDownPrice": 72.54
-    },
-    "002981.SZ": {
-      "symbol": "002981.SZ",
-      "code": "002981",
-      "name": "朝阳科技",
-      "price": 21.8,
-      "high": 21.98,
-      "low": 20.98,
-      "open": 21.04,
-      "preClose": 20.97,
-      "pct": 3.96,
-      "amount": 66270000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 23.07,
-      "limitDownPrice": 18.87
-    },
-    "002982.SZ": {
-      "symbol": "002982.SZ",
-      "code": "002982",
-      "name": "湘佳股份",
-      "price": 13.57,
-      "high": 13.78,
-      "low": 13.38,
-      "open": 13.59,
-      "preClose": 13.59,
-      "pct": -0.15,
-      "amount": 111880000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 14.95,
-      "limitDownPrice": 12.23
-    },
-    "002983.SZ": {
-      "symbol": "002983.SZ",
-      "code": "002983",
-      "name": "芯瑞达",
-      "price": 22.76,
-      "high": 23.46,
-      "low": 22.57,
-      "open": 22.9,
-      "preClose": 22.78,
-      "pct": -0.09,
-      "amount": 78890000.0,
-      "quoteTimestamp": "2026-10-28T16:15:00+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 25.06,
-      "limitDownPrice": 20.5
-    },
-    "002984.SZ": {
-      "symbol": "002984.SZ",
-      "code": "002984",
-      "name": "森麒麟",
-      "price": 11.98,
-      "high": 12.21,
-      "low": 11.74,
-      "open": 11.92,
-      "preClose": 12.04,
-      "pct": -0.5,
-      "amount": 138230000.0,
-      "quoteTimestamp": "2026-10-28T16:14:15+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 13.24,
-      "limitDownPrice": 10.84
-    },
-    "002985.SZ": {
-      "symbol": "002985.SZ",
-      "code": "002985",
-      "name": "北摩高科",
-      "price": 27.71,
-      "high": 28.27,
-      "low": 26.79,
-      "open": 26.84,
-      "preClose": 26.77,
-      "pct": 3.51,
-      "amount": 184770000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 29.45,
-      "limitDownPrice": 24.09
-    },
-    "002986.SZ": {
-      "symbol": "002986.SZ",
-      "code": "002986",
-      "name": "宇新股份",
-      "price": 10.19,
-      "high": 10.4,
-      "low": 10.05,
-      "open": 10.35,
-      "preClose": 10.31,
-      "pct": -1.16,
-      "amount": 75920000.0,
-      "quoteTimestamp": "2026-10-28T16:14:48+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 11.34,
-      "limitDownPrice": 9.28
-    },
-    "002987.SZ": {
-      "symbol": "002987.SZ",
-      "code": "002987",
-      "name": "京北方",
-      "price": 10.75,
-      "high": 10.92,
-      "low": 10.6,
-      "open": 10.73,
-      "preClose": 10.71,
-      "pct": 0.37,
-      "amount": 124820000.0,
-      "quoteTimestamp": "2026-10-28T16:14:09+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 11.78,
-      "limitDownPrice": 9.64
-    },
-    "002988.SZ": {
-      "symbol": "002988.SZ",
-      "code": "002988",
-      "name": "豪美新材",
-      "price": 28.22,
-      "high": 28.62,
-      "low": 26.46,
-      "open": 27.44,
-      "preClose": 27.66,
-      "pct": 2.02,
-      "amount": 204600000.0,
-      "quoteTimestamp": "2026-10-28T16:14:15+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 30.43,
-      "limitDownPrice": 24.89
-    },
-    "002989.SZ": {
-      "symbol": "002989.SZ",
-      "code": "002989",
-      "name": "中天精装",
-      "price": 18.8,
-      "high": 19.25,
-      "low": 17.81,
-      "open": 17.84,
-      "preClose": 17.53,
-      "pct": 7.24,
-      "amount": 132410000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 19.28,
-      "limitDownPrice": 15.78
-    },
-    "002990.SZ": {
-      "symbol": "002990.SZ",
-      "code": "002990",
-      "name": "盛视科技",
-      "price": 39.75,
-      "high": 41.18,
-      "low": 37.35,
-      "open": 41.09,
-      "preClose": 41.5,
-      "pct": -4.22,
-      "amount": 959050000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 45.65,
-      "limitDownPrice": 37.35
-    },
-    "002991.SZ": {
-      "symbol": "002991.SZ",
-      "code": "002991",
-      "name": "甘源食品",
-      "price": 38.71,
-      "high": 38.97,
-      "low": 38.23,
-      "open": 38.36,
-      "preClose": 38.66,
-      "pct": 0.13,
-      "amount": 33760000.0,
-      "quoteTimestamp": "2026-10-28T16:14:24+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 42.53,
-      "limitDownPrice": 34.79
-    },
-    "002992.SZ": {
-      "symbol": "002992.SZ",
-      "code": "002992",
-      "name": "宝明科技",
-      "price": 28.5,
-      "high": 28.9,
-      "low": 27.66,
-      "open": 27.72,
-      "preClose": 27.7,
-      "pct": 2.89,
-      "amount": 46720000.0,
-      "quoteTimestamp": "2026-10-28T16:14:15+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 30.47,
-      "limitDownPrice": 24.93
-    },
-    "002993.SZ": {
-      "symbol": "002993.SZ",
-      "code": "002993",
-      "name": "奥海科技",
-      "price": 28.97,
-      "high": 29.47,
-      "low": 28.47,
-      "open": 28.52,
-      "preClose": 28.32,
-      "pct": 2.3,
-      "amount": 110450000.0,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 31.15,
-      "limitDownPrice": 25.49
-    },
-    "002995.SZ": {
-      "symbol": "002995.SZ",
-      "code": "002995",
-      "name": "天地在线",
-      "price": 18.51,
-      "high": 18.85,
-      "low": 17.63,
-      "open": 18.34,
-      "preClose": 18.52,
-      "pct": -0.05,
-      "amount": 500960000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 20.37,
-      "limitDownPrice": 16.67
-    },
-    "002996.SZ": {
-      "symbol": "002996.SZ",
-      "code": "002996",
-      "name": "顺博合金",
-      "price": 5.63,
-      "high": 5.68,
-      "low": 5.56,
-      "open": 5.59,
-      "preClose": 5.56,
-      "pct": 1.26,
-      "amount": 20010000.0,
-      "quoteTimestamp": "2026-10-28T16:14:15+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 6.12,
-      "limitDownPrice": 5.0
-    },
-    "002997.SZ": {
-      "symbol": "002997.SZ",
-      "code": "002997",
-      "name": "瑞鹄模具",
-      "price": 24.55,
-      "high": 24.93,
-      "low": 23.61,
-      "open": 23.61,
-      "preClose": 23.57,
-      "pct": 4.16,
-      "amount": 87350000.0,
-      "quoteTimestamp": "2026-10-28T16:14:18+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 25.93,
-      "limitDownPrice": 21.21
-    },
-    "002998.SZ": {
-      "symbol": "002998.SZ",
-      "code": "002998",
-      "name": "优彩资源",
-      "price": 6.93,
-      "high": 7.06,
-      "low": 6.78,
-      "open": 6.91,
-      "preClose": 6.99,
-      "pct": -0.86,
-      "amount": 58750000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 7.69,
-      "limitDownPrice": 6.29
-    },
-    "002999.SZ": {
-      "symbol": "002999.SZ",
-      "code": "002999",
-      "name": "天禾股份",
-      "price": 5.63,
-      "high": 5.72,
-      "low": 5.57,
-      "open": 5.66,
-      "preClose": 5.62,
-      "pct": 0.18,
-      "amount": 36930000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 6.18,
-      "limitDownPrice": 5.06
-    },
-    "003000.SZ": {
-      "symbol": "003000.SZ",
-      "code": "003000",
-      "name": "劲仔食品",
-      "price": 8.99,
-      "high": 9.13,
-      "low": 8.95,
-      "open": 9.07,
-      "preClose": 9.1,
-      "pct": -1.21,
-      "amount": 33630000.0,
-      "quoteTimestamp": "2026-10-28T16:14:21+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 10.01,
-      "limitDownPrice": 8.19
-    },
-    "003001.SZ": {
-      "symbol": "003001.SZ",
-      "code": "003001",
-      "name": "中岩大地",
-      "price": 14.95,
-      "high": 15.18,
-      "low": 14.7,
-      "open": 14.91,
-      "preClose": 14.94,
-      "pct": 0.07,
-      "amount": 72100000.0,
-      "quoteTimestamp": "2026-10-28T16:14:54+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 16.43,
-      "limitDownPrice": 13.45
-    },
-    "003002.SZ": {
-      "symbol": "003002.SZ",
-      "code": "003002",
-      "name": "壶化股份",
-      "price": 13.27,
-      "high": 13.4,
-      "low": 13.0,
-      "open": 13.12,
-      "preClose": 13.08,
-      "pct": 1.45,
-      "amount": 56200000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 14.39,
-      "limitDownPrice": 11.77
-    },
-    "003003.SZ": {
-      "symbol": "003003.SZ",
-      "code": "003003",
-      "name": "天元股份",
-      "price": 9.89,
-      "high": 10.0,
-      "low": 9.6,
-      "open": 9.83,
-      "preClose": 9.81,
-      "pct": 0.82,
-      "amount": 29100000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 10.79,
-      "limitDownPrice": 8.83
-    },
-    "003004.SZ": {
-      "symbol": "003004.SZ",
-      "code": "003004",
-      "name": "声迅股份",
-      "price": 56.48,
-      "high": 56.94,
-      "low": 53.74,
-      "open": 56.0,
-      "preClose": 56.09,
-      "pct": 0.7,
-      "amount": 65010000.0,
-      "quoteTimestamp": "2026-10-28T16:14:06+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 61.7,
-      "limitDownPrice": 50.48
-    },
-    "003005.SZ": {
-      "symbol": "003005.SZ",
-      "code": "003005",
-      "name": "竞业达",
-      "price": 13.86,
-      "high": 14.05,
-      "low": 13.3,
-      "open": 13.8,
-      "preClose": 14.06,
-      "pct": -1.42,
-      "amount": 129700000.0,
-      "quoteTimestamp": "2026-10-28T16:14:33+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 15.47,
-      "limitDownPrice": 12.65
-    },
-    "003006.SZ": {
-      "symbol": "003006.SZ",
-      "code": "003006",
-      "name": "百亚股份",
-      "price": 23.09,
-      "high": 23.62,
-      "low": 22.64,
-      "open": 23.29,
-      "preClose": 23.02,
-      "pct": 0.3,
-      "amount": 927580000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 25.32,
-      "limitDownPrice": 20.72
-    },
-    "003007.SZ": {
-      "symbol": "003007.SZ",
-      "code": "003007",
-      "name": "直真科技",
-      "price": 37.48,
-      "high": 39.5,
-      "low": 36.97,
-      "open": 37.99,
-      "preClose": 35.91,
-      "pct": 4.37,
-      "amount": 227280000.0,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 39.5,
-      "limitDownPrice": 32.32
-    },
-    "003008.SZ": {
-      "symbol": "003008.SZ",
-      "code": "003008",
-      "name": "开普检测",
-      "price": 18.09,
-      "high": 18.35,
-      "low": 17.9,
-      "open": 17.93,
-      "preClose": 17.91,
-      "pct": 1.01,
-      "amount": 22260000.0,
-      "quoteTimestamp": "2026-10-28T16:14:21+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 19.7,
-      "limitDownPrice": 16.12
-    },
-    "003009.SZ": {
-      "symbol": "003009.SZ",
-      "code": "003009",
-      "name": "中天火箭",
-      "price": 43.27,
-      "high": 43.64,
-      "low": 41.22,
-      "open": 41.9,
-      "preClose": 41.89,
-      "pct": 3.29,
-      "amount": 201600000.0,
-      "quoteTimestamp": "2026-10-28T16:14:36+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 46.08,
-      "limitDownPrice": 37.7
-    },
-    "003010.SZ": {
-      "symbol": "003010.SZ",
-      "code": "003010",
-      "name": "若羽臣",
-      "price": 25.66,
-      "high": 25.93,
-      "low": 24.58,
-      "open": 24.8,
-      "preClose": 24.34,
-      "pct": 5.42,
-      "amount": 182690000.0,
-      "quoteTimestamp": "2026-10-28T16:14:39+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 26.77,
-      "limitDownPrice": 21.91
-    },
-    "003011.SZ": {
-      "symbol": "003011.SZ",
-      "code": "003011",
-      "name": "海象新材",
-      "price": 16.99,
-      "high": 17.12,
-      "low": 16.58,
-      "open": 16.72,
-      "preClose": 16.72,
-      "pct": 1.61,
-      "amount": 30860000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 18.39,
-      "limitDownPrice": 15.05
-    },
-    "003012.SZ": {
-      "symbol": "003012.SZ",
-      "code": "003012",
-      "name": "东鹏控股",
-      "price": 4.43,
-      "high": 4.47,
-      "low": 4.41,
-      "open": 4.41,
-      "preClose": 4.42,
-      "pct": 0.23,
-      "amount": 25650000.0,
-      "quoteTimestamp": "2026-10-28T16:14:42+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 4.86,
-      "limitDownPrice": 3.98
-    },
-    "003013.SZ": {
-      "symbol": "003013.SZ",
-      "code": "003013",
-      "name": "地铁设计",
-      "price": 15.82,
-      "high": 16.05,
-      "low": 14.5,
-      "open": 15.51,
-      "preClose": 15.62,
-      "pct": 1.28,
-      "amount": 163810000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 17.18,
-      "limitDownPrice": 14.06
-    },
-    "003015.SZ": {
-      "symbol": "003015.SZ",
-      "code": "003015",
-      "name": "日久光电",
-      "price": 12.0,
-      "high": 12.12,
-      "low": 11.55,
-      "open": 11.81,
-      "preClose": 11.63,
-      "pct": 3.18,
-      "amount": 76360000.0,
-      "quoteTimestamp": "2026-10-28T16:15:00+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 12.79,
-      "limitDownPrice": 10.47
-    },
-    "003016.SZ": {
-      "symbol": "003016.SZ",
-      "code": "003016",
-      "name": "欣贺股份",
-      "price": 6.69,
-      "high": 6.8,
-      "low": 6.55,
-      "open": 6.69,
-      "preClose": 6.84,
-      "pct": -2.19,
-      "amount": 47300000.0,
-      "quoteTimestamp": "2026-10-28T16:14:48+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 7.52,
-      "limitDownPrice": 6.16
-    },
-    "003017.SZ": {
-      "symbol": "003017.SZ",
-      "code": "003017",
-      "name": "大洋生物",
-      "price": 21.42,
-      "high": 22.84,
-      "low": 19.55,
-      "open": 20.56,
-      "preClose": 20.76,
-      "pct": 3.18,
-      "amount": 227850000.0,
-      "quoteTimestamp": "2026-10-28T16:14:24+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 22.84,
-      "limitDownPrice": 18.68
-    },
-    "003018.SZ": {
-      "symbol": "003018.SZ",
-      "code": "003018",
-      "name": "金富科技",
-      "price": 38.1,
-      "high": 38.12,
-      "low": 35.08,
-      "open": 35.63,
-      "preClose": 35.22,
-      "pct": 8.18,
-      "amount": 370580000.0,
-      "quoteTimestamp": "2026-10-28T16:14:24+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 38.74,
-      "limitDownPrice": 31.7
-    },
-    "003019.SZ": {
-      "symbol": "003019.SZ",
-      "code": "003019",
-      "name": "宸展光电",
-      "price": 24.05,
-      "high": 24.18,
-      "low": 23.25,
-      "open": 23.27,
-      "preClose": 23.27,
-      "pct": 3.35,
-      "amount": 50060000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 25.6,
-      "limitDownPrice": 20.94
-    },
-    "003020.SZ": {
-      "symbol": "003020.SZ",
-      "code": "003020",
-      "name": "立方制药",
-      "price": 15.74,
-      "high": 15.88,
-      "low": 15.55,
-      "open": 15.55,
-      "preClose": 15.52,
-      "pct": 1.42,
-      "amount": 30230000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 17.07,
-      "limitDownPrice": 13.97
-    },
-    "003021.SZ": {
-      "symbol": "003021.SZ",
-      "code": "003021",
-      "name": "兆威机电",
-      "price": 97.41,
-      "high": 101.75,
-      "low": 90.65,
-      "open": 92.5,
-      "preClose": 92.5,
-      "pct": 5.31,
-      "amount": 2082660000.0,
-      "quoteTimestamp": "2026-10-28T16:14:27+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 101.75,
-      "limitDownPrice": 83.25
-    },
-    "003022.SZ": {
-      "symbol": "003022.SZ",
-      "code": "003022",
-      "name": "联泓新科",
-      "price": 15.82,
-      "high": 16.04,
-      "low": 15.33,
-      "open": 15.49,
-      "preClose": 15.21,
-      "pct": 4.01,
-      "amount": 165890000.0,
-      "quoteTimestamp": "2026-10-28T16:14:15+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 16.73,
-      "limitDownPrice": 13.69
-    },
-    "003023.SZ": {
-      "symbol": "003023.SZ",
-      "code": "003023",
-      "name": "彩虹集团",
-      "price": 20.94,
-      "high": 21.17,
-      "low": 20.5,
-      "open": 20.7,
-      "preClose": 20.69,
-      "pct": 1.21,
-      "amount": 43190000.0,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 22.76,
-      "limitDownPrice": 18.62
-    },
-    "003025.SZ": {
-      "symbol": "003025.SZ",
-      "code": "003025",
-      "name": "思进智能",
-      "price": 11.89,
-      "high": 12.08,
-      "low": 11.6,
-      "open": 11.6,
-      "preClose": 11.57,
-      "pct": 2.77,
-      "amount": 41640000.0,
-      "quoteTimestamp": "2026-10-28T16:14:54+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 12.73,
-      "limitDownPrice": 10.41
-    },
-    "003026.SZ": {
-      "symbol": "003026.SZ",
-      "code": "003026",
-      "name": "中晶科技",
-      "price": 28.76,
-      "high": 30.61,
-      "low": 28.01,
-      "open": 30.61,
-      "preClose": 27.83,
-      "pct": 3.34,
-      "amount": 869710000.0,
-      "quoteTimestamp": "2026-10-28T16:14:06+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 30.61,
-      "limitDownPrice": 25.05
-    },
-    "003027.SZ": {
-      "symbol": "003027.SZ",
-      "code": "003027",
-      "name": "同兴科技",
-      "price": 14.73,
-      "high": 14.97,
-      "low": 14.48,
-      "open": 14.48,
-      "preClose": 14.48,
-      "pct": 1.73,
-      "amount": 27810000.0,
-      "quoteTimestamp": "2026-10-28T16:14:27+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 15.93,
-      "limitDownPrice": 13.03
-    },
-    "003028.SZ": {
-      "symbol": "003028.SZ",
-      "code": "003028",
-      "name": "振邦智能",
-      "price": 25.91,
-      "high": 25.91,
-      "low": 23.49,
-      "open": 23.49,
-      "preClose": 23.55,
-      "pct": 10.02,
-      "amount": 105870000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 25.91,
-      "limitDownPrice": 21.2
-    },
-    "003029.SZ": {
-      "symbol": "003029.SZ",
-      "code": "003029",
-      "name": "吉大正元",
-      "price": 18.23,
-      "high": 18.7,
-      "low": 17.7,
-      "open": 18.7,
-      "preClose": 18.81,
-      "pct": -3.08,
-      "amount": 609840000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 20.69,
-      "limitDownPrice": 16.93
-    },
-    "003030.SZ": {
-      "symbol": "003030.SZ",
-      "code": "003030",
-      "name": "祖名股份",
-      "price": 22.32,
-      "high": 22.76,
-      "low": 21.41,
-      "open": 21.5,
-      "preClose": 21.68,
-      "pct": 2.95,
-      "amount": 55340000.0,
-      "quoteTimestamp": "2026-10-28T16:14:33+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 23.85,
-      "limitDownPrice": 19.51
-    },
-    "003031.SZ": {
-      "symbol": "003031.SZ",
-      "code": "003031",
-      "name": "中瓷电子",
-      "price": 93.06,
-      "high": 94.38,
-      "low": 90.02,
-      "open": 92.22,
-      "preClose": 90.01,
-      "pct": 3.39,
-      "amount": 482010000.0,
-      "quoteTimestamp": "2026-10-28T16:14:36+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 99.01,
-      "limitDownPrice": 81.01
-    },
-    "003032.SZ": {
-      "symbol": "003032.SZ",
-      "code": "003032",
-      "name": "传智教育",
-      "price": 8.23,
-      "high": 8.36,
-      "low": 7.45,
-      "open": 7.67,
-      "preClose": 7.73,
-      "pct": 6.47,
-      "amount": 244670000.0,
-      "quoteTimestamp": "2026-10-28T16:14:39+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 8.5,
-      "limitDownPrice": 6.96
-    },
-    "003033.SZ": {
-      "symbol": "003033.SZ",
-      "code": "003033",
-      "name": "征和工业",
-      "price": 81.42,
-      "high": 83.1,
-      "low": 75.18,
-      "open": 77.55,
-      "preClose": 77.37,
-      "pct": 5.23,
-      "amount": 196520000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 85.11,
-      "limitDownPrice": 69.63
-    },
-    "003035.SZ": {
-      "symbol": "003035.SZ",
-      "code": "003035",
-      "name": "南网能源",
-      "price": 4.95,
-      "high": 4.98,
-      "low": 4.85,
-      "open": 4.86,
-      "preClose": 4.82,
-      "pct": 2.7,
-      "amount": 102770000.0,
-      "quoteTimestamp": "2026-10-28T16:14:12+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 5.3,
-      "limitDownPrice": 4.34
-    },
-    "003036.SZ": {
-      "symbol": "003036.SZ",
-      "code": "003036",
-      "name": "泰坦股份",
-      "price": 31.86,
-      "high": 32.8,
-      "low": 31.3,
-      "open": 32.18,
-      "preClose": 31.45,
-      "pct": 1.3,
-      "amount": 196290000.0,
-      "quoteTimestamp": "2026-10-28T16:14:33+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 34.6,
-      "limitDownPrice": 28.31
-    },
-    "003037.SZ": {
-      "symbol": "003037.SZ",
-      "code": "003037",
-      "name": "三和管桩",
-      "price": 5.39,
-      "high": 5.45,
-      "low": 5.3,
-      "open": 5.44,
-      "preClose": 5.41,
-      "pct": -0.37,
-      "amount": 51900000.0,
-      "quoteTimestamp": "2026-10-28T16:14:33+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 5.95,
-      "limitDownPrice": 4.87
-    },
-    "003038.SZ": {
-      "symbol": "003038.SZ",
-      "code": "003038",
-      "name": "鑫铂股份",
-      "price": 10.0,
-      "high": 10.43,
-      "low": 9.7,
-      "open": 9.81,
-      "preClose": 9.79,
-      "pct": 2.15,
-      "amount": 50550000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 10.77,
-      "limitDownPrice": 8.81
-    },
-    "003039.SZ": {
-      "symbol": "003039.SZ",
-      "code": "003039",
-      "name": "顺控发展",
-      "price": 12.05,
-      "high": 12.18,
-      "low": 11.95,
-      "open": 12.06,
-      "preClose": 12.02,
-      "pct": 0.25,
-      "amount": 47600000.0,
-      "quoteTimestamp": "2026-10-28T16:14:39+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 13.22,
-      "limitDownPrice": 10.82
-    },
-    "003040.SZ": {
-      "symbol": "003040.SZ",
-      "code": "003040",
-      "name": "楚天龙",
-      "price": 12.79,
-      "high": 12.9,
-      "low": 12.54,
-      "open": 12.66,
-      "preClose": 12.75,
-      "pct": 0.31,
-      "amount": 356330000.0,
-      "quoteTimestamp": "2026-10-28T16:14:42+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 14.03,
-      "limitDownPrice": 11.48
-    },
-    "003041.SZ": {
-      "symbol": "003041.SZ",
-      "code": "003041",
-      "name": "真爱美家",
-      "price": 34.04,
-      "high": 34.85,
-      "low": 33.1,
-      "open": 34.85,
-      "preClose": 33.79,
-      "pct": 0.74,
-      "amount": 60090000.0,
-      "quoteTimestamp": "2026-10-28T16:14:42+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 37.17,
-      "limitDownPrice": 30.41
-    },
-    "003042.SZ": {
-      "symbol": "003042.SZ",
-      "code": "003042",
-      "name": "中农联合",
-      "price": 12.68,
-      "high": 12.87,
-      "low": 12.4,
-      "open": 12.68,
-      "preClose": 12.78,
-      "pct": -0.78,
-      "amount": 32800000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 14.06,
-      "limitDownPrice": 11.5
-    },
-    "003043.SZ": {
-      "symbol": "003043.SZ",
-      "code": "003043",
-      "name": "华亚智能",
-      "price": 49.69,
-      "high": 49.96,
-      "low": 47.22,
-      "open": 47.88,
-      "preClose": 47.16,
-      "pct": 5.36,
-      "amount": 224940000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 51.88,
-      "limitDownPrice": 42.44
-    },
-    "003816.SZ": {
-      "symbol": "003816.SZ",
-      "code": "003816",
-      "name": "中国广核",
-      "price": 4.57,
-      "high": 4.68,
-      "low": 4.55,
-      "open": 4.61,
-      "preClose": 4.62,
-      "pct": -1.08,
-      "amount": 771560000.0,
-      "quoteTimestamp": "2026-10-28T16:14:15+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 5.08,
-      "limitDownPrice": 4.16
-    },
     "300001.SZ": {
       "symbol": "300001.SZ",
       "code": "300001",
@@ -34371,564 +34743,6 @@
       "segment": "SZSE_MAIN",
       "limitUpPrice": 1.89,
       "limitDownPrice": 1.55
-    },
-    "002937.SZ": {
-      "symbol": "002937.SZ",
-      "code": "002937",
-      "name": "兴瑞科技",
-      "price": 20.65,
-      "high": 20.9,
-      "low": 19.82,
-      "open": 19.98,
-      "preClose": 19.9,
-      "pct": 3.77,
-      "amount": 120120000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 21.89,
-      "limitDownPrice": 17.91
-    },
-    "002938.SZ": {
-      "symbol": "002938.SZ",
-      "code": "002938",
-      "name": "鹏鼎控股",
-      "price": 68.01,
-      "high": 68.88,
-      "low": 66.5,
-      "open": 66.5,
-      "preClose": 65.52,
-      "pct": 3.8,
-      "amount": 1201570000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 72.07,
-      "limitDownPrice": 58.97
-    },
-    "002939.SZ": {
-      "symbol": "002939.SZ",
-      "code": "002939",
-      "name": "长城证券",
-      "price": 7.3,
-      "high": 7.38,
-      "low": 7.3,
-      "open": 7.38,
-      "preClose": 7.31,
-      "pct": -0.14,
-      "amount": 81580000.0,
-      "quoteTimestamp": "2026-10-28T16:14:18+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 8.04,
-      "limitDownPrice": 6.58
-    },
-    "002940.SZ": {
-      "symbol": "002940.SZ",
-      "code": "002940",
-      "name": "昂利康",
-      "price": 23.28,
-      "high": 23.43,
-      "low": 22.1,
-      "open": 23.12,
-      "preClose": 23.05,
-      "pct": 1.0,
-      "amount": 342870000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 25.36,
-      "limitDownPrice": 20.75
-    },
-    "002941.SZ": {
-      "symbol": "002941.SZ",
-      "code": "002941",
-      "name": "新疆交建",
-      "price": 11.1,
-      "high": 11.16,
-      "low": 10.75,
-      "open": 10.96,
-      "preClose": 10.93,
-      "pct": 1.56,
-      "amount": 226500000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 12.02,
-      "limitDownPrice": 9.84
-    },
-    "002942.SZ": {
-      "symbol": "002942.SZ",
-      "code": "002942",
-      "name": "新农股份",
-      "price": 15.35,
-      "high": 15.49,
-      "low": 15.0,
-      "open": 15.1,
-      "preClose": 15.07,
-      "pct": 1.86,
-      "amount": 30810000.0,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 16.58,
-      "limitDownPrice": 13.56
-    },
-    "002943.SZ": {
-      "symbol": "002943.SZ",
-      "code": "002943",
-      "name": "宇晶股份",
-      "price": 25.11,
-      "high": 25.11,
-      "low": 22.78,
-      "open": 23.15,
-      "preClose": 22.83,
-      "pct": 9.99,
-      "amount": 211620000.0,
-      "quoteTimestamp": "2026-10-28T16:14:15+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 25.11,
-      "limitDownPrice": 20.55
-    },
-    "002945.SZ": {
-      "symbol": "002945.SZ",
-      "code": "002945",
-      "name": "华林证券",
-      "price": 14.5,
-      "high": 14.88,
-      "low": 14.23,
-      "open": 14.81,
-      "preClose": 14.76,
-      "pct": -1.76,
-      "amount": 444550000.0,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 16.24,
-      "limitDownPrice": 13.28
-    },
-    "002946.SZ": {
-      "symbol": "002946.SZ",
-      "code": "002946",
-      "name": "新乳业",
-      "price": 14.26,
-      "high": 14.46,
-      "low": 14.01,
-      "open": 14.14,
-      "preClose": 14.19,
-      "pct": 0.49,
-      "amount": 134940000.0,
-      "quoteTimestamp": "2026-10-28T16:14:54+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 15.61,
-      "limitDownPrice": 12.77
-    },
-    "002947.SZ": {
-      "symbol": "002947.SZ",
-      "code": "002947",
-      "name": "恒铭达",
-      "price": 47.55,
-      "high": 48.14,
-      "low": 46.28,
-      "open": 47.02,
-      "preClose": 46.28,
-      "pct": 2.74,
-      "amount": 201960000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 50.91,
-      "limitDownPrice": 41.65
-    },
-    "002948.SZ": {
-      "symbol": "002948.SZ",
-      "code": "002948",
-      "name": "青岛银行",
-      "price": 5.86,
-      "high": 5.88,
-      "low": 5.81,
-      "open": 5.83,
-      "preClose": 5.84,
-      "pct": 0.34,
-      "amount": 161000000.0,
-      "quoteTimestamp": "2026-10-28T16:14:24+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 6.42,
-      "limitDownPrice": 5.26
-    },
-    "002949.SZ": {
-      "symbol": "002949.SZ",
-      "code": "002949",
-      "name": "华阳国际",
-      "price": 12.01,
-      "high": 12.38,
-      "low": 11.7,
-      "open": 11.99,
-      "preClose": 12.24,
-      "pct": -1.88,
-      "amount": 83860000.0,
-      "quoteTimestamp": "2026-10-28T16:14:54+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 13.46,
-      "limitDownPrice": 11.02
-    },
-    "002950.SZ": {
-      "symbol": "002950.SZ",
-      "code": "002950",
-      "name": "奥美医疗",
-      "price": 8.39,
-      "high": 8.4,
-      "low": 8.2,
-      "open": 8.27,
-      "preClose": 8.22,
-      "pct": 2.07,
-      "amount": 37010000.0,
-      "quoteTimestamp": "2026-10-28T16:14:48+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 9.04,
-      "limitDownPrice": 7.4
-    },
-    "002951.SZ": {
-      "symbol": "002951.SZ",
-      "code": "002951",
-      "name": "金时科技",
-      "price": 14.86,
-      "high": 14.94,
-      "low": 14.2,
-      "open": 14.2,
-      "preClose": 14.22,
-      "pct": 4.5,
-      "amount": 109120000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 15.64,
-      "limitDownPrice": 12.8
-    },
-    "002952.SZ": {
-      "symbol": "002952.SZ",
-      "code": "002952",
-      "name": "亚世光电",
-      "price": 17.97,
-      "high": 18.15,
-      "low": 17.55,
-      "open": 17.66,
-      "preClose": 17.56,
-      "pct": 2.33,
-      "amount": 47750000.0,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 19.32,
-      "limitDownPrice": 15.8
-    },
-    "002953.SZ": {
-      "symbol": "002953.SZ",
-      "code": "002953",
-      "name": "日丰股份",
-      "price": 9.55,
-      "high": 9.68,
-      "low": 9.23,
-      "open": 9.3,
-      "preClose": 9.19,
-      "pct": 3.92,
-      "amount": 76750000.0,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 10.11,
-      "limitDownPrice": 8.27
-    },
-    "002955.SZ": {
-      "symbol": "002955.SZ",
-      "code": "002955",
-      "name": "鸿合科技",
-      "price": 28.08,
-      "high": 28.34,
-      "low": 27.5,
-      "open": 27.91,
-      "preClose": 27.39,
-      "pct": 2.52,
-      "amount": 99120000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 30.13,
-      "limitDownPrice": 24.65
-    },
-    "002956.SZ": {
-      "symbol": "002956.SZ",
-      "code": "002956",
-      "name": "西麦食品",
-      "price": 18.21,
-      "high": 18.96,
-      "low": 17.91,
-      "open": 18.58,
-      "preClose": 18.57,
-      "pct": -1.94,
-      "amount": 137620000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 20.43,
-      "limitDownPrice": 16.71
-    },
-    "002957.SZ": {
-      "symbol": "002957.SZ",
-      "code": "002957",
-      "name": "科瑞技术",
-      "price": 27.88,
-      "high": 28.18,
-      "low": 26.7,
-      "open": 27.68,
-      "preClose": 26.8,
-      "pct": 4.03,
-      "amount": 363870000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 29.48,
-      "limitDownPrice": 24.12
-    },
-    "002958.SZ": {
-      "symbol": "002958.SZ",
-      "code": "002958",
-      "name": "青农商行",
-      "price": 2.86,
-      "high": 2.89,
-      "low": 2.85,
-      "open": 2.87,
-      "preClose": 2.88,
-      "pct": -0.69,
-      "amount": 158160000.0,
-      "quoteTimestamp": "2026-10-28T16:14:48+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 3.17,
-      "limitDownPrice": 2.59
-    },
-    "002959.SZ": {
-      "symbol": "002959.SZ",
-      "code": "002959",
-      "name": "小熊电器",
-      "price": 33.59,
-      "high": 33.84,
-      "low": 32.4,
-      "open": 33.45,
-      "preClose": 33.64,
-      "pct": -0.15,
-      "amount": 79430000.0,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 37.0,
-      "limitDownPrice": 30.28
-    },
-    "002960.SZ": {
-      "symbol": "002960.SZ",
-      "code": "002960",
-      "name": "青鸟智控",
-      "price": 8.47,
-      "high": 8.92,
-      "low": 8.43,
-      "open": 8.56,
-      "preClose": 8.56,
-      "pct": -1.05,
-      "amount": 143710000.0,
-      "quoteTimestamp": "2026-10-28T16:15:00+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 9.42,
-      "limitDownPrice": 7.7
-    },
-    "002961.SZ": {
-      "symbol": "002961.SZ",
-      "code": "002961",
-      "name": "瑞达期货",
-      "price": 11.36,
-      "high": 12.2,
-      "low": 11.36,
-      "open": 12.0,
-      "preClose": 12.62,
-      "pct": -9.98,
-      "amount": 357820000.0,
-      "quoteTimestamp": "2026-10-28T16:14:33+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 13.88,
-      "limitDownPrice": 11.36
-    },
-    "002962.SZ": {
-      "symbol": "002962.SZ",
-      "code": "002962",
-      "name": "五方光电",
-      "price": 12.83,
-      "high": 12.83,
-      "low": 11.85,
-      "open": 12.0,
-      "preClose": 11.66,
-      "pct": 10.03,
-      "amount": 254110000.0,
-      "quoteTimestamp": "2026-10-28T16:14:51+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 12.83,
-      "limitDownPrice": 10.49
-    },
-    "002963.SZ": {
-      "symbol": "002963.SZ",
-      "code": "002963",
-      "name": "豪尔赛",
-      "price": 16.1,
-      "high": 16.43,
-      "low": 15.77,
-      "open": 16.09,
-      "preClose": 16.02,
-      "pct": 0.5,
-      "amount": 64550000.0,
-      "quoteTimestamp": "2026-10-28T16:14:54+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 17.62,
-      "limitDownPrice": 14.42
-    },
-    "002965.SZ": {
-      "symbol": "002965.SZ",
-      "code": "002965",
-      "name": "祥鑫科技",
-      "price": 24.64,
-      "high": 25.48,
-      "low": 23.29,
-      "open": 23.33,
-      "preClose": 23.22,
-      "pct": 6.12,
-      "amount": 459910000.0,
-      "quoteTimestamp": "2026-10-28T16:14:57+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 25.54,
-      "limitDownPrice": 20.9
-    },
-    "002966.SZ": {
-      "symbol": "002966.SZ",
-      "code": "002966",
-      "name": "苏州银行",
-      "price": 9.34,
-      "high": 9.58,
-      "low": 9.33,
-      "open": 9.47,
-      "preClose": 9.48,
-      "pct": -1.48,
-      "amount": 391450000.0,
-      "quoteTimestamp": "2026-10-28T16:15:00+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 10.43,
-      "limitDownPrice": 8.53
-    },
-    "002967.SZ": {
-      "symbol": "002967.SZ",
-      "code": "002967",
-      "name": "广电计量",
-      "price": 17.38,
-      "high": 17.46,
-      "low": 16.89,
-      "open": 17.0,
-      "preClose": 17.0,
-      "pct": 2.24,
-      "amount": 82800000.0,
-      "quoteTimestamp": "2026-10-28T16:14:21+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 18.7,
-      "limitDownPrice": 15.3
-    },
-    "002968.SZ": {
-      "symbol": "002968.SZ",
-      "code": "002968",
-      "name": "新大正",
-      "price": 8.82,
-      "high": 8.95,
-      "low": 8.69,
-      "open": 8.7,
-      "preClose": 8.61,
-      "pct": 2.44,
-      "amount": 33050000.0,
-      "quoteTimestamp": "2026-10-28T16:14:30+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 9.47,
-      "limitDownPrice": 7.75
-    },
-    "002969.SZ": {
-      "symbol": "002969.SZ",
-      "code": "002969",
-      "name": "嘉美包装",
-      "price": 10.04,
-      "high": 10.4,
-      "low": 9.52,
-      "open": 9.79,
-      "preClose": 9.63,
-      "pct": 4.26,
-      "amount": 448890000.0,
-      "quoteTimestamp": "2026-10-28T16:14:45+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 10.59,
-      "limitDownPrice": 8.67
-    },
-    "002970.SZ": {
-      "symbol": "002970.SZ",
-      "code": "002970",
-      "name": "锐明技术",
-      "price": 35.81,
-      "high": 36.6,
-      "low": 35.11,
-      "open": 35.55,
-      "preClose": 35.55,
-      "pct": 0.73,
-      "amount": 116150000.0,
-      "quoteTimestamp": "2026-10-28T16:14:54+08:00",
-      "source": "Tencent",
-      "stale": true,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 39.11,
-      "limitDownPrice": 32.0
     },
     "300088.SZ": {
       "symbol": "300088.SZ",
