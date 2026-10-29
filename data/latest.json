@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-29T19:39:42.250478+08:00",
-    "lastSuccessfulAt": "2026-10-29T19:39:42.250478+08:00",
+    "generatedAt": "2026-10-29T19:46:01.292580+08:00",
+    "lastSuccessfulAt": "2026-10-29T19:46:01.292580+08:00",
     "quoteTimestamp": "2026-10-29T16:12:01+08:00",
     "tradingDate": "2026-10-29",
     "stale": false,
@@ -26,12 +26,11 @@
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 3: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 3: HTTP Error 502: Bad Gateway",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 605089.SH: Remote end closed connection without response",
-      "Daily limits 605100.SH: Remote end closed connection without response"
+      "Daily history 605089.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
