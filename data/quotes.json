@@ -1,8 +1,8 @@
 {
   "meta": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-29T15:37:45.992908+08:00",
-    "quoteTimestamp": "2026-10-29T15:37:57+08:00",
+    "generatedAt": "2026-10-29T15:40:10.219449+08:00",
+    "quoteTimestamp": "2026-10-29T15:40:15+08:00",
     "tradingDate": "2026-10-29",
     "stale": false,
     "source": "Eastmoney with Tencent cache-symbol fallback",
@@ -21,7 +21,7 @@
       "preClose": 12.78,
       "pct": 1.33,
       "amount": 74355558.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -37,10 +37,12 @@
       "preClose": 22.64,
       "pct": 9.98,
       "amount": 137500626.0,
-      "quoteTimestamp": "2026-10-29T15:37:37+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:07+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 24.9,
+      "limitDownPrice": 20.38
     },
     "605589.SH": {
       "symbol": "605589.SH",
@@ -53,7 +55,7 @@
       "preClose": 29.57,
       "pct": -3.72,
       "amount": 429145167.0,
-      "quoteTimestamp": "2026-10-29T15:37:33+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:03+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -69,7 +71,7 @@
       "preClose": 38.09,
       "pct": -2.55,
       "amount": 38857374.0,
-      "quoteTimestamp": "2026-10-29T15:37:39+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:09+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -85,7 +87,7 @@
       "preClose": 16.7,
       "pct": -3.11,
       "amount": 162774107.0,
-      "quoteTimestamp": "2026-10-29T15:37:37+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:07+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -101,7 +103,7 @@
       "preClose": 13.77,
       "pct": -7.77,
       "amount": 434409862.0,
-      "quoteTimestamp": "2026-10-29T15:37:45+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:45+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -117,7 +119,7 @@
       "preClose": 8.67,
       "pct": -1.38,
       "amount": 50568344.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -133,10 +135,12 @@
       "preClose": 28.6,
       "pct": -6.99,
       "amount": 243649330.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 31.46,
+      "limitDownPrice": 25.74
     },
     "605555.SH": {
       "symbol": "605555.SH",
@@ -149,7 +153,7 @@
       "preClose": 11.61,
       "pct": -6.12,
       "amount": 129200477.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -165,7 +169,7 @@
       "preClose": 14.81,
       "pct": -2.09,
       "amount": 67409427.0,
-      "quoteTimestamp": "2026-10-29T15:37:33+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:03+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -181,7 +185,7 @@
       "preClose": 6.95,
       "pct": -2.3,
       "amount": 16433528.0,
-      "quoteTimestamp": "2026-10-29T15:37:30+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:00+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -197,7 +201,7 @@
       "preClose": 103.42,
       "pct": -1.31,
       "amount": 315529909.0,
-      "quoteTimestamp": "2026-10-29T15:37:36+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:06+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -213,7 +217,7 @@
       "preClose": 48.61,
       "pct": -1.97,
       "amount": 1804452437.0,
-      "quoteTimestamp": "2026-10-29T15:37:34+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:04+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN",
@@ -231,7 +235,7 @@
       "preClose": 11.35,
       "pct": -6.78,
       "amount": 62196583.0,
-      "quoteTimestamp": "2026-10-29T15:37:42+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:12+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -247,7 +251,7 @@
       "preClose": 22.07,
       "pct": -1.0,
       "amount": 84089941.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -263,7 +267,7 @@
       "preClose": 59.96,
       "pct": 3.12,
       "amount": 135210634.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -279,7 +283,7 @@
       "preClose": 6.36,
       "pct": -1.89,
       "amount": 84675027.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -295,7 +299,7 @@
       "preClose": 13.58,
       "pct": -3.98,
       "amount": 41783915.0,
-      "quoteTimestamp": "2026-10-29T15:37:30+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:00+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -311,7 +315,7 @@
       "preClose": 7.61,
       "pct": 0.79,
       "amount": 49326500.0,
-      "quoteTimestamp": "2026-10-29T15:37:27+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:57+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -327,7 +331,7 @@
       "preClose": 79.02,
       "pct": -6.28,
       "amount": 542972637.0,
-      "quoteTimestamp": "2026-10-29T15:37:33+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:03+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -343,7 +347,7 @@
       "preClose": 17.59,
       "pct": -0.28,
       "amount": 35664151.0,
-      "quoteTimestamp": "2026-10-29T15:37:31+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:01+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -359,7 +363,7 @@
       "preClose": 6.48,
       "pct": -1.39,
       "amount": 13234109.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -375,7 +379,7 @@
       "preClose": 7.74,
       "pct": -7.36,
       "amount": 333011516.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -391,7 +395,7 @@
       "preClose": 13.34,
       "pct": -2.55,
       "amount": 39735634.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -407,7 +411,7 @@
       "preClose": 32.38,
       "pct": -5.62,
       "amount": 778246160.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -423,7 +427,7 @@
       "preClose": 13.26,
       "pct": -0.23,
       "amount": 28603545.0,
-      "quoteTimestamp": "2026-10-29T15:37:27+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:57+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -439,10 +443,12 @@
       "preClose": 17.25,
       "pct": 10.03,
       "amount": 95984658.0,
-      "quoteTimestamp": "2026-10-29T15:37:54+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 18.98,
+      "limitDownPrice": 15.53
     },
     "605337.SH": {
       "symbol": "605337.SH",
@@ -455,7 +461,7 @@
       "preClose": 8.84,
       "pct": -0.23,
       "amount": 19271433.0,
-      "quoteTimestamp": "2026-10-29T15:37:30+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:00+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -471,7 +477,7 @@
       "preClose": 10.22,
       "pct": -3.91,
       "amount": 7795271.0,
-      "quoteTimestamp": "2026-10-29T15:37:28+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:58+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -487,10 +493,12 @@
       "preClose": 20.81,
       "pct": -5.09,
       "amount": 473349070.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 22.89,
+      "limitDownPrice": 18.73
     },
     "605319.SH": {
       "symbol": "605319.SH",
@@ -503,7 +511,7 @@
       "preClose": 21.28,
       "pct": -5.08,
       "amount": 91551733.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -519,7 +527,7 @@
       "preClose": 70.3,
       "pct": -2.18,
       "amount": 57614415.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -535,7 +543,7 @@
       "preClose": 27.49,
       "pct": -3.78,
       "amount": 83089966.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -551,7 +559,7 @@
       "preClose": 21.8,
       "pct": -5.18,
       "amount": 59017876.0,
-      "quoteTimestamp": "2026-10-29T15:37:54+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:54+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -567,7 +575,7 @@
       "preClose": 9.46,
       "pct": -2.11,
       "amount": 24957449.0,
-      "quoteTimestamp": "2026-10-29T15:37:51+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:51+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -583,7 +591,7 @@
       "preClose": 11.06,
       "pct": -3.71,
       "amount": 70804096.0,
-      "quoteTimestamp": "2026-10-29T15:37:27+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:57+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -599,7 +607,7 @@
       "preClose": 41.43,
       "pct": -2.32,
       "amount": 22751707.0,
-      "quoteTimestamp": "2026-10-29T15:37:55+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:55+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -615,7 +623,7 @@
       "preClose": 29.68,
       "pct": 0.34,
       "amount": 49414621.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -631,7 +639,7 @@
       "preClose": 67.08,
       "pct": -5.14,
       "amount": 145411595.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -647,10 +655,12 @@
       "preClose": 65.4,
       "pct": -2.22,
       "amount": 207672785.0,
-      "quoteTimestamp": "2026-10-29T15:37:26+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 71.94,
+      "limitDownPrice": 58.86
     },
     "605287.SH": {
       "symbol": "605287.SH",
@@ -663,7 +673,7 @@
       "preClose": 47.53,
       "pct": -0.02,
       "amount": 525442080.0,
-      "quoteTimestamp": "2026-10-29T15:37:26+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN",
@@ -681,7 +691,7 @@
       "preClose": 22.78,
       "pct": -3.99,
       "amount": 30170869.0,
-      "quoteTimestamp": "2026-10-29T15:37:51+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:51+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -697,7 +707,7 @@
       "preClose": 15.46,
       "pct": -9.96,
       "amount": 195285045.0,
-      "quoteTimestamp": "2026-10-29T15:37:48+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:48+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -713,7 +723,7 @@
       "preClose": 9.11,
       "pct": -2.52,
       "amount": 23364828.0,
-      "quoteTimestamp": "2026-10-29T15:37:54+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:54+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -729,7 +739,7 @@
       "preClose": 15.39,
       "pct": -1.1,
       "amount": 13325622.0,
-      "quoteTimestamp": "2026-10-29T15:37:52+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:52+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -745,7 +755,7 @@
       "preClose": 17.28,
       "pct": -0.12,
       "amount": 13122254.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -761,7 +771,7 @@
       "preClose": 50.18,
       "pct": -4.3,
       "amount": 31696437.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -777,7 +787,7 @@
       "preClose": 10.63,
       "pct": -3.86,
       "amount": 42127976.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -793,7 +803,7 @@
       "preClose": 18.83,
       "pct": -0.42,
       "amount": 61386679.0,
-      "quoteTimestamp": "2026-10-29T15:37:48+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:48+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -809,7 +819,7 @@
       "preClose": 12.98,
       "pct": -4.93,
       "amount": 51995739.0,
-      "quoteTimestamp": "2026-10-29T15:37:45+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:45+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -825,7 +835,7 @@
       "preClose": 11.5,
       "pct": -6.52,
       "amount": 100262417.0,
-      "quoteTimestamp": "2026-10-29T15:37:51+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:51+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -841,7 +851,7 @@
       "preClose": 5.36,
       "pct": -0.37,
       "amount": 3133286.0,
-      "quoteTimestamp": "2026-10-29T15:37:49+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:49+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -857,7 +867,7 @@
       "preClose": 57.32,
       "pct": -5.97,
       "amount": 93271553.0,
-      "quoteTimestamp": "2026-10-29T15:37:26+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -873,7 +883,7 @@
       "preClose": 27.95,
       "pct": -3.72,
       "amount": 298152320.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -889,7 +899,7 @@
       "preClose": 16.05,
       "pct": -6.36,
       "amount": 279857172.0,
-      "quoteTimestamp": "2026-10-29T15:37:50+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:50+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -905,7 +915,7 @@
       "preClose": 11.98,
       "pct": -4.51,
       "amount": 150977545.0,
-      "quoteTimestamp": "2026-10-29T15:37:50+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:50+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -921,7 +931,7 @@
       "preClose": 23.45,
       "pct": -2.64,
       "amount": 32742931.0,
-      "quoteTimestamp": "2026-10-29T15:37:45+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:45+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -937,7 +947,7 @@
       "preClose": 14.65,
       "pct": -2.12,
       "amount": 15913176.0,
-      "quoteTimestamp": "2026-10-29T15:37:42+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:12+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -953,7 +963,7 @@
       "preClose": 12.46,
       "pct": -1.61,
       "amount": 16179143.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -969,12 +979,10 @@
       "preClose": 21.61,
       "pct": 10.0,
       "amount": 889176464.0,
-      "quoteTimestamp": "2026-10-29T15:37:46+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:46+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 23.77,
-      "limitDownPrice": 19.45
+      "segment": "SSE_MAIN"
     },
     "605178.SH": {
       "symbol": "605178.SH",
@@ -987,7 +995,7 @@
       "preClose": 62.08,
       "pct": -5.22,
       "amount": 114902956.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1003,7 +1011,7 @@
       "preClose": 21.2,
       "pct": -0.09,
       "amount": 86562924.0,
-      "quoteTimestamp": "2026-10-29T15:37:50+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:50+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1019,7 +1027,7 @@
       "preClose": 11.8,
       "pct": -1.53,
       "amount": 23002079.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1035,7 +1043,7 @@
       "preClose": 41.88,
       "pct": -4.01,
       "amount": 104330401.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1051,7 +1059,7 @@
       "preClose": 13.83,
       "pct": 0.58,
       "amount": 39106217.0,
-      "quoteTimestamp": "2026-10-29T15:37:42+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:12+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1067,7 +1075,7 @@
       "preClose": 7.7,
       "pct": -2.08,
       "amount": 19624743.0,
-      "quoteTimestamp": "2026-10-29T15:37:39+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:09+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1083,7 +1091,7 @@
       "preClose": 8.17,
       "pct": -2.2,
       "amount": 56653356.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:44+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1099,7 +1107,7 @@
       "preClose": 6.71,
       "pct": -2.24,
       "amount": 24355437.0,
-      "quoteTimestamp": "2026-10-29T15:37:43+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:13+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1115,7 +1123,7 @@
       "preClose": 13.25,
       "pct": -2.19,
       "amount": 12654534.0,
-      "quoteTimestamp": "2026-10-29T15:37:50+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:50+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1131,7 +1139,7 @@
       "preClose": 17.0,
       "pct": -2.06,
       "amount": 21378711.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1147,7 +1155,7 @@
       "preClose": 5.54,
       "pct": -2.17,
       "amount": 14639442.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:44+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1163,7 +1171,7 @@
       "preClose": 8.79,
       "pct": -3.98,
       "amount": 151084791.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:14+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1179,7 +1187,7 @@
       "preClose": 26.4,
       "pct": -2.08,
       "amount": 236941708.0,
-      "quoteTimestamp": "2026-10-29T15:37:39+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:09+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1195,7 +1203,7 @@
       "preClose": 22.33,
       "pct": -4.84,
       "amount": 76941769.0,
-      "quoteTimestamp": "2026-10-29T15:37:36+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:06+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1211,7 +1219,7 @@
       "preClose": 73.48,
       "pct": 3.16,
       "amount": 184213919.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1227,7 +1235,7 @@
       "preClose": 11.33,
       "pct": -3.44,
       "amount": 23398622.0,
-      "quoteTimestamp": "2026-10-29T15:37:40+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:10+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1243,7 +1251,7 @@
       "preClose": 30.82,
       "pct": 6.39,
       "amount": 484484939.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN",
@@ -1261,7 +1269,7 @@
       "preClose": 68.82,
       "pct": -0.68,
       "amount": 541681463.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:14+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1277,7 +1285,7 @@
       "preClose": 18.34,
       "pct": -1.04,
       "amount": 23402273.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1293,7 +1301,7 @@
       "preClose": 39.37,
       "pct": -3.61,
       "amount": 545206822.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1309,7 +1317,7 @@
       "preClose": 11.52,
       "pct": -0.26,
       "amount": 20991070.0,
-      "quoteTimestamp": "2026-10-29T15:37:36+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:06+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1325,7 +1333,7 @@
       "preClose": 34.64,
       "pct": 6.47,
       "amount": 331393509.0,
-      "quoteTimestamp": "2026-10-29T15:37:33+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:03+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN",
@@ -1343,7 +1351,7 @@
       "preClose": 26.46,
       "pct": -1.74,
       "amount": 25419684.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1359,7 +1367,7 @@
       "preClose": 52.17,
       "pct": -0.17,
       "amount": 34214332.0,
-      "quoteTimestamp": "2026-10-29T15:37:37+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:07+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1375,7 +1383,7 @@
       "preClose": 29.1,
       "pct": -0.07,
       "amount": 385647294.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:44+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1391,7 +1399,7 @@
       "preClose": 20.31,
       "pct": -3.45,
       "amount": 49164624.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN",
@@ -1409,7 +1417,7 @@
       "preClose": 20.62,
       "pct": -6.01,
       "amount": 121177744.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1425,7 +1433,7 @@
       "preClose": 20.37,
       "pct": -2.75,
       "amount": 22148660.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1441,7 +1449,7 @@
       "preClose": 23.72,
       "pct": -0.21,
       "amount": 45109165.0,
-      "quoteTimestamp": "2026-10-29T15:37:33+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:03+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1457,7 +1465,7 @@
       "preClose": 10.33,
       "pct": -2.71,
       "amount": 35704130.0,
-      "quoteTimestamp": "2026-10-29T15:37:30+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:00+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1473,7 +1481,7 @@
       "preClose": 9.96,
       "pct": -2.21,
       "amount": 34658089.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1489,10 +1497,12 @@
       "preClose": 19.43,
       "pct": -7.82,
       "amount": 137617082.0,
-      "quoteTimestamp": "2026-10-29T15:37:34+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:04+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 21.37,
+      "limitDownPrice": 17.49
     },
     "605066.SH": {
       "symbol": "605066.SH",
@@ -1505,7 +1515,7 @@
       "preClose": 6.36,
       "pct": -2.83,
       "amount": 27206599.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1521,7 +1531,7 @@
       "preClose": 32.16,
       "pct": -6.56,
       "amount": 170354597.0,
-      "quoteTimestamp": "2026-10-29T15:37:37+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:07+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1537,7 +1547,7 @@
       "preClose": 50.77,
       "pct": -10.01,
       "amount": 680301141.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1553,7 +1563,7 @@
       "preClose": 12.66,
       "pct": 2.69,
       "amount": 279235680.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1569,10 +1579,12 @@
       "preClose": 7.95,
       "pct": -2.39,
       "amount": 96405174.0,
-      "quoteTimestamp": "2026-10-29T15:37:30+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:00+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 8.75,
+      "limitDownPrice": 7.16
     },
     "605050.SH": {
       "symbol": "605050.SH",
@@ -1585,7 +1597,7 @@
       "preClose": 9.96,
       "pct": -2.21,
       "amount": 21336123.0,
-      "quoteTimestamp": "2026-10-29T15:37:26+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1601,7 +1613,7 @@
       "preClose": 17.31,
       "pct": -1.21,
       "amount": 24940760.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1617,7 +1629,7 @@
       "preClose": 22.04,
       "pct": -1.45,
       "amount": 24859921.0,
-      "quoteTimestamp": "2026-10-29T15:37:31+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:01+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1633,7 +1645,7 @@
       "preClose": 28.66,
       "pct": -2.13,
       "amount": 155455477.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1649,7 +1661,7 @@
       "preClose": 11.18,
       "pct": -3.58,
       "amount": 37437269.0,
-      "quoteTimestamp": "2026-10-29T15:37:34+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:04+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1665,7 +1677,7 @@
       "preClose": 17.71,
       "pct": -0.85,
       "amount": 31113588.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1681,7 +1693,7 @@
       "preClose": 16.05,
       "pct": -1.5,
       "amount": 60269835.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1697,7 +1709,7 @@
       "preClose": 22.98,
       "pct": -1.57,
       "amount": 39945433.0,
-      "quoteTimestamp": "2026-10-29T15:37:57+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:57+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1713,7 +1725,7 @@
       "preClose": 11.12,
       "pct": -5.94,
       "amount": 52890449.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1729,7 +1741,7 @@
       "preClose": 12.74,
       "pct": -3.3,
       "amount": 55323751.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1745,7 +1757,7 @@
       "preClose": 12.8,
       "pct": 0.16,
       "amount": 510241102.0,
-      "quoteTimestamp": "2026-10-29T15:37:28+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:58+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1761,7 +1773,7 @@
       "preClose": 15.5,
       "pct": -1.74,
       "amount": 16628760.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1777,7 +1789,7 @@
       "preClose": 26.57,
       "pct": -10.01,
       "amount": 77556805.0,
-      "quoteTimestamp": "2026-10-29T15:37:31+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:01+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1793,7 +1805,7 @@
       "preClose": 5.33,
       "pct": 0.0,
       "amount": 20641157.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1809,7 +1821,7 @@
       "preClose": 6.48,
       "pct": -0.31,
       "amount": 141941386.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1825,7 +1837,7 @@
       "preClose": 10.49,
       "pct": -6.86,
       "amount": 248512563.0,
-      "quoteTimestamp": "2026-10-29T15:37:54+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:54+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1841,12 +1853,10 @@
       "preClose": 12.11,
       "pct": -3.47,
       "amount": 458131183.0,
-      "quoteTimestamp": "2026-10-29T15:37:50+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:50+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 13.32,
-      "limitDownPrice": 10.9
+      "segment": "SSE_MAIN"
     },
     "603995.SH": {
       "symbol": "603995.SH",
@@ -1859,7 +1869,7 @@
       "preClose": 22.35,
       "pct": -3.04,
       "amount": 71011566.0,
-      "quoteTimestamp": "2026-10-29T15:37:56+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1875,7 +1885,7 @@
       "preClose": 14.06,
       "pct": -0.57,
       "amount": 1393362204.0,
-      "quoteTimestamp": "2026-10-29T15:37:55+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:55+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1891,7 +1901,7 @@
       "preClose": 22.67,
       "pct": -3.4,
       "amount": 302692941.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN",
@@ -1909,7 +1919,7 @@
       "preClose": 130.08,
       "pct": -3.48,
       "amount": 209974240.0,
-      "quoteTimestamp": "2026-10-29T15:37:28+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:58+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1925,7 +1935,7 @@
       "preClose": 18.89,
       "pct": -2.59,
       "amount": 217524125.0,
-      "quoteTimestamp": "2026-10-29T15:37:56+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1941,7 +1951,7 @@
       "preClose": 21.78,
       "pct": -4.82,
       "amount": 196472731.0,
-      "quoteTimestamp": "2026-10-29T15:37:55+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:55+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1957,7 +1967,7 @@
       "preClose": 16.3,
       "pct": -3.25,
       "amount": 58049805.0,
-      "quoteTimestamp": "2026-10-29T15:37:51+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:51+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1973,7 +1983,7 @@
       "preClose": 7.13,
       "pct": -1.82,
       "amount": 16311038.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -1989,7 +1999,7 @@
       "preClose": 289.88,
       "pct": -4.79,
       "amount": 9912559654.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2005,7 +2015,7 @@
       "preClose": 14.75,
       "pct": -2.03,
       "amount": 91722260.0,
-      "quoteTimestamp": "2026-10-29T15:37:52+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:52+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2021,7 +2031,7 @@
       "preClose": 24.76,
       "pct": -2.3,
       "amount": 41386409.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2037,7 +2047,7 @@
       "preClose": 6.26,
       "pct": -5.11,
       "amount": 35812348.0,
-      "quoteTimestamp": "2026-10-29T15:37:55+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:55+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2053,7 +2063,7 @@
       "preClose": 8.45,
       "pct": -4.14,
       "amount": 271040474.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2069,7 +2079,7 @@
       "preClose": 59.88,
       "pct": -1.8,
       "amount": 315285021.0,
-      "quoteTimestamp": "2026-10-29T15:37:52+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:52+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2085,7 +2095,7 @@
       "preClose": 20.7,
       "pct": -4.2,
       "amount": 126094293.0,
-      "quoteTimestamp": "2026-10-29T15:37:48+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:48+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2101,7 +2111,7 @@
       "preClose": 9.77,
       "pct": -0.2,
       "amount": 44519136.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:14+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2117,7 +2127,7 @@
       "preClose": 30.15,
       "pct": -2.06,
       "amount": 103029377.0,
-      "quoteTimestamp": "2026-10-29T15:37:50+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:50+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2133,7 +2143,7 @@
       "preClose": 10.09,
       "pct": -3.57,
       "amount": 37010503.0,
-      "quoteTimestamp": "2026-10-29T15:37:49+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:49+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2149,7 +2159,7 @@
       "preClose": 5.98,
       "pct": -2.17,
       "amount": 81573733.0,
-      "quoteTimestamp": "2026-10-29T15:37:56+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2165,7 +2175,7 @@
       "preClose": 10.44,
       "pct": -2.49,
       "amount": 90352959.0,
-      "quoteTimestamp": "2026-10-29T15:37:52+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:52+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2181,7 +2191,7 @@
       "preClose": 12.21,
       "pct": 0.0,
       "amount": 31775183.0,
-      "quoteTimestamp": "2026-10-29T15:37:50+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:50+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2197,7 +2207,7 @@
       "preClose": 6.93,
       "pct": -1.59,
       "amount": 26133302.0,
-      "quoteTimestamp": "2026-10-29T15:37:49+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:49+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2213,7 +2223,7 @@
       "preClose": 15.02,
       "pct": -4.19,
       "amount": 67768040.0,
-      "quoteTimestamp": "2026-10-29T15:37:45+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:15+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2229,7 +2239,7 @@
       "preClose": 3.68,
       "pct": -4.08,
       "amount": 17568330.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:14+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2245,7 +2255,7 @@
       "preClose": 16.07,
       "pct": -1.49,
       "amount": 80753044.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2261,7 +2271,7 @@
       "preClose": 6.33,
       "pct": -6.95,
       "amount": 114189779.0,
-      "quoteTimestamp": "2026-10-29T15:37:45+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:15+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2277,7 +2287,7 @@
       "preClose": 26.18,
       "pct": 1.34,
       "amount": 233494776.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2293,7 +2303,7 @@
       "preClose": 41.2,
       "pct": -6.55,
       "amount": 170297194.0,
-      "quoteTimestamp": "2026-10-29T15:37:49+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:49+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2309,7 +2319,7 @@
       "preClose": 13.88,
       "pct": -3.82,
       "amount": 77705344.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2325,7 +2335,7 @@
       "preClose": 18.17,
       "pct": -3.14,
       "amount": 35981734.0,
-      "quoteTimestamp": "2026-10-29T15:37:46+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:46+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2341,7 +2351,7 @@
       "preClose": 24.91,
       "pct": 1.16,
       "amount": 181699649.0,
-      "quoteTimestamp": "2026-10-29T15:37:42+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:12+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2357,7 +2367,7 @@
       "preClose": 32.27,
       "pct": -5.52,
       "amount": 275553175.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2373,7 +2383,7 @@
       "preClose": 10.79,
       "pct": -2.78,
       "amount": 45061084.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:14+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2389,7 +2399,7 @@
       "preClose": 14.04,
       "pct": -8.05,
       "amount": 466396819.0,
-      "quoteTimestamp": "2026-10-29T15:37:42+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:12+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2405,7 +2415,7 @@
       "preClose": 18.35,
       "pct": -4.47,
       "amount": 272898154.0,
-      "quoteTimestamp": "2026-10-29T15:37:50+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:50+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2421,7 +2431,7 @@
       "preClose": 27.2,
       "pct": -4.56,
       "amount": 90972183.0,
-      "quoteTimestamp": "2026-10-29T15:37:46+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:46+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2437,7 +2447,7 @@
       "preClose": 104.65,
       "pct": -2.83,
       "amount": 424483807.0,
-      "quoteTimestamp": "2026-10-29T15:37:43+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:13+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2453,7 +2463,7 @@
       "preClose": 10.81,
       "pct": 0.0,
       "amount": 117444493.0,
-      "quoteTimestamp": "2026-10-29T15:37:43+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:13+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2469,7 +2479,7 @@
       "preClose": 14.2,
       "pct": -3.03,
       "amount": 214744203.0,
-      "quoteTimestamp": "2026-10-29T15:37:39+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:09+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2485,12 +2495,10 @@
       "preClose": 17.06,
       "pct": -2.58,
       "amount": 173934659.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 18.77,
-      "limitDownPrice": 15.35
+      "segment": "SSE_MAIN"
     },
     "603922.SH": {
       "symbol": "603922.SH",
@@ -2503,7 +2511,7 @@
       "preClose": 10.39,
       "pct": -0.38,
       "amount": 6258172.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2519,12 +2527,10 @@
       "preClose": 37.85,
       "pct": -7.71,
       "amount": 1140206720.0,
-      "quoteTimestamp": "2026-10-29T15:37:39+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:09+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 41.64,
-      "limitDownPrice": 34.07
+      "segment": "SSE_MAIN"
     },
     "603919.SH": {
       "symbol": "603919.SH",
@@ -2537,7 +2543,7 @@
       "preClose": 15.72,
       "pct": -2.42,
       "amount": 164201745.0,
-      "quoteTimestamp": "2026-10-29T15:37:47+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:47+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2553,7 +2559,7 @@
       "preClose": 10.21,
       "pct": -2.45,
       "amount": 101058506.0,
-      "quoteTimestamp": "2026-10-29T15:37:43+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:13+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2569,7 +2575,7 @@
       "preClose": 12.28,
       "pct": -2.44,
       "amount": 31146333.0,
-      "quoteTimestamp": "2026-10-29T15:37:40+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:10+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2585,7 +2591,7 @@
       "preClose": 9.33,
       "pct": -2.14,
       "amount": 47683597.0,
-      "quoteTimestamp": "2026-10-29T15:37:40+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:10+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2601,7 +2607,7 @@
       "preClose": 13.62,
       "pct": -3.6,
       "amount": 99297614.0,
-      "quoteTimestamp": "2026-10-29T15:37:36+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:06+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2617,7 +2623,7 @@
       "preClose": 6.92,
       "pct": -4.77,
       "amount": 96715481.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2633,7 +2639,7 @@
       "preClose": 9.15,
       "pct": -0.98,
       "amount": 16898016.0,
-      "quoteTimestamp": "2026-10-29T15:37:38+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:08+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2649,7 +2655,7 @@
       "preClose": 17.99,
       "pct": -2.95,
       "amount": 20160935.0,
-      "quoteTimestamp": "2026-10-29T15:37:36+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:06+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2665,7 +2671,7 @@
       "preClose": 14.68,
       "pct": -3.54,
       "amount": 180461858.0,
-      "quoteTimestamp": "2026-10-29T15:37:44+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:14+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2681,7 +2687,7 @@
       "preClose": 11.83,
       "pct": -4.48,
       "amount": 49275872.0,
-      "quoteTimestamp": "2026-10-29T15:37:40+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:10+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2697,12 +2703,10 @@
       "preClose": 10.85,
       "pct": -4.98,
       "amount": 320998677.0,
-      "quoteTimestamp": "2026-10-29T15:37:37+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:07+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 11.94,
-      "limitDownPrice": 9.77
+      "segment": "SSE_MAIN"
     },
     "603900.SH": {
       "symbol": "603900.SH",
@@ -2715,7 +2719,7 @@
       "preClose": 5.58,
       "pct": -2.15,
       "amount": 23918370.0,
-      "quoteTimestamp": "2026-10-29T15:37:37+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:07+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2731,7 +2735,7 @@
       "preClose": 21.42,
       "pct": 0.75,
       "amount": 39777957.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2747,7 +2751,7 @@
       "preClose": 12.05,
       "pct": -0.83,
       "amount": 40021982.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2763,12 +2767,10 @@
       "preClose": 26.43,
       "pct": -4.39,
       "amount": 376819194.0,
-      "quoteTimestamp": "2026-10-29T15:37:35+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:05+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 29.07,
-      "limitDownPrice": 23.79
+      "segment": "SSE_MAIN"
     },
     "603896.SH": {
       "symbol": "603896.SH",
@@ -2781,7 +2783,7 @@
       "preClose": 13.85,
       "pct": -1.66,
       "amount": 13861148.0,
-      "quoteTimestamp": "2026-10-29T15:37:33+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:03+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2797,7 +2799,7 @@
       "preClose": 24.72,
       "pct": -0.49,
       "amount": 24058571.0,
-      "quoteTimestamp": "2026-10-29T15:37:41+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:11+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2813,7 +2815,7 @@
       "preClose": 206.32,
       "pct": -7.86,
       "amount": 2321944004.0,
-      "quoteTimestamp": "2026-10-29T15:37:37+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:07+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN",
@@ -2831,7 +2833,7 @@
       "preClose": 13.27,
       "pct": -5.8,
       "amount": 219667738.0,
-      "quoteTimestamp": "2026-10-29T15:37:34+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:04+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2847,7 +2849,7 @@
       "preClose": 6.31,
       "pct": -0.32,
       "amount": 80560881.0,
-      "quoteTimestamp": "2026-10-29T15:37:34+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:04+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2863,7 +2865,7 @@
       "preClose": 16.69,
       "pct": -1.74,
       "amount": 165033622.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2879,7 +2881,7 @@
       "preClose": 7.42,
       "pct": -2.43,
       "amount": 78889807.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2895,7 +2897,7 @@
       "preClose": 13.71,
       "pct": 1.6,
       "amount": 183440716.0,
-      "quoteTimestamp": "2026-10-29T15:37:32+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:02+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2911,7 +2913,7 @@
       "preClose": 9.37,
       "pct": 1.17,
       "amount": 89182023.0,
-      "quoteTimestamp": "2026-10-29T15:37:30+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:00+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2927,7 +2929,7 @@
       "preClose": 14.6,
       "pct": -0.75,
       "amount": 116458475.0,
-      "quoteTimestamp": "2026-10-29T15:37:37+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:07+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2943,7 +2945,7 @@
       "preClose": 31.61,
       "pct": -9.55,
       "amount": 778515195.0,
-      "quoteTimestamp": "2026-10-29T15:37:34+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:04+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2959,7 +2961,7 @@
       "preClose": 20.48,
       "pct": -2.78,
       "amount": 287151073.0,
-      "quoteTimestamp": "2026-10-29T15:37:31+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:01+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2975,7 +2977,7 @@
       "preClose": 7.91,
       "pct": -0.63,
       "amount": 61468672.0,
-      "quoteTimestamp": "2026-10-29T15:37:31+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:01+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -2991,7 +2993,7 @@
       "preClose": 4.4,
       "pct": -1.14,
       "amount": 29550143.0,
-      "quoteTimestamp": "2026-10-29T15:37:56+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3007,7 +3009,7 @@
       "preClose": 4.38,
       "pct": -3.2,
       "amount": 31123867.0,
-      "quoteTimestamp": "2026-10-29T15:37:56+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3023,7 +3025,7 @@
       "preClose": 11.95,
       "pct": -2.51,
       "amount": 14934254.0,
-      "quoteTimestamp": "2026-10-29T15:37:29+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:59+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3039,7 +3041,7 @@
       "preClose": 14.6,
       "pct": -2.74,
       "amount": 146031449.0,
-      "quoteTimestamp": "2026-10-29T15:37:57+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:57+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3055,7 +3057,7 @@
       "preClose": 10.87,
       "pct": 3.96,
       "amount": 171053290.0,
-      "quoteTimestamp": "2026-10-29T15:37:34+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:04+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3071,7 +3073,7 @@
       "preClose": 7.83,
       "pct": -2.81,
       "amount": 3389765.0,
-      "quoteTimestamp": "2026-10-29T15:37:31+08:00",
+      "quoteTimestamp": "2026-10-29T15:40:01+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3087,7 +3089,7 @@
       "preClose": 34.22,
       "pct": 1.46,
       "amount": 258053570.0,
-      "quoteTimestamp": "2026-10-29T15:37:28+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:58+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN",
@@ -3105,7 +3107,7 @@
       "preClose": 27.68,
       "pct": -2.85,
       "amount": 109279999.0,
-      "quoteTimestamp": "2026-10-29T15:37:28+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:58+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3121,7 +3123,7 @@
       "preClose": 4.11,
       "pct": 0.97,
       "amount": 43216069.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3137,7 +3139,7 @@
       "preClose": 12.09,
       "pct": -2.07,
       "amount": 43564054.0,
-      "quoteTimestamp": "2026-10-29T15:37:53+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:53+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3153,7 +3155,7 @@
       "preClose": 10.64,
       "pct": -7.05,
       "amount": 124064325.0,
-      "quoteTimestamp": "2026-10-29T15:37:56+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:56+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
@@ -3169,7 +3171,7 @@
       "preClose": 24.92,
       "pct": -0.48,
       "amount": 24247049.0,
-      "quoteTimestamp": "2026-10-29T15:37:54+08:00",
+      "quoteTimestamp": "2026-10-29T15:39:54+08:00",
       "source": "Eastmoney",
       "stale": false,
       "segment": "SSE_MAIN"
