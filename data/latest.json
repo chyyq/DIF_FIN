@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-29T20:51:25.294539+08:00",
-    "lastSuccessfulAt": "2026-10-29T20:51:25.294539+08:00",
+    "generatedAt": "2026-10-29T21:18:42.614873+08:00",
+    "lastSuccessfulAt": "2026-10-29T21:18:42.614873+08:00",
     "quoteTimestamp": "2026-10-29T16:12:01+08:00",
     "tradingDate": "2026-10-29",
     "stale": false,
@@ -17,7 +17,7 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "98 symbols received; pagination can be partial and is reported separately"
+        "note": "198 symbols received; pagination can be partial and is reported separately"
       },
       {
         "name": "Tencent-history",
@@ -27,11 +27,20 @@
     ],
     "errors": [
       "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 2: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 605089.SH: Remote end closed connection without response",
-      "Daily limits 605068.SH: Remote end closed connection without response"
+      "Daily history 002943.SZ: Remote end closed connection without response",
+      "Daily limits 002988.SZ: Remote end closed connection without response",
+      "Daily limits 003021.SZ: Remote end closed connection without response",
+      "Daily limits 002979.SZ: HTTP Error 502: Bad Gateway",
+      "Daily limits 605100.SH: Remote end closed connection without response",
+      "Daily limits 002948.SZ: Remote end closed connection without response",
+      "Daily limits 605598.SH: Remote end closed connection without response",
+      "Daily limits 002949.SZ: Remote end closed connection without response",
+      "Daily limits 002963.SZ: Remote end closed connection without response",
+      "Daily limits 003011.SZ: Remote end closed connection without response",
+      "Daily limits 605055.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -1055,8 +1064,8 @@
   ],
   "stats": {
     "candidateCount": 2,
-    "eventCount": 342,
-    "quoteCount": 98,
+    "eventCount": 343,
+    "quoteCount": 198,
     "watchCount": 2,
     "readyCount": 0
   },
