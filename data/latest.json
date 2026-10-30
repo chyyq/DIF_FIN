@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-30T19:39:00.966211+08:00",
-    "lastSuccessfulAt": "2026-10-30T19:39:00.966211+08:00",
-    "quoteTimestamp": "2026-10-30T16:15:00+08:00",
+    "generatedAt": "2026-10-30T20:01:22.920575+08:00",
+    "lastSuccessfulAt": "2026-10-30T20:01:22.920575+08:00",
+    "quoteTimestamp": "2026-10-30T16:12:01+08:00",
     "tradingDate": "2026-10-30",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,19 +15,54 @@
         "note": "Actual historical daily bars; no intraday confirmation"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney",
         "ok": true,
-        "note": "5222 requested symbols received with reported daily limits; security/account metadata unverified"
+        "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Sina-universe",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "Enumerated 5576 symbols; complete=True; explicit board exclusions complete=True"
+        "note": "493 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 6: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
+      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily limits 603838.SH: Remote end closed connection without response",
+      "Daily limits 603868.SH: Remote end closed connection without response",
+      "Daily limits 603366.SH: Remote end closed connection without response",
+      "Daily limits 605338.SH: Remote end closed connection without response",
+      "Daily limits 605488.SH: Remote end closed connection without response",
+      "Daily limits 605089.SH: Remote end closed connection without response",
+      "Daily limits 605366.SH: Remote end closed connection without response",
+      "Daily limits 605060.SH: Remote end closed connection without response",
+      "Daily limits 603992.SH: Remote end closed connection without response",
+      "Daily limits 605068.SH: Remote end closed connection without response",
+      "Daily limits 603677.SH: Remote end closed connection without response",
+      "Daily limits 603626.SH: Remote end closed connection without response",
+      "Daily limits 605566.SH: Remote end closed connection without response",
+      "Daily limits 605333.SH: Remote end closed connection without response",
+      "Daily limits 603466.SH: Remote end closed connection without response",
+      "Daily limits 603893.SH: Remote end closed connection without response",
+      "Daily limits 605288.SH: Remote end closed connection without response",
+      "Daily limits 603721.SH: Remote end closed connection without response",
+      "Daily limits 605287.SH: Remote end closed connection without response",
+      "Daily limits 603533.SH: Remote end closed connection without response",
+      "Daily limits 603703.SH: Remote end closed connection without response",
+      "Daily limits 603528.SH: Remote end closed connection without response",
+      "Daily limits 603369.SH: Remote end closed connection without response",
+      "Daily limits 603587.SH: Remote end closed connection without response",
+      "Daily limits 603919.SH: Remote end closed connection without response",
+      "Daily limits 603330.SH: Remote end closed connection without response",
+      "Daily limits 603538.SH: Remote end closed connection without response",
+      "Daily limits 603456.SH: Remote end closed connection without response",
+      "Daily limits 603990.SH: Remote end closed connection without response",
+      "Daily limits 605339.SH: Remote end closed connection without response",
+      "Daily limits 603915.SH: Remote end closed connection without response",
+      "Daily limits 603328.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -926,10 +961,11 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -955,7 +991,7 @@
       "price": 178.81,
       "high": 190.53,
       "low": 178.67,
-      "quoteTimestamp": "2026-10-30T16:14:53+08:00",
+      "quoteTimestamp": "2026-10-30T16:11:46+08:00",
       "limitDownPrice": 171.09,
       "eventDayIndex": 5,
       "expiresOn": null,
@@ -1038,6 +1074,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1058,8 +1095,8 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 461,
-    "quoteCount": 5222,
-    "watchCount": 1,
+    "quoteCount": 493,
+    "watchCount": 2,
     "readyCount": 0
   },
   "learning": {
