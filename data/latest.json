@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-30T21:10:24.180437+08:00",
-    "lastSuccessfulAt": "2026-10-30T21:10:24.180437+08:00",
+    "generatedAt": "2026-10-30T21:14:28.359611+08:00",
+    "lastSuccessfulAt": "2026-10-30T21:14:28.359611+08:00",
     "quoteTimestamp": "2026-10-30T16:12:01+08:00",
     "tradingDate": "2026-10-30",
     "stale": false,
@@ -31,9 +31,16 @@
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily limits 605339.SH: HTTP Error 502: Bad Gateway",
+      "Daily limits 603893.SH: Remote end closed connection without response",
+      "Daily limits 603933.SH: Remote end closed connection without response",
+      "Daily limits 605287.SH: Remote end closed connection without response",
+      "Daily limits 605338.SH: Remote end closed connection without response",
+      "Daily limits 603919.SH: Remote end closed connection without response",
       "Daily limits 605118.SH: Remote end closed connection without response",
-      "Daily limits 603990.SH: Remote end closed connection without response"
+      "Daily limits 605339.SH: Remote end closed connection without response",
+      "Daily limits 603915.SH: Remote end closed connection without response",
+      "Daily limits 605598.SH: Remote end closed connection without response",
+      "Daily limits 605255.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -1045,6 +1052,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
