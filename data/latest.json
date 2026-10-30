@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-30T15:21:41.487756+08:00",
-    "lastSuccessfulAt": "2026-10-30T15:21:41.487756+08:00",
-    "quoteTimestamp": "2026-10-30T15:21:47+08:00",
+    "generatedAt": "2026-10-30T15:30:16.790549+08:00",
+    "lastSuccessfulAt": "2026-10-30T15:30:16.790549+08:00",
+    "quoteTimestamp": "2026-10-30T15:30:25+08:00",
     "tradingDate": "2026-10-30",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -17,7 +17,7 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "296 symbols received; pagination can be partial and is reported separately"
+        "note": "98 symbols received; pagination can be partial and is reported separately"
       },
       {
         "name": "Tencent-history",
@@ -26,38 +26,12 @@
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 3: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 2: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 003032.SZ: Remote end closed connection without response",
-      "Daily limits 003021.SZ: Remote end closed connection without response",
-      "Daily limits 002945.SZ: Remote end closed connection without response",
-      "Daily limits 002988.SZ: Remote end closed connection without response",
-      "Daily limits 605060.SH: Remote end closed connection without response",
-      "Daily limits 002962.SZ: Remote end closed connection without response",
-      "Daily limits 002975.SZ: Remote end closed connection without response",
-      "Daily limits 002943.SZ: Remote end closed connection without response",
-      "Daily limits 603893.SH: Remote end closed connection without response",
-      "Daily limits 605566.SH: Remote end closed connection without response",
-      "Daily limits 003007.SZ: Remote end closed connection without response",
-      "Daily limits 605288.SH: Remote end closed connection without response",
-      "Daily limits 002979.SZ: Remote end closed connection without response",
-      "Daily limits 605287.SH: Remote end closed connection without response",
-      "Daily limits 002995.SZ: Remote end closed connection without response",
-      "Daily limits 003028.SZ: Remote end closed connection without response",
-      "Daily limits 605338.SH: Remote end closed connection without response",
-      "Daily limits 002946.SZ: Remote end closed connection without response",
-      "Daily limits 605169.SH: Remote end closed connection without response",
-      "Daily limits 605058.SH: Remote end closed connection without response",
-      "Daily limits 603919.SH: Remote end closed connection without response",
-      "Daily limits 605118.SH: Remote end closed connection without response",
-      "Daily limits 002991.SZ: Remote end closed connection without response",
-      "Daily limits 605598.SH: Remote end closed connection without response",
-      "Daily limits 603990.SH: Remote end closed connection without response",
-      "Daily limits 605339.SH: Remote end closed connection without response",
-      "Daily limits 603915.SH: Remote end closed connection without response",
-      "Daily limits 605255.SH: Remote end closed connection without response"
+      "Daily history 605089.SH: Remote end closed connection without response",
+      "Daily limits 605118.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -1081,7 +1055,8 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1092,8 +1067,8 @@
   ],
   "stats": {
     "candidateCount": 2,
-    "eventCount": 382,
-    "quoteCount": 296,
+    "eventCount": 387,
+    "quoteCount": 98,
     "watchCount": 2,
     "readyCount": 0
   },
