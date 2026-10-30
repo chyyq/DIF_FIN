@@ -99926,6 +99926,17 @@
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
+    },
+    {
+      "date": "2026-10-30",
+      "open": 17.38,
+      "close": 17.02,
+      "high": 18.69,
+      "low": 17.01,
+      "volume": 157187.0,
+      "amount": null,
+      "adjusted": true,
+      "source": "Tencent historical daily"
     }
   ],
   "002026.SZ": [
@@ -323459,6 +323470,17 @@
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
+    },
+    {
+      "date": "2026-10-30",
+      "open": 33.8,
+      "close": 31.97,
+      "high": 34.71,
+      "low": 31.91,
+      "volume": 327051.0,
+      "amount": null,
+      "adjusted": true,
+      "source": "Tencent historical daily"
     }
   ],
   "603868.SH": [
@@ -338390,6 +338412,17 @@
       "high": 17.7,
       "low": 16.5,
       "volume": 101902.0,
+      "amount": null,
+      "adjusted": true,
+      "source": "Tencent historical daily"
+    },
+    {
+      "date": "2026-10-30",
+      "open": 16.41,
+      "close": 15.07,
+      "high": 16.61,
+      "low": 15.01,
+      "volume": 100506.0,
       "amount": null,
       "adjusted": true,
       "source": "Tencent historical daily"
