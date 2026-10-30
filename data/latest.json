@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-10-30T15:41:28.637478+08:00",
-    "lastSuccessfulAt": "2026-10-30T15:41:28.637478+08:00",
-    "quoteTimestamp": "2026-10-30T15:42:07+08:00",
+    "generatedAt": "2026-10-30T15:43:32.738073+08:00",
+    "lastSuccessfulAt": "2026-10-30T15:43:32.738073+08:00",
+    "quoteTimestamp": "2026-10-30T15:43:42+08:00",
     "tradingDate": "2026-10-30",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,19 +15,26 @@
         "note": "Actual historical daily bars; no intraday confirmation"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney",
         "ok": true,
-        "note": "5222 requested symbols received with reported daily limits; security/account metadata unverified"
+        "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Sina-universe",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "Enumerated 5576 symbols; complete=True; explicit board exclusions complete=True"
+        "note": "396 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 2: Remote end closed connection without response",
+      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily limits 605488.SH: Remote end closed connection without response",
+      "Daily limits 605089.SH: Remote end closed connection without response",
+      "Daily limits 605339.SH: Remote end closed connection without response",
+      "Daily limits 002949.SZ: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -926,10 +933,11 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -955,7 +963,7 @@
       "price": 178.81,
       "high": 190.53,
       "low": 178.67,
-      "quoteTimestamp": "2026-10-30T15:41:53+08:00",
+      "quoteTimestamp": "2026-10-30T15:43:16+08:00",
       "limitDownPrice": 171.09,
       "eventDayIndex": 5,
       "expiresOn": null,
@@ -1038,7 +1046,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
         "SECTOR_UNVERIFIED",
@@ -1058,8 +1065,8 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 461,
-    "quoteCount": 5222,
-    "watchCount": 1,
+    "quoteCount": 396,
+    "watchCount": 2,
     "readyCount": 0
   },
   "learning": {
