@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-03T00:29:47.766838+08:00",
-    "lastSuccessfulAt": "2026-11-03T00:29:47.766838+08:00",
+    "generatedAt": "2026-11-03T00:34:47.753238+08:00",
+    "lastSuccessfulAt": "2026-11-03T00:34:47.753238+08:00",
     "quoteTimestamp": "2026-11-02T16:12:01+08:00",
     "tradingDate": "2026-11-02",
     "stale": false,
@@ -830,22 +830,16 @@
       "eventDayIndex": 6,
       "expiresOn": "2026-11-02",
       "drawdownPct": 29.776437,
-      "trendScore": 33.33,
+      "trendScore": null,
       "metrics": {
-        "historySessions": 145,
-        "available": true,
+        "historySessions": 0,
+        "available": false,
         "passed": false,
-        "ma20": 207.4745,
-        "ma60": 179.647667,
-        "atr14": 17.152143,
-        "support": 169.75,
-        "score": 33.33,
-        "ma20Slope": -0.04997080876881699,
-        "checks": [
-          false,
-          true,
-          false
-        ]
+        "ma20": null,
+        "ma60": null,
+        "atr14": null,
+        "support": null,
+        "score": null
       },
       "absorption": {
         "available": false,
@@ -865,8 +859,8 @@
           "tp2": 200.11,
           "tp1Pct": 3.174519,
           "tp2Pct": 6.052255,
-          "plannedStop": 161.17,
-          "rewardRisk": 0.316315,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -885,8 +879,8 @@
           "tp2": 198.51,
           "tp1Pct": 4.147465,
           "tp2Pct": 7.622662,
-          "plannedStop": 161.17,
-          "rewardRisk": 0.46628,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -899,18 +893,17 @@
       ],
       "riskLevel": "EXTREME",
       "gates": {
-        "universe": false,
+        "universe": true,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [
-        "TREND_FAILED"
-      ],
+      "hardVetoReasons": [],
       "reasonCodes": [
-        "TREND_FAILED",
+        "INSUFFICIENT_HISTORY",
+        "TREND_UNAVAILABLE",
         "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
@@ -922,8 +915,8 @@
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -1032,7 +1025,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1054,7 +1046,7 @@
     "candidateCount": 2,
     "eventCount": 627,
     "quoteCount": 5219,
-    "watchCount": 1,
+    "watchCount": 2,
     "readyCount": 0
   },
   "learning": {
