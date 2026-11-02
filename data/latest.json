@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-02T16:15:37.465870+08:00",
-    "lastSuccessfulAt": "2026-11-02T16:15:37.465870+08:00",
-    "quoteTimestamp": "2026-11-02T16:15:00+08:00",
+    "generatedAt": "2026-11-02T21:43:26.710609+08:00",
+    "lastSuccessfulAt": "2026-11-02T21:43:26.710609+08:00",
+    "quoteTimestamp": "2026-11-02T16:12:00+08:00",
     "tradingDate": "2026-11-02",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,18 +15,39 @@
         "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "5222 requested symbols received with reported daily limits; security/account metadata unverified"
+        "note": "197 symbols received; pagination can be partial and is reported separately"
       },
       {
-        "name": "Sina-universe",
+        "name": "Tencent-history",
         "ok": true,
-        "note": "Enumerated 5576 symbols; complete=True; explicit board exclusions complete=True"
+        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 3: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
+      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily history 605287.SH: Remote end closed connection without response",
+      "Daily limits 605366.SH: Remote end closed connection without response",
+      "Daily limits 605566.SH: Remote end closed connection without response",
+      "Daily limits 605598.SH: Remote end closed connection without response",
+      "Daily limits 605255.SH: Remote end closed connection without response",
+      "Daily limits 605169.SH: Remote end closed connection without response",
+      "Daily limits 605488.SH: Remote end closed connection without response",
+      "Daily limits 605068.SH: Remote end closed connection without response",
+      "Daily limits 605136.SH: Remote end closed connection without response",
+      "Daily limits 603888.SH: Remote end closed connection without response",
+      "Daily limits 605016.SH: Remote end closed connection without response",
+      "Daily limits 603999.SH: Remote end closed connection without response",
+      "Daily limits 605398.SH: Remote end closed connection without response",
+      "Daily limits 603918.SH: Remote end closed connection without response",
+      "Daily limits 603860.SH: Remote end closed connection without response",
+      "Daily limits 603881.SH: Remote end closed connection without response",
+      "Daily limits 605567.SH: Remote end closed connection without response",
+      "Daily limits 603903.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -925,10 +946,11 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -954,14 +976,14 @@
       "price": 181.38,
       "high": 185.25,
       "low": 174.0,
-      "quoteTimestamp": "2026-11-02T16:14:53+08:00",
+      "quoteTimestamp": "2026-11-02T16:11:48+08:00",
       "limitDownPrice": 160.93,
       "eventDayIndex": 6,
       "expiresOn": "2026-11-02",
       "drawdownPct": 16.213969,
       "trendScore": 66.67,
       "metrics": {
-        "historySessions": 143,
+        "historySessions": 144,
         "available": true,
         "passed": true,
         "ma20": 199.073,
@@ -1037,6 +1059,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
         "SECTOR_UNVERIFIED",
@@ -1056,8 +1079,8 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 627,
-    "quoteCount": 5222,
-    "watchCount": 1,
+    "quoteCount": 197,
+    "watchCount": 2,
     "readyCount": 0
   },
   "learning": {
