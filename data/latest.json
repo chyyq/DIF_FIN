@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-02T21:43:26.710609+08:00",
-    "lastSuccessfulAt": "2026-11-02T21:43:26.710609+08:00",
-    "quoteTimestamp": "2026-11-02T16:12:00+08:00",
+    "generatedAt": "2026-11-02T21:51:07.619172+08:00",
+    "lastSuccessfulAt": "2026-11-02T21:51:07.619172+08:00",
+    "quoteTimestamp": "2026-11-02T16:12:01+08:00",
     "tradingDate": "2026-11-02",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -17,7 +17,7 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "197 symbols received; pagination can be partial and is reported separately"
+        "note": "5219 symbols received; pagination can be partial and is reported separately"
       },
       {
         "name": "Tencent-history",
@@ -26,28 +26,7 @@
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 3: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
-      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 605287.SH: Remote end closed connection without response",
-      "Daily limits 605366.SH: Remote end closed connection without response",
-      "Daily limits 605566.SH: Remote end closed connection without response",
-      "Daily limits 605598.SH: Remote end closed connection without response",
-      "Daily limits 605255.SH: Remote end closed connection without response",
-      "Daily limits 605169.SH: Remote end closed connection without response",
-      "Daily limits 605488.SH: Remote end closed connection without response",
-      "Daily limits 605068.SH: Remote end closed connection without response",
-      "Daily limits 605136.SH: Remote end closed connection without response",
-      "Daily limits 603888.SH: Remote end closed connection without response",
-      "Daily limits 605016.SH: Remote end closed connection without response",
-      "Daily limits 603999.SH: Remote end closed connection without response",
-      "Daily limits 605398.SH: Remote end closed connection without response",
-      "Daily limits 603918.SH: Remote end closed connection without response",
-      "Daily limits 603860.SH: Remote end closed connection without response",
-      "Daily limits 603881.SH: Remote end closed connection without response",
-      "Daily limits 605567.SH: Remote end closed connection without response",
-      "Daily limits 603903.SH: Remote end closed connection without response"
+      "Daily history 603628.SH: <urlopen error _ssl.c:999: The handshake operation timed out>"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -853,7 +832,7 @@
       "price": 146.69,
       "high": 152.8,
       "low": 143.02,
-      "quoteTimestamp": "2026-11-02T16:14:57+08:00",
+      "quoteTimestamp": "2026-11-02T16:11:50+08:00",
       "limitDownPrice": 132.56,
       "eventDayIndex": 6,
       "expiresOn": "2026-11-02",
@@ -939,6 +918,8 @@
       ],
       "reasonCodes": [
         "TREND_FAILED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
         "SECTOR_UNVERIFIED",
@@ -946,11 +927,10 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -1059,6 +1039,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1079,8 +1060,8 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 627,
-    "quoteCount": 197,
-    "watchCount": 2,
+    "quoteCount": 5219,
+    "watchCount": 1,
     "readyCount": 0
   },
   "learning": {
