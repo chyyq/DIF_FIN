@@ -2,35 +2,27 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-02T15:56:00.185066+08:00",
-    "lastSuccessfulAt": "2026-11-02T15:56:00.185066+08:00",
-    "quoteTimestamp": "2026-11-02T15:56:58+08:00",
+    "generatedAt": "2026-11-02T16:10:54.656676+08:00",
+    "lastSuccessfulAt": "2026-11-02T16:10:54.656676+08:00",
+    "quoteTimestamp": "2026-11-02T16:12:01+08:00",
     "tradingDate": "2026-11-02",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
       {
-        "name": "Tencent-history",
+        "name": "Eastmoney",
         "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
+        "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "5222 requested symbols received with reported daily limits; security/account metadata unverified"
-      },
-      {
-        "name": "Sina-universe",
-        "ok": true,
-        "note": "Enumerated 5576 symbols; complete=True; explicit board exclusions complete=True"
+        "note": "5219 symbols received; pagination can be partial and is reported separately"
       }
     ],
-    "errors": [
-      "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
-    ],
+    "errors": [],
     "automaticOrders": false,
-    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -798,7 +790,7 @@
       "2026-10-30",
       "2026-11-02"
     ],
-    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-11-02",
     "futureDatesEstimated": false
@@ -833,27 +825,21 @@
       "price": 146.69,
       "high": 152.8,
       "low": 143.02,
-      "quoteTimestamp": "2026-11-02T15:56:50+08:00",
+      "quoteTimestamp": "2026-11-02T16:10:50+08:00",
       "limitDownPrice": 132.56,
       "eventDayIndex": 6,
       "expiresOn": "2026-11-02",
       "drawdownPct": 29.776437,
-      "trendScore": 33.33,
+      "trendScore": null,
       "metrics": {
-        "historySessions": 145,
-        "available": true,
+        "historySessions": 0,
+        "available": false,
         "passed": false,
-        "ma20": 207.4745,
-        "ma60": 179.647667,
-        "atr14": 17.152143,
-        "support": 169.75,
-        "score": 33.33,
-        "ma20Slope": -0.04997080876881699,
-        "checks": [
-          false,
-          true,
-          false
-        ]
+        "ma20": null,
+        "ma60": null,
+        "atr14": null,
+        "support": null,
+        "score": null
       },
       "absorption": {
         "available": false,
@@ -873,8 +859,8 @@
           "tp2": 200.11,
           "tp1Pct": 3.174519,
           "tp2Pct": 6.052255,
-          "plannedStop": 161.17,
-          "rewardRisk": 0.316315,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -893,8 +879,8 @@
           "tp2": 198.51,
           "tp1Pct": 4.147465,
           "tp2Pct": 7.622662,
-          "plannedStop": 161.17,
-          "rewardRisk": 0.46628,
+          "plannedStop": null,
+          "rewardRisk": null,
           "status": "WAIT_CONFIRM",
           "reachableToday": true,
           "sellSplit": [
@@ -907,19 +893,18 @@
       ],
       "riskLevel": "EXTREME",
       "gates": {
-        "universe": false,
+        "universe": true,
         "trend": false,
         "limitEvent": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [
-        "TREND_FAILED"
-      ],
+      "hardVetoReasons": [],
       "reasonCodes": [
-        "TREND_FAILED",
-        "QUOTE_NOT_FRESH_FOR_ENTRY",
+        "INSUFFICIENT_HISTORY",
+        "TREND_UNAVAILABLE",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
         "SECTOR_UNVERIFIED",
@@ -929,8 +914,8 @@
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "stale": true
@@ -956,7 +941,7 @@
       "price": 181.38,
       "high": 185.25,
       "low": 174.0,
-      "quoteTimestamp": "2026-11-02T15:56:53+08:00",
+      "quoteTimestamp": "2026-11-02T16:10:48+08:00",
       "limitDownPrice": 160.93,
       "eventDayIndex": 6,
       "expiresOn": "2026-11-02",
@@ -1039,7 +1024,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "QUOTE_NOT_FRESH_FOR_ENTRY",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
         "SECTOR_UNVERIFIED",
@@ -1059,8 +1044,8 @@
   "stats": {
     "candidateCount": 2,
     "eventCount": 627,
-    "quoteCount": 5222,
-    "watchCount": 1,
+    "quoteCount": 5219,
+    "watchCount": 2,
     "readyCount": 0
   },
   "learning": {
