@@ -2,18 +2,13 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-03T22:27:38.553367+08:00",
-    "lastSuccessfulAt": "2026-11-03T22:27:38.553367+08:00",
+    "generatedAt": "2026-11-03T22:37:43.840284+08:00",
+    "lastSuccessfulAt": "2026-11-03T22:37:43.840284+08:00",
     "quoteTimestamp": "2026-11-03T16:12:01+08:00",
     "tradingDate": "2026-11-03",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
-      },
       {
         "name": "Eastmoney",
         "ok": true,
@@ -22,29 +17,19 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "197 symbols received; pagination can be partial and is reported separately"
+        "note": "5218 symbols received; pagination can be partial and is reported separately"
+      },
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
     "errors": [
-      "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 3: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
-      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily limits 605255.SH: Remote end closed connection without response",
-      "Daily limits 605189.SH: Remote end closed connection without response",
-      "Daily limits 605068.SH: Remote end closed connection without response",
-      "Daily limits 603955.SH: Remote end closed connection without response",
-      "Daily limits 605598.SH: Remote end closed connection without response",
-      "Daily limits 605333.SH: Remote end closed connection without response",
-      "Daily limits 605488.SH: Remote end closed connection without response",
-      "Daily limits 605118.SH: Remote end closed connection without response",
-      "Daily limits 603906.SH: Remote end closed connection without response",
-      "Daily limits 603992.SH: Remote end closed connection without response",
-      "Daily limits 605296.SH: Remote end closed connection without response"
+      "Daily history 003017.SZ: The read operation timed out"
     ],
     "automaticOrders": false,
-    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -813,7 +798,7 @@
       "2026-11-02",
       "2026-11-03"
     ],
-    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-11-03",
     "futureDatesEstimated": false
@@ -855,7 +840,7 @@
       "drawdownPct": 2.279687,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
         "ma20": 26.689,
@@ -938,8 +923,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -975,7 +959,7 @@
       "drawdownPct": 0.0,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
         "ma20": 3.4305,
@@ -1058,8 +1042,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1095,7 +1078,7 @@
       "drawdownPct": 0.0,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
         "ma20": 1.8295,
@@ -1178,8 +1161,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1299,8 +1281,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1336,7 +1317,7 @@
       "drawdownPct": 0.0,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
         "ma20": 9.574,
@@ -1419,8 +1400,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1456,7 +1436,7 @@
       "drawdownPct": 0.0,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
         "ma20": 2.2575,
@@ -1539,8 +1519,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1576,7 +1555,7 @@
       "drawdownPct": 0.0,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
         "ma20": 3.823,
@@ -1659,8 +1638,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1696,7 +1674,7 @@
       "drawdownPct": 0.0,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
         "ma20": 5.1745,
@@ -1779,8 +1757,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1816,7 +1793,7 @@
       "drawdownPct": 0.0,
       "trendScore": 100.0,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
         "ma20": 12.903,
@@ -1900,8 +1877,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1937,15 +1913,15 @@
       "drawdownPct": 2.839506,
       "trendScore": 66.67,
       "metrics": {
-        "historySessions": 150,
+        "historySessions": 149,
         "available": true,
         "passed": true,
-        "ma20": 6.7263,
-        "ma60": 6.7691,
-        "atr14": 0.518714,
-        "support": 5.952,
+        "ma20": 6.7245,
+        "ma60": 6.767167,
+        "atr14": 0.518571,
+        "support": 5.95,
         "score": 66.67,
-        "ma20Slope": 0.05123075720872072,
+        "ma20Slope": 0.051278042679590685,
         "checks": [
           true,
           false,
@@ -2020,8 +1996,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -2033,7 +2008,7 @@
   "stats": {
     "candidateCount": 10,
     "eventCount": 715,
-    "quoteCount": 197,
+    "quoteCount": 5218,
     "watchCount": 10,
     "readyCount": 0
   },
