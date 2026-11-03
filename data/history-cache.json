@@ -40822,17 +40822,6 @@
   ],
   "605488.SH": [
     {
-      "date": "2026-03-23",
-      "open": 32.04,
-      "close": 31.83,
-      "high": 33.64,
-      "low": 31.55,
-      "volume": 72552.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 32.45,
       "close": 32.09,
@@ -163174,17 +163163,6 @@
   ],
   "605333.SH": [
     {
-      "date": "2026-03-23",
-      "open": 24.7,
-      "close": 24.57,
-      "high": 25.61,
-      "low": 24.37,
-      "volume": 31559.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 25.08,
       "close": 24.69,
@@ -179771,17 +179749,6 @@
   ],
   "605287.SH": [
     {
-      "date": "2026-03-23",
-      "open": 42.6,
-      "close": 38.59,
-      "high": 42.6,
-      "low": 38.59,
-      "volume": 75098.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 39.74,
       "close": 40.14,
@@ -184760,17 +184727,6 @@
   ],
   "605118.SH": [
     {
-      "date": "2026-03-23",
-      "open": 40.65,
-      "close": 37.15,
-      "high": 41.15,
-      "low": 37.15,
-      "volume": 29315.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 38.25,
       "close": 38.41,
@@ -187924,17 +187880,6 @@
     }
   ],
   "605068.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 26.36,
-      "close": 25.46,
-      "high": 26.71,
-      "low": 25.2,
-      "volume": 23632.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 25.66,
@@ -308887,17 +308832,6 @@
   ],
   "605288.SH": [
     {
-      "date": "2026-03-23",
-      "open": 65.786,
-      "close": 60.907,
-      "high": 65.786,
-      "low": 60.707,
-      "volume": 11596.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 63.757,
       "close": 63.336,
@@ -310549,17 +310483,6 @@
     }
   ],
   "605566.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 26.66,
-      "close": 24.21,
-      "high": 26.66,
-      "low": 24.06,
-      "volume": 41618.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 24.74,
@@ -313714,17 +313637,6 @@
     }
   ],
   "603992.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 31.455,
-      "close": 33.125,
-      "high": 33.665,
-      "low": 31.215,
-      "volume": 79290.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 33.135,
@@ -317040,17 +316952,6 @@
     }
   ],
   "603868.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 33.61,
-      "close": 31.7,
-      "high": 33.61,
-      "low": 31.22,
-      "volume": 26765.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 32.29,
@@ -323532,17 +323433,6 @@
   ],
   "605366.SH": [
     {
-      "date": "2026-03-23",
-      "open": 10.2,
-      "close": 9.26,
-      "high": 10.2,
-      "low": 9.23,
-      "volume": 456330.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 9.49,
       "close": 10.19,
@@ -326857,17 +326747,6 @@
     }
   ],
   "605060.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 52.7,
-      "close": 51.07,
-      "high": 53.83,
-      "low": 50.65,
-      "volume": 57203.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 53.15,
@@ -343432,17 +343311,6 @@
     }
   ],
   "605577.SH": [
-    {
-      "date": "2026-03-18",
-      "open": 13.22,
-      "close": 13.5,
-      "high": 13.53,
-      "low": 13.12,
-      "volume": 23590.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-19",
       "open": 13.34,
@@ -519981,17 +519849,6 @@
   ],
   "605338.SH": [
     {
-      "date": "2026-03-23",
-      "open": 23.91,
-      "close": 22.93,
-      "high": 24.2,
-      "low": 22.81,
-      "volume": 24985.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 23.19,
       "close": 24.28,
@@ -523295,17 +523152,6 @@
     }
   ],
   "605598.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 46.369,
-      "close": 45.919,
-      "high": 48.819,
-      "low": 45.569,
-      "volume": 45566.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 46.789,
@@ -544355,17 +544201,6 @@
   ],
   "605169.SH": [
     {
-      "date": "2026-03-23",
-      "open": 14.034,
-      "close": 13.594,
-      "high": 14.054,
-      "low": 13.434,
-      "volume": 128947.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 13.404,
       "close": 13.704,
@@ -546017,17 +545852,6 @@
     }
   ],
   "605058.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 31.16,
-      "close": 29.5,
-      "high": 31.63,
-      "low": 29.5,
-      "volume": 89752.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 29.85,
@@ -555940,17 +555764,6 @@
     }
   ],
   "605255.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 97.485,
-      "close": 99.765,
-      "high": 102.855,
-      "low": 96.975,
-      "volume": 24211.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 101.955,
@@ -698014,17 +697827,6 @@
   ],
   "605303.SH": [
     {
-      "date": "2026-03-09",
-      "open": 17.3,
-      "close": 17.26,
-      "high": 17.54,
-      "low": 17.0,
-      "volume": 25382.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-10",
       "open": 17.57,
       "close": 18.1,
@@ -702830,17 +702632,6 @@
     }
   ],
   "605189.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 12.917,
-      "close": 12.587,
-      "high": 13.247,
-      "low": 12.387,
-      "volume": 34545.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 12.687,
@@ -722559,17 +722350,6 @@
     }
   ],
   "603955.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 25.07,
-      "close": 24.95,
-      "high": 26.3,
-      "low": 24.5,
-      "volume": 24479.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 25.2,
@@ -785019,17 +784799,6 @@
     }
   ],
   "603927.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 16.76,
-      "close": 16.14,
-      "high": 16.92,
-      "low": 16.03,
-      "volume": 123317.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 16.38,
@@ -861516,17 +861285,6 @@
   ],
   "605378.SH": [
     {
-      "date": "2026-03-23",
-      "open": 19.55,
-      "close": 18.97,
-      "high": 19.86,
-      "low": 18.84,
-      "volume": 30576.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 19.24,
       "close": 19.49,
@@ -863178,17 +862936,6 @@
     }
   ],
   "605388.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 6.25,
-      "close": 6.03,
-      "high": 6.28,
-      "low": 5.99,
-      "volume": 61752.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 6.12,
@@ -864842,17 +864589,6 @@
   ],
   "605318.SH": [
     {
-      "date": "2026-03-23",
-      "open": 72.1,
-      "close": 69.72,
-      "high": 74.9,
-      "low": 68.88,
-      "volume": 31832.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
-    {
       "date": "2026-03-24",
       "open": 71.46,
       "close": 70.94,
@@ -866504,17 +866240,6 @@
     }
   ],
   "605296.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 30.28,
-      "close": 29.51,
-      "high": 30.73,
-      "low": 29.3,
-      "volume": 40625.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 30.1,
@@ -893933,17 +893658,6 @@
     }
   ],
   "603906.SH": [
-    {
-      "date": "2026-03-23",
-      "open": 18.24,
-      "close": 18.57,
-      "high": 18.86,
-      "low": 18.18,
-      "volume": 338019.0,
-      "amount": null,
-      "adjusted": true,
-      "source": "Tencent historical daily"
-    },
     {
       "date": "2026-03-24",
       "open": 19.1,
