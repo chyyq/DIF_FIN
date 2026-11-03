@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-03T21:00:46.759526+08:00",
-    "lastSuccessfulAt": "2026-11-03T21:00:46.759526+08:00",
-    "quoteTimestamp": "2026-11-03T16:15:00+08:00",
+    "generatedAt": "2026-11-03T21:30:35.870600+08:00",
+    "lastSuccessfulAt": "2026-11-03T21:30:35.870600+08:00",
+    "quoteTimestamp": "2026-11-03T16:12:01+08:00",
     "tradingDate": "2026-11-03",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,21 +15,24 @@
         "note": "Actual historical daily bars; no intraday confirmation"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney",
         "ok": true,
-        "note": "5143 requested symbols received with reported daily limits; security/account metadata unverified"
+        "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Sina-universe",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "Enumerated 5497 symbols; complete=False; explicit board exclusions complete=True"
+        "note": "99 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response",
-      "Sina node hs_a page: <urlopen error _ssl.c:999: The handshake operation timed out>",
-      "Sina universe incomplete; missing previous symbols remain stale"
+      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
+      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily limits 605255.SH: Remote end closed connection without response",
+      "Daily limits 605338.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -926,12 +929,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1044,12 +1049,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1162,12 +1169,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1280,12 +1289,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1398,12 +1409,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1516,12 +1529,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1634,12 +1649,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1752,12 +1769,14 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1871,12 +1890,14 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1989,18 +2010,20 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY"
+      "entryMode": "MANUAL_RECORD_ONLY",
+      "stale": true
     }
   ],
   "stats": {
     "candidateCount": 10,
     "eventCount": 715,
-    "quoteCount": 5143,
+    "quoteCount": 99,
     "watchCount": 10,
     "readyCount": 0
   },
