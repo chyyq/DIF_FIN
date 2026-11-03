@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-03T21:30:35.870600+08:00",
-    "lastSuccessfulAt": "2026-11-03T21:30:35.870600+08:00",
+    "generatedAt": "2026-11-03T22:02:21.311687+08:00",
+    "lastSuccessfulAt": "2026-11-03T22:02:21.311687+08:00",
     "quoteTimestamp": "2026-11-03T16:12:01+08:00",
     "tradingDate": "2026-11-03",
     "stale": false,
@@ -22,17 +22,17 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "99 symbols received; pagination can be partial and is reported separately"
+        "note": "5218 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
-      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily limits 605255.SH: Remote end closed connection without response",
-      "Daily limits 605338.SH: Remote end closed connection without response"
+      "Daily limits 002558.SZ: No request budget",
+      "Daily limits 300413.SZ: No request budget",
+      "Daily limits 300980.SZ: No request budget",
+      "Daily limits 603628.SH: No request budget",
+      "Tencent daily history 002816.SZ: Pipeline request budget exhausted",
+      "Tencent daily history 601086.SH: Pipeline request budget exhausted"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -839,7 +839,7 @@
       "price": 28.72,
       "high": 29.39,
       "low": 27.97,
-      "quoteTimestamp": "2026-11-03T16:14:50+08:00",
+      "quoteTimestamp": "2026-11-03T16:11:50+08:00",
       "limitDownPrice": 24.05,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -929,8 +929,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -959,7 +958,7 @@
       "price": 4.95,
       "high": 4.95,
       "low": 4.79,
-      "quoteTimestamp": "2026-11-03T16:14:50+08:00",
+      "quoteTimestamp": "2026-11-03T16:11:50+08:00",
       "limitDownPrice": 4.05,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1049,8 +1048,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1079,7 +1077,7 @@
       "price": 2.46,
       "high": 2.46,
       "low": 2.26,
-      "quoteTimestamp": "2026-11-03T16:14:48+08:00",
+      "quoteTimestamp": "2026-11-03T16:11:48+08:00",
       "limitDownPrice": 2.02,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1169,8 +1167,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1199,7 +1196,7 @@
       "price": 19.52,
       "high": 20.9,
       "low": 19.01,
-      "quoteTimestamp": "2026-11-03T16:14:43+08:00",
+      "quoteTimestamp": "2026-11-03T16:11:43+08:00",
       "limitDownPrice": 17.1,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1282,6 +1279,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1289,8 +1287,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1319,7 +1316,7 @@
       "price": 12.36,
       "high": 12.36,
       "low": 10.88,
-      "quoteTimestamp": "2026-11-03T16:14:45+08:00",
+      "quoteTimestamp": "2026-11-03T15:34:36+08:00",
       "limitDownPrice": 10.12,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1409,8 +1406,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1439,7 +1435,7 @@
       "price": 3.42,
       "high": 3.42,
       "low": 3.33,
-      "quoteTimestamp": "2026-11-03T16:14:51+08:00",
+      "quoteTimestamp": "2026-11-03T15:34:51+08:00",
       "limitDownPrice": 2.8,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1529,8 +1525,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1559,7 +1554,7 @@
       "price": 4.0,
       "high": 4.0,
       "low": 3.65,
-      "quoteTimestamp": "2026-11-03T16:14:51+08:00",
+      "quoteTimestamp": "2026-11-03T16:11:51+08:00",
       "limitDownPrice": 3.28,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1649,8 +1644,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1679,7 +1673,7 @@
       "price": 6.24,
       "high": 6.24,
       "low": 5.54,
-      "quoteTimestamp": "2026-11-03T16:14:42+08:00",
+      "quoteTimestamp": "2026-11-03T16:11:34+08:00",
       "limitDownPrice": 5.1,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1769,8 +1763,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1799,7 +1792,7 @@
       "price": 17.16,
       "high": 17.16,
       "low": 17.16,
-      "quoteTimestamp": "2026-11-03T16:14:45+08:00",
+      "quoteTimestamp": "2026-11-03T15:34:39+08:00",
       "limitDownPrice": 14.04,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1890,8 +1883,7 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1920,7 +1912,7 @@
       "price": 7.87,
       "high": 8.1,
       "low": 7.15,
-      "quoteTimestamp": "2026-11-03T16:14:18+08:00",
+      "quoteTimestamp": "2026-11-03T15:34:18+08:00",
       "limitDownPrice": 6.62,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -2010,8 +2002,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -2023,7 +2014,7 @@
   "stats": {
     "candidateCount": 10,
     "eventCount": 715,
-    "quoteCount": 99,
+    "quoteCount": 5218,
     "watchCount": 10,
     "readyCount": 0
   },
