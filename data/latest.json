@@ -2,18 +2,13 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-04T15:56:28.174455+08:00",
-    "lastSuccessfulAt": "2026-11-04T15:56:28.174455+08:00",
-    "quoteTimestamp": "2026-11-04T15:59:07+08:00",
+    "generatedAt": "2026-11-04T21:10:37.339864+08:00",
+    "lastSuccessfulAt": "2026-11-04T21:10:37.339864+08:00",
+    "quoteTimestamp": "2026-11-04T16:12:01+08:00",
     "tradingDate": "2026-11-04",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
-      },
       {
         "name": "Eastmoney",
         "ok": true,
@@ -25,16 +20,9 @@
         "note": "5220 symbols received; pagination can be partial and is reported separately"
       }
     ],
-    "errors": [
-      "Daily history 000001.SH: <urlopen error _ssl.c:999: The handshake operation timed out>",
-      "Daily limits 002535.SZ: No request budget",
-      "Daily limits 605189.SH: No request budget",
-      "Tencent daily history 000400.SZ: Pipeline request budget exhausted",
-      "Tencent daily history 601956.SH: Pipeline request budget exhausted",
-      "Tencent daily history 603906.SH: Pipeline request budget exhausted"
-    ],
+    "errors": [],
     "automaticOrders": false,
-    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -804,7 +792,7 @@
       "2026-11-03",
       "2026-11-04"
     ],
-    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-11-04",
     "futureDatesEstimated": false
@@ -839,7 +827,7 @@
       "price": 30.14,
       "high": 30.62,
       "low": 28.2,
-      "quoteTimestamp": "2026-11-04T15:56:46+08:00",
+      "quoteTimestamp": "2026-11-04T16:11:46+08:00",
       "limitDownPrice": 25.85,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -922,6 +910,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -960,7 +949,7 @@
       "price": 4.46,
       "high": 4.95,
       "low": 4.46,
-      "quoteTimestamp": "2026-11-04T15:57:13+08:00",
+      "quoteTimestamp": "2026-11-04T16:11:43+08:00",
       "limitDownPrice": 4.46,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1080,7 +1069,7 @@
       "price": 2.47,
       "high": 2.71,
       "low": 2.33,
-      "quoteTimestamp": "2026-11-04T15:56:46+08:00",
+      "quoteTimestamp": "2026-11-04T16:11:46+08:00",
       "limitDownPrice": 2.21,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1163,6 +1152,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1198,7 +1188,7 @@
       "price": 18.18,
       "high": 19.43,
       "low": 17.81,
-      "quoteTimestamp": "2026-11-04T15:57:12+08:00",
+      "quoteTimestamp": "2026-11-04T16:11:42+08:00",
       "limitDownPrice": 17.57,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1560,7 +1550,7 @@
       "price": 3.93,
       "high": 4.07,
       "low": 3.76,
-      "quoteTimestamp": "2026-11-04T15:57:17+08:00",
+      "quoteTimestamp": "2026-11-04T16:11:47+08:00",
       "limitDownPrice": 3.6,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1682,7 +1672,7 @@
       "price": 5.65,
       "high": 6.18,
       "low": 5.62,
-      "quoteTimestamp": "2026-11-04T15:57:04+08:00",
+      "quoteTimestamp": "2026-11-04T16:11:34+08:00",
       "limitDownPrice": 5.62,
       "eventDayIndex": 1,
       "expiresOn": null,
