@@ -2,13 +2,18 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-04T22:22:08.778976+08:00",
-    "lastSuccessfulAt": "2026-11-04T22:22:08.778976+08:00",
+    "generatedAt": "2026-11-04T22:41:57.358432+08:00",
+    "lastSuccessfulAt": "2026-11-04T22:41:57.358432+08:00",
     "quoteTimestamp": "2026-11-04T16:12:01+08:00",
     "tradingDate": "2026-11-04",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
+      },
       {
         "name": "Eastmoney",
         "ok": true,
@@ -20,9 +25,11 @@
         "note": "5220 symbols received; pagination can be partial and is reported separately"
       }
     ],
-    "errors": [],
+    "errors": [
+      "Daily history 000001.SH: The read operation timed out"
+    ],
     "automaticOrders": false,
-    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -792,7 +799,7 @@
       "2026-11-03",
       "2026-11-04"
     ],
-    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-11-04",
     "futureDatesEstimated": false
@@ -910,6 +917,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1151,6 +1159,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
