@@ -2,34 +2,39 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-04T15:46:19.563074+08:00",
-    "lastSuccessfulAt": "2026-11-04T15:46:19.563074+08:00",
-    "quoteTimestamp": "2026-11-04T15:47:04+08:00",
+    "generatedAt": "2026-11-04T15:56:28.174455+08:00",
+    "lastSuccessfulAt": "2026-11-04T15:56:28.174455+08:00",
+    "quoteTimestamp": "2026-11-04T15:59:07+08:00",
     "tradingDate": "2026-11-04",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
+      },
       {
         "name": "Eastmoney",
         "ok": true,
         "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "5223 requested symbols received with reported daily limits; security/account metadata unverified"
-      },
-      {
-        "name": "Sina-universe",
-        "ok": true,
-        "note": "Enumerated 5577 symbols; complete=True; explicit board exclusions complete=True"
+        "note": "5220 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
+      "Daily history 000001.SH: <urlopen error _ssl.c:999: The handshake operation timed out>",
+      "Daily limits 002535.SZ: No request budget",
+      "Daily limits 605189.SH: No request budget",
+      "Tencent daily history 000400.SZ: Pipeline request budget exhausted",
+      "Tencent daily history 601956.SH: Pipeline request budget exhausted",
+      "Tencent daily history 603906.SH: Pipeline request budget exhausted"
     ],
     "automaticOrders": false,
-    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -799,7 +804,7 @@
       "2026-11-03",
       "2026-11-04"
     ],
-    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-11-04",
     "futureDatesEstimated": false
@@ -834,7 +839,7 @@
       "price": 30.14,
       "high": 30.62,
       "low": 28.2,
-      "quoteTimestamp": "2026-11-04T15:46:46+08:00",
+      "quoteTimestamp": "2026-11-04T15:56:46+08:00",
       "limitDownPrice": 25.85,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -955,7 +960,7 @@
       "price": 4.46,
       "high": 4.95,
       "low": 4.46,
-      "quoteTimestamp": "2026-11-04T15:46:43+08:00",
+      "quoteTimestamp": "2026-11-04T15:57:13+08:00",
       "limitDownPrice": 4.46,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -997,8 +1002,8 @@
           "tp2Pct": 6.053812,
           "plannedStop": 3.03,
           "rewardRisk": 0.146853,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -1017,8 +1022,8 @@
           "tp2Pct": 7.798165,
           "plannedStop": 3.03,
           "rewardRisk": 0.195489,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -1038,6 +1043,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1074,7 +1080,7 @@
       "price": 2.47,
       "high": 2.71,
       "low": 2.33,
-      "quoteTimestamp": "2026-11-04T15:46:59+08:00",
+      "quoteTimestamp": "2026-11-04T15:56:46+08:00",
       "limitDownPrice": 2.21,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1192,7 +1198,7 @@
       "price": 18.18,
       "high": 19.43,
       "low": 17.81,
-      "quoteTimestamp": "2026-11-04T15:46:42+08:00",
+      "quoteTimestamp": "2026-11-04T15:57:12+08:00",
       "limitDownPrice": 17.57,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1275,6 +1281,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1311,7 +1318,7 @@
       "price": 11.12,
       "high": 11.68,
       "low": 11.12,
-      "quoteTimestamp": "2026-11-04T15:46:45+08:00",
+      "quoteTimestamp": "2026-11-04T15:34:57+08:00",
       "limitDownPrice": 11.12,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1353,8 +1360,8 @@
           "tp2Pct": 6.09319,
           "plannedStop": 5.66,
           "rewardRisk": 0.093636,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -1373,8 +1380,8 @@
           "tp2Pct": 7.607699,
           "plannedStop": 5.66,
           "rewardRisk": 0.121905,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -1394,6 +1401,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1430,7 +1438,7 @@
       "price": 3.28,
       "high": 3.67,
       "low": 3.08,
-      "quoteTimestamp": "2026-11-04T15:46:30+08:00",
+      "quoteTimestamp": "2026-11-04T15:34:21+08:00",
       "limitDownPrice": 3.08,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1513,6 +1521,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1551,7 +1560,7 @@
       "price": 3.93,
       "high": 4.07,
       "low": 3.76,
-      "quoteTimestamp": "2026-11-04T15:46:47+08:00",
+      "quoteTimestamp": "2026-11-04T15:57:17+08:00",
       "limitDownPrice": 3.6,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1613,8 +1622,8 @@
           "tp2Pct": 7.520891,
           "plannedStop": 2.75,
           "rewardRisk": 0.25,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -1634,6 +1643,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1672,7 +1682,7 @@
       "price": 5.65,
       "high": 6.18,
       "low": 5.62,
-      "quoteTimestamp": "2026-11-04T15:46:40+08:00",
+      "quoteTimestamp": "2026-11-04T15:57:04+08:00",
       "limitDownPrice": 5.62,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1714,8 +1724,8 @@
           "tp2Pct": 6.039076,
           "plannedStop": 4.44,
           "rewardRisk": 0.218487,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -1734,8 +1744,8 @@
           "tp2Pct": 7.636364,
           "plannedStop": 4.44,
           "rewardRisk": 0.306604,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -1755,6 +1765,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1791,7 +1802,7 @@
       "price": 16.36,
       "high": 18.88,
       "low": 15.62,
-      "quoteTimestamp": "2026-11-04T15:46:45+08:00",
+      "quoteTimestamp": "2026-11-04T15:34:00+08:00",
       "limitDownPrice": 15.44,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1874,6 +1885,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -1909,7 +1921,7 @@
       "price": 7.68,
       "high": 7.86,
       "low": 7.1,
-      "quoteTimestamp": "2026-11-04T15:46:42+08:00",
+      "quoteTimestamp": "2026-11-04T15:34:42+08:00",
       "limitDownPrice": 7.08,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1971,8 +1983,8 @@
           "tp2Pct": 7.703081,
           "plannedStop": 5.69,
           "rewardRisk": 0.293103,
-          "status": "UNREACHABLE_TODAY",
-          "reachableToday": false,
+          "status": "WAIT_CONFIRM",
+          "reachableToday": true,
           "sellSplit": [
             0.5,
             0.5
@@ -1992,6 +2004,7 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -2011,7 +2024,7 @@
   "stats": {
     "candidateCount": 10,
     "eventCount": 874,
-    "quoteCount": 5223,
+    "quoteCount": 5220,
     "watchCount": 10,
     "readyCount": 0
   },
