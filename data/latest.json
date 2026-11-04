@@ -2,17 +2,17 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-04T15:38:59.016566+08:00",
-    "lastSuccessfulAt": "2026-11-04T15:38:59.016566+08:00",
-    "quoteTimestamp": "2026-11-04T15:39:59+08:00",
+    "generatedAt": "2026-11-04T15:46:19.563074+08:00",
+    "lastSuccessfulAt": "2026-11-04T15:46:19.563074+08:00",
+    "quoteTimestamp": "2026-11-04T15:47:04+08:00",
     "tradingDate": "2026-11-04",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
       {
-        "name": "Tencent-history",
+        "name": "Eastmoney",
         "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
+        "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
         "name": "Tencent",
@@ -26,11 +26,10 @@
       }
     ],
     "errors": [
-      "Daily history 000001.SH: Remote end closed connection without response",
       "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
     ],
     "automaticOrders": false,
-    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "6ad318cf5331e444",
     "parameterVersion": "1.0.0",
     "dataLimits": [
@@ -800,7 +799,7 @@
       "2026-11-03",
       "2026-11-04"
     ],
-    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
+    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-11-04",
     "futureDatesEstimated": false
@@ -835,7 +834,7 @@
       "price": 30.14,
       "high": 30.62,
       "low": 28.2,
-      "quoteTimestamp": "2026-11-04T15:39:46+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:46+08:00",
       "limitDownPrice": 25.85,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -956,7 +955,7 @@
       "price": 4.46,
       "high": 4.95,
       "low": 4.46,
-      "quoteTimestamp": "2026-11-04T15:39:43+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:43+08:00",
       "limitDownPrice": 4.46,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1075,7 +1074,7 @@
       "price": 2.47,
       "high": 2.71,
       "low": 2.33,
-      "quoteTimestamp": "2026-11-04T15:39:46+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:59+08:00",
       "limitDownPrice": 2.21,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1170,8 +1169,7 @@
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY",
-      "supersededEventId": "600715.SH:2026-11-03:01"
+      "entryMode": "MANUAL_RECORD_ONLY"
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1194,7 +1192,7 @@
       "price": 18.18,
       "high": 19.43,
       "low": 17.81,
-      "quoteTimestamp": "2026-11-04T15:39:42+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:42+08:00",
       "limitDownPrice": 17.57,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1313,7 +1311,7 @@
       "price": 11.12,
       "high": 11.68,
       "low": 11.12,
-      "quoteTimestamp": "2026-11-04T15:39:45+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:45+08:00",
       "limitDownPrice": 11.12,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1432,7 +1430,7 @@
       "price": 3.28,
       "high": 3.67,
       "low": 3.08,
-      "quoteTimestamp": "2026-11-04T15:39:30+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:30+08:00",
       "limitDownPrice": 3.08,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1553,7 +1551,7 @@
       "price": 3.93,
       "high": 4.07,
       "low": 3.76,
-      "quoteTimestamp": "2026-11-04T15:39:47+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:47+08:00",
       "limitDownPrice": 3.6,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1674,7 +1672,7 @@
       "price": 5.65,
       "high": 6.18,
       "low": 5.62,
-      "quoteTimestamp": "2026-11-04T15:39:40+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:40+08:00",
       "limitDownPrice": 5.62,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -1793,7 +1791,7 @@
       "price": 16.36,
       "high": 18.88,
       "low": 15.62,
-      "quoteTimestamp": "2026-11-04T15:39:45+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:45+08:00",
       "limitDownPrice": 15.44,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1888,8 +1886,7 @@
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
-      "entryMode": "MANUAL_RECORD_ONLY",
-      "supersededEventId": "000995.SZ:2026-11-03:01"
+      "entryMode": "MANUAL_RECORD_ONLY"
     },
     {
       "strategyId": "LBR_MAIN_V1",
@@ -1912,7 +1909,7 @@
       "price": 7.68,
       "high": 7.86,
       "low": 7.1,
-      "quoteTimestamp": "2026-11-04T15:39:42+08:00",
+      "quoteTimestamp": "2026-11-04T15:46:42+08:00",
       "limitDownPrice": 7.08,
       "eventDayIndex": 1,
       "expiresOn": null,
