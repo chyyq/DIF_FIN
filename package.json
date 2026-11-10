@@ -1,9 +1,9 @@
 {
   "name": "lbr-wave",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
-  "description": "LBR limit-up pullback research and manual position monitoring",
+  "description": "LBR adaptive limit-up and trend pullback research with manual position monitoring",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "test": "npm run test:js && npm run test:py",

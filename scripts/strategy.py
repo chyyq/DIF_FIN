@@ -213,6 +213,9 @@ def hard_veto(quote: dict, config: dict) -> list[str]:
             reasons.append(reason)
     if number(quote.get("price"), 0) <= 0:
         reasons.append("INVALID_QUOTE")
+    maximum = config.get("selectionRules", {}).get("maxPrice")
+    if maximum is not None and number(quote.get("price"), 0) > maximum:
+        reasons.append("CANDIDATE_PRICE_TOO_HIGH")
     return reasons
 
 
@@ -220,6 +223,9 @@ def evaluate_event(event: dict, quote: dict, history: list[dict], calendar: Trad
                    config: dict, as_of: str, bars: list[dict] | None = None,
                    now: datetime | None = None) -> dict:
     result = copy.deepcopy(event)
+    result["eventType"] = event.get("eventType", "LIMIT_UP")
+    result["stale"] = quote.get("stale", False)
+    result["amount"] = quote.get("amount", event.get("amount"))
     result.update({k: quote.get(k) for k in ("price", "high", "low", "quoteTimestamp", "limitDownPrice") if quote.get(k) is not None})
     result["eventDayIndex"] = calendar.index(result["eventDate"], as_of)
     result["expiresOn"] = calendar.deadline(result["eventDate"], config.get("candidateSessions", 7))
@@ -233,17 +239,45 @@ def evaluate_event(event: dict, quote: dict, history: list[dict], calendar: Trad
     price = number(quote.get("price"), 0)
     result["drawdownPct"] = round((1 - price / observed_peak) * 100, 6) if observed_peak and price else None
     trend = trend_metrics(history, result["eventDate"])
+    adaptive = config.get("adaptivePricing", {}).get("enabled", False)
+    current_trend = trend_metrics(history, as_of) if adaptive else trend
     absorption = absorption_metrics(bars or [], config, quote.get("sectorVerifiedStable"))
     result["trendScore"] = trend.get("score")
     result["metrics"] = trend
     result["absorption"] = absorption
-    result["buyLevels"] = plan_levels(observed_peak, config, support=trend.get("support"), atr=trend.get("atr14"), limit_down=quote.get("limitDownPrice")) if observed_peak else []
+    risk_vetoes = []
+    if adaptive:
+        try:
+            from .adaptive import adaptive_levels, falling_risk, market_profile
+        except ImportError:
+            from adaptive import adaptive_levels, falling_risk, market_profile
+        decision_date = min(as_of, str(quote.get("quoteTimestamp") or as_of)[:10])
+        profile = market_profile(history, decision_date, config)
+        expected_daily_session = max((day for day in calendar.sessions if day < decision_date), default=None)
+        daily_history_fresh = bool(expected_daily_session and profile.get("asOf") == expected_daily_session)
+        risk_vetoes, risk_metrics = falling_risk(profile, price, config)
+        result["volatility"] = profile
+        result["riskMetrics"] = risk_metrics
+        result["pricingMethod"] = "ATR14_SWING_SUPPORT"
+        result["currentTrend"] = current_trend
+        result["buyLevels"] = adaptive_levels(observed_peak, profile, config, quote.get("limitDownPrice")) if observed_peak else []
+    else:
+        result["buyLevels"] = plan_levels(observed_peak, config, support=trend.get("support"), atr=trend.get("atr14"), limit_down=quote.get("limitDownPrice")) if observed_peak else []
     vetoes = hard_veto(quote, config)
     if event.get("symbol") != quote.get("symbol"):
         vetoes.append("INSTRUMENT_MISMATCH")
     if event.get("segment") not in config.get("allowedSegments", []) or event.get("segment") != quote.get("segment"):
         vetoes.append("EVENT_SEGMENT_UNVERIFIED_OR_CHANGED")
+    vetoes.extend(risk_vetoes)
+    result["riskVetoReasons"] = risk_vetoes
     reasons = list(vetoes)
+    if adaptive and not result["volatility"]["available"]:
+        reasons.append(result["volatility"]["reason"])
+    if adaptive and not daily_history_fresh:
+        reasons.append("DAILY_HISTORY_STALE_OR_UNVERIFIED")
+    if adaptive and current_trend.get("available") and not current_trend.get("passed"):
+        vetoes.append("CURRENT_TREND_FAILED")
+        reasons.append("CURRENT_TREND_FAILED")
     age = result["eventDayIndex"]
     if age is None:
         reasons.append("CALENDAR_UNAVAILABLE")
@@ -256,9 +290,10 @@ def evaluate_event(event: dict, quote: dict, history: list[dict], calendar: Trad
         reasons.append("TREND_FAILED")
     elif not trend["available"]:
         reasons.append("TREND_UNAVAILABLE")
-    event_verified = event.get("limitEventVerified") is True and number(event.get("limitUpPrice"), 0) > 0
+    is_trend_setup = result["eventType"] == "TREND_PULLBACK"
+    event_verified = (event.get("trendSetupVerified") is True and trend["passed"] and current_trend["passed"]) if is_trend_setup else (event.get("limitEventVerified") is True and number(event.get("limitUpPrice"), 0) > 0)
     if not event_verified:
-        reasons.append("LIMIT_PRICE_UNVERIFIED")
+        reasons.append("TREND_SETUP_UNVERIFIED" if is_trend_setup else "LIMIT_PRICE_UNVERIFIED")
     if (quote.get("limitPriceVerified") is not True or number(quote.get("limitUpPrice"), 0) <= 0
             or number(quote.get("limitDownPrice"), 0) <= 0):
         reasons.append("CURRENT_DAILY_LIMITS_UNVERIFIED")
@@ -286,24 +321,29 @@ def evaluate_event(event: dict, quote: dict, history: list[dict], calendar: Trad
     if quote.get("stale") is True:
         reasons.append("STALE_QUOTE")
     dd = result["drawdownPct"]
-    if dd is not None and dd > 16:
+    extreme_limit = result.get("riskMetrics", {}).get("recentPeakLossLimitPct", 16) if adaptive else 16
+    if dd is not None and dd > extreme_limit:
         reasons.append("EXTREME_DRAWDOWN_NO_NEW_ENTRY")
-    result["riskLevel"] = "EXTREME" if dd is not None and dd > 16 else "DEEP" if dd is not None and dd >= 14 else "NORMAL"
-    gates = {"universe": not bool(vetoes), "trend": trend["passed"], "limitEvent": event_verified,
+    deep_limit = result["buyLevels"][-1]["drawdownPct"] if adaptive and result["buyLevels"] else 14
+    result["riskLevel"] = "EXTREME" if dd is not None and dd > extreme_limit else "DEEP" if dd is not None and dd >= deep_limit else "NORMAL"
+    gates = {"universe": not bool(vetoes), "trend": trend["passed"] and current_trend["passed"],
+             "setup": event_verified, "limitEvent": None if is_trend_setup else event_verified,
+             "dailyHistory": daily_history_fresh if adaptive else True,
              "structure": quote.get("structureVerified") is True and not quote.get("structureBroken", False),
              "absorption": absorption["available"] and absorption["confirmed"], "payoff": False}
     for level in result["buyLevels"]:
         previous = next((x for x in event.get("buyLevels", []) if x.get("id") == level["id"]), {})
+        plan_changed = previous.get("triggerPrice") != level["triggerPrice"] or previous.get("maxBuyPrice") != level["maxBuyPrice"]
         quote_day = str(quote.get("quoteTimestamp") or "")[:10]
         valid_day_low = quote_day > result["eventDate"] and number(quote.get("low")) is not None
         verified_event_low = quote.get("eventLowVerified") is True and number(quote.get("eventLowAsOf")) is not None
         # T0 daily low can precede the first limit touch. It proves no post-touch
         # drawdown unless timestamped event-relative data explicitly verifies it.
-        touched = (bool(previous.get("touched")) and not anchor_changed) or bool(price and price <= level["triggerPrice"])
+        touched = (bool(previous.get("touched")) and not anchor_changed and not plan_changed) or bool(price and price <= level["triggerPrice"])
         touched = touched or (valid_day_low and float(quote["low"]) <= level["triggerPrice"])
         touched = touched or (verified_event_low and float(quote["eventLowAsOf"]) <= level["triggerPrice"])
         level["touched"] = touched
-        level["payoffPassed"] = level["rewardRisk"] is not None and level["rewardRisk"] >= config.get("minimumRewardRisk", 1.5)
+        level["payoffPassed"] = level["rewardRisk"] is not None and level["rewardRisk"] >= config.get("minimumRewardRisk", 1.5) and level.get("structurePlanValid", True)
         gates["payoff"] = gates["payoff"] or level["payoffPassed"]
     signal_fresh = False
     if now and absorption.get("signalTimestamp"):
@@ -322,17 +362,24 @@ def evaluate_event(event: dict, quote: dict, history: list[dict], calendar: Trad
             eligible.append(level)
     if not gates["payoff"]:
         reasons.append("PAYOFF_UNAVAILABLE_OR_INSUFFICIENT")
+    if adaptive and not anchor_changed and event.get("buyLevels") and (len(event["buyLevels"]) != len(result["buyLevels"]) or any(
+            old.get(key) != new.get(key)
+            for old, new in zip(event["buyLevels"], result["buyLevels"])
+            for key in ("triggerPrice", "maxBuyPrice", "tp1", "tp2", "plannedStop"))):
+        result["eventVersion"] = int(event.get("eventVersion", 1)) + 1
+        result["pendingOrdersInvalidated"] = True
     result["gates"] = gates
     result["hardVetoReasons"] = vetoes
     result["reasonCodes"] = list(dict.fromkeys(reasons))
     result["status"] = "EXPIRE" if "EVENT_EXPIRED" in reasons else "CANCEL" if vetoes else "WATCH"
     # Public delayed providers lack mandatory metadata/account/intraday, so remain WATCH.
-    if not reasons and all(gates.values()) and eligible and signal_fresh:
+    if not reasons and all(gates[key] for key in ("universe", "trend", "setup", "dailyHistory", "structure", "absorption", "payoff")) and eligible and signal_fresh:
         result["status"] = "BUY_READY"
         for level in eligible:
             level["status"] = "BUY_READY"
     result["action"] = {"WATCH": "WATCH_NO_BROKER_ORDER", "BUY_READY": "MANUAL_CONFIRM_REQUIRED", "CANCEL": "CANCEL_PENDING_BUY", "EXPIRE": "EXPIRE_UNFILLED"}[result["status"]]
     result["compositeScore"] = None  # Never invent missing board/orderbook components.
+    result["pricePreference"] = "PREFERRED" if price <= config.get("selectionRules", {}).get("preferredPriceMax", 30) else "STANDARD"
     result["entryMode"] = "MANUAL_RECORD_ONLY"
     return result
 
@@ -342,14 +389,20 @@ def rotate_pool(previous: dict, events: list[dict], calendar: TradingCalendar,
     """Freeze membership for seven sessions; prices and versions still update daily."""
     old_pool = previous.get("pool", {})
     age = calendar.index(old_pool.get("startedOn", ""), as_of)
+    rules_changed = config.get("selectionRules", {}).get("reselectOnVersionChange", False) and old_pool.get("selectionVersion") != config.get("parameterVersion")
     # An empty initial pool must not lock the site empty for the next seven days.
-    due = not previous.get("candidates") or not old_pool.get("batchId") or (age is not None and age >= config.get("candidateSessions", 7))
+    due = rules_changed or not previous.get("candidates") or not old_pool.get("batchId") or (age is not None and age >= config.get("candidateSessions", 7))
     candidates = []
     archives = []
     if due:
         archives = [{**e, "batchId": old_pool.get("batchId"), "archiveReason": "BATCH_ROTATED", "archivedOn": as_of} for e in previous.get("candidates", [])]
         active = [e for e in events if e.get("eventDayIndex") is not None and e["eventDayIndex"] < config.get("candidateSessions", 7) and e.get("status") not in ("CANCEL", "EXPIRE")]
-        active.sort(key=lambda e: (e.get("eventDate", ""), e.get("trendScore") or 0, e.get("amount") or 0), reverse=True)
+        try:
+            from .adaptive import admission_ok, ranking_key
+        except ImportError:
+            from adaptive import admission_ok, ranking_key
+        active = [e for e in active if admission_ok(e, config)]
+        active.sort(key=lambda e: ranking_key(e, config))
         seen = set()
         sectors = {}
         for event in active:
@@ -367,7 +420,8 @@ def rotate_pool(previous: dict, events: list[dict], calendar: TradingCalendar,
         started = as_of if as_of in calendar.sessions else (calendar.sessions[-1] if calendar.sessions else None)
         pool = {"batchId": f"LBR:{started or as_of}", "startedOn": started, "sessionIndex": 0 if started else None,
                 "refreshAfterSessions": config.get("candidateSessions", 7), "retained": False,
-                "nextRefreshOn": calendar.deadline(started, config.get("candidateSessions", 7) + 1) if started else None}
+                "nextRefreshOn": calendar.deadline(started, config.get("candidateSessions", 7) + 1) if started else None,
+                "selectionVersion": config.get("parameterVersion"), "ruleChangeRefresh": rules_changed}
     else:
         by_id = {e["eventId"]: e for e in events}
         candidates = [by_id.get(e["eventId"], e) for e in previous.get("candidates", [])]

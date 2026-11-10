@@ -236,7 +236,7 @@ def research_rules(records: list[dict], event_map: dict, closed: list[dict], con
         return result
     overall_train, overall_validation = stats(train), stats(validation)
     candidates = []
-    for field in ("drawdownBin", "pattern", "timing", "sector"):
+    for field in ("drawdownBin", "pattern", "timing", "sector", "setupType", "pricingMethod"):
         # Only training data may define or rank a proposed selector.
         for value in sorted({str(r.get(field) or "UNKNOWN") for r in train}):
             own_train = [r for r in train if str(r.get(field) or "UNKNOWN") == value]
@@ -318,11 +318,14 @@ def analyze(events: list[dict], export: dict, config: dict) -> dict:
                   "touch": touched, "confirm": confirmed, "fill": filled,
                   "outcome": "CLOSED" if own_closed else "OPEN_OR_PARTIAL" if filled else "UNFILLED",
                   "drawdownBin": b, "pattern": pattern, "timing": timing, "sector": feature_source.get("sector", "UNKNOWN"),
+                  "setupType": feature_source.get("eventType", "LIMIT_UP" if feature_source else "UNKNOWN"),
+                  "pricingMethod": feature_source.get("pricingMethod", "LEGACY_FIXED_GRID" if feature_source else "UNKNOWN"),
                   "featuresKnownAtFill": isinstance(fill_snapshot, dict),
                   "closedNetReturnPct": own_closed[0]["netReturnPct"] if len(own_closed) == 1 else None,
                   "reasonCodes": event.get("reasonCodes", [])}
         all_records.append(record)
-        for key in (f"drawdown:{b}", f"pattern:{pattern}", f"timing:{timing}", f"sector:{event.get('sector', 'UNKNOWN')}"):
+        for key in (f"drawdown:{b}", f"pattern:{pattern}", f"timing:{timing}", f"sector:{event.get('sector', 'UNKNOWN')}",
+                    f"setup:{record['setupType']}", f"pricing:{record['pricingMethod']}"):
             groups[key]["events"].add(event_id)
             # A round trip spanning two events is excluded from event-group returns
             # so its profit cannot be counted twice or arbitrarily attributed.

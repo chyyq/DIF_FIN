@@ -16,10 +16,12 @@ from pathlib import Path
 
 try:
     from .providers import PublicProvider, CN_TZ
-    from .strategy import TradingCalendar, evaluate_event, number, rotate_pool
+    from .strategy import TradingCalendar, evaluate_event, hard_veto, number, rotate_pool, trend_metrics
+    from .adaptive import history_probes, market_profile
 except ImportError:
     from providers import PublicProvider, CN_TZ
-    from strategy import TradingCalendar, evaluate_event, number, rotate_pool
+    from strategy import TradingCalendar, evaluate_event, hard_veto, number, rotate_pool, trend_metrics
+    from adaptive import history_probes, market_profile
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -99,11 +101,43 @@ def build_snapshot(previous: dict, previous_events: list[dict], quotes: list[dic
             events[event_id] = {"strategyId": config["strategyId"], "eventId": event_id, "eventVersion": 1,
                                 "symbol": q["symbol"], "code": q["code"], "name": q["name"],
                                 "sector": q.get("sector", "UNKNOWN"), "segment": q.get("segment"),
-                                "eventDate": event_day, "limitUpPrice": upper, "referencePeak": high,
+                                "eventDate": event_day, "eventType": "LIMIT_UP", "anchorType": "LIMIT_EVENT_HIGH",
+                                "limitUpPrice": upper, "referencePeak": high,
                                 "firstObservedAt": stamp, "firstTouchTime": None,
                                 "firstTouchTimeVerified": False, "limitEventVerified": True,
                                 "limitEventSource": q.get("limitPriceSource"), "amount": q.get("amount")}
             observations.append({"type": "LIMIT_EVENT_DISCOVERED", "asOf": stamp, "eventId": event_id, "input": q})
+    if config.get("selectionRules", {}).get("includeTrendPullbacks", False):
+        for q in quotes:
+            if hard_veto(q, config) or not q.get("quoteTimestamp") or q.get("stale") or not q.get("limitPriceVerified"):
+                continue
+            upper = number(q.get("limitUpPrice"), 0)
+            if q.get("limitPriceVerified") and upper and number(q.get("high"), 0) >= upper:
+                continue
+            event_day = q["quoteTimestamp"][:10]
+            active = [e for e in events.values() if e["symbol"] == q["symbol"]
+                      and e.get("status") not in ("CANCEL", "EXPIRE")
+                      and calendar.index(e["eventDate"], as_of) is not None
+                      and 0 <= calendar.index(e["eventDate"], as_of) < config.get("candidateSessions", 7)]
+            if active:
+                continue
+            rows = histories.get(q["symbol"], [])
+            trend = trend_metrics(rows, event_day)
+            profile = market_profile(rows, event_day, config)
+            if (not trend["passed"] or trend["historySessions"] < config.get("minimumHistorySessions", 120)
+                    or not profile["available"]):
+                continue
+            event_id = f"{q['symbol']}:{event_day}:TREND"
+            if event_id in events:
+                continue
+            events[event_id] = {"strategyId": config["strategyId"], "eventId": event_id, "eventVersion": 1,
+                                "symbol": q["symbol"], "code": q["code"], "name": q["name"],
+                                "sector": q.get("sector", "UNKNOWN"), "segment": q.get("segment"),
+                                "eventDate": event_day, "eventType": "TREND_PULLBACK", "anchorType": "RECENT_20_SESSION_HIGH",
+                                "limitUpPrice": None, "limitEventVerified": False, "trendSetupVerified": True,
+                                "referencePeak": max(profile["recentPeak"], number(q.get("high"), 0), number(q.get("price"), 0)),
+                                "firstObservedAt": stamp, "amount": q.get("amount")}
+            observations.append({"type": "TREND_SETUP_DISCOVERED", "asOf": stamp, "eventId": event_id})
     evaluated = []
     for event in events.values():
         quote = current.get(event["symbol"])
@@ -144,7 +178,11 @@ def build_snapshot(previous: dict, previous_events: list[dict], quotes: list[dic
                 "config": config, "calendar": calendar.as_dict(), "pool": pool, "candidates": candidates,
                 "stats": {"candidateCount": len(candidates), "eventCount": len(evaluated), "quoteCount": len(quotes),
                           "watchCount": sum(e.get("status") == "WATCH" for e in candidates),
-                          "readyCount": sum(e.get("status") == "BUY_READY" for e in candidates)},
+                          "readyCount": sum(e.get("status") == "BUY_READY" for e in candidates),
+                          "limitCandidateCount": sum(e.get("eventType", "LIMIT_UP") == "LIMIT_UP" for e in candidates),
+                          "trendCandidateCount": sum(e.get("eventType") == "TREND_PULLBACK" for e in candidates),
+                          "historyAnalyzedCount": sum(bool(rows) for rows in histories.values()),
+                          "historyEnrichmentCap": config.get("selectionRules", {}).get("maxHistorySymbols", 100)},
                 "learning": {"mode": "DESCRIPTIVE_ONLY", "autoApply": False,
                              "message": "Export all manual fills and unfilled events for offline analysis; no win-rate uplift is claimed."}}
     return snapshot, evaluated, observations
@@ -199,20 +237,21 @@ def run(root: Path = ROOT, *, offline: bool = False, now: datetime | None = None
     known_symbols = {e["symbol"] for e in events if e.get("status") not in ("CANCEL", "EXPIRE")
                      and calendar.index(e.get("eventDate", ""), now.date().isoformat()) is not None
                      and calendar.index(e.get("eventDate", ""), now.date().isoformat()) < config.get("candidateSessions", 7)}
-    # A broad prefilter only reduces detail requests. It never verifies a touch.
-    probes = [q for q in quotes if q["symbol"] in known_symbols or (q.get("segment") in config.get("allowedSegments", []) and number(q.get("preClose"), 0) > 0 and number(q.get("high"), 0) / q["preClose"] >= 1.08)]
-    probes.sort(key=lambda q: (q["symbol"] in known_symbols, number(q.get("pct"), -999)), reverse=True)
-    enriched = provider.enrich_many(probes[:100]) if provider.remaining() > 8 else {}
+    cached_history = load_json(data / "history-cache.json", {})
+    # Both setup families share a bounded, low-price-aware enrichment queue.
+    probes = history_probes(quotes, known_symbols, cached_history, config)
+    enriched = provider.enrich_many(probes) if provider.remaining() > 8 else {}
     qmap = {q["symbol"]: q for q in quotes}
     for symbol, (quote, history) in enriched.items():
         qmap[symbol] = quote
         histories[symbol] = history
     # For active events outside this run's history budget, retain a known historic
     # cache; failures never transform missing history into a passing trend gate.
-    cached_history = load_json(data / "history-cache.json", {})
-    for symbol in known_symbols:
+    for symbol in known_symbols | {q["symbol"] for q in probes}:
         if not histories.get(symbol):
-            histories[symbol] = cached_history.get(symbol, [])
+            cached_rows = cached_history.get(symbol, [])
+            # Old qfq caches cannot become absolute entry/support anchors.
+            histories[symbol] = cached_rows if not any(r.get("adjusted") is True for r in cached_rows) else []
     for symbol, rows in histories.items():
         if rows:
             cached_history[symbol] = rows
@@ -248,7 +287,7 @@ def run(root: Path = ROOT, *, offline: bool = False, now: datetime | None = None
                                    "trainingRange": None, "validation": None, "autoOptimized": False})
         write_json(data / "parameter-audit.json", audits)
     append_audit(data / "audit.jsonl", audit + [{"type": "REFRESH_COMPLETE", "asOf": now.isoformat(), "parameterHash": hash_value, "eventCount": len(all_events), "quoteCount": len(quotes)}])
-    print(json.dumps({"mode": snapshot["meta"]["mode"], "stale": False, "candidates": len(snapshot["candidates"]), "events": len(all_events), "quotes": len(quotes)}, ensure_ascii=False))
+    print(json.dumps({"mode": snapshot["meta"]["mode"], "stale": snapshot["meta"]["stale"], "candidates": len(snapshot["candidates"]), "events": len(all_events), "quotes": len(quotes)}, ensure_ascii=False))
     return 0
 
 

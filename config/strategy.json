@@ -1,6 +1,38 @@
 {
   "strategyId": "LBR_MAIN_V1",
-  "parameterVersion": "1.0.0",
+  "parameterVersion": "1.1.0",
+  "adaptivePricing": {
+    "enabled": true,
+    "lookbackSessions": 20,
+    "atrMultiplierA": 1.5,
+    "atrMultiplierB": 2.5,
+    "minDrawdownA": 0.02,
+    "maxDrawdownA": 0.10,
+    "minDrawdownB": 0.035,
+    "maxDrawdownB": 0.14
+  },
+  "riskFilters": {
+    "enabled": true,
+    "minFiveDayLossPct": 6,
+    "maxFiveDayLossPct": 10,
+    "minTenDayLossPct": 8,
+    "maxTenDayLossPct": 16,
+    "minPeakDrawdownPct": 12,
+    "maxPeakDrawdownPct": 22,
+    "maxAtrPct": 7,
+    "supportBreakAtr": 0.5,
+    "maxConsecutiveDeclines": 4
+  },
+  "selectionRules": {
+    "strictAdmission": true,
+    "preferLowerPrice": true,
+    "preferredPriceMax": 30,
+    "maxPrice": 60,
+    "qualityBandSize": 10,
+    "includeTrendPullbacks": true,
+    "maxHistorySymbols": 120,
+    "reselectOnVersionChange": true
+  },
   "candidateSessions": 7,
   "holdingSessions": 7,
   "holdingIncludesEntryDay": true,

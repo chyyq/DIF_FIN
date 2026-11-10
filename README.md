@@ -1,8 +1,8 @@
-# LBR 涨停深回撤波段研究台
+# LBR 趋势回踩波段研究台
 
 这是基于 `BIG A GO_super` 静态框架重新实现的独立项目：浏览器页面 + 本地交易记录 + Python 数据生成器 + GitHub Actions + GitHub Pages。页面的两项核心工作是维护备选池，以及跟踪人工确认买入后的持仓。LBR 的买卖逻辑与旧早盘涨停、尾盘 T+1 模型隔离。
 
-已实现七日备选池、人工成交与同股合并、独立持仓监控、冻结分笔目标、事件样本和演示隔离。页面仍以实际数据时效和证据完整性决定状态，部署文件的存在不代表线上服务已开通。
+当前版本1.1：涨停回撤与非涨停上升趋势回踩共用风控，自适应ATR买价与低价优先。已实现七日备选池、人工成交与同股合并、独立持仓监控、冻结分笔目标、事件样本和演示隔离。页面仍以实际数据时效和证据完整性决定状态，部署文件的存在不代表线上服务已开通。
 
 ## 策略与使用口径
 
@@ -35,9 +35,9 @@ npm run test:py
 
 `npm test` 顺序执行上述两组测试。首次没有可核验行情时应显示数据不足；不能把演示行情当成实时行情。
 
-2026-10-24 本地验收通过 JavaScript 41 项、Python 88 项。前后端集成回归覆盖拒绝未来成交、平仓后的新事件、活动持仓行情覆盖、完整事件归档、浮盈与已实现收益区分、严格演示导入隔离，以及模式切换后拒绝迟到行情回写；HTTP 验收覆盖公开模块、个人路径拒绝访问和端口占用处理。
+2026-11-02 本地验收通过 JavaScript 41 项、Python 115 项，共156项。前后端集成回归覆盖拒绝未来成交、平仓后的新事件、活动持仓行情覆盖、完整事件归档、浮盈与已实现收益区分、严格演示导入隔离，以及模式切换后拒绝迟到行情回写；HTTP 验收覆盖公开模块、个人路径拒绝访问和端口占用处理。
 
-当前随项目保存的公开行情快照包含 5,223 只股票、102 个已观测涨停事件和 2 条固定池记录（1 只 `WATCH`、1 只趋势否决的 `CANCEL`），来源时间为 2026-10-23 16:15（上海时间）。这是历史时点的数据，不代表读取页面时的实时价格；缺少完整确认条件时不会升级为可买状态。GitHub Actions/Pages 的线上可用性仍待新仓库实跑验证。
+本轮真实快照来源为2026-11-02闭市行情：5,219条报价、120只日线分析、129条完整事件；含18个非涨停趋势回踩研究事件，本次筛选保留2只WATCH观察股，BUY_READY为0。云端Actions尚未实跑；本地通过三条workflow的actionlint检查及站点打包检查。
 
 ## 刷新机制
 
@@ -57,12 +57,12 @@ GitHub Actions 可能延迟、跳过或因公共接口限流失败，它是定�
 
 ## GitHub 与 Pages 配置
 
-新项目尚未配置新的 GitHub 仓库或远端。原 `BIG A GO_super/.git` 是空目录，不能据此恢复可信 Git 历史或远端；旧 README 的在线地址不应被自动用作新项目发布目标。
+目标仓库为 `chyyq/DIF`，统一使用 `main`。上传包内的 `index.html`、`config/`、`scripts/` 和 `.github/` 必须直接位于仓库根目录；不要把外层 `LBR-wave` 文件夹一起上传。`main` 与 `master` 是不同分支，网页上传前和提交确认页都需核对目标分支。本次已完成本地修复和打包，未执行云端提交或部署。
 
-1. 在 GitHub 创建一个新的空仓库，默认分支使用 `main`，并将本目录作为仓库根目录。公开发布时仅上传可公开代码和市场数据；人工交易与证据资料留在本地。
+1. 将上传包解压后的内容上传到 `chyyq/DIF` 的 `main` 根目录，确认仓库首页直接能看到 `index.html` 和 `.github/workflows`，并将仓库默认分支设为 `main`，否则定时任务不会按此分支运行。人工交易与证据资料留在本地。
 2. `Settings → Actions → General → Workflow permissions` 允许 `Read and write permissions`，以便数据工作流提交 `data/`。
 3. `Settings → Pages → Build and deployment → Source` 选择 **GitHub Actions**。
-4. 推送 `main` 后运行 `Deploy LBR Pages`；随后可在 Actions 手动执行 `Update LBR market data` 获取首份行情。
+4. 在 Actions 先确认 `Check LBR code` 通过，再手动执行 `Update LBR market data`；更新成功后会自动触发 `Deploy LBR Pages`。也可手动运行部署工作流。
 5. 在 Actions 与 Pages 查看实际成功状态和发布地址；上线后检查 JSON 的生成时间和来源状态。
 
 这里修复了旧“从分支发布”的一个限制：使用 `GITHUB_TOKEN` 推送的数据提交不会触发新的 Pages 构建。因此 `deploy-pages.yml` 通过成功完成的数据工作流 `workflow_run` 显式部署，并检出最新 `main`；人工推送与手动触发也可部署。[GitHub 官方说明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
@@ -102,3 +102,8 @@ python scripts/learning.py --ledger "reference/你的导出账本.json" --output
 离线学习还会生成受独立事件数、训练与验证日期、同股隔离、市场阶段和尾部收益约束的规则候选。它们只用于影子研究，未通过检验不自动作用于正式推荐。完整 A/B/C 收益回测目前缺少盘中历史证据，准备状态和缺失清单见 data/backtest-readiness.json。
 
 策略原文的只读提取保存在 docs/strategy-spec.txt，本次明确确认的七交易日与30% / 30% / 40%覆盖文档的旧初值。
+
+
+## 1.1 优化与验证
+
+详见[优化说明](OPTIMIZATION_v1.1.md)和[本地验收报告](QA_REPORT.md)。默认优先30元以内，上限60元，先通过趋势和风险筛选。A/B根据近期非复权ATR、历史回撤与支撑计算，不使用固定11%/13%作为实盘备用价。新增Check LBR code工作流，Update工作流每次抓取前也运行后端测试。

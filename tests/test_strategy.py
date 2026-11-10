@@ -22,6 +22,11 @@ from scripts.learning import analyze, descriptive, drawdown_bin, extract_closed_
 from scripts.backtest import readiness
 
 CONFIG = json.loads((ROOT / "config/strategy.json").read_text(encoding="utf-8"))
+# Keep the original v1.0 price-grid and gate fixtures as explicit regression
+# comparisons. Default v1.1 admission/risk/pricing has its own integration suite.
+CONFIG["adaptivePricing"]["enabled"] = False
+CONFIG["riskFilters"]["enabled"] = False
+CONFIG["selectionRules"].update(strictAdmission=False, reselectOnVersionChange=False, includeTrendPullbacks=False)
 SESSIONS = ["2026-09-28", "2026-09-29", "2026-09-30", "2026-10-09", "2026-10-12",
             "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-19",
             "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23"]

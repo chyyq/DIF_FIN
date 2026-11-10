@@ -290,7 +290,7 @@ class PublicProvider:
 
     def enrich_many(self, quotes: list[dict]) -> dict[str, tuple[dict, list[dict]]]:
         def one(q):
-            return self.details(q), self.history(q["symbol"], self.config.get("minimumHistorySessions", 120) + 30)
+            return self.details(q), self.history(q["symbol"], self.config.get("minimumHistorySessions", 120) + 30, adjusted=False)
         output = {}
         with ThreadPoolExecutor(max_workers=6) as pool:
             futures = {pool.submit(one, q): q for q in quotes}
