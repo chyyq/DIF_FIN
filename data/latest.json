@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-11T16:16:53.867332+08:00",
-    "lastSuccessfulAt": "2026-11-11T16:16:53.867332+08:00",
+    "generatedAt": "2026-11-11T16:24:12.301308+08:00",
+    "lastSuccessfulAt": "2026-11-11T16:24:12.301308+08:00",
     "quoteTimestamp": "2026-11-11T16:12:01+08:00",
     "tradingDate": "2026-11-11",
     "stale": false,
@@ -18,16 +18,9 @@
         "name": "Eastmoney-universe",
         "ok": true,
         "note": "5222 symbols received; pagination can be partial and is reported separately"
-      },
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
-    "errors": [
-      "Daily history 603448.SH: No request budget"
-    ],
+    "errors": [],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "2b62cd09f3c5584c",
