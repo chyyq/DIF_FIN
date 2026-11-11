@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-11T22:33:14.629052+08:00",
-    "lastSuccessfulAt": "2026-11-11T22:33:14.629052+08:00",
-    "quoteTimestamp": "2026-11-11T16:15:00+08:00",
+    "generatedAt": "2026-11-11T22:35:27.048203+08:00",
+    "lastSuccessfulAt": "2026-11-11T22:35:27.048203+08:00",
+    "quoteTimestamp": "2026-11-11T16:12:01+08:00",
     "tradingDate": "2026-11-11",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,19 +15,41 @@
         "note": "Actual historical daily bars; no intraday confirmation"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney",
         "ok": true,
-        "note": "5105 requested symbols received with reported daily limits; security/account metadata unverified"
+        "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Sina-universe",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "Enumerated 5350 symbols; complete=True; explicit board exclusions complete=True"
+        "note": "99 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
+      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily limits 605066.SH: Remote end closed connection without response",
+      "Daily limits 605188.SH: Remote end closed connection without response",
+      "Daily limits 605169.SH: Remote end closed connection without response",
+      "Daily limits 605056.SH: Remote end closed connection without response",
+      "Daily limits 605179.SH: Remote end closed connection without response",
+      "Daily limits 605277.SH: Remote end closed connection without response",
+      "Daily limits 605100.SH: Remote end closed connection without response",
+      "Daily limits 605398.SH: Remote end closed connection without response",
+      "Daily limits 605090.SH: Remote end closed connection without response",
+      "Daily limits 605305.SH: Remote end closed connection without response",
+      "Daily limits 605589.SH: Remote end closed connection without response",
+      "Daily limits 605358.SH: Remote end closed connection without response",
+      "Daily limits 605566.SH: Remote end closed connection without response",
+      "Daily limits 605258.SH: Remote end closed connection without response",
+      "Daily limits 605118.SH: Remote end closed connection without response",
+      "Daily limits 605060.SH: Remote end closed connection without response",
+      "Daily limits 605287.SH: Remote end closed connection without response",
+      "Daily limits 605058.SH: Remote end closed connection without response",
+      "Daily limits 605111.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -871,7 +893,7 @@
       "referencePeak": 3.01,
       "firstObservedAt": "2026-11-11T03:13:53.852630+08:00",
       "amount": 706210000.0,
-      "stale": false,
+      "stale": true,
       "price": 2.98,
       "high": 3.01,
       "low": 2.96,
@@ -1023,7 +1045,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1051,7 +1074,7 @@
       "referencePeak": 10.07,
       "firstObservedAt": "2026-11-11T03:13:53.852630+08:00",
       "amount": 115430000.0,
-      "stale": false,
+      "stale": true,
       "price": 9.04,
       "high": 9.04,
       "low": 8.75,
@@ -1203,7 +1226,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1230,7 +1254,7 @@
       "referencePeak": 2.2,
       "firstObservedAt": "2026-11-11T15:53:05.971148+08:00",
       "amount": 125070000.0,
-      "stale": false,
+      "stale": true,
       "price": 2.14,
       "high": 2.17,
       "low": 2.13,
@@ -1382,7 +1406,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1394,12 +1419,12 @@
   "stats": {
     "candidateCount": 3,
     "eventCount": 319,
-    "quoteCount": 5105,
+    "quoteCount": 99,
     "watchCount": 3,
     "readyCount": 0,
     "limitCandidateCount": 0,
     "trendCandidateCount": 3,
-    "historyAnalyzedCount": 146,
+    "historyAnalyzedCount": 76,
     "historyEnrichmentCap": 120
   },
   "learning": {
