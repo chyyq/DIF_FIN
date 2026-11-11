@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-11T16:24:12.301308+08:00",
-    "lastSuccessfulAt": "2026-11-11T16:24:12.301308+08:00",
+    "generatedAt": "2026-11-11T20:52:18.207875+08:00",
+    "lastSuccessfulAt": "2026-11-11T20:52:18.207875+08:00",
     "quoteTimestamp": "2026-11-11T16:12:01+08:00",
     "tradingDate": "2026-11-11",
     "stale": false,
@@ -17,10 +17,32 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "5222 symbols received; pagination can be partial and is reported separately"
+        "note": "99 symbols received; pagination can be partial and is reported separately"
+      },
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
-    "errors": [],
+    "errors": [
+      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
+      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
+      "Eastmoney universe STAR page 1: The read operation timed out",
+      "Daily history 605388.SH: Remote end closed connection without response",
+      "Daily limits 605339.SH: Remote end closed connection without response",
+      "Daily limits 605589.SH: Remote end closed connection without response",
+      "Daily limits 605133.SH: Remote end closed connection without response",
+      "Daily limits 605358.SH: Remote end closed connection without response",
+      "Daily limits 605598.SH: Remote end closed connection without response",
+      "Daily limits 605118.SH: Remote end closed connection without response",
+      "Daily limits 605060.SH: Remote end closed connection without response",
+      "Daily limits 605258.SH: Remote end closed connection without response",
+      "Daily limits 605111.SH: Remote end closed connection without response",
+      "Daily limits 605058.SH: Remote end closed connection without response",
+      "Daily limits 605287.SH: Remote end closed connection without response"
+    ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "2b62cd09f3c5584c",
@@ -863,7 +885,7 @@
       "referencePeak": 3.01,
       "firstObservedAt": "2026-11-11T03:13:53.852630+08:00",
       "amount": 706211321.0,
-      "stale": false,
+      "stale": true,
       "price": 2.98,
       "high": 3.01,
       "low": 2.96,
@@ -1015,7 +1037,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1043,7 +1066,7 @@
       "referencePeak": 10.07,
       "firstObservedAt": "2026-11-11T03:13:53.852630+08:00",
       "amount": 115427798.0,
-      "stale": false,
+      "stale": true,
       "price": 9.04,
       "high": 9.04,
       "low": 8.75,
@@ -1195,7 +1218,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1222,7 +1246,7 @@
       "referencePeak": 2.2,
       "firstObservedAt": "2026-11-11T15:53:05.971148+08:00",
       "amount": 125072210.68,
-      "stale": false,
+      "stale": true,
       "price": 2.14,
       "high": 2.17,
       "low": 2.13,
@@ -1374,7 +1398,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -1385,13 +1410,13 @@
   ],
   "stats": {
     "candidateCount": 3,
-    "eventCount": 213,
-    "quoteCount": 5222,
+    "eventCount": 216,
+    "quoteCount": 99,
     "watchCount": 3,
     "readyCount": 0,
     "limitCandidateCount": 0,
     "trendCandidateCount": 3,
-    "historyAnalyzedCount": 123,
+    "historyAnalyzedCount": 66,
     "historyEnrichmentCap": 120
   },
   "learning": {
