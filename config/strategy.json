@@ -1,6 +1,7 @@
 {
   "strategyId": "LBR_MAIN_V1",
-  "parameterVersion": "1.1.0",
+  "parameterVersion": "1.2.0",
+  "candidatePoolMode": "WEEKLY_DAILY",
   "adaptivePricing": {
     "enabled": true,
     "lookbackSessions": 20,

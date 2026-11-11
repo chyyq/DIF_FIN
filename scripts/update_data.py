@@ -18,10 +18,12 @@ try:
     from .providers import PublicProvider, CN_TZ
     from .strategy import TradingCalendar, evaluate_event, hard_veto, number, rotate_pool, trend_metrics
     from .adaptive import history_probes, market_profile
+    from .weekly_pool import build_weekly_pool
 except ImportError:
     from providers import PublicProvider, CN_TZ
     from strategy import TradingCalendar, evaluate_event, hard_veto, number, rotate_pool, trend_metrics
     from adaptive import history_probes, market_profile
+    from weekly_pool import build_weekly_pool
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -56,6 +58,9 @@ def parameter_hash(config: dict) -> str:
 def stale_snapshot(previous: dict, config: dict, now: datetime, errors: list[str], health: list[dict]) -> dict:
     snapshot = copy.deepcopy(previous)
     old_meta = snapshot.get("meta", {})
+    if config.get('candidatePoolMode') == 'WEEKLY_DAILY':
+        pool, members, _ = build_weekly_pool(previous, previous.get('candidates', []), config, now.date().isoformat())
+        snapshot.update(pool=pool, candidates=members)
     for event in snapshot.get("candidates", []):
         if event.get("status") == "BUY_READY":
             event["status"] = "WATCH"
@@ -68,11 +73,14 @@ def stale_snapshot(previous: dict, config: dict, now: datetime, errors: list[str
                         "tradingDate": old_meta.get("tradingDate"), "stale": True,
                         "mode": "cached-fallback" if previous.get("candidates") else "no-current-data",
                         "errors": errors, "sourceHealth": health, "automaticOrders": False}
-    snapshot.setdefault("config", config)
+    snapshot["config"] = config
     snapshot.setdefault("candidates", [])
     snapshot.setdefault("calendar", {"sessions": [], "verified": False, "source": "unavailable", "coverageThrough": None})
     snapshot.setdefault("pool", {"batchId": None, "startedOn": None, "sessionIndex": None, "refreshAfterSessions": config.get("candidateSessions", 7), "nextRefreshOn": None, "retained": True})
     snapshot.setdefault("stats", {"candidateCount": 0, "eventCount": 0})
+    snapshot['stats'].update(candidateCount=len(snapshot['candidates']),
+                             watchCount=sum(e.get('status') == 'WATCH' for e in snapshot['candidates']),
+                             readyCount=0)
     return snapshot
 
 
@@ -160,12 +168,15 @@ def build_snapshot(previous: dict, previous_events: list[dict], quotes: list[dic
             event["status"] = "CANCEL"
             event["action"] = "CANCEL_PENDING_BUY"
             event["reasonCodes"] = list(dict.fromkeys(event.get("reasonCodes", []) + ["SUPERSEDED_LIMIT_EVENT"]))
-    pool, candidates, archives = rotate_pool(previous, evaluated, calendar, config, trading_date or as_of)
+    if config.get('candidatePoolMode') == 'WEEKLY_DAILY':
+        pool, candidates, archives = build_weekly_pool(previous, evaluated, config, as_of, quote_day, stamp)
+    else:
+        pool, candidates, archives = rotate_pool(previous, evaluated, calendar, config, trading_date or as_of)
     # Within a batch, membership is stable by symbol; a fresh event may reanchor
     # that same stock only after invalidating its old plan version.
     for index, candidate in enumerate(candidates):
         newest = latest_by_symbol.get(candidate["symbol"])
-        if newest and newest["eventId"] != candidate["eventId"] and newest.get("status") not in ("CANCEL", "EXPIRE"):
+        if config.get('candidatePoolMode') != 'WEEKLY_DAILY' and newest and newest["eventId"] != candidate["eventId"] and newest.get("status") not in ("CANCEL", "EXPIRE"):
             candidates[index] = {**newest, "supersededEventId": candidate["eventId"]}
     observations.extend({"type": "POOL_EVENT_ARCHIVED", "asOf": stamp, "snapshot": item} for item in archives)
     snapshot = {"meta": {"schemaVersion": 1, "strategyId": config["strategyId"], "generatedAt": stamp,

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import * as portfolio from '../portfolio.js';
 import * as demo from '../demo.js';
+import * as weekly from '../weekly.js';
 
 // Exercise the real form/refresh handlers against the real ledger. The tiny
 // element adapter supplies input values; these tests make no markup assertions.
@@ -23,9 +24,10 @@ function harness(files = {}) {
   const storage = new Map();
   const calls = [];
   const controls = {now:NOW, files, calls, quoteResult:null};
-  const make = new Function('portfolio', 'demo', 'document', 'localStorage', 'controls', `
+  const make = new Function('portfolio', 'demo', 'weekly', 'document', 'localStorage', 'controls', `
     const {newState,recordBuy,recordSell,recordEvents,applyQuotes,holdings,learningSummary,mergeState,validateState,exportState,suggestedQuantity}=portfolio;
     const {demoData,demoBuys,demoQuotes,DEMO_NOW}=demo;
+    const {weeklyView,moveDate}=weekly;
     ${handlers}
     render=()=>{}; notice=()=>{}; toast=()=>{};
     now=()=>controls.now;
@@ -38,9 +40,9 @@ function harness(files = {}) {
       if(controls.quoteResult)return controls.quoteResult;
       return {symbol:code,price:10,timestamp:controls.now,source:'integration-fixture'};
     };
-    return {ctx,saveTrade,refresh,refreshLiveQuotes,held,importFile};
+    return {ctx,saveTrade,refresh,refreshLiveQuotes,held,importFile,selectPoolDate,candidateFor};
   `);
-  const app = make(portfolio, demo, {querySelector:element, hidden:false}, {
+  const app = make(portfolio, demo, weekly, {querySelector:element, hidden:false}, {
     getItem:key=>storage.get(key)||null,
     setItem:(key,value)=>storage.set(key,value),
   }, controls);
@@ -71,6 +73,19 @@ test('manual form rejects future fills before writing the ledger', () => {
   assert.equal(h.ctx.ledger.fills.length,0);
   assert.match(h.element('#trade-error').textContent,/未来/);
   assert.equal(h.storage.size,0);
+});
+
+test('changing recommendation dates and Monday refresh preserve actual holdings and frozen targets', async()=>{
+  const h=harness({'data/latest.json':{meta:{strategyId:'LBR_MAIN_V1',generatedAt:NOW},
+    calendar:{verified:true,sessions:SESSIONS},pool:{mode:'WEEKLY_DAILY',weekStart:'2026-05-11',days:[]},candidates:[]}});
+  h.ctx.ledger=buy(h.ctx.ledger,'600002','prior-buy','prior-week');
+  const fills=structuredClone(h.ctx.ledger.fills);
+  h.selectPoolDate('2026-05-12');h.selectPoolDate('2026-05-11');
+  await h.refresh();
+  assert.deepEqual(h.ctx.ledger.fills,fills);
+  assert.equal(h.held().length,1);
+  assert.equal(h.held()[0].qty,100);
+  assert.deepEqual(h.ctx.data.candidates,[]);
 });
 
 test('a new manual round trip does not reopen a previously closed event', () => {

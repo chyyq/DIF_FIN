@@ -26,6 +26,7 @@ CONFIG = json.loads((ROOT / "config/strategy.json").read_text(encoding="utf-8"))
 # comparisons. Default v1.1 admission/risk/pricing has its own integration suite.
 CONFIG["adaptivePricing"]["enabled"] = False
 CONFIG["riskFilters"]["enabled"] = False
+CONFIG['candidatePoolMode'] = 'LEGACY_BATCH'  # Explicit historical batch-policy comparisons.
 CONFIG["selectionRules"].update(strictAdmission=False, reselectOnVersionChange=False, includeTrendPullbacks=False)
 SESSIONS = ["2026-09-28", "2026-09-29", "2026-09-30", "2026-10-09", "2026-10-12",
             "2026-10-13", "2026-10-14", "2026-10-15", "2026-10-16", "2026-10-19",
