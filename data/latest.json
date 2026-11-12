@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-12T16:46:44.520275+08:00",
-    "lastSuccessfulAt": "2026-11-12T16:46:44.520275+08:00",
+    "generatedAt": "2026-11-12T16:51:57.039950+08:00",
+    "lastSuccessfulAt": "2026-11-12T16:51:57.039950+08:00",
     "quoteTimestamp": "2026-11-12T16:12:01+08:00",
     "tradingDate": "2026-11-12",
     "stale": false,
@@ -22,41 +22,27 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "594 symbols received; pagination can be partial and is reported separately"
+        "note": "297 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 7: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily limits 603989.SH: Remote end closed connection without response",
-      "Daily limits 605305.SH: Remote end closed connection without response",
-      "Daily limits 603897.SH: Remote end closed connection without response",
-      "Daily limits 603882.SH: Remote end closed connection without response",
-      "Daily limits 605060.SH: Remote end closed connection without response",
-      "Daily limits 603833.SH: Remote end closed connection without response",
-      "Daily limits 603938.SH: Remote end closed connection without response",
-      "Daily limits 603666.SH: Remote end closed connection without response",
-      "Daily limits 605020.SH: Remote end closed connection without response",
-      "Daily limits 603626.SH: Remote end closed connection without response",
-      "Daily limits 603678.SH: Remote end closed connection without response",
-      "Daily limits 603823.SH: Remote end closed connection without response",
-      "Daily limits 603799.SH: Remote end closed connection without response",
-      "Daily limits 603688.SH: Remote end closed connection without response",
-      "Daily limits 605358.SH: Remote end closed connection without response",
-      "Daily limits 605118.SH: Remote end closed connection without response",
-      "Daily limits 603800.SH: Remote end closed connection without response",
-      "Daily limits 603341.SH: Remote end closed connection without response",
-      "Daily limits 603950.SH: Remote end closed connection without response",
-      "Daily limits 605258.SH: Remote end closed connection without response",
-      "Daily limits 603859.SH: Remote end closed connection without response",
       "Daily limits 603786.SH: Remote end closed connection without response",
+      "Daily limits 603823.SH: Remote end closed connection without response",
       "Daily limits 603920.SH: Remote end closed connection without response",
-      "Daily limits 605168.SH: Remote end closed connection without response",
+      "Daily limits 605258.SH: Remote end closed connection without response",
       "Daily limits 605111.SH: Remote end closed connection without response",
-      "Daily limits 603757.SH: Remote end closed connection without response"
+      "Daily limits 603859.SH: Remote end closed connection without response",
+      "Daily limits 605058.SH: Remote end closed connection without response",
+      "Daily limits 603757.SH: Remote end closed connection without response",
+      "Daily limits 605168.SH: Remote end closed connection without response",
+      "Daily limits 603728.SH: Remote end closed connection without response",
+      "Daily limits 603773.SH: Remote end closed connection without response",
+      "Daily limits 603733.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -886,7 +872,7 @@
       {
         "date": "2026-11-12",
         "firstRecordedAt": "2026-11-12T16:30:24.504803+08:00",
-        "lastUpdatedAt": "2026-11-12T16:46:44.520275+08:00",
+        "lastUpdatedAt": "2026-11-12T16:51:57.039950+08:00",
         "candidates": [
           {
             "strategyId": "LBR_MAIN_V1",
@@ -1964,13 +1950,13 @@
   ],
   "stats": {
     "candidateCount": 3,
-    "eventCount": 299,
-    "quoteCount": 594,
+    "eventCount": 302,
+    "quoteCount": 297,
     "watchCount": 3,
     "readyCount": 0,
     "limitCandidateCount": 0,
     "trendCandidateCount": 3,
-    "historyAnalyzedCount": 175,
+    "historyAnalyzedCount": 162,
     "historyEnrichmentCap": 120
   },
   "learning": {
