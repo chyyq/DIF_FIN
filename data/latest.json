@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-13T22:28:22.970948+08:00",
-    "lastSuccessfulAt": "2026-11-13T22:28:22.970948+08:00",
+    "generatedAt": "2026-11-13T22:43:10.884780+08:00",
+    "lastSuccessfulAt": "2026-11-13T22:43:10.884780+08:00",
     "quoteTimestamp": "2026-11-13T16:12:01+08:00",
     "tradingDate": "2026-11-13",
     "stale": false,
@@ -30,19 +30,25 @@
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 605338.SH: Remote end closed connection without response",
-      "Daily limits 605589.SH: Remote end closed connection without response",
-      "Daily limits 605020.SH: Remote end closed connection without response",
-      "Daily limits 603955.SH: Remote end closed connection without response",
-      "Daily limits 603800.SH: Remote end closed connection without response",
+      "Daily history 603816.SH: Remote end closed connection without response",
+      "Daily limits 603978.SH: Remote end closed connection without response",
+      "Daily limits 603882.SH: Remote end closed connection without response",
+      "Daily limits 605358.SH: Remote end closed connection without response",
       "Daily limits 603976.SH: Remote end closed connection without response",
+      "Daily limits 605020.SH: Remote end closed connection without response",
+      "Daily limits 603678.SH: Remote end closed connection without response",
+      "Daily limits 603799.SH: Remote end closed connection without response",
       "Daily limits 603688.SH: Remote end closed connection without response",
+      "Daily limits 603800.SH: Remote end closed connection without response",
+      "Daily limits 603955.SH: Remote end closed connection without response",
       "Daily limits 603859.SH: Remote end closed connection without response",
       "Daily limits 603699.SH: Remote end closed connection without response",
-      "Daily limits 603979.SH: Remote end closed connection without response",
       "Daily limits 603920.SH: Remote end closed connection without response",
+      "Daily limits 603979.SH: Remote end closed connection without response",
+      "Daily limits 605168.SH: Remote end closed connection without response",
       "Daily limits 603786.SH: Remote end closed connection without response",
-      "Daily limits 605168.SH: Remote end closed connection without response"
+      "Daily limits 605287.SH: Remote end closed connection without response",
+      "Daily limits 603667.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -1414,7 +1420,7 @@
       {
         "date": "2026-11-13",
         "firstRecordedAt": "2026-11-13T16:15:10.289367+08:00",
-        "lastUpdatedAt": "2026-11-13T22:28:22.970948+08:00",
+        "lastUpdatedAt": "2026-11-13T22:43:10.884780+08:00",
         "candidates": [
           {
             "strategyId": "LBR_MAIN_V1",
@@ -3576,7 +3582,7 @@
     "readyCount": 0,
     "limitCandidateCount": 0,
     "trendCandidateCount": 7,
-    "historyAnalyzedCount": 193,
+    "historyAnalyzedCount": 209,
     "historyEnrichmentCap": 120
   },
   "learning": {
