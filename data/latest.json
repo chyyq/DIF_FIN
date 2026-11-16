@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-16T21:53:38.709396+08:00",
-    "lastSuccessfulAt": "2026-11-16T21:53:38.709396+08:00",
-    "quoteTimestamp": "2026-11-16T16:15:00+08:00",
+    "generatedAt": "2026-11-16T22:00:03.926261+08:00",
+    "lastSuccessfulAt": "2026-11-16T22:00:03.926261+08:00",
+    "quoteTimestamp": "2026-11-16T16:12:01+08:00",
     "tradingDate": "2026-11-16",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,14 +15,9 @@
         "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "5143 requested symbols received with reported daily limits; security/account metadata unverified"
-      },
-      {
-        "name": "Sina-universe",
-        "ok": true,
-        "note": "Enumerated 5498 symbols; complete=False; explicit board exclusions complete=True"
+        "note": "296 symbols received; pagination can be partial and is reported separately"
       },
       {
         "name": "Tencent-history",
@@ -31,10 +26,11 @@
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response",
-      "Sina node hs_a page: <urlopen error _ssl.c:1001: The handshake operation timed out>",
-      "Sina universe incomplete; missing previous symbols remain stale",
-      "Daily history 600103.SH: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
+      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily history 603687.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -866,7 +862,7 @@
       {
         "date": "2026-11-16",
         "firstRecordedAt": "2026-11-16T16:07:53.358203+08:00",
-        "lastUpdatedAt": "2026-11-16T21:53:38.709396+08:00",
+        "lastUpdatedAt": "2026-11-16T22:00:03.926261+08:00",
         "candidates": [
           {
             "strategyId": "LBR_MAIN_V1",
@@ -1782,12 +1778,12 @@
       "trendSetupVerified": true,
       "referencePeak": 11.77,
       "firstObservedAt": "2026-11-16T16:07:53.358203+08:00",
-      "amount": 119790000.0,
+      "amount": 119794297.0,
       "stale": false,
       "price": 10.4,
       "high": 10.56,
       "low": 9.92,
-      "quoteTimestamp": "2026-11-16T16:14:58+08:00",
+      "quoteTimestamp": "2026-11-16T16:11:58+08:00",
       "limitDownPrice": 9.22,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -1961,7 +1957,7 @@
       "referencePeak": 15.73,
       "firstObservedAt": "2026-11-13T21:26:00.491320+08:00",
       "amount": 189450000.0,
-      "stale": false,
+      "stale": true,
       "price": 15.45,
       "high": 15.73,
       "low": 14.78,
@@ -2113,7 +2109,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -2141,7 +2138,7 @@
       "referencePeak": 4.9,
       "firstObservedAt": "2026-11-13T16:15:10.289367+08:00",
       "amount": 1178590000.0,
-      "stale": false,
+      "stale": true,
       "price": 4.79,
       "high": 4.82,
       "low": 4.65,
@@ -2293,7 +2290,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -2320,7 +2318,7 @@
       "referencePeak": 1.51,
       "firstObservedAt": "2026-11-16T21:53:38.709396+08:00",
       "amount": 101230000.0,
-      "stale": false,
+      "stale": true,
       "price": 1.45,
       "high": 1.45,
       "low": 1.43,
@@ -2472,7 +2470,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -2498,7 +2497,7 @@
       "referencePeak": 2.2,
       "firstObservedAt": "2026-11-12T06:29:31.572752+08:00",
       "amount": 147900000.0,
-      "stale": false,
+      "stale": true,
       "price": 2.15,
       "high": 2.16,
       "low": 2.12,
@@ -2650,7 +2649,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -2662,12 +2662,12 @@
   "stats": {
     "candidateCount": 5,
     "eventCount": 466,
-    "quoteCount": 5143,
+    "quoteCount": 296,
     "watchCount": 5,
     "readyCount": 0,
     "limitCandidateCount": 0,
     "trendCandidateCount": 5,
-    "historyAnalyzedCount": 209,
+    "historyAnalyzedCount": 121,
     "historyEnrichmentCap": 120
   },
   "learning": {
