@@ -1,7 +1,7 @@
 {
   "meta": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-16T16:16:52.958829+08:00",
+    "generatedAt": "2026-11-16T16:31:21.403993+08:00",
     "quoteTimestamp": "2026-11-16T16:12:01+08:00",
     "tradingDate": "2026-11-16",
     "stale": false,
@@ -40,9 +40,7 @@
       "quoteTimestamp": "2026-11-16T16:11:49+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 28.6,
-      "limitDownPrice": 23.4
+      "segment": "SSE_MAIN"
     },
     "605589.SH": {
       "symbol": "605589.SH",
@@ -680,9 +678,7 @@
       "quoteTimestamp": "2026-11-16T16:11:59+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 53.05,
-      "limitDownPrice": 43.41
+      "segment": "SSE_MAIN"
     },
     "605286.SH": {
       "symbol": "605286.SH",
@@ -1042,9 +1038,7 @@
       "quoteTimestamp": "2026-11-16T16:11:53+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 15.75,
-      "limitDownPrice": 12.89
+      "segment": "SSE_MAIN"
     },
     "605168.SH": {
       "symbol": "605168.SH",
@@ -1270,7 +1264,9 @@
       "quoteTimestamp": "2026-11-16T16:11:43+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 37.4,
+      "limitDownPrice": 30.6
     },
     "605117.SH": {
       "symbol": "605117.SH",
@@ -1656,7 +1652,9 @@
       "quoteTimestamp": "2026-11-16T16:11:34+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 30.28,
+      "limitDownPrice": 24.78
     },
     "605018.SH": {
       "symbol": "605018.SH",
@@ -2430,7 +2428,9 @@
       "quoteTimestamp": "2026-11-16T16:11:46+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 14.27,
+      "limitDownPrice": 11.67
     },
     "603933.SH": {
       "symbol": "603933.SH",
@@ -2528,9 +2528,7 @@
       "quoteTimestamp": "2026-11-16T16:11:49+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 19.07,
-      "limitDownPrice": 15.61
+      "segment": "SSE_MAIN"
     },
     "603922.SH": {
       "symbol": "603922.SH",
@@ -4210,9 +4208,7 @@
       "quoteTimestamp": "2026-11-16T16:11:37+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 13.62,
-      "limitDownPrice": 11.14
+      "segment": "SSE_MAIN"
     },
     "603722.SH": {
       "symbol": "603722.SH",
@@ -4444,9 +4440,7 @@
       "quoteTimestamp": "2026-11-16T16:11:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 11.62,
-      "limitDownPrice": 9.5
+      "segment": "SSE_MAIN"
     },
     "603701.SH": {
       "symbol": "603701.SH",
@@ -4844,9 +4838,7 @@
       "quoteTimestamp": "2026-11-16T16:11:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 57.13,
-      "limitDownPrice": 46.75
+      "segment": "SSE_MAIN"
     },
     "603666.SH": {
       "symbol": "603666.SH",
