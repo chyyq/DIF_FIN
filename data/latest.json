@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-18T22:59:07.788062+08:00",
-    "lastSuccessfulAt": "2026-11-18T22:59:07.788062+08:00",
+    "generatedAt": "2026-11-18T23:31:54.520167+08:00",
+    "lastSuccessfulAt": "2026-11-18T23:31:54.520167+08:00",
     "quoteTimestamp": "2026-11-18T16:12:01+08:00",
     "tradingDate": "2026-11-18",
     "stale": false,
@@ -17,7 +17,7 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "394 symbols received; pagination can be partial and is reported separately"
+        "note": "296 symbols received; pagination can be partial and is reported separately"
       },
       {
         "name": "Tencent-history",
@@ -26,35 +26,36 @@
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 5: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 603767.SH: Remote end closed connection without response",
-      "Daily limits 603799.SH: Remote end closed connection without response",
-      "Daily limits 603530.SH: Remote end closed connection without response",
-      "Daily limits 603920.SH: Remote end closed connection without response",
-      "Daily limits 603757.SH: Remote end closed connection without response",
+      "Daily history 603990.SH: Remote end closed connection without response",
+      "Daily limits 603882.SH: HTTP Error 502: Bad Gateway",
+      "Daily limits 605020.SH: Remote end closed connection without response",
+      "Daily limits 605196.SH: Remote end closed connection without response",
+      "Daily limits 603950.SH: Remote end closed connection without response",
+      "Daily limits 603938.SH: Remote end closed connection without response",
+      "Daily limits 603678.SH: Remote end closed connection without response",
       "Daily limits 605358.SH: Remote end closed connection without response",
-      "Daily limits 605111.SH: Remote end closed connection without response",
+      "Daily limits 603666.SH: Remote end closed connection without response",
+      "Daily limits 603823.SH: Remote end closed connection without response",
+      "Daily limits 603799.SH: Remote end closed connection without response",
+      "Daily limits 603955.SH: Remote end closed connection without response",
+      "Daily limits 603859.SH: Remote end closed connection without response",
+      "Daily limits 603920.SH: Remote end closed connection without response",
+      "Daily limits 605258.SH: Remote end closed connection without response",
+      "Daily limits 603757.SH: Remote end closed connection without response",
       "Daily limits 605168.SH: Remote end closed connection without response",
-      "Daily limits 603606.SH: Remote end closed connection without response",
+      "Daily limits 603688.SH: Remote end closed connection without response",
+      "Daily limits 605111.SH: Remote end closed connection without response",
       "Daily limits 603699.SH: Remote end closed connection without response",
-      "Daily limits 605058.SH: Remote end closed connection without response",
-      "Daily limits 603658.SH: Remote end closed connection without response",
       "Daily limits 605198.SH: Remote end closed connection without response",
-      "Daily limits 603486.SH: Remote end closed connection without response",
       "Daily limits 603667.SH: Remote end closed connection without response",
-      "Daily limits 603979.SH: Remote end closed connection without response",
-      "Daily limits 603662.SH: Remote end closed connection without response",
-      "Daily limits 603650.SH: Remote end closed connection without response",
       "Daily limits 603773.SH: Remote end closed connection without response",
-      "Daily limits 603605.SH: Remote end closed connection without response",
-      "Daily limits 603459.SH: Remote end closed connection without response",
-      "Daily limits 605289.SH: Remote end closed connection without response",
-      "Daily limits 603618.SH: Remote end closed connection without response",
-      "Daily limits 603516.SH: Remote end closed connection without response",
-      "Daily limits 603663.SH: Remote end closed connection without response"
+      "Daily limits 603979.SH: Remote end closed connection without response",
+      "Daily limits 605058.SH: Remote end closed connection without response",
+      "Daily limits 605289.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -3600,7 +3601,7 @@
       {
         "date": "2026-11-18",
         "firstRecordedAt": "2026-11-18T16:42:14.394699+08:00",
-        "lastUpdatedAt": "2026-11-18T22:59:07.788062+08:00",
+        "lastUpdatedAt": "2026-11-18T23:31:54.520167+08:00",
         "candidates": [
           {
             "strategyId": "LBR_MAIN_V1",
@@ -5406,7 +5407,7 @@
     {
       "strategyId": "LBR_MAIN_V1",
       "eventId": "603680.SH:2026-11-16:TREND",
-      "eventVersion": 11,
+      "eventVersion": 12,
       "symbol": "603680.SH",
       "code": "603680",
       "name": "今创集团",
@@ -5430,22 +5431,16 @@
       "eventDayIndex": 2,
       "expiresOn": null,
       "drawdownPct": 15.37808,
-      "trendScore": 100.0,
+      "trendScore": null,
       "metrics": {
-        "historySessions": 149,
-        "available": true,
-        "passed": true,
-        "ma20": 10.7215,
-        "ma60": 10.338667,
-        "atr14": 0.472143,
-        "support": 9.61,
-        "score": 100.0,
-        "ma20Slope": 0.01256079709118385,
-        "checks": [
-          true,
-          true,
-          true
-        ]
+        "historySessions": 0,
+        "available": false,
+        "passed": false,
+        "ma20": null,
+        "ma60": null,
+        "atr14": null,
+        "support": null,
+        "score": null
       },
       "absorption": {
         "available": false,
@@ -5456,123 +5451,44 @@
         "reason": "MISSING_5MIN_BASELINES"
       },
       "volatility": {
-        "available": true,
-        "reason": null,
-        "asOf": "2026-11-16",
-        "historySessions": 150,
-        "atr14": 0.498571,
-        "atrPct": 4.793956,
-        "close": 10.4,
-        "ma10": 10.773,
-        "ma20": 10.733999999999998,
-        "support": 10.57,
-        "supportKind": "CONFIRMED_DAILY_PIVOT",
-        "recentPeak": 11.77,
-        "return5Pct": -2.439024,
-        "return10Pct": -7.964602,
-        "realizedDailyVolPct": 2.8497108253141152,
-        "consecutiveDeclines": 0,
-        "pullbackMedian": 0.03950722175021232,
-        "pullback75": 0.05547423415340125
+        "available": false,
+        "reason": "VOLATILITY_HISTORY_MISSING",
+        "asOf": null
       },
       "riskMetrics": {
-        "available": true,
-        "fiveDayLossLimitPct": 10,
-        "tenDayLossLimitPct": 16,
-        "recentPeakDrawdownPct": 15.378079864061167,
-        "recentPeakLossLimitPct": 22
+        "available": false
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 150,
-        "available": true,
-        "passed": true,
-        "ma20": 10.734,
-        "ma60": 10.3425,
-        "atr14": 0.498571,
-        "support": 9.61,
-        "score": 100.0,
-        "ma20Slope": 0.010496587432337057,
-        "checks": [
-          true,
-          true,
-          true
-        ]
+        "historySessions": 0,
+        "available": false,
+        "passed": false,
+        "ma20": null,
+        "ma60": null,
+        "atr14": null,
+        "support": null,
+        "score": null
       },
-      "buyLevels": [
-        {
-          "id": "A",
-          "drawdownPct": 6.372133,
-          "triggerPrice": 11.02,
-          "maxBuyPrice": 11.06,
-          "tp1": 11.3,
-          "tp2": 11.48,
-          "tp1Pct": 2.169982,
-          "tp2Pct": 3.797468,
-          "plannedStop": 10.32,
-          "rewardRisk": 0.445946,
-          "priceMethod": "ATR14_SWING_SUPPORT",
-          "atr14": 0.498571,
-          "supportReference": 10.57,
-          "supportConfluence": true,
-          "nearestDailySupport": 10.773,
-          "structurePlanValid": true,
-          "reachableToday": true,
-          "status": "WAIT_CONFIRM",
-          "sellSplit": [
-            0.5,
-            0.5
-          ],
-          "touched": true,
-          "payoffPassed": false
-        },
-        {
-          "id": "B",
-          "drawdownPct": 10.620221,
-          "triggerPrice": 10.52,
-          "maxBuyPrice": 10.56,
-          "tp1": 10.99,
-          "tp2": 11.29,
-          "tp1Pct": 4.07197,
-          "tp2Pct": 6.912879,
-          "plannedStop": 10.27,
-          "rewardRisk": 2.0,
-          "priceMethod": "ATR14_SWING_SUPPORT",
-          "atr14": 0.498571,
-          "supportReference": 10.57,
-          "supportConfluence": true,
-          "nearestDailySupport": 10.57,
-          "structurePlanValid": true,
-          "reachableToday": true,
-          "status": "WAIT_CONFIRM",
-          "sellSplit": [
-            0.5,
-            0.5
-          ],
-          "touched": true,
-          "payoffPassed": true
-        }
-      ],
-      "riskVetoReasons": [
-        "DAILY_SUPPORT_BROKEN"
-      ],
+      "buyLevels": [],
+      "riskVetoReasons": [],
       "riskLevel": "DEEP",
       "gates": {
-        "universe": false,
-        "trend": true,
-        "setup": true,
+        "universe": true,
+        "trend": false,
+        "setup": false,
         "limitEvent": null,
         "dailyHistory": false,
         "structure": false,
         "absorption": false,
-        "payoff": true
+        "payoff": false
       },
-      "hardVetoReasons": [
-        "DAILY_SUPPORT_BROKEN"
-      ],
+      "hardVetoReasons": [],
       "reasonCodes": [
-        "DAILY_SUPPORT_BROKEN",
+        "VOLATILITY_HISTORY_MISSING",
         "DAILY_HISTORY_STALE_OR_UNVERIFIED",
+        "INSUFFICIENT_HISTORY",
+        "TREND_UNAVAILABLE",
+        "TREND_SETUP_UNVERIFIED",
         "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
@@ -5581,10 +5497,11 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "LIQUIDITY_FLOOR_FAILED"
+        "LIQUIDITY_FLOOR_FAILED",
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "CANCEL",
-      "action": "CANCEL_PENDING_BUY",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "pricePreference": "PREFERRED",
       "entryMode": "MANUAL_RECORD_ONLY",
@@ -5608,7 +5525,7 @@
       "referencePeak": 15.81,
       "firstObservedAt": "2026-11-13T21:26:00.491320+08:00",
       "amount": 137665755.0,
-      "stale": false,
+      "stale": true,
       "price": 15.5,
       "high": 15.81,
       "low": 15.31,
@@ -5761,7 +5678,8 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -6337,7 +6255,7 @@
       "referencePeak": 13.15,
       "firstObservedAt": "2026-11-17T00:09:35.018224+08:00",
       "amount": 206404743.0,
-      "stale": false,
+      "stale": true,
       "price": 12.5,
       "high": 12.58,
       "low": 12.37,
@@ -6489,7 +6407,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -7615,7 +7534,7 @@
       "referencePeak": 16.27,
       "firstObservedAt": "2026-11-13T21:26:00.491320+08:00",
       "amount": 160542292.0,
-      "stale": false,
+      "stale": true,
       "price": 15.24,
       "high": 15.58,
       "low": 15.12,
@@ -7767,7 +7686,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -8334,7 +8254,7 @@
       "referencePeak": 12.35,
       "firstObservedAt": "2026-11-18T17:07:32.153728+08:00",
       "amount": 118977193.0,
-      "stale": false,
+      "stale": true,
       "price": 12.08,
       "high": 12.35,
       "low": 11.76,
@@ -8486,7 +8406,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -8498,12 +8419,12 @@
   "stats": {
     "candidateCount": 17,
     "eventCount": 576,
-    "quoteCount": 394,
-    "watchCount": 16,
+    "quoteCount": 296,
+    "watchCount": 17,
     "readyCount": 0,
     "limitCandidateCount": 3,
     "trendCandidateCount": 14,
-    "historyAnalyzedCount": 281,
+    "historyAnalyzedCount": 263,
     "historyEnrichmentCap": 120
   },
   "learning": {
