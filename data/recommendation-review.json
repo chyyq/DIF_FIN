@@ -1,0 +1,771 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-11-24",
+  "strategyId": "LBR_MAIN_V1",
+  "mode": "NOMINAL_DAILY_FOLLOWUP_NOT_TRADE_BACKTEST",
+  "autoApply": false,
+  "summary": {
+    "snapshotCount": 69,
+    "distinctRecordedEvents": 6,
+    "distinctSymbols": 4,
+    "firstWatchOrReadyCount": 5,
+    "eligibleObservationCount": 4,
+    "initialBuyReadyCount": 0,
+    "qualityEligiblePlanCount": 2,
+    "eligibleEntryZoneObservedEvents": 1,
+    "eligibleEntryZoneNotObservedEvents": 1,
+    "followUpStatuses": {
+      "EXCLUDED_INITIAL_CANCEL_EXPIRE_OR_STALE": 1,
+      "EXCLUDED_STALE_QUOTE_AT_KNOWN_TIME": 1,
+      "COMPLETE_NOMINAL_PRICE_FOLLOWUP": 4
+    },
+    "allObservationBenchmark": {
+      "completeEventCount": 4,
+      "uniqueSymbols": 2,
+      "meanCostAdjustedBenchmarkPct": 3.9915,
+      "medianCostAdjustedBenchmarkPct": 1.3997,
+      "positiveBenchmarkFraction": 0.5,
+      "positiveSignalCloseFraction": 0.5,
+      "meanSignalToSeventhClosePct": 4.7795,
+      "isActualTradeWinRate": false
+    },
+    "qualityEligiblePlanBenchmark": {
+      "completeEventCount": 2,
+      "uniqueSymbols": 2,
+      "meanCostAdjustedBenchmarkPct": 7.9579,
+      "medianCostAdjustedBenchmarkPct": 7.9579,
+      "positiveBenchmarkFraction": 0.5,
+      "positiveSignalCloseFraction": 0.5,
+      "meanSignalToSeventhClosePct": 7.0724,
+      "isActualTradeWinRate": false
+    },
+    "byParameterVersion": {
+      "1.0.0": {
+        "completeEventCount": 0,
+        "uniqueSymbols": 0,
+        "meanCostAdjustedBenchmarkPct": null,
+        "medianCostAdjustedBenchmarkPct": null,
+        "positiveBenchmarkFraction": null,
+        "positiveSignalCloseFraction": null,
+        "meanSignalToSeventhClosePct": null,
+        "isActualTradeWinRate": false
+      },
+      "1.1.0": {
+        "completeEventCount": 4,
+        "uniqueSymbols": 2,
+        "meanCostAdjustedBenchmarkPct": 3.9915,
+        "medianCostAdjustedBenchmarkPct": 1.3997,
+        "positiveBenchmarkFraction": 0.5,
+        "positiveSignalCloseFraction": 0.5,
+        "meanSignalToSeventhClosePct": 4.7795,
+        "isActualTradeWinRate": false
+      }
+    }
+  },
+  "records": [
+    {
+      "eventId": "603186.SH:2026-10-23:01",
+      "symbol": "603186.SH",
+      "knownAt": "2026-10-26T16:35:00+00:00",
+      "recommendationDate": "2026-10-27",
+      "eventDate": "2026-10-23",
+      "source": "https://github.com/chyyq/DIF/blob/5c8fb5484b646be90a1f2f303e253c2f862fb2ec/data/latest.json",
+      "parameterVersion": "1.0.0",
+      "setupType": "LIMIT_UP",
+      "statusAtFirstSnapshot": "CANCEL",
+      "signalPrice": 201.65,
+      "priceSourceTimestamp": "2026-10-23T16:14:46+08:00",
+      "qualityPlanEligibleAtFirstSnapshot": false,
+      "eligibleObservation": false,
+      "actualFillKnown": false,
+      "realizedTradeReturnPct": null,
+      "corporateActionsVerified": false,
+      "followUpStatus": "EXCLUDED_INITIAL_CANCEL_EXPIRE_OR_STALE"
+    },
+    {
+      "eventId": "603893.SH:2026-10-23:01",
+      "symbol": "603893.SH",
+      "knownAt": "2026-10-26T16:35:00+00:00",
+      "recommendationDate": "2026-10-27",
+      "eventDate": "2026-10-23",
+      "source": "https://github.com/chyyq/DIF/blob/5c8fb5484b646be90a1f2f303e253c2f862fb2ec/data/latest.json",
+      "parameterVersion": "1.0.0",
+      "setupType": "LIMIT_UP",
+      "statusAtFirstSnapshot": "WATCH",
+      "signalPrice": 214.04,
+      "priceSourceTimestamp": "2026-10-23T16:14:41+08:00",
+      "qualityPlanEligibleAtFirstSnapshot": false,
+      "eligibleObservation": false,
+      "actualFillKnown": false,
+      "realizedTradeReturnPct": null,
+      "corporateActionsVerified": false,
+      "followUpStatus": "EXCLUDED_STALE_QUOTE_AT_KNOWN_TIME"
+    },
+    {
+      "eventId": "001282.SZ:2026-10-23:01",
+      "symbol": "001282.SZ",
+      "knownAt": "2026-11-02T15:02:51+00:00",
+      "recommendationDate": "2026-11-02",
+      "eventDate": "2026-10-23",
+      "source": "https://github.com/chyyq/DIF/blob/9b9182d3084da41ec396ce336ea67e8df5a435c8/data/latest.json",
+      "parameterVersion": "1.1.0",
+      "setupType": "LIMIT_UP",
+      "statusAtFirstSnapshot": "WATCH",
+      "signalPrice": 16.22,
+      "priceSourceTimestamp": "2026-11-02T15:34:30+08:00",
+      "qualityPlanEligibleAtFirstSnapshot": true,
+      "eligibleObservation": true,
+      "actualFillKnown": false,
+      "realizedTradeReturnPct": null,
+      "corporateActionsVerified": false,
+      "followUpStatus": "COMPLETE_NOMINAL_PRICE_FOLLOWUP",
+      "sessions": [
+        "2026-11-03",
+        "2026-11-04",
+        "2026-11-05",
+        "2026-11-06",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11"
+      ],
+      "entryBenchmarkDate": "2026-11-03",
+      "entryBenchmarkOpen": 16.06,
+      "seventhSessionDate": "2026-11-11",
+      "seventhSessionClose": 18.7,
+      "signalToSeventhClosePct": 15.2898,
+      "nextOpenToSeventhClosePct": 16.4384,
+      "hypotheticalCostBps": 30,
+      "costAdjustedBenchmarkPct": 16.1384,
+      "maxFavorablePriceMovePct": 15.2898,
+      "maxAdversePriceMovePct": -8.0148,
+      "planObservations": [
+        {
+          "id": "A",
+          "payoffPassedAtRecommendation": false,
+          "entryZoneObserved": true,
+          "firstZoneDate": "2026-11-03",
+          "sameDayOrderingUnknown": false,
+          "postZoneTarget1Touch": true,
+          "postZoneStopTouch": false,
+          "laterTargetAndStopSameDay": false,
+          "executionInferred": false,
+          "status": "ZONE_TOUCH_ONLY_NO_FILL_OR_WIN_LABEL"
+        },
+        {
+          "id": "B",
+          "payoffPassedAtRecommendation": true,
+          "entryZoneObserved": true,
+          "firstZoneDate": "2026-11-03",
+          "sameDayOrderingUnknown": false,
+          "postZoneTarget1Touch": true,
+          "postZoneStopTouch": false,
+          "laterTargetAndStopSameDay": false,
+          "executionInferred": false,
+          "status": "ZONE_TOUCH_ONLY_NO_FILL_OR_WIN_LABEL"
+        }
+      ]
+    },
+    {
+      "eventId": "002322.SZ:2026-10-23:01",
+      "symbol": "002322.SZ",
+      "knownAt": "2026-11-02T15:02:51+00:00",
+      "recommendationDate": "2026-11-02",
+      "eventDate": "2026-10-23",
+      "source": "https://github.com/chyyq/DIF/blob/9b9182d3084da41ec396ce336ea67e8df5a435c8/data/latest.json",
+      "parameterVersion": "1.1.0",
+      "setupType": "LIMIT_UP",
+      "statusAtFirstSnapshot": "WATCH",
+      "signalPrice": 13.1,
+      "priceSourceTimestamp": "2026-11-02T15:34:21+08:00",
+      "qualityPlanEligibleAtFirstSnapshot": true,
+      "eligibleObservation": true,
+      "actualFillKnown": false,
+      "realizedTradeReturnPct": null,
+      "corporateActionsVerified": false,
+      "followUpStatus": "COMPLETE_NOMINAL_PRICE_FOLLOWUP",
+      "sessions": [
+        "2026-11-03",
+        "2026-11-04",
+        "2026-11-05",
+        "2026-11-06",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11"
+      ],
+      "entryBenchmarkDate": "2026-11-03",
+      "entryBenchmarkOpen": 12.94,
+      "seventhSessionDate": "2026-11-11",
+      "seventhSessionClose": 12.95,
+      "signalToSeventhClosePct": -1.145,
+      "nextOpenToSeventhClosePct": 0.0773,
+      "hypotheticalCostBps": 30,
+      "costAdjustedBenchmarkPct": -0.2227,
+      "maxFavorablePriceMovePct": 2.9771,
+      "maxAdversePriceMovePct": -2.5954,
+      "planObservations": [
+        {
+          "id": "A",
+          "payoffPassedAtRecommendation": false,
+          "entryZoneObserved": false,
+          "firstZoneDate": null,
+          "sameDayOrderingUnknown": false,
+          "postZoneTarget1Touch": false,
+          "postZoneStopTouch": false,
+          "laterTargetAndStopSameDay": false,
+          "executionInferred": false,
+          "status": "NO_ENTRY_ZONE_OBSERVED"
+        },
+        {
+          "id": "B",
+          "payoffPassedAtRecommendation": true,
+          "entryZoneObserved": false,
+          "firstZoneDate": null,
+          "sameDayOrderingUnknown": false,
+          "postZoneTarget1Touch": false,
+          "postZoneStopTouch": false,
+          "laterTargetAndStopSameDay": false,
+          "executionInferred": false,
+          "status": "NO_ENTRY_ZONE_OBSERVED"
+        }
+      ]
+    },
+    {
+      "eventId": "002322.SZ:2026-11-03:TREND",
+      "symbol": "002322.SZ",
+      "knownAt": "2026-11-03T08:32:34+00:00",
+      "recommendationDate": "2026-11-03",
+      "eventDate": "2026-11-03",
+      "source": "https://github.com/chyyq/DIF/blob/b62002c777475ff41498e17ec816b2225e440193/data/latest.json",
+      "parameterVersion": "1.1.0",
+      "setupType": "TREND_PULLBACK",
+      "statusAtFirstSnapshot": "WATCH",
+      "signalPrice": 13.14,
+      "priceSourceTimestamp": "2026-11-03T15:34:39+08:00",
+      "qualityPlanEligibleAtFirstSnapshot": false,
+      "eligibleObservation": true,
+      "actualFillKnown": false,
+      "realizedTradeReturnPct": null,
+      "corporateActionsVerified": false,
+      "followUpStatus": "COMPLETE_NOMINAL_PRICE_FOLLOWUP",
+      "sessions": [
+        "2026-11-04",
+        "2026-11-05",
+        "2026-11-06",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12"
+      ],
+      "entryBenchmarkDate": "2026-11-04",
+      "entryBenchmarkOpen": 13.1,
+      "seventhSessionDate": "2026-11-12",
+      "seventhSessionClose": 12.75,
+      "signalToSeventhClosePct": -2.968,
+      "nextOpenToSeventhClosePct": -2.6718,
+      "hypotheticalCostBps": 30,
+      "costAdjustedBenchmarkPct": -2.9718,
+      "maxFavorablePriceMovePct": 2.5875,
+      "maxAdversePriceMovePct": -3.1963,
+      "planObservations": [
+        {
+          "id": "A",
+          "payoffPassedAtRecommendation": false,
+          "entryZoneObserved": true,
+          "firstZoneDate": "2026-11-04",
+          "sameDayOrderingUnknown": false,
+          "postZoneTarget1Touch": false,
+          "postZoneStopTouch": false,
+          "laterTargetAndStopSameDay": false,
+          "executionInferred": false,
+          "status": "ZONE_TOUCH_ONLY_NO_FILL_OR_WIN_LABEL"
+        },
+        {
+          "id": "B",
+          "payoffPassedAtRecommendation": false,
+          "entryZoneObserved": false,
+          "firstZoneDate": null,
+          "sameDayOrderingUnknown": false,
+          "postZoneTarget1Touch": false,
+          "postZoneStopTouch": false,
+          "laterTargetAndStopSameDay": false,
+          "executionInferred": false,
+          "status": "NO_ENTRY_ZONE_OBSERVED"
+        }
+      ]
+    },
+    {
+      "eventId": "001282.SZ:2026-11-04:01",
+      "symbol": "001282.SZ",
+      "knownAt": "2026-11-04T08:00:25+00:00",
+      "recommendationDate": "2026-11-04",
+      "eventDate": "2026-11-04",
+      "source": "https://github.com/chyyq/DIF/blob/89f6354590c173fc37a45144016ff8e997e649f4/data/latest.json",
+      "parameterVersion": "1.1.0",
+      "setupType": "LIMIT_UP",
+      "statusAtFirstSnapshot": "WATCH",
+      "signalPrice": 17.0,
+      "priceSourceTimestamp": "2026-11-04T15:34:30+08:00",
+      "qualityPlanEligibleAtFirstSnapshot": false,
+      "eligibleObservation": true,
+      "actualFillKnown": false,
+      "realizedTradeReturnPct": null,
+      "corporateActionsVerified": false,
+      "followUpStatus": "COMPLETE_NOMINAL_PRICE_FOLLOWUP",
+      "sessions": [
+        "2026-11-05",
+        "2026-11-06",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13"
+      ],
+      "entryBenchmarkDate": "2026-11-05",
+      "entryBenchmarkOpen": 17.76,
+      "seventhSessionDate": "2026-11-13",
+      "seventhSessionClose": 18.35,
+      "signalToSeventhClosePct": 7.9412,
+      "nextOpenToSeventhClosePct": 3.3221,
+      "hypotheticalCostBps": 30,
+      "costAdjustedBenchmarkPct": 3.0221,
+      "maxFavorablePriceMovePct": 21.0,
+      "maxAdversePriceMovePct": -5.7059,
+      "planObservations": []
+    }
+  ],
+  "validation": {
+    "method": "Chronological recommendation-date 70/30 split; overlapping symbols removed from validation",
+    "splitDate": "2026-11-04",
+    "training": {
+      "completeEventCount": 3,
+      "uniqueSymbols": 2,
+      "meanCostAdjustedBenchmarkPct": 4.3146,
+      "medianCostAdjustedBenchmarkPct": -0.2227,
+      "positiveBenchmarkFraction": 0.3333333333333333,
+      "positiveSignalCloseFraction": 0.3333333333333333,
+      "meanSignalToSeventhClosePct": 3.7256,
+      "isActualTradeWinRate": false
+    },
+    "validation": {
+      "completeEventCount": 0,
+      "uniqueSymbols": 0,
+      "meanCostAdjustedBenchmarkPct": null,
+      "medianCostAdjustedBenchmarkPct": null,
+      "positiveBenchmarkFraction": null,
+      "positiveSignalCloseFraction": null,
+      "meanSignalToSeventhClosePct": null,
+      "isActualTradeWinRate": false
+    },
+    "overlappingValidationEventsExcluded": 1
+  },
+  "optimization": {
+    "status": "BLOCKED_INSUFFICIENT_OUT_OF_SAMPLE_EVIDENCE",
+    "activeParameterChanges": [],
+    "blockReasons": [
+      "FEWER_THAN_30_COMPLETE_RECOMMENDATION_EVENTS",
+      "FEWER_THAN_20_INDEPENDENT_SYMBOLS",
+      "INSUFFICIENT_TIME_SEPARATED_TRAIN_AND_VALIDATION",
+      "FEWER_THAN_10_RECOMMENDATION_DATES",
+      "NO_ACTUAL_FILL_OR_EXIT_LABELS",
+      "INTRADAY_EXECUTION_AND_ORDERING_UNVERIFIED",
+      "CORPORATE_ACTIONS_AND_MARKET_REGIMES_UNVERIFIED"
+    ],
+    "winRateImprovementEstablished": false
+  },
+  "qualityFindings": [
+    {
+      "code": "OBSERVATION_WITHOUT_ELIGIBLE_PLAN",
+      "count": 2,
+      "eventIds": [
+        "002322.SZ:2026-11-03:TREND",
+        "001282.SZ:2026-11-04:01"
+      ],
+      "action": "Require full admission on every new/replacement event; retain original event snapshots for rolling slots"
+    }
+  ],
+  "limitations": [
+    "Every event uses its earliest saved recommendation snapshot; later anchors and outcomes cannot rewrite it",
+    "The first follow-up bar is strictly after the known recommendation date; today is excluded",
+    "WATCH means observation, not an executable buy signal; zero actual fill/exit labels are inferred",
+    "Repeated events for one symbol and overlapping seven-session windows are not independent trades",
+    "Daily entry-zone or target touches do not prove execution, sequencing, T+1 exits or a winning trade",
+    "Raw-price changes exclude verified dividend/split adjustments; benchmark costs are configurable assumptions",
+    "Failed refresh/publication periods create an observation gap, not zero-return or invented recommendation samples"
+  ],
+  "sources": {
+    "snapshotManifest": [
+      {
+        "source": "https://github.com/chyyq/DIF/blob/bdec1fc4aff8fd0a055af1818707ccbee7c10895/data/latest.json",
+        "sha256": "ffeedc568c694aedba8c4fef2e1593eafa301e1a2f4a0db5f0e9755ea9ae6572",
+        "committedAt": "2026-11-10T08:40:44Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/b78c9cd3bfef1da2c8e828463b254f42cd14ab1b/data/latest.json",
+        "sha256": "1f4fe396d2aa2e18681613e46bbe4613a6da784bd7b57cf6f9ef31f4d95cc6ae",
+        "committedAt": "2026-11-10T08:33:15Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/a581ee997b2becf4a33aad5b46445ace93e1c83e/data/latest.json",
+        "sha256": "914a54904da71bce72744ed8b607b126e739b307ced413a7e0f4beabf183fdb8",
+        "committedAt": "2026-11-09T23:58:12Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/fa0be36107a418ead38683691c0c38b04cfb7658/data/latest.json",
+        "sha256": "bd56865b7bd1da4ba4f03c854b83fcfbdc26cbfeb2ceccea3340a8f74b59891a",
+        "committedAt": "2026-11-09T21:47:17Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/33a1e248d59a127c4d381595be8aaeda5fa3feb1/data/latest.json",
+        "sha256": "4b54d9a945a8560cf87ef1515f0f94cd68bccc68047381a4464505b238b0ccaf",
+        "committedAt": "2026-11-09T16:56:24Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/3a829b9d3cd7e8c3047704333b3a59c2d251847d/data/latest.json",
+        "sha256": "ef6ace0e29c13dd044c6b7626ce6e9ff8d6a77313d596606732081551a277d9b",
+        "committedAt": "2026-11-09T16:49:28Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/872d6c8ab211fa142b13eb3bd53967d1ee7478bc/data/latest.json",
+        "sha256": "b42903d90efefa54f31813adcc8229dac68d6e73d0d06f3d37931347f73e12b6",
+        "committedAt": "2026-11-09T16:46:41Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/d2583076e5b8765818569c04fd9bbc76daa446ce/data/latest.json",
+        "sha256": "1b9b7552a92477c11ecbca8f005368babcbb8b3e5730cf54056bbba2b2d6e409",
+        "committedAt": "2026-11-09T16:27:25Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/db1128c70b043a54cf3e2d5338c123bd7142c11d/data/latest.json",
+        "sha256": "94f53303fa18a9711945e34b721566a6d349f9192ded2f3a23cdc652faf398da",
+        "committedAt": "2026-11-09T16:05:27Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/a068ab3b9fbdca49991e550475d49856f27e42cf/data/latest.json",
+        "sha256": "dcff779b9fda68f0e5c9be2f4303e0713da852ad66943eea46c7f51688f93dcc",
+        "committedAt": "2026-11-09T15:22:19Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/435ca6afd67eb1f188dba9952254b443120562b8/data/latest.json",
+        "sha256": "e40e93c6771fa58d1be286fc13b177f1644f04d5f04d62183f16761b8160040b",
+        "committedAt": "2026-11-09T14:23:50Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/ccd21a0c6f796af9e91aa287ec0dcbfe7ef84272/data/latest.json",
+        "sha256": "5b6a78f89678163c044a2f9043c4742d625b6865f588cd0bc8e3f4bf93e4f1d8",
+        "committedAt": "2026-11-09T14:16:09Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/7620fe413111d0725758057f90ab907118a1b0d3/data/latest.json",
+        "sha256": "157069a13f2aaa8a68be1e4b1bc87052b8659f09de26edacd88dc5af4285623f",
+        "committedAt": "2026-11-09T08:41:09Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/143e353af1d23316917a0e431d8f5d81d5c7cde7/data/latest.json",
+        "sha256": "058b0a43447ac919a60e5cabfbc2507d8e70135727a6ac3a30b482287c449702",
+        "committedAt": "2026-11-09T08:22:11Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/08cbc55385a59f7eac27f7dfad5618b4a4fc1b42/data/latest.json",
+        "sha256": "93aeecf78f9bb19692afb6354e2f2179fb163e9835f0450cc5cca92e11e6a449",
+        "committedAt": "2026-11-09T08:12:07Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/50208ce67f4c322aac3b3ac1a602442c54d56cd2/data/latest.json",
+        "sha256": "bf8d23e5d7141f6de0c0dda0bd62e09ead8ff282485cfacfba197f2b9e42783f",
+        "committedAt": "2026-11-06T21:10:52Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/51faa77cae5b0165e4ddc486b82e860bf736e6e0/data/latest.json",
+        "sha256": "ad782d1ebc0a70396d9b980670b21cbb2a70b313925161c73f992a96996118d5",
+        "committedAt": "2026-11-06T18:42:10Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/0b64f367555f1a07e7e2f4f8e2feebf4fb25d888/data/latest.json",
+        "sha256": "7a19964bb3ba0ba3c94897193198f63c9f71fcd1c8ff0a2c4e1f094c0876d5fd",
+        "committedAt": "2026-11-06T14:39:07Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/bc53e9b5cef71d9f70bebcb7d982f0434f29d0a7/data/latest.json",
+        "sha256": "8f4fa2c330fab682d542a32989f0bd26f8e5c51915768e39f1c556572788909b",
+        "committedAt": "2026-11-06T14:36:34Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/9898a3b3176649f8b8a38e7a1903660478dada33/data/latest.json",
+        "sha256": "b31095a075dddebee82a350195a4eb33980ba3c8a19c2c708fe2b1d4515f3f34",
+        "committedAt": "2026-11-06T14:31:41Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/dadd8279730df540d19ded09e25798469f44b463/data/latest.json",
+        "sha256": "32161f430c44280d6d43d6e27d0760a702610f637a4521f889706bd5c30422dd",
+        "committedAt": "2026-11-06T14:21:13Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/abf37ab800ba13726cc6b183b563508f952d4d47/data/latest.json",
+        "sha256": "83162b81a98a5e5a9951d54a6fe957125b23d3e633cab47b7cc597b44046838f",
+        "committedAt": "2026-11-06T14:13:07Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/2dd8389d2a4c340a25ed77f97a09ffa2811dd2b2/data/latest.json",
+        "sha256": "168a22ece7c50b30cd9655a2673898f54ccd6ad3bad81c9ef5b663a1d5b1d298",
+        "committedAt": "2026-11-06T13:51:19Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/f3bfdde42ee4d8d13b7bdd8b1a45a3147774d48a/data/latest.json",
+        "sha256": "1ecbec782b03de2adc175306930389c90d02c1faef62ea49af4e13c2cda6d8de",
+        "committedAt": "2026-11-06T13:16:34Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/604a618ef19ec720aecbb2e070a12838a131148d/data/latest.json",
+        "sha256": "52b643406db167a21fe23a4be22da866181a764df6e5460f3c2218dc9b47d351",
+        "committedAt": "2026-11-06T13:09:56Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/c8a506753ad8ef349a150109de39f6d4b3659aec/data/latest.json",
+        "sha256": "fd9d83555fa61cc5f8ff28fec673527829fae45078f32f6bf2ff1b70e9d5dad2",
+        "committedAt": "2026-11-06T08:31:29Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/78d5950f870424ea540d7e4bba185aad037079b8/data/latest.json",
+        "sha256": "f86d88d0eaf2661ddc09b4ca6e83363bd67f68b1c90bb69778a1f71860a25ac2",
+        "committedAt": "2026-11-06T08:14:24Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/19325848f9dc0a7a2fca203f378f75b7a66a78da/data/latest.json",
+        "sha256": "774b7f373c7000d367021d13e3c154c994792b917bf76f48882d6c40bba3057d",
+        "committedAt": "2026-11-06T08:03:40Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/ceb7f41bf8f142f04f1a08e472f52659c3fe068b/data/latest.json",
+        "sha256": "290a14a64fc00778ff818b4334155606cf893f5659161db0282ab5c5ea785654",
+        "committedAt": "2026-11-05T21:42:42Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/b56c558ab1bc67d2035266b82f8b6c6f27c9c6b4/data/latest.json",
+        "sha256": "14e04f67cc271d741652d51a8c731862d84c27de52875359c1332cf6e3dee228",
+        "committedAt": "2026-11-05T19:15:44Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/4fc1d049ad821708786ff72cf363687ac7421908/data/latest.json",
+        "sha256": "f86124fc5d9632220dcfec9ccdb12800a4c3508e3ac45e317343e497b23fa353",
+        "committedAt": "2026-11-05T15:02:58Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/c6a94724eed9938021ffffd40c890fbd86832b57/data/latest.json",
+        "sha256": "82c268333b765df68e7a6dcf7d0d3d3855e02cfc1bddc2c2a3ee64bdc661e55d",
+        "committedAt": "2026-11-05T14:58:31Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/dfaca972c37319dc3a3df2b1caf4ab127fe0fd6a/data/latest.json",
+        "sha256": "ada7986e177c33265c50d4183d2516b771d74754f865444821a98da02ea3189c",
+        "committedAt": "2026-11-05T14:54:27Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/563db265758524bad8625328e4ed1734c3eb83f3/data/latest.json",
+        "sha256": "2e77270f9262970c288d5b74a95ad42c7a41b5e2909aba95f87043f0fba2b08b",
+        "committedAt": "2026-11-05T14:42:20Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/5437d5d7ac7cbc8e056696ca769301f23596061d/data/latest.json",
+        "sha256": "d492bfcb8540c8280de97b636054a5a23808e3d3efaae5acc0f236ff9817c7b3",
+        "committedAt": "2026-11-05T14:34:17Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/4027f27bdad0bedb4e460a5ce690b7f9c9149a37/data/latest.json",
+        "sha256": "565be79ee554bf20d8bba8062d4129129e4889994522931cf5559b538b8ea651",
+        "committedAt": "2026-11-05T14:07:53Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/e860a4b1ff5d08522d631702fb3a4eafcd174114/data/latest.json",
+        "sha256": "eeecced6a5e89169614c96c4e9d34a743a1cb4e3595bae90a37374ded8f2f0ef",
+        "committedAt": "2026-11-05T13:33:25Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/f1d7bc0086a69c79329b8bc378fa9cb9ac1016ea/data/latest.json",
+        "sha256": "6e8de9476215339f6d024703dc5c7e4023bbe9376670452ca31bef12baa2377b",
+        "committedAt": "2026-11-05T13:29:11Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/c740394a55b938e3ccdf2eb2e5f4888282bb0494/data/latest.json",
+        "sha256": "2368d2b823b190a28a68a7030eb4dc4c8d570e32d07f059684f7ce1acb56821a",
+        "committedAt": "2026-11-05T08:36:30Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/f91483095a6acfff137d88f2c96aef1dc8698d5f/data/latest.json",
+        "sha256": "faa9115a6c91fee4439b244f8b496b2dcafc0704c90bfdce7383975b522729c0",
+        "committedAt": "2026-11-05T08:28:55Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/6cd814d4d982ad8e8c4ccdd9b1a170e4d6dcd825/data/latest.json",
+        "sha256": "420e5b521bcb6e6b9e3064b3be95b960e674c8871a8bca4b212d148c1154ceb7",
+        "committedAt": "2026-11-05T08:07:55Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/6e88978218122768d87e8ac6254b41848851bf35/data/latest.json",
+        "sha256": "2998d9121d79c85b794909d7bd6cb2b4720f27be4c19585f7487d79b7191ff5c",
+        "committedAt": "2026-11-05T08:01:59Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/7162deed0ae46638b0643f8e70725d2141870657/data/latest.json",
+        "sha256": "fb204f6a4f41784e393027ea114873000fbb21b186e1bb5c29d94f55290d5baf",
+        "committedAt": "2026-11-04T21:40:03Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/62590932638d0037843ced35854bb186bb6cd8eb/data/latest.json",
+        "sha256": "223402b42c6adf22edfda2b563ed904360361362a12d946cb8916808918d7a98",
+        "committedAt": "2026-11-04T19:05:44Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/5e298c591ce3305b501c039abe94048200ebd1fd/data/latest.json",
+        "sha256": "7b3c4ebe64925a66f239c80733c3908c9e39d0fa0cd443b2947a21555688846d",
+        "committedAt": "2026-11-04T14:55:44Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/35de052f336426a4c89e72d1fd13bfaf8c947466/data/latest.json",
+        "sha256": "3f95dd4670b7fd46c88a0f3798d4092be1a57fba1ed45ecbf25b40f9d92aa1d9",
+        "committedAt": "2026-11-04T14:54:06Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/8e9b5c2965fe0c70353ccafaf4ab130a7546da97/data/latest.json",
+        "sha256": "255429668578cfe2e7e5f80c84f0961fbb667856320cc02e1f7b975820623375",
+        "committedAt": "2026-11-04T14:49:51Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/26892443d9dc9b057e48475d83264a8965045279/data/latest.json",
+        "sha256": "a6def7d101b797937116ba07da96d7d994cd652a8d74cc00ddd938d06f033a8d",
+        "committedAt": "2026-11-04T14:37:08Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/9d11deec94087488738c91af933bb807aed0cb97/data/latest.json",
+        "sha256": "81bad53ce129e8094574b4e3f805b8da18779703b8f460dfade18e6d7ede0824",
+        "committedAt": "2026-11-04T14:26:11Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/a2c0bc5a1547e8025945cc8cff139545ffcf5119/data/latest.json",
+        "sha256": "6c5954fe0cdd70be2d728d1bb3d8b8bb124ee3657168e97b7280efc9e4fcd6ae",
+        "committedAt": "2026-11-04T13:54:06Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/697fc8cba839f21cbbdc511280fe51ed7cd32536/data/latest.json",
+        "sha256": "e450c67e524e608ded18184443392346cf43903c1c9394852e120d02a549d59d",
+        "committedAt": "2026-11-04T13:18:40Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/89f6354590c173fc37a45144016ff8e997e649f4/data/latest.json",
+        "sha256": "5ddf619c17236b313d471ff7d2bdfb6df5676907c561eb4b6bd852e3030b0905",
+        "committedAt": "2026-11-04T08:00:25Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/26deb17267cd364f26252ed576da7ff4d966e94b/data/latest.json",
+        "sha256": "25b63bb2fea14e114d738e753becbd4ba5cd12a7832d00ed05ae5de4e61eb53b",
+        "committedAt": "2026-11-04T07:44:40Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/1abbe1361fcd0228e0617235bcf0541f29e19aa8/data/latest.json",
+        "sha256": "53a1d8a893fe0bdfd803d92020fb01f94efd737487f63d8a52e43491aceb325e",
+        "committedAt": "2026-11-04T07:38:27Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/5fe2356f34abd3c191906cee1f9a773dcaa4bac6/data/latest.json",
+        "sha256": "aad76084b82ec852247432698c8dae598b9ae47745ea4a19594b16859078faaf",
+        "committedAt": "2026-11-03T21:25:14Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/76993814910d83e723d70c110e26392bdc3ee239/data/latest.json",
+        "sha256": "1071b08ac996bd2d5445362c43249600f0e8bddcf7857871804584853558103f",
+        "committedAt": "2026-11-03T18:47:52Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/d05a1618517eb9370fae7b5ae931dd4a2c17142c/data/latest.json",
+        "sha256": "f0ab506b41c641fb6b58590e3c73ecb627d462aeb7cc9d0d372dbb02310a5c1d",
+        "committedAt": "2026-11-03T14:42:05Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/7ebc2dcd274ebc8f66056c40026416326527a384/data/latest.json",
+        "sha256": "2043e92124f9146decc8da8fe9ce39f5337dc7f34c6567fe1c0399fe88dc8968",
+        "committedAt": "2026-11-03T14:38:12Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/6b14e16f1880bb06e120ea6aa6950476e5fb4d61/data/latest.json",
+        "sha256": "c77c4b12b574cb74016bc0ec6669d81d31beff628799ae6c5059bcb14d328771",
+        "committedAt": "2026-11-03T14:33:12Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/bdc60412eaa7c0a09d55bcbd4bdd907c857f52e4/data/latest.json",
+        "sha256": "cf3a5933897b534380e9b8c716b32d756fe6802cbc511277279b6d906bbbbe72",
+        "committedAt": "2026-11-03T14:20:13Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/3419edddccaa5d7c8717c29131b02424af32d4de/data/latest.json",
+        "sha256": "32c6ce12ea27bf528113c2df95f252781381fc075cd45c449baf4c5f39834d7e",
+        "committedAt": "2026-11-03T14:03:56Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/5bbdd3d9f70d971f1c43176210fba05a1a112b1c/data/latest.json",
+        "sha256": "866294ff61637e1568403893454b276b0858518697b1cf9180aa4f8c264fa2ad",
+        "committedAt": "2026-11-03T13:44:07Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/3b71d1ea846b34b71a79d85815ae437247046fb0/data/latest.json",
+        "sha256": "131c4a91ffff44c6bac88f7dbf122f324b460c0701fa6fa0627d206ce97a48cf",
+        "committedAt": "2026-11-03T13:00:30Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/f0ddb67d7a81054a880aa42f6a1125ed7e01a92a/data/latest.json",
+        "sha256": "a27dec9fe2eea9bb2bcf412367cb1785cc64302cb1f084bce22b57654b3c7c80",
+        "committedAt": "2026-11-03T08:39:29Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/b62002c777475ff41498e17ec816b2225e440193/data/latest.json",
+        "sha256": "fc3ad1832328b308af0a53fb34b147dce03685c5e29b9dd8f23e141879eb6b7a",
+        "committedAt": "2026-11-03T08:32:34Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/1bf4e8bc532ba611b48c267120b2c11f2fa7fc7c/data/latest.json",
+        "sha256": "e6d155e78c4494a03db98fa2030b08b09672a62bac79048a65e71bdd8c6ec440",
+        "committedAt": "2026-11-03T08:16:28Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/cfdd4c91151a14fb05c9add396880f298b2c0034/data/latest.json",
+        "sha256": "5ebdc37c7ae7d0833d7ec3ecc51092dc14b5eea06c6e6e48e3d13cd9bbda8b12",
+        "committedAt": "2026-11-03T08:04:02Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/9b9182d3084da41ec396ce336ea67e8df5a435c8/data/latest.json",
+        "sha256": "0959632b0ca57ef0a8d427f1b9012353a4393215578dcfadaec8bfdaeb351007",
+        "committedAt": "2026-11-02T15:02:51Z"
+      },
+      {
+        "source": "https://github.com/chyyq/DIF/blob/5c8fb5484b646be90a1f2f303e253c2f862fb2ec/data/latest.json",
+        "sha256": "dd60a14c27324fcc63b2d5124f1d42806e2cf0cefbe72073ac2ae6a5c64bc67c",
+        "committedAt": "2026-10-26T16:35:00Z"
+      }
+    ],
+    "dailyHistory": [
+      {
+        "symbol": "000001.SH",
+        "source": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/fqkline/get?param=sh000001%2Cday%2C%2C%2C160%2C",
+        "adjustment": "unadjusted-only-day-key"
+      },
+      {
+        "symbol": "001282.SZ",
+        "source": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/fqkline/get?param=sz001282%2Cday%2C%2C%2C160%2C",
+        "adjustment": "unadjusted-only-day-key"
+      },
+      {
+        "symbol": "002322.SZ",
+        "source": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/fqkline/get?param=sz002322%2Cday%2C%2C%2C160%2C",
+        "adjustment": "unadjusted-only-day-key"
+      },
+      {
+        "symbol": "603186.SH",
+        "source": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/fqkline/get?param=sh603186%2Cday%2C%2C%2C160%2C",
+        "adjustment": "unadjusted-only-day-key"
+      },
+      {
+        "symbol": "603893.SH",
+        "source": "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/fqkline/get?param=sh603893%2Cday%2C%2C%2C160%2C",
+        "adjustment": "unadjusted-only-day-key"
+      }
+    ]
+  }
+}

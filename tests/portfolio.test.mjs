@@ -39,6 +39,48 @@ test('multiple buys merge to one symbol row with quantity-weighted cost and froz
   assert.equal(row.targets[1].tp1, 11.14);
 });
 
+test('second actual buy flags stop review with remaining-lot risk and no target mutation',()=>{
+  const first=buy();assert.equal(rows(first)[0].stopReviewRequired,false);
+  const state=recordBuy(first,buyInput({id:'second-stop',qty:100,fees:5,price:11,executedAt:at('2026-10-20'),entry:{high:13,low:10,stop:9.5}}));
+  const before=exportState(state),[h]=rows(state);
+  assert.equal(h.stopReviewRequired,true);assert.equal(h.buyCount,2);
+  assert.equal(h.stopMissingQty,0);assert.equal(h.stopRisk,280);
+  assert.equal(exportState(state),before);
+  const partial=recordSell(state,sellInput(),{sessions});
+  assert.equal(rows(partial)[0].stopRisk,155);assert.equal(rows(partial)[0].stopReviewRequired,true);
+});
+
+test('missing stop stays unknown after two buys and a fully closed cycle resets buy count',()=>{
+  let state=recordBuy(buy(),buyInput({id:'second-no-stop',executedAt:at('2026-10-20'),entry:{}}));
+  assert.equal(rows(state)[0].stopMissingQty,100);assert.equal(rows(state)[0].stopRisk,null);
+  state=recordSell(state,sellInput({qty:200,executedAt:at('2026-10-21')}),{sessions});
+  assert.deepEqual(rows(state,'2026-10-21'),[]);
+  state=recordBuy(state,buyInput({id:'reopen',executedAt:at('2026-10-22')}));
+  assert.equal(rows(state,'2026-10-22')[0].buyCount,1);
+  assert.equal(rows(state,'2026-10-22')[0].stopReviewRequired,false);
+});
+
+test('unclosed holding remains present after day seven and carries an overdue marker',()=>{
+  const state=buy(),before=exportState(state);
+  const onSeven=rows(state,'2026-10-27')[0],onEight=rows(state,'2026-10-28')[0];
+  assert.equal(onSeven.due,true);assert.equal(onSeven.overdue,false);
+  assert.equal(onEight.overdue,true);assert.equal(onEight.overdueSessions,1);
+  assert.equal(onEight.qty,100);assert.equal(onEight.firstBuyDate,'2026-10-19');
+  assert.equal(exportState(state),before);
+});
+
+test('stale calendar preserves a proved overdue warning as a lower bound',()=>{
+  const [row]=holdings(buy(),{sessions:sessions.slice(0,8),asOf:'2026-11-02',now:at('2026-11-02')});
+  assert.equal(row.qty,100);assert.equal(row.calendarUnknown,true);
+  assert.equal(row.sessionCountIsLowerBound,true);assert.equal(row.overdue,true);
+  assert.equal(row.overdueSessions,1);assert.equal(row.sellableQty,null);
+});
+
+test('a recorded profit-protecting stop in a valid imported ledger does not break valuation',()=>{
+  const state=buy({entry:{high:12,low:9,stop:11}});
+  assert.equal(rows(state)[0].stopRisk,0);
+});
+
 test('T+1 is batch-specific and same-day buy cannot be sold', () => {
   assert.equal(rows(buy(), '2026-10-19')[0].sellableQty, 0);
   assert.throws(() => recordSell(buy(), sellInput({ executedAt: at('2026-10-19', '14:00') }), { sessions }), /T\+1/);

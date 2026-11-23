@@ -75,6 +75,15 @@ test('manual form rejects future fills before writing the ledger', () => {
   assert.equal(h.storage.size,0);
 });
 
+test('an outdated market calendar cannot hide a later actual holding',()=>{
+  const h=harness();
+  h.ctx.data.calendar.sessions=SESSIONS.filter(day=>day<'2026-05-11');
+  h.ctx.ledger=buy(h.ctx.ledger,'600002','today-fill','actual-today','2026-05-11');
+  assert.equal(h.held().length,1);assert.equal(h.held()[0].qty,100);
+  assert.equal(h.held()[0].calendarUnknown,true);
+  assert.equal(h.held()[0].sellableQty,null);
+});
+
 test('changing recommendation dates and Monday refresh preserve actual holdings and frozen targets', async()=>{
   const h=harness({'data/latest.json':{meta:{strategyId:'LBR_MAIN_V1',generatedAt:NOW},
     calendar:{verified:true,sessions:SESSIONS},pool:{mode:'WEEKLY_DAILY',weekStart:'2026-05-11',days:[]},candidates:[]}});

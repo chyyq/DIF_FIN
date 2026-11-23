@@ -27,7 +27,7 @@ function poolView(){return weeklyView(ctx.data,asOf(),ctx.selectedPoolDate);}
 function selectPoolDate(value){ctx.selectedPoolDate=value;render();}
 function stepPoolDate(step){selectPoolDate(moveDate(poolView(),step));}
 function sessions(){return ctx.data?.calendar?.verified?ctx.data.calendar.sessions:[];}
-function storageKey(){return ctx.demo?`${MODEL_KEY}-demo`:MODEL_KEY;}
+function storageKey(){return ctx.demo?`${MODEL_KEY}-demo-v1.3`:MODEL_KEY;}
 function notice(message){$('#global-notice').textContent=message;$('#global-notice').hidden=!message;}
 let toastTimer;
 function toast(message){$('#toast').textContent=message;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,5000);}
@@ -54,10 +54,11 @@ async function refresh({silent=false}={}){
   if(ctx.refreshing||ctx.demo)return;
   ctx.refreshing=true;$('#refresh-button').disabled=true;const old=ctx.data?.meta?.generatedAt,generation=ctx.generation;
   try{
-    const [latest,quoteResult,eventResult]=await Promise.allSettled([fetchJSON('data/latest.json'),fetchJSON('data/quotes.json'),fetchJSON('data/events.json')]);
+    const [latest,quoteResult,eventResult,reviewResult]=await Promise.allSettled([fetchJSON('data/latest.json'),fetchJSON('data/quotes.json'),fetchJSON('data/events.json'),fetchJSON('data/recommendation-review.json')]);
     if(generation!==ctx.generation||ctx.demo)return;
     if(latest.status!=='fulfilled')throw latest.reason;if(!dataValid(latest.value))throw Error('快照结构不受支持');
     ctx.data=latest.value;
+    if(reviewResult.status==='fulfilled'&&reviewResult.value?.strategyId==='LBR_MAIN_V1')ctx.reviewReport=reviewResult.value;
     let next=ctx.ledger;
     if(eventResult.status==='fulfilled'&&eventResult.value.strategyId==='LBR_MAIN_V1'){
       // The server retains complete audit snapshots. Keep stable research facts
@@ -110,13 +111,14 @@ async function refreshLiveQuotes(){
   const failed=results.filter(r=>r.status==='rejected').length;
   $('#refresh-status').textContent=failed?`${quotes.length}只个股行情可用 · ${failed}只读取失败`:'每60秒检查个股行情 · 来源时间可查';
 }
-function held(){const calendar=sessions(),last=calendar.filter(d=>d<=asOf()).at(-1);return holdings(ctx.ledger,{sessions:calendar,asOf:last||asOf(),now:now()}).map(h=>({...h,totalPnl:h.pnl,pnl:h.unrealizedPnl,pnlPct:h.unrealizedPnl!=null&&h.costCents?100*h.unrealizedPnl/(h.costCents/100):null}));}
+function held(){return holdings(ctx.ledger,{sessions:sessions(),asOf:asOf(),now:now()}).map(h=>({...h,totalPnl:h.pnl,pnl:h.unrealizedPnl,pnlPct:h.unrealizedPnl!=null&&h.costCents?100*h.unrealizedPnl/(h.costCents/100):null}));}
 function quoteFor(c){return ctx.ledger.quotes[codeOf(c.symbol||c.code)];}
 function quotePrice(c){const q=quoteFor(c);return q?.priceCents!=null?q.priceCents/100:c.price;}
 function getAlerts(rows){
   const list=[];
   for(const h of rows){
-    if(h.due)list.push({symbol:h.symbol,name:h.name,title:`第${h.heldSessions}个交易日 · 请处理`,text:'七日跟踪到期，持仓继续保留，等待实际卖出确认。',type:'warning'});
+    if(h.due)list.push({symbol:h.symbol,name:h.name,title:h.overdue?`已${h.sessionCountIsLowerBound?'至少':''}超期${h.overdueSessions}个交易日 · 尚未卖出`:`第${h.heldSessions}个交易日 · 请处理`,text:'持仓持续保留，请复核止盈、止损和实际卖出计划。',type:h.overdue?'danger':'warning'});
+    if(h.stopReviewRequired)list.push({symbol:h.symbol,name:h.name,title:`已买入${h.buyCount}笔 · 请复核止损`,text:h.stopMissingQty?`${h.stopMissingQty}股尚未记录止损参考，请在分笔明细中核对。`:`分笔止损参考 ${targetLabel(h,'stop')}元；请核对实际执行计划。`,type:h.stopMissingQty?'danger':'warning'});
     if(h.calendarUnknown)list.push({symbol:h.symbol,name:h.name,title:'交易日历待确认',text:'无法可靠计算期限与可卖数量，请先补齐交易日历。',type:'warning'});
     if(h.targets.some(t=>t.stopReached))list.push({symbol:h.symbol,name:h.name,title:'触及止损参考',text:h.sellableQty?'请核对可卖数量并手动处理。':'当前可能有T+1限制，请核对可卖股数。',type:'danger'});
     else if(h.targets.some(t=>t.tp2Reached&&!t.requiresExitReview))list.push({symbol:h.symbol,name:h.name,title:'触及第二止盈',text:'已观测到目标触价；未自动记作卖出。',type:'warning'});
@@ -130,8 +132,8 @@ function render(){
   ctx.rows=held();const summary=learningSummary(ctx.ledger),alerts=getAlerts(ctx.rows),data=ctx.data,view=poolView(),candidates=view.candidates;
   // null means follow the newest saved day; only an explicit navigation pins a date.
   $('#price-policy').textContent=`优先${data?.config?.selectionRules?.preferredPriceMax??30}元以内 / 上限${data?.config?.selectionRules?.maxPrice??60}元`;
-  $('#today-label').textContent=`${dateShort(view.selected)} 周${'一二三四五'[view.dates.indexOf(view.selected)]}`;$('#date-prev').disabled=view.selected===view.monday;$('#date-next').disabled=view.selected===view.friday;$('#demo-banner').hidden=!ctx.demo;$('#demo-toggle').textContent=ctx.demo?'退出演示':'体验演示';$('#refresh-button').disabled=ctx.demo;
-  $('#pool-count').innerHTML=`${candidates.length}<small>/ ${data?.config?.maxCandidates||10}</small>`;$('#pool-badge').textContent=candidates.length;$('#pool-description').textContent=`${dateShort(view.selected)}留档 · 本周${new Set(view.days.flatMap(d=>d.candidates.map(c=>codeOf(c.symbol||c.code)))).size}只`;
+  $('#today-label').textContent=`${dateShort(view.selected)} 周${'一二三四五'[view.dates.indexOf(view.selected)]}`;$('#date-prev').disabled=(view.selectedIndex??view.dates.indexOf(view.selected))===0;$('#date-next').disabled=(view.selectedIndex??view.dates.indexOf(view.selected))===4;$('#demo-banner').hidden=!ctx.demo;$('#demo-toggle').textContent=ctx.demo?'退出演示':'体验演示';$('#refresh-button').disabled=ctx.demo;
+  $('#pool-count').innerHTML=`${candidates.length}<small>/ ${data?.config?.maxCandidates||10}</small>`;$('#pool-badge').textContent=candidates.length;$('#pool-description').textContent=`${dateShort(view.selected)}留档 · 轮替池${new Set(view.days.flatMap(d=>d.candidates.map(c=>codeOf(c.symbol||c.code)))).size}只`;
   $('#position-count').innerHTML=`${ctx.rows.length}<small>只</small>`;$('#holdings-badge').textContent=ctx.rows.length;
   const known=ctx.rows.filter(h=>h.pnl!=null);const pnl=known.reduce((s,h)=>s+h.pnl,0);
   $('#floating-pnl').textContent=known.length?`${pnl>=0?'+':''}${money(pnl)}`:'—';$('#floating-pnl').className=sign(pnl);
@@ -139,10 +141,10 @@ function render(){
   $('#alert-count').innerHTML=`${alerts.length}<small>项</small>`;$('#alert-description').textContent=alerts.length?'请查看监控提醒，成交后更新账本':'止盈、止损与第七日检查';$('#alerts-total').textContent=`${alerts.length} 项`;
   $('#data-status').textContent=ctx.demo?'演示行情':data?.meta?.stale?'数据待核验':data?.meta?.quoteTimestamp&&dayOf(data.meta.quoteTimestamp)<asOf()?'闭市 / 历史快照':data?.meta?.generatedAt?'行情快照':'等待数据';
   $('#data-time').textContent=data?.meta?.quoteTimestamp?`来源 ${formatTime(data.meta.quoteTimestamp)}`:'尚未取得可靠来源时间';$('#data-dot').style.background=data?.meta?.stale?'#cba267':'#75a480';
-  $('#cycle-range').textContent=`${dateShort(view.monday)} — ${dateShort(view.friday)}`;
-  $('#cycle-note').textContent=`下周一 ${dateShort(view.nextMonday)} 重置；持仓独立跟踪`;
-  $('#cycle-dots').innerHTML=view.dates.map((date,i)=>{const day=view.days.find(d=>d.date===date);return `<button type="button" class="pool-day ${date===view.selected?'current':''}" data-pool-date="${date}" aria-pressed="${date===view.selected}"><span>周${'一二三四五'[i]}</span><b>${date.slice(5).replace('-','/')}</b><small>${day?`${day.candidates.length}只`:date>asOf()?'待更新':'未留档'}</small></button>`;}).join('');
-  $('#pool-day-note').textContent=view.day?'保留当日入选名单；价格、买卖参考与风险状态按最新资料更新。失效股票仍可回看。':view.selected>asOf()?'尚未到该日期，推荐将在成功刷新后留档。':'当日暂无留档：可能休市、尚未成功刷新或升级前没有历史记录。';
+  $('#cycle-range').textContent='五个星期槽位 · 同星期轮替';
+  $('#cycle-note').textContent='新周一只替换旧周一，其余记录继续保留；持仓不轮替';
+  $('#cycle-dots').innerHTML=view.dates.map((date,i)=>{const day=view.days.find(d=>d.date===date);return `<button type="button" class="pool-day ${date===view.selected?'current':''}" data-pool-date="${date}" aria-pressed="${date===view.selected}"><span>周${'一二三四五'[i]}</span><b>${date.slice(5).replace('-','/')}</b><small>${day?`${day.candidates.length}只${date<view.monday?' · 旧记录':''}`:'未留档'}</small></button>`;}).join('');
+  $('#pool-day-note').textContent=view.day?`${view.selected<view.monday?'这是上一轮记录，将在对应星期成功更新后替换。':'保留当日入选名单。'}价格和风险状态按最新资料更新，已买入持仓独立保留。`:'该星期暂无留档；休市、更新失败或升级前无记录时，不补造推荐。';
   renderCandidates();renderPositions();renderJournal();renderLearning(summary);
   $('#alerts-list').innerHTML=alerts.length?alerts.slice(0,8).map(a=>`<article class="alert-item ${a.type}"><b>${escapeHTML(a.name)} · ${escapeHTML(a.title)}</b><p>${escapeHTML(a.text)}</p></article>`).join(''):'<p class="aside-note">暂无待处理提醒。买入记录会在这里持续跟踪。</p>';
   $('#sample-count').textContent=`${summary.closedEventCount} 个已完成事件`;$('#sample-progress-bar').style.width=`${Math.min(100,summary.closedEventCount/30*100)}%`;$('#journal-count').textContent=summary.fillCount;
@@ -162,7 +164,7 @@ function renderCandidates(){
 }
 function targetLabel(h,key){const vals=[...new Set(h.targets.map(t=>t[key]).filter(v=>v!=null))];return vals.length?vals.map(v=>money(v)).join(' / '):'待补齐';}
 function renderPositions(){
-  $('#position-list').innerHTML=ctx.rows.length?ctx.rows.map(h=>`<article class="position-card"><div class="stock-row"><div class="stock-identity"><div class="stock-mark">${escapeHTML(h.name?.replace(/^示例·/,'').slice(0,1)||'持')}</div><div><span class="stock-name">${escapeHTML(h.name)}</span><span class="stock-code">${escapeHTML(h.symbol)}</span><div class="stock-meta">${dateShort(h.firstBuyDate)} 首次买入 · ${integer(h.qty)}股 · 可卖 ${integer(h.sellableQty)}股</div></div></div><div class="stock-price"><b class="${sign(h.pnl)}">${h.pnl==null?'—':`${h.pnl>=0?'+':''}${money(h.pnl)}`}</b><small class="${sign(h.pnlPct)}">${percent(h.pnlPct)}</small></div></div><div class="position-overview"><div><label>加权成本 / 现价</label><b>${money(h.avgCost)} / ${money(h.marketPrice)}</b></div><div><label>观察高点 / 低点</label><b>${money(h.high)} / ${money(h.low)}</b></div><div><label>TP1 / TP2（分批）</label><b>${targetLabel(h,'tp1')} / ${targetLabel(h,'tp2')}</b></div><div><label>止损参考</label><b>${targetLabel(h,'stop')}</b></div></div><div class="holding-progress"><span class="status-pill ${h.due?'warning':''}">${h.calendarUnknown?'期限待确认':`第${h.heldSessions} / 7交易日`}</span><div class="bar"><i style="width:${Math.min(100,(h.heldSessions||0)/7*100)}%"></i></div><span>${h.expiryDate?`${dateShort(h.expiryDate)} 提醒`:'期限待后续交易日历'}</span><div class="position-actions"><button class="mini-button" data-action="add" data-code="${escapeHTML(h.symbol)}">＋ 加仓</button><button class="mini-button sell" data-action="sell" data-code="${escapeHTML(h.symbol)}" data-fraction="0.5">记卖出50%</button><button class="mini-button sell" data-action="sell" data-code="${escapeHTML(h.symbol)}" data-fraction="1">记卖出</button></div></div><div class="coverage">${h.coverageGap?'观察覆盖不完整 · 峰谷不是完整行情路径':'峰谷仅使用买入后收到的有效报价'} · ${h.due?'到期保留持仓，等待你处理':'加仓不会重置七日计数'} · <button class="text-button" data-action="holding-detail" data-code="${escapeHTML(h.symbol)}">分笔目标 / 明细 ↗</button></div></article>`).join(''):empty('还没有正在监控的持仓','在备选池点击计划比例，或补录实际成交。买入后自动合并同股，并开始独立七日跟踪。');
+  $('#position-list').innerHTML=ctx.rows.length?ctx.rows.map(h=>`<article class="position-card ${h.overdue?'overdue-position':''}"><div class="stock-row"><div class="stock-identity"><div class="stock-mark">${escapeHTML(h.name?.replace(/^示例·/,'').slice(0,1)||'持')}</div><div><span class="stock-name">${escapeHTML(h.name)}</span><span class="stock-code">${escapeHTML(h.symbol)}</span><div class="stock-meta">${dateShort(h.firstBuyDate)} 首次买入 · ${integer(h.qty)}股 · 可卖 ${integer(h.sellableQty)}股</div></div></div><div class="stock-price"><b class="${sign(h.pnl)}">${h.pnl==null?'—':`${h.pnl>=0?'+':''}${money(h.pnl)}`}</b><small class="${sign(h.pnlPct)}">${percent(h.pnlPct)}</small></div></div><div class="position-overview"><div><label>加权成本 / 现价</label><b>${money(h.avgCost)} / ${money(h.marketPrice)}</b></div><div><label>观察高点 / 低点</label><b>${money(h.high)} / ${money(h.low)}</b></div><div><label>TP1 / TP2（分批）</label><b>${targetLabel(h,'tp1')} / ${targetLabel(h,'tp2')}</b></div><div><label>止损参考</label><b>${targetLabel(h,'stop')}</b></div></div>${h.stopReviewRequired?`<div class="stop-review ${h.stopMissingQty?'missing':''}"><b>已买入${h.buyCount}笔 · 请复核止损价</b><span>分笔参考 ¥${targetLabel(h,'stop')}${h.stopMissingQty?` · ${h.stopMissingQty}股待补止损`:` · 按各笔止损估算亏损 ¥${money(h.stopRisk)}（含已录买费，未含卖费与滑点）`}</span><button class="text-button" data-action="holding-detail" data-code="${escapeHTML(h.symbol)}">查看分笔止损</button></div>`:''}<div class="holding-progress"><span class="status-pill ${h.overdue?'danger':h.due?'warning':''}">${h.overdue?`已${h.sessionCountIsLowerBound?'至少':''}超期${h.overdueSessions}交易日 · 持仓保留`:h.calendarUnknown?'期限待确认':`第${h.heldSessions} / 7交易日`}</span><div class="bar"><i style="width:${Math.min(100,(h.heldSessions||0)/7*100)}%"></i></div><span>${h.expiryDate?`${dateShort(h.expiryDate)} 提醒`:'期限待后续交易日历'}</span><div class="position-actions"><button class="mini-button" data-action="add" data-code="${escapeHTML(h.symbol)}">＋ 加仓</button><button class="mini-button sell" data-action="sell" data-code="${escapeHTML(h.symbol)}" data-fraction="0.5">记卖出50%</button><button class="mini-button sell" data-action="sell" data-code="${escapeHTML(h.symbol)}" data-fraction="1">记卖出</button></div></div><div class="coverage">${h.coverageGap?'观察覆盖不完整 · 峰谷不是完整行情路径':'峰谷仅使用买入后收到的有效报价'} · ${h.due?'到期保留持仓，等待你处理':'加仓不会重置七日计数'} · <button class="text-button" data-action="holding-detail" data-code="${escapeHTML(h.symbol)}">分笔目标 / 明细 ↗</button></div></article>`).join(''):empty('还没有正在监控的持仓','在备选池点击计划比例，或补录实际成交。买入后自动合并同股，并开始独立七日跟踪。');
 }
 function renderJournal(){
   const fills=[...ctx.ledger.fills].sort((a,b)=>b.executedAt.localeCompare(a.executedAt));
@@ -170,6 +172,12 @@ function renderJournal(){
 }
 function renderLearning(s){
   $('#learning-content').innerHTML=`<div class="learning-stages">${[['01 · COLLECT','不足30个事件','检查数据、成交语义和缺失证据，不推断稳定胜率。'],['02 · DESCRIBE','30—99个事件','仅展示已记录结果，按回撤档位和市场日期研究差异。'],['03 · VALIDATE','100个事件起','按时间前推，隔离相邻事件，另做样本外检验。']].map((v,i)=>`<article class="learning-stage ${i===(s.closedEventCount<30?0:s.closedEventCount<100?1:2)?'current':''}"><small>${v[0]}</small><h3>${v[1]}</h3><p>${v[2]}</p></article>`).join('')}</div><section class="panel"><div class="panel-header"><h2>样本积累</h2><span class="tiny-tag">${ctx.demo?'DEMO ONLY':'ACTUAL FILLS'}</span></div><div class="learning-metrics"><div><label>独立记录事件</label><b>${s.eventCount}</b></div><div><label>已完成 / 未成交</label><b>${s.closedEventCount} <small>/ ${s.unfilledEventCount}</small></b></div><div><label>已平仓事件净盈亏</label><b class="${sign(s.netRealized)}">${money(s.netRealized)}</b></div><div><label>描述性胜率</label><b>${s.winRatePct==null?'—':`${s.winRatePct.toFixed(1)}%`}</b></div></div><div class="learning-explanation">${escapeHTML(s.message)}<br>每笔买入保留事件快照和冻结参数。未平仓、未成交样本独立保留。导出账本后，离线学习脚本可以读取全部事件和真实成交；当前版本不会自动修改推荐门槛。</div></section><section class="panel"><div class="panel-header"><h2>事件样本状态</h2></div>${s.samples.length?`<div class="table-scroll"><table class="trade-table"><thead><tr><th>事件</th><th>代码</th><th>状态</th><th>已实现净收益</th></tr></thead><tbody>${s.samples.map(x=>`<tr><td>${escapeHTML(x.eventId||x.id)}</td><td class="num">${escapeHTML(x.symbol)}</td><td>${escapeHTML(x.status)}</td><td class="num">${x.status==='CLOSED'?money(x.netPnlCents/100):'待完成'}</td></tr>`).join('')}</tbody></table></div>`:empty('尚无研究样本','真实候选和实际成交会逐步累积；演示数据保持隔离。')}</section>`;
+  const review=ctx.demo?null:ctx.reviewReport;
+  if(review?.summary){
+    const a=review.summary,b=a.allObservationBenchmark||{},records=review.records||[];
+    $('#learning-content').insertAdjacentHTML('afterbegin',`<section class="panel recommendation-review"><div class="panel-header"><h2>近期推荐复盘</h2><span class="tiny-tag">${escapeHTML(review.asOf)} 前的完整日线</span></div><div class="learning-metrics"><div><label>历史快照</label><b>${integer(a.snapshotCount)}</b></div><div><label>事件 / 股票</label><b>${integer(a.distinctRecordedEvents)} / ${integer(a.distinctSymbols)}</b></div><div><label>可完成价格随访</label><b>${integer(b.completeEventCount)}</b></div><div><label>首见合格收益比方案</label><b>${integer(a.qualityEligiblePlanCount)}</b></div></div><p class="learning-explanation">这是推荐之后的名义价格随访，缺少你的实际成交与卖出记录，不能当成实盘胜率。同股重复事件和七日窗口存在重叠，样本不足以证明推荐胜率提高。已据复盘修复同股新事件绕过入选门槛的问题；价格与风险阈值没有按少量结果反复调参。</p><div class="table-scroll"><table class="trade-table"><thead><tr><th>股票</th><th>首次可知日期</th><th>7交易日收盘相对参考价</th><th>入选时收益比</th></tr></thead><tbody>${records.slice(0,20).map(r=>`<tr><td>${escapeHTML(r.symbol)}</td><td>${escapeHTML(r.recommendationDate)}</td><td>${r.followUpStatus==='COMPLETE_NOMINAL_PRICE_FOLLOWUP'?percent(r.signalToSeventhClosePct):'资料不足 / 已剔除'}</td><td>${r.qualityPlanEligibleAtFirstSnapshot?'存在合格档位':'未通过 / 待核验'}</td></tr>`).join('')}</tbody></table></div></section>`);
+  }
+
 }
 function showPage(page){if(!names[page])return;ctx.page=page;for(const p of Object.keys(names))$(`#${p}-page`).hidden=p!==page;document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.page===page));$('#breadcrumb-name').textContent=names[page];history.replaceState(null,'',`#${page}`);window.scrollTo({top:0,behavior:'instant'});}
 function candidateFor(code){return poolView().candidates.find(c=>codeOf(c.code||c.symbol)===codeOf(code));}
@@ -186,6 +194,8 @@ function openTrade(type,code=null,fraction=.3,tranche=null){
   if(isSell){const available=h.sellableQty??h.qty;$('#trade-quantity').value=fraction===.5?Math.max(1,Math.floor(available/2/100)*100):available;$('#trade-context').textContent=`${h.name} · 共${h.qty}股，可卖${h.sellableQty??'待日历确认'}股。按实际已成交数量填写。`;$('#trade-reason').value=fraction===.5?'TP1':h.due?'TIME':'MANUAL';}
   else{const suggest=price?suggestedQuantity({budget:ctx.settings.budget,fraction,price}):null;$('#trade-quantity').value=suggest?.qty||100;$('#trade-context').textContent=`${tranche?`第${tranche}次计划份额 · `:''}计划资金${money(ctx.settings.budget)}元的${fraction*100}% ≈ ${money(ctx.settings.budget*fraction)}元。参考股数按100股向下取整，请改成实际成交值。`;$('#entry-high').value=c?.referencePeak||'';$('#entry-low').value=c?.confirmedPivotLow||'';$('#entry-stop').value=ctx.demo&&c?c.buyLevels?.[0]?.plannedStop||'':'';}
   $('#trade-warning').textContent=isSell?'仅记录已经发生的卖出。触及目标但未成交时，请继续保留持仓。':'这是成交记账，不会发送券商委托。观察状态、过期报价仍可补录真实成交；缺入场锚点将提示资料待补。';
+  $('#entry-plan').open=!isSell&&Boolean(h?.buyCount>=1);
+  if(!isSell&&h?.buyCount>=1)$('#trade-warning').textContent=`这是本轮第${h.buyCount+1}笔买入，请复核止损价。现有分笔止损：${targetLabel(h,'stop')}元；新一笔请填写成交当时确认的计划，记录成交不会自动修改旧目标。`;
   updateEstimate();$('#trade-dialog').showModal();
 }
 function updateEstimate(){const p=Number($('#trade-price').value),q=Number($('#trade-quantity').value),fee=Number($('#trade-fee').value);$('#trade-estimate').textContent=p>0&&q>0?`${ctx.trade?.type==='sell'?'预计净收款':'成交金额含费'} ¥${money(p*q+(ctx.trade?.type==='sell'?-fee:fee))} · ${integer(q)}股 × ¥${money(p)}`:'';}

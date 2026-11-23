@@ -274,11 +274,11 @@ function calendarInfo(input) {
 }
 function sessionStatus(calendar, firstBuyDate, asOf, length) {
   const unknown = { heldSessions: null, expiryDate: null, due: false, calendarUnknown: true };
-  if (!calendar || firstBuyDate > asOf || firstBuyDate < calendar.coveredFrom || asOf > calendar.coveredTo) return unknown;
+  if (!calendar || firstBuyDate > asOf || firstBuyDate < calendar.coveredFrom) return unknown;
   const index = calendar.sessions.indexOf(firstBuyDate);
   if (index < 0) return unknown;
   const heldSessions = calendar.sessions.filter(d => d >= firstBuyDate && d <= asOf).length;
-  return { heldSessions, expiryDate: calendar.sessions[index + length - 1] || null, due: heldSessions >= length, calendarUnknown: false };
+  return { heldSessions, expiryDate: calendar.sessions[index + length - 1] || null, due: heldSessions >= length, overdue: heldSessions > length, overdueSessions: Math.max(0, heldSessions - length), calendarUnknown: asOf > calendar.coveredTo, sessionCountIsLowerBound: asOf > calendar.coveredTo };
 }
 function isSellable(lot, day, calendar) { return !!calendar && day >= calendar.coveredFrom && day <= calendar.coveredTo && calendar.sessions.includes(day) && calendar.sessions.includes(lot.tradeDate) && lot.tradeDate < day; }
 export function recordSell(state, input, { sessions } = {}) {
@@ -368,7 +368,10 @@ export function holdings(state, { sessions, asOf, now = new Date().toISOString()
     const marketValueCents = q && !stale ? product(q.priceCents, qty) : null;
     const unrealizedPnlCents = marketValueCents == null ? null : marketValueCents - costCents;
     const targets = lots.map(l => ({ buyFillId: l.id, eventId: l.eventId, qty: l.remainingQty, boughtAt: l.executedAt, high: amount(l.entry.highCents), low: amount(l.entry.lowCents), tp1: amount(l.entry.tp1Cents), tp2: amount(l.entry.tp2Cents), stop: amount(l.entry.stopCents), tp1Cents: l.entry.tp1Cents, tp2Cents: l.entry.tp2Cents, stopCents: l.entry.stopCents, requiresExitReview: l.entry.tp1Cents == null || l.entry.stopCents == null || l.entry.tp1Cents <= l.priceCents, tp1Reached: !stale && l.entry.tp1Cents != null && q.priceCents >= l.entry.tp1Cents, tp2Reached: !stale && l.entry.tp2Cents != null && q.priceCents >= l.entry.tp2Cents, stopReached: !stale && l.entry.stopCents != null && q.priceCents <= l.entry.stopCents }));
-    result.push({ symbol, name: buys.at(-1).name, qty, sellableQty, costCents, avgPrice: Math.round(priceBasisCents / qty) / 100, avgCost: Math.round(costCents / qty) / 100, firstBuyDate: first.tradeDate, firstBuyAt: first.executedAt, ...status, quoteTimestamp: q?.timestamp || null, quoteAgeMinutes, stale, marketPrice: q ? amount(q.priceCents) : null, marketValue: amount(marketValueCents), marketValueCents, unrealizedPnl: amount(unrealizedPnlCents), unrealizedPnlCents, netRealized: amount(netRealizedCents), netRealizedCents, pnl: unrealizedPnlCents == null ? null : amount(unrealizedPnlCents + netRealizedCents), high: amount(highCents), low: amount(lowCents), observedHigh: amount(highCents), observedLow: amount(lowCents), coverageGap: observed.length === 0 || gaps > 0 || stale, coverageGapCount: gaps, coverageNote: '仅记录成交后实际收到的离散报价；未覆盖时段的真实高低点未知', observationCount: observed.length, targets, buyCount: buys.length, fills: clone(cycle) });
+    const stopMissingQty = lots.filter(l => l.entry.stopCents == null).reduce((sum,l)=>sum+l.remainingQty,0);
+    const stopRiskRaw = stopMissingQty ? null : lots.reduce((sum,l)=>sum+BigInt(l.priceCents-l.entry.stopCents)*BigInt(l.remainingQty)+BigInt(l.remainingFeesCents),0n);
+    const stopRiskCents = stopRiskRaw==null || stopRiskRaw>BigInt(Number.MAX_SAFE_INTEGER) ? null : Number(stopRiskRaw<0n?0n:stopRiskRaw);
+    result.push({ symbol, name: buys.at(-1).name, qty, sellableQty, costCents, avgPrice: Math.round(priceBasisCents / qty) / 100, avgCost: Math.round(costCents / qty) / 100, firstBuyDate: first.tradeDate, firstBuyAt: first.executedAt, ...status, quoteTimestamp: q?.timestamp || null, quoteAgeMinutes, stale, marketPrice: q ? amount(q.priceCents) : null, marketValue: amount(marketValueCents), marketValueCents, unrealizedPnl: amount(unrealizedPnlCents), unrealizedPnlCents, netRealized: amount(netRealizedCents), netRealizedCents, pnl: unrealizedPnlCents == null ? null : amount(unrealizedPnlCents + netRealizedCents), high: amount(highCents), low: amount(lowCents), observedHigh: amount(highCents), observedLow: amount(lowCents), coverageGap: observed.length === 0 || gaps > 0 || stale, coverageGapCount: gaps, coverageNote: '仅记录成交后实际收到的离散报价；未覆盖时段的真实高低点未知', observationCount: observed.length, targets, buyCount: buys.length, stopReviewRequired: buys.length>=2, stopMissingQty, stopRisk: amount(stopRiskCents), fills: clone(cycle) });
   }
   return result;
 }

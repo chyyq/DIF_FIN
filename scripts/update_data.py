@@ -17,12 +17,12 @@ from pathlib import Path
 try:
     from .providers import PublicProvider, CN_TZ
     from .strategy import TradingCalendar, evaluate_event, hard_veto, number, rotate_pool, trend_metrics
-    from .adaptive import history_probes, market_profile
+    from .adaptive import admission_ok, history_probes, market_profile
     from .weekly_pool import build_weekly_pool
 except ImportError:
     from providers import PublicProvider, CN_TZ
     from strategy import TradingCalendar, evaluate_event, hard_veto, number, rotate_pool, trend_metrics
-    from adaptive import history_probes, market_profile
+    from adaptive import admission_ok, history_probes, market_profile
     from weekly_pool import build_weekly_pool
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -176,9 +176,27 @@ def build_snapshot(previous: dict, previous_events: list[dict], quotes: list[dic
     # that same stock only after invalidating its old plan version.
     for index, candidate in enumerate(candidates):
         newest = latest_by_symbol.get(candidate["symbol"])
-        if config.get('candidatePoolMode') != 'WEEKLY_DAILY' and newest and newest["eventId"] != candidate["eventId"] and newest.get("status") not in ("CANCEL", "EXPIRE"):
+        if (config.get('candidatePoolMode') != 'WEEKLY_DAILY' and newest
+                and newest["eventId"] != candidate["eventId"] and newest.get("status") not in ("CANCEL", "EXPIRE")
+                and admission_ok(newest, config)):
             candidates[index] = {**newest, "supersededEventId": candidate["eventId"]}
     observations.extend({"type": "POOL_EVENT_ARCHIVED", "asOf": stamp, "snapshot": item} for item in archives)
+    previous_recommendations = {(day.get('date'), e.get('eventId'))
+                                for day in previous.get('pool', {}).get('days', [])
+                                for e in day.get('candidates', [])}
+    if previous.get('pool', {}).get('mode') != 'WEEKLY_DAILY':
+        legacy_date = str(previous.get('meta', {}).get('generatedAt') or '')[:10]
+        previous_recommendations.update((legacy_date, e.get('eventId')) for e in previous.get('candidates', []))
+    for day in pool.get('days', []):
+        # Persist the actual admission snapshot, not a later event evaluation.
+        # Old imported slots are not relabeled as recommendations made now.
+        if day.get('date') != as_of or quote_day != as_of:
+            continue
+        for candidate in day.get('candidates', []):
+            if (day['date'], candidate.get('eventId')) not in previous_recommendations:
+                observations.append({'type': 'RECOMMENDATION_RECORDED', 'asOf': stamp,
+                                     'recommendationDate': day['date'], 'parameterVersion': config.get('parameterVersion'),
+                                     'parameterHash': parameter_hash(config), 'snapshot': candidate})
     snapshot = {"meta": {"schemaVersion": 1, "strategyId": config["strategyId"], "generatedAt": stamp,
                           "lastSuccessfulAt": stamp, "quoteTimestamp": max(stamps) if stamps else None,
                           "tradingDate": trading_date, "stale": False, "mode": "public-delayed-manual-monitor",

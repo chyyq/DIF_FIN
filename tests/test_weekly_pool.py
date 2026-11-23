@@ -1,4 +1,4 @@
-"""Daily retention, Monday rollover and outage semantics, with synthetic events."""
+"""Weekday-slot replacement and outage semantics, with synthetic events."""
 import copy
 import json
 import unittest
@@ -65,16 +65,16 @@ class WeeklyPoolTests(unittest.TestCase):
         self.assertEqual(second['pool']['days'][1]['candidates'][0]['eventId'],'600001:2026-11-10')
         self.assertEqual(len(second['candidates']),2)
 
-    def test_monday_reset_is_calendar_based_even_with_friday_quotes(self):
+    def test_new_monday_with_friday_quotes_keeps_existing_slots(self):
         friday,_=refresh({},[event(day='2026-11-13')],'2026-11-13')
         weekend,_=refresh(friday,[event(day='2026-11-13')],'2026-11-14','2026-11-13')
         self.assertEqual(weekend['pool']['days'],friday['pool']['days'])
         monday,archives=refresh(weekend,[event(day='2026-11-13')],'2026-11-16','2026-11-13')
         self.assertEqual(monday['pool']['weekStart'],'2026-11-16')
-        self.assertEqual(monday['pool']['nextRefreshOn'],'2026-11-23')
-        self.assertEqual(monday['pool']['days'],[])
-        self.assertEqual(monday['candidates'],[])
-        self.assertEqual(len(archives),1)
+        self.assertEqual(monday['pool']['rotation'],'WEEKDAY_ROLLING')
+        self.assertEqual(monday['pool']['days'],friday['pool']['days'])
+        self.assertEqual(len(monday['candidates']),1)
+        self.assertEqual(archives,[])
 
     def test_wednesday_initialization_does_not_invent_monday_and_tuesday(self):
         snapshot,_=refresh({},[event(day='2026-11-11')],'2026-11-11')
@@ -84,14 +84,14 @@ class WeeklyPoolTests(unittest.TestCase):
         snapshot,_=refresh({},[],'2026-11-11')
         self.assertEqual(snapshot['pool']['days'][0]['candidates'],[])
 
-    def test_outage_keeps_daily_history_and_resets_on_next_monday(self):
+    def test_outage_keeps_daily_history_across_new_monday(self):
         first,_=refresh({},[event()],'2026-11-09')
         failed=stale_snapshot(first,CONFIG,datetime.fromisoformat('2026-11-10T10:00:00+08:00'),['offline'],[])
         self.assertEqual(failed['pool']['days'],first['pool']['days'])
         self.assertEqual(failed['candidates'][0]['stale'],True)
         reset=stale_snapshot(failed,CONFIG,datetime.fromisoformat('2026-11-16T00:00:00+08:00'),['offline'],[])
-        self.assertEqual(reset['pool']['days'],[])
-        self.assertEqual(reset['stats']['candidateCount'],0)
+        self.assertEqual(reset['pool']['days'],first['pool']['days'])
+        self.assertEqual(reset['stats']['candidateCount'],1)
 
     def test_parameter_changes_do_not_erase_current_week(self):
         first,_=refresh({},[event()],'2026-11-09')
@@ -104,6 +104,78 @@ class WeeklyPoolTests(unittest.TestCase):
         upgraded,_=refresh(old,[],'2026-11-11')
         self.assertEqual([d['date'] for d in upgraded['pool']['days']],['2026-11-10','2026-11-11'])
         self.assertTrue(upgraded['pool']['days'][0]['migrated'])
+
+    def full_week(self):
+        previous = {}
+        for index, day in enumerate(['2026-11-09','2026-11-10','2026-11-11','2026-11-12','2026-11-13']):
+            previous, _ = refresh(previous, [event(f'60000{index}', day)], day)
+        return previous
+
+    def test_new_monday_replaces_only_monday_then_tuesday_replaces_only_tuesday(self):
+        first = self.full_week()
+        old = copy.deepcopy(first)
+        monday, archives = refresh(first, [event('600010','2026-11-16')], '2026-11-16')
+        self.assertEqual([d['date'] for d in monday['pool']['days']],
+                         ['2026-11-16','2026-11-10','2026-11-11','2026-11-12','2026-11-13'])
+        self.assertEqual(monday['pool']['days'][1:], old['pool']['days'][1:])
+        self.assertEqual(archives[0]['archiveReason'], 'WEEKDAY_SLOT_REPLACED')
+        self.assertEqual(archives[0]['recommendationDate'], '2026-11-09')
+        self.assertEqual(len(monday['candidates']), 5)
+        tuesday, archives = refresh(monday, [event('600011','2026-11-17')], '2026-11-17')
+        self.assertEqual([d['date'] for d in tuesday['pool']['days']],
+                         ['2026-11-16','2026-11-17','2026-11-11','2026-11-12','2026-11-13'])
+        self.assertEqual(tuesday['pool']['days'][0], monday['pool']['days'][0])
+        self.assertEqual(archives[0]['weekday'], 1)
+        self.assertEqual(first, old)
+
+    def test_empty_success_replaces_own_slot_but_failure_does_not(self):
+        first = self.full_week()
+        monday, archives = refresh(first, [], '2026-11-16')
+        self.assertEqual(monday['pool']['days'][0]['candidates'], [])
+        self.assertEqual(len(monday['pool']['days']), 5)
+        self.assertEqual(len(archives), 1)
+        failed = stale_snapshot(first, CONFIG, datetime.fromisoformat('2026-11-16T10:00:00+08:00'), ['offline'], [])
+        self.assertEqual(failed['pool']['days'], first['pool']['days'])
+
+    def test_missing_weekday_and_long_holiday_do_not_discard_known_records(self):
+        first = self.full_week()
+        pool, members, archives = build_weekly_pool(first, [], CONFIG, '2026-12-07', None)
+        self.assertEqual(pool['days'], first['pool']['days'])
+        self.assertEqual(len(members), 5)
+        self.assertEqual(archives, [])
+        self.assertTrue(all(c['stale'] for c in members))
+
+    def test_duplicate_legacy_dates_keep_newest_known_day_per_weekday(self):
+        first = self.full_week()
+        original = copy.deepcopy(first['pool']['days'][0])
+        original['date'] = '2026-11-02'
+        first['pool']['days'].append(original)
+        first['pool']['days'].append({**original, 'date':'2026-11-30'})
+        first['pool']['days'].append({**original, 'date':'invalid'})
+        pool, _, _ = build_weekly_pool(first, [], CONFIG, '2026-11-16')
+        self.assertEqual(len(pool['days']), 5)
+        self.assertEqual(pool['days'][0]['date'], '2026-11-09')
+
+    def test_legacy_flat_snapshot_from_prior_week_is_retained_until_own_weekday(self):
+        old = {'pool': {'startedOn':'2026-11-09'}, 'candidates':[event()],
+               'meta':{'generatedAt':'2026-11-09T14:00:00+08:00'}}
+        upgraded, _ = refresh(old, [event('600012','2026-11-17')], '2026-11-17')
+        self.assertEqual([d['date'] for d in upgraded['pool']['days']], ['2026-11-09','2026-11-17'])
+        self.assertTrue(upgraded['pool']['days'][0]['migrated'])
+
+    def test_an_event_shared_by_two_days_survives_replacement_of_only_one_slot(self):
+        first, _ = refresh({}, [event()], '2026-11-09')
+        tuesday, _ = refresh(first, [event()], '2026-11-10')
+        monday, _ = refresh(tuesday, [], '2026-11-16')
+        self.assertEqual(len(monday['candidates']), 1)
+        self.assertEqual(monday['pool']['days'][1]['candidates'][0]['eventId'], event()['eventId'])
+
+    def test_lost_current_quote_never_revives_an_expired_or_cancelled_history_record(self):
+        first, _ = refresh({}, [event()], '2026-11-09')
+        first['pool']['days'][0]['candidates'][0]['status'] = 'EXPIRE'
+        pool, members, _ = build_weekly_pool(first, [], CONFIG, '2026-11-16')
+        self.assertEqual(members[0]['status'], 'EXPIRE')
+        self.assertTrue(members[0]['stale'])
 
     def test_per_day_price_risk_and_capacity_guards_remain(self):
         cfg={**CONFIG,'maxCandidates':1}

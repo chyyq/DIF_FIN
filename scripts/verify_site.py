@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def verify(root=ROOT):
     required = ('index.html','app.js','portfolio.js','demo.js','weekly.js','styles.css','favicon.svg',
                 'scripts/update_data.py','scripts/strategy.py','scripts/adaptive.py','scripts/providers.py','scripts/weekly_pool.py',
+                'scripts/publish_data.py','scripts/recommendation_review.py',
                 'config/strategy.json','.github/workflows/check.yml',
                 '.github/workflows/update-data.yml','.github/workflows/deploy-pages.yml')
     missing = [p for p in required if not (root/p).is_file()]
@@ -33,6 +34,7 @@ def verify(root=ROOT):
     config = json.loads((root/'config/strategy.json').read_text())
     assert config['candidateSessions']==config['holdingSessions']==7
     assert config['candidatePoolMode']=='WEEKLY_DAILY'
+    assert config['poolRotation']=='WEEKDAY_ROLLING'
     assert config['adaptivePricing']['enabled'] and config['selectionRules']['includeTrendPullbacks']
     assert config['selectionRules']['strictAdmission']
     return {'status':'PASS','pythonCompatibility':'3.11 syntax','rootIndex':True,'relativeAssets':True,

@@ -1,4 +1,4 @@
-"""Monday-Friday recommendation history, independent from the private ledger."""
+"""Five rolling weekday recommendation slots, independent from the private ledger."""
 from __future__ import annotations
 
 import copy
@@ -23,37 +23,60 @@ def eligible_daily(events, config):
     return options
 
 
+def _saved_slots(previous, as_of):
+    """Keep the newest known snapshot for each weekday, without inventing dates."""
+    old = previous.get('pool', {})
+    saved = copy.deepcopy(old.get('days', []))
+    # Old releases without daily history prove only their actual snapshot date.
+    # A dated record may be old; that is shown as retained history, not relabelled.
+    legacy_day = str(previous.get('meta', {}).get('generatedAt') or '')[:10]
+    if old.get('mode') != 'WEEKLY_DAILY' and legacy_day and previous.get('candidates'):
+        saved.append({'date': legacy_day, 'firstRecordedAt': previous['meta']['generatedAt'],
+                      'lastUpdatedAt': previous['meta']['generatedAt'], 'migrated': True,
+                      'candidates': copy.deepcopy(previous.get('candidates', []))})
+    slots = {}
+    for entry in saved:
+        try:
+            day = date.fromisoformat(entry['date'])
+        except (ValueError, TypeError, KeyError):
+            continue
+        weekday = day.weekday()
+        if day.isoformat() != entry['date'] or weekday >= 5 or day.isoformat() > as_of:
+            continue
+        if weekday not in slots or entry['date'] > slots[weekday]['date']:
+            slots[weekday] = {**entry, 'weekday': weekday}
+    return slots
+
+
 def build_weekly_pool(previous, events, config, as_of, quote_day=None, stamp=None):
-    """Append today's choices; never replace another day's membership or evidence.
+    """Replace only today's weekday slot after a successful current-day refresh.
 
     days[].candidates are the original recommendation snapshots. The returned
     flat list holds their current event states, including CANCEL/EXPIRE. A new
-    event for the same symbol must not rewrite an earlier recommendation.
+    event for the same symbol must not rewrite an earlier recommendation. Old
+    Tuesday-Friday records survive a new Monday; holidays/outages keep all slots.
     """
     monday = week_start(as_of)
     start = date.fromisoformat(monday)
     friday = (start + timedelta(days=4)).isoformat()
     next_monday = (start + timedelta(days=7)).isoformat()
-    old = previous.get('pool', {})
-    same_week = old.get('mode') == 'WEEKLY_DAILY' and old.get('weekStart') == monday
-    days = copy.deepcopy(old.get('days', [])) if same_week else []
-    archives = [] if same_week else [dict(e, archiveReason='WEEK_RESET', archivedOn=as_of)
-                                    for e in previous.get('candidates', [])]
-    # Upgrade only the snapshot date we actually possess. Never manufacture
-    # Monday/Tuesday recommendations from Wednesday's current market data.
-    legacy_day = str(previous.get('meta', {}).get('generatedAt') or '')[:10]
-    if old.get('mode') != 'WEEKLY_DAILY' and legacy_day and monday <= legacy_day <= min(friday, as_of):
-        days.append({'date': legacy_day, 'firstRecordedAt': previous['meta']['generatedAt'],
-                     'lastUpdatedAt': previous['meta']['generatedAt'], 'migrated': True,
-                     'candidates': copy.deepcopy(previous.get('candidates', []))})
+    today = date.fromisoformat(as_of)
+    slots = _saved_slots(previous, as_of)
+    archives = []
     # A weekend run, Monday with Friday quotes, or a source outage cannot
     # relabel old recommendations as a new day's selections.
-    can_select = quote_day == as_of and monday <= as_of <= friday
+    can_select = quote_day == as_of and today.weekday() < 5
     if can_select:
-        day = next((d for d in days if d['date'] == as_of), None)
-        if day is None:
-            day = {'date': as_of, 'firstRecordedAt': stamp, 'lastUpdatedAt': stamp, 'candidates': []}
-            days.append(day)
+        weekday = today.weekday()
+        day = slots.get(weekday)
+        if day is None or day['date'] != as_of:
+            if day:
+                archives.extend(dict(e, archiveReason='WEEKDAY_SLOT_REPLACED',
+                                     recommendationDate=day['date'], replacementDate=as_of,
+                                     weekday=weekday, archivedOn=as_of) for e in day['candidates'])
+            day = {'date': as_of, 'weekday': weekday, 'firstRecordedAt': stamp,
+                   'lastUpdatedAt': stamp, 'candidates': []}
+            slots[weekday] = day
         day['lastUpdatedAt'] = stamp
         seen = {e['symbol'] for e in day['candidates']}
         sectors = {}
@@ -69,17 +92,25 @@ def build_weekly_pool(previous, events, config, as_of, quote_day=None, stamp=Non
             day['candidates'].append(copy.deepcopy(event))
             seen.add(event['symbol'])
             sectors[sector] = sectors.get(sector, 0) + 1
-    days.sort(key=lambda d: d['date'])
+    # Weekday order is intentional: new Monday can precede last week's Tuesday.
+    days = [slots[weekday] for weekday in range(5) if weekday in slots]
     current = {e['eventId']: e for e in events}
     members = {}
     for day in days:
         for original in day['candidates']:
             candidate = copy.deepcopy(current.get(original['eventId'], original))
             if original['eventId'] not in current:
-                candidate.update(stale=True, status='WATCH', action='WATCH_NO_BROKER_ORDER')
+                candidate.update(stale=True)
+                if candidate.get('status') not in ('CANCEL', 'EXPIRE'):
+                    candidate.update(status='WATCH', action='WATCH_NO_BROKER_ORDER')
             members[candidate['eventId']] = candidate
-    pool = {'mode': 'WEEKLY_DAILY', 'batchId': f'LBR:WEEK:{monday}', 'weekStart': monday,
-            'weekEnd': friday, 'startedOn': monday, 'nextRefreshOn': next_monday,
-            'selectionVersion': config.get('parameterVersion'), 'retained': same_week,
-            'days': days}
+    next_weekday = today + timedelta(days=1)
+    while next_weekday.weekday() >= 5:
+        next_weekday += timedelta(days=1)
+    pool = {'mode': 'WEEKLY_DAILY', 'rotation': 'WEEKDAY_ROLLING',
+            'batchId': f'LBR:ROLLING:{monday}', 'weekStart': monday,
+            'weekEnd': friday, 'startedOn': min((d['date'] for d in days), default=monday),
+            'nextRefreshOn': next_weekday.isoformat(), 'nextMonday': next_monday,
+            'selectionVersion': config.get('parameterVersion'),
+            'retained': bool(previous.get('pool', {}).get('days')), 'days': days}
     return pool, list(members.values()), archives
