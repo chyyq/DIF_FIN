@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-25T02:14:32.389204+08:00",
-    "lastSuccessfulAt": "2026-11-25T02:14:32.389204+08:00",
-    "quoteTimestamp": "2026-11-24T16:15:00+08:00",
+    "generatedAt": "2026-11-25T02:21:16.871532+08:00",
+    "lastSuccessfulAt": "2026-11-25T02:21:16.871532+08:00",
+    "quoteTimestamp": "2026-11-24T16:12:02+08:00",
     "tradingDate": "2026-11-24",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -15,14 +15,9 @@
         "note": "Public delayed quote endpoint responded; metadata remains unverified"
       },
       {
-        "name": "Tencent",
+        "name": "Eastmoney-universe",
         "ok": true,
-        "note": "5223 requested symbols received with reported daily limits; security/account metadata unverified"
-      },
-      {
-        "name": "Sina-universe",
-        "ok": true,
-        "note": "Enumerated 5580 symbols; complete=True; explicit board exclusions complete=True"
+        "note": "395 symbols received; pagination can be partial and is reported separately"
       },
       {
         "name": "Tencent-history",
@@ -31,8 +26,31 @@
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response",
-      "Daily history 600838.SH: Remote end closed connection without response"
+      "Eastmoney universe SSE_MAIN page 5: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
+      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily history 605577.SH: Remote end closed connection without response",
+      "Daily limits 603938.SH: HTTP Error 502: Bad Gateway",
+      "Daily limits 603823.SH: Remote end closed connection without response",
+      "Daily limits 603678.SH: Remote end closed connection without response",
+      "Daily limits 605358.SH: HTTP Error 502: Bad Gateway",
+      "Daily limits 603955.SH: Remote end closed connection without response",
+      "Daily limits 603657.SH: Remote end closed connection without response",
+      "Daily limits 603688.SH: Remote end closed connection without response",
+      "Daily limits 603800.SH: Remote end closed connection without response",
+      "Daily limits 603799.SH: Remote end closed connection without response",
+      "Daily limits 605258.SH: Remote end closed connection without response",
+      "Daily limits 603859.SH: Remote end closed connection without response",
+      "Daily limits 603757.SH: Remote end closed connection without response",
+      "Daily limits 605111.SH: Remote end closed connection without response",
+      "Daily limits 605168.SH: Remote end closed connection without response",
+      "Daily limits 603699.SH: Remote end closed connection without response",
+      "Daily limits 603786.SH: Remote end closed connection without response",
+      "Daily limits 605198.SH: Remote end closed connection without response",
+      "Daily limits 603979.SH: Remote end closed connection without response",
+      "Daily limits 605178.SH: Remote end closed connection without response",
+      "Daily limits 603773.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -2036,14 +2054,15 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "EXPIRE",
-      "action": "EXPIRE_UNFILLED",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "eventType": "LIMIT_UP",
-      "stale": false,
+      "stale": true,
       "volatility": {
         "available": false,
         "reason": "VOLATILITY_HISTORY_MISSING",
@@ -2138,14 +2157,15 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "QUOTE_MISSING"
       ],
-      "status": "EXPIRE",
-      "action": "EXPIRE_UNFILLED",
+      "status": "WATCH",
+      "action": "WATCH_NO_BROKER_ORDER",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "eventType": "LIMIT_UP",
-      "stale": false,
+      "stale": true,
       "volatility": {
         "available": false,
         "reason": "VOLATILITY_HISTORY_MISSING",
@@ -2187,7 +2207,7 @@
       "referencePeak": 3.09,
       "firstObservedAt": "2026-11-24T10:45:14.954581+08:00",
       "amount": 290120000.0,
-      "stale": false,
+      "stale": true,
       "price": 2.94,
       "high": 3.0,
       "low": 2.92,
@@ -2339,7 +2359,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -2364,12 +2385,12 @@
       "trendSetupVerified": true,
       "referencePeak": 16.27,
       "firstObservedAt": "2026-11-24T02:27:39.895675+08:00",
-      "amount": 261400000.0,
+      "amount": 261400504.0,
       "stale": false,
       "price": 15.63,
       "high": 15.98,
       "low": 15.0,
-      "quoteTimestamp": "2026-11-24T16:15:00+08:00",
+      "quoteTimestamp": "2026-11-24T16:11:42+08:00",
       "limitDownPrice": 13.82,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -2544,7 +2565,7 @@
       "referencePeak": 21.69,
       "firstObservedAt": "2026-11-24T10:45:14.954581+08:00",
       "amount": 340620000.0,
-      "stale": false,
+      "stale": true,
       "price": 20.69,
       "high": 21.0,
       "low": 20.01,
@@ -2696,7 +2717,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -2721,12 +2743,12 @@
       "trendSetupVerified": true,
       "referencePeak": 15.2,
       "firstObservedAt": "2026-11-24T19:12:03.782928+08:00",
-      "amount": 102110000.0,
+      "amount": 102108621.0,
       "stale": false,
       "price": 14.99,
       "high": 15.15,
       "low": 14.75,
-      "quoteTimestamp": "2026-11-24T16:14:36+08:00",
+      "quoteTimestamp": "2026-11-24T16:11:36+08:00",
       "limitDownPrice": 13.46,
       "eventDayIndex": 0,
       "expiresOn": null,
@@ -2886,12 +2908,12 @@
   "stats": {
     "candidateCount": 6,
     "eventCount": 493,
-    "quoteCount": 5223,
-    "watchCount": 4,
+    "quoteCount": 395,
+    "watchCount": 6,
     "readyCount": 0,
     "limitCandidateCount": 2,
     "trendCandidateCount": 4,
-    "historyAnalyzedCount": 156,
+    "historyAnalyzedCount": 141,
     "historyEnrichmentCap": 120
   },
   "learning": {
