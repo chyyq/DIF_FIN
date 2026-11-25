@@ -1,8 +1,8 @@
 {
   "meta": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-25T18:25:37.653875+08:00",
-    "quoteTimestamp": "2026-11-25T16:12:00+08:00",
+    "generatedAt": "2026-11-25T18:27:40.567568+08:00",
+    "quoteTimestamp": "2026-11-25T16:12:01+08:00",
     "tradingDate": "2026-11-25",
     "stale": false,
     "source": "Eastmoney with Tencent cache-symbol fallback",
@@ -104,9 +104,7 @@
       "quoteTimestamp": "2026-11-25T16:11:51+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 20.03,
-      "limitDownPrice": 16.39
+      "segment": "SSE_MAIN"
     },
     "605567.SH": {
       "symbol": "605567.SH",
@@ -250,9 +248,7 @@
       "quoteTimestamp": "2026-11-25T16:11:53+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 23.71,
-      "limitDownPrice": 19.4
+      "segment": "SSE_MAIN"
     },
     "605389.SH": {
       "symbol": "605389.SH",
@@ -656,9 +652,7 @@
       "quoteTimestamp": "2026-11-25T16:11:44+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 67.1,
-      "limitDownPrice": 54.9
+      "segment": "SSE_MAIN"
     },
     "605287.SH": {
       "symbol": "605287.SH",
@@ -674,9 +668,7 @@
       "quoteTimestamp": "2026-11-25T16:11:41+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 39.23,
-      "limitDownPrice": 32.09
+      "segment": "SSE_MAIN"
     },
     "605286.SH": {
       "symbol": "605286.SH",
@@ -820,9 +812,7 @@
       "quoteTimestamp": "2026-11-25T16:11:38+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 21.34,
-      "limitDownPrice": 17.46
+      "segment": "SSE_MAIN"
     },
     "605218.SH": {
       "symbol": "605218.SH",
@@ -934,7 +924,9 @@
       "quoteTimestamp": "2026-11-25T16:11:35+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 10.41,
+      "limitDownPrice": 8.51
     },
     "605186.SH": {
       "symbol": "605186.SH",
@@ -1542,9 +1534,7 @@
       "quoteTimestamp": "2026-11-25T16:11:53+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 28.49,
-      "limitDownPrice": 23.31
+      "segment": "SSE_MAIN"
     },
     "605058.SH": {
       "symbol": "605058.SH",
@@ -1623,7 +1613,7 @@
       "amount": 19848596.0,
       "quoteTimestamp": "2026-11-25T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605028.SH": {
@@ -1639,7 +1629,7 @@
       "amount": 13677362.0,
       "quoteTimestamp": "2026-11-25T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605020.SH": {
@@ -1655,7 +1645,7 @@
       "amount": 186507654.0,
       "quoteTimestamp": "2026-11-25T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605018.SH": {
@@ -1671,8 +1661,10 @@
       "amount": 683704100.0,
       "quoteTimestamp": "2026-11-25T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 13.66,
+      "limitDownPrice": 11.18
     },
     "605016.SH": {
       "symbol": "605016.SH",
@@ -1687,7 +1679,7 @@
       "amount": 41392181.0,
       "quoteTimestamp": "2026-11-25T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605011.SH": {
@@ -1703,7 +1695,7 @@
       "amount": 80410031.0,
       "quoteTimestamp": "2026-11-25T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605009.SH": {
@@ -1719,7 +1711,7 @@
       "amount": 19007984.0,
       "quoteTimestamp": "2026-11-25T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605008.SH": {
@@ -1735,7 +1727,7 @@
       "amount": 25012168.0,
       "quoteTimestamp": "2026-11-25T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605007.SH": {
@@ -1751,7 +1743,7 @@
       "amount": 27459386.0,
       "quoteTimestamp": "2026-11-25T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605006.SH": {
@@ -1767,8 +1759,10 @@
       "amount": 161656414.0,
       "quoteTimestamp": "2026-11-25T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 11.47,
+      "limitDownPrice": 9.39
     },
     "605005.SH": {
       "symbol": "605005.SH",
@@ -1783,7 +1777,7 @@
       "amount": 13189167.0,
       "quoteTimestamp": "2026-11-25T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605003.SH": {
@@ -1799,7 +1793,7 @@
       "amount": 25621391.0,
       "quoteTimestamp": "2026-11-25T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "605001.SH": {
@@ -1815,7 +1809,7 @@
       "amount": 20122294.0,
       "quoteTimestamp": "2026-11-25T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603999.SH": {
@@ -1831,7 +1825,7 @@
       "amount": 75444192.0,
       "quoteTimestamp": "2026-11-25T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603998.SH": {
@@ -1847,7 +1841,7 @@
       "amount": 152895213.0,
       "quoteTimestamp": "2026-11-25T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603997.SH": {
@@ -1863,7 +1857,7 @@
       "amount": 181641510.0,
       "quoteTimestamp": "2026-11-25T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603995.SH": {
@@ -1879,7 +1873,7 @@
       "amount": 51325934.0,
       "quoteTimestamp": "2026-11-25T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603993.SH": {
@@ -1895,8 +1889,10 @@
       "amount": 1995574163.0,
       "quoteTimestamp": "2026-11-25T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 12.87,
+      "limitDownPrice": 10.53
     },
     "603992.SH": {
       "symbol": "603992.SH",
@@ -1911,7 +1907,7 @@
       "amount": 73343201.0,
       "quoteTimestamp": "2026-11-25T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603991.SH": {
@@ -1927,7 +1923,7 @@
       "amount": 213258097.0,
       "quoteTimestamp": "2026-11-25T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603990.SH": {
@@ -1943,8 +1939,10 @@
       "amount": 341010033.0,
       "quoteTimestamp": "2026-11-25T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 21.99,
+      "limitDownPrice": 17.99
     },
     "603989.SH": {
       "symbol": "603989.SH",
@@ -1959,7 +1957,7 @@
       "amount": 196160243.0,
       "quoteTimestamp": "2026-11-25T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603988.SH": {
@@ -1975,7 +1973,7 @@
       "amount": 53091231.0,
       "quoteTimestamp": "2026-11-25T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603987.SH": {
@@ -1991,7 +1989,7 @@
       "amount": 21686439.0,
       "quoteTimestamp": "2026-11-25T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603986.SH": {
@@ -2007,7 +2005,7 @@
       "amount": 5835895126.0,
       "quoteTimestamp": "2026-11-25T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603985.SH": {
@@ -2023,7 +2021,7 @@
       "amount": 221261616.0,
       "quoteTimestamp": "2026-11-25T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603983.SH": {
@@ -2039,7 +2037,7 @@
       "amount": 209382948.0,
       "quoteTimestamp": "2026-11-25T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603982.SH": {
@@ -2055,7 +2053,7 @@
       "amount": 27863628.0,
       "quoteTimestamp": "2026-11-25T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603980.SH": {
@@ -2071,7 +2069,7 @@
       "amount": 169614023.0,
       "quoteTimestamp": "2026-11-25T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603979.SH": {
@@ -2087,7 +2085,7 @@
       "amount": 482582805.0,
       "quoteTimestamp": "2026-11-25T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603978.SH": {
@@ -2103,7 +2101,7 @@
       "amount": 112252111.0,
       "quoteTimestamp": "2026-11-25T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603977.SH": {
@@ -2119,7 +2117,7 @@
       "amount": 44892490.0,
       "quoteTimestamp": "2026-11-25T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603976.SH": {
@@ -2135,7 +2133,7 @@
       "amount": 160065534.0,
       "quoteTimestamp": "2026-11-25T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603970.SH": {
@@ -2151,7 +2149,7 @@
       "amount": 18315539.0,
       "quoteTimestamp": "2026-11-25T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603969.SH": {
@@ -2167,7 +2165,7 @@
       "amount": 88431132.0,
       "quoteTimestamp": "2026-11-25T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603968.SH": {
@@ -2183,7 +2181,7 @@
       "amount": 34273006.0,
       "quoteTimestamp": "2026-11-25T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603967.SH": {
@@ -2199,7 +2197,7 @@
       "amount": 34612074.0,
       "quoteTimestamp": "2026-11-25T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603966.SH": {
@@ -2215,7 +2213,7 @@
       "amount": 32844769.0,
       "quoteTimestamp": "2026-11-25T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603960.SH": {
@@ -2231,7 +2229,7 @@
       "amount": 71147846.0,
       "quoteTimestamp": "2026-11-25T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603959.SH": {
@@ -2247,7 +2245,7 @@
       "amount": 15598792.0,
       "quoteTimestamp": "2026-11-25T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603958.SH": {
@@ -2263,7 +2261,7 @@
       "amount": 63448354.0,
       "quoteTimestamp": "2026-11-25T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603956.SH": {
@@ -2279,8 +2277,10 @@
       "amount": 215016702.0,
       "quoteTimestamp": "2026-11-25T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 6.88,
+      "limitDownPrice": 5.63
     },
     "603955.SH": {
       "symbol": "603955.SH",
@@ -2295,7 +2295,7 @@
       "amount": 306895613.0,
       "quoteTimestamp": "2026-11-25T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603950.SH": {
@@ -2311,7 +2311,7 @@
       "amount": 154303954.0,
       "quoteTimestamp": "2026-11-25T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603949.SH": {
@@ -2327,7 +2327,7 @@
       "amount": 135356837.0,
       "quoteTimestamp": "2026-11-25T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603948.SH": {
@@ -2343,7 +2343,7 @@
       "amount": 134045174.0,
       "quoteTimestamp": "2026-11-25T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603939.SH": {
@@ -2359,7 +2359,7 @@
       "amount": 505736611.0,
       "quoteTimestamp": "2026-11-25T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603938.SH": {
@@ -2375,7 +2375,7 @@
       "amount": 144491857.0,
       "quoteTimestamp": "2026-11-25T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603937.SH": {
@@ -2391,7 +2391,7 @@
       "amount": 31469413.0,
       "quoteTimestamp": "2026-11-25T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603936.SH": {
@@ -2407,7 +2407,7 @@
       "amount": 471814141.0,
       "quoteTimestamp": "2026-11-25T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603933.SH": {
@@ -2423,7 +2423,7 @@
       "amount": 65670278.0,
       "quoteTimestamp": "2026-11-25T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603931.SH": {
@@ -2439,8 +2439,10 @@
       "amount": 569338912.0,
       "quoteTimestamp": "2026-11-25T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 33.83,
+      "limitDownPrice": 27.68
     },
     "603929.SH": {
       "symbol": "603929.SH",
@@ -2455,7 +2457,7 @@
       "amount": 260902740.0,
       "quoteTimestamp": "2026-11-25T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603928.SH": {
@@ -2471,7 +2473,7 @@
       "amount": 480226749.0,
       "quoteTimestamp": "2026-11-25T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN",
       "limitUpPrice": 14.62,
       "limitDownPrice": 11.96
@@ -2489,7 +2491,7 @@
       "amount": 84398252.0,
       "quoteTimestamp": "2026-11-25T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603926.SH": {
@@ -2505,7 +2507,7 @@
       "amount": 470289098.0,
       "quoteTimestamp": "2026-11-25T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603922.SH": {
@@ -2521,7 +2523,7 @@
       "amount": 11850560.0,
       "quoteTimestamp": "2026-11-25T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603920.SH": {
@@ -2537,8 +2539,10 @@
       "amount": 937162632.0,
       "quoteTimestamp": "2026-11-25T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 39.38,
+      "limitDownPrice": 32.22
     },
     "603919.SH": {
       "symbol": "603919.SH",
@@ -2553,7 +2557,7 @@
       "amount": 90385056.0,
       "quoteTimestamp": "2026-11-25T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603918.SH": {
@@ -2569,7 +2573,7 @@
       "amount": 42536555.0,
       "quoteTimestamp": "2026-11-25T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603917.SH": {
@@ -2585,7 +2589,7 @@
       "amount": 30826826.0,
       "quoteTimestamp": "2026-11-25T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603916.SH": {
@@ -2601,7 +2605,7 @@
       "amount": 43115156.0,
       "quoteTimestamp": "2026-11-25T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603915.SH": {
@@ -2617,7 +2621,7 @@
       "amount": 98005450.0,
       "quoteTimestamp": "2026-11-25T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603912.SH": {
@@ -2633,7 +2637,7 @@
       "amount": 59762650.0,
       "quoteTimestamp": "2026-11-25T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603909.SH": {
@@ -2649,7 +2653,7 @@
       "amount": 15525931.0,
       "quoteTimestamp": "2026-11-25T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603908.SH": {
@@ -2665,7 +2669,7 @@
       "amount": 22979801.0,
       "quoteTimestamp": "2026-11-25T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603906.SH": {
@@ -2681,7 +2685,7 @@
       "amount": 192074142.0,
       "quoteTimestamp": "2026-11-25T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603903.SH": {
@@ -2697,7 +2701,7 @@
       "amount": 51599354.0,
       "quoteTimestamp": "2026-11-25T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603901.SH": {
@@ -2713,8 +2717,10 @@
       "amount": 194363699.0,
       "quoteTimestamp": "2026-11-25T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 11.01,
+      "limitDownPrice": 9.01
     },
     "603900.SH": {
       "symbol": "603900.SH",
@@ -2729,7 +2735,7 @@
       "amount": 52592218.0,
       "quoteTimestamp": "2026-11-25T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603899.SH": {
@@ -2745,7 +2751,7 @@
       "amount": 167982466.0,
       "quoteTimestamp": "2026-11-25T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603898.SH": {
@@ -2761,7 +2767,7 @@
       "amount": 150293947.0,
       "quoteTimestamp": "2026-11-25T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN",
       "limitUpPrice": 15.86,
       "limitDownPrice": 12.98
@@ -2779,7 +2785,7 @@
       "amount": 85958099.0,
       "quoteTimestamp": "2026-11-25T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603896.SH": {
@@ -2795,7 +2801,7 @@
       "amount": 22048926.0,
       "quoteTimestamp": "2026-11-25T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603895.SH": {
@@ -2811,7 +2817,7 @@
       "amount": 30323024.0,
       "quoteTimestamp": "2026-11-25T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603893.SH": {
@@ -2827,7 +2833,7 @@
       "amount": 3742148553.0,
       "quoteTimestamp": "2026-11-25T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603890.SH": {
@@ -2843,7 +2849,7 @@
       "amount": 187400138.0,
       "quoteTimestamp": "2026-11-25T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603889.SH": {
@@ -2859,7 +2865,7 @@
       "amount": 60790341.0,
       "quoteTimestamp": "2026-11-25T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603888.SH": {
@@ -2875,7 +2881,7 @@
       "amount": 112602177.0,
       "quoteTimestamp": "2026-11-25T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603887.SH": {
@@ -2891,7 +2897,7 @@
       "amount": 536271328.0,
       "quoteTimestamp": "2026-11-25T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN",
       "limitUpPrice": 8.48,
       "limitDownPrice": 6.94
@@ -2909,7 +2915,7 @@
       "amount": 76392533.0,
       "quoteTimestamp": "2026-11-25T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603885.SH": {
@@ -2925,10 +2931,8 @@
       "amount": 130391837.0,
       "quoteTimestamp": "2026-11-25T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 11.72,
-      "limitDownPrice": 9.59
+      "stale": false,
+      "segment": "SSE_MAIN"
     },
     "603883.SH": {
       "symbol": "603883.SH",
@@ -2943,8 +2947,10 @@
       "amount": 316078400.0,
       "quoteTimestamp": "2026-11-25T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
-      "segment": "SSE_MAIN"
+      "stale": false,
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 16.19,
+      "limitDownPrice": 13.25
     },
     "603882.SH": {
       "symbol": "603882.SH",
@@ -2959,7 +2965,7 @@
       "amount": 180390584.0,
       "quoteTimestamp": "2026-11-25T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603881.SH": {
@@ -2975,7 +2981,7 @@
       "amount": 261781584.0,
       "quoteTimestamp": "2026-11-25T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603880.SH": {
@@ -2991,7 +2997,7 @@
       "amount": 58509689.0,
       "quoteTimestamp": "2026-11-25T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603879.SH": {
@@ -3007,7 +3013,7 @@
       "amount": 36288348.0,
       "quoteTimestamp": "2026-11-25T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603878.SH": {
@@ -3023,7 +3029,7 @@
       "amount": 50152564.0,
       "quoteTimestamp": "2026-11-25T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603877.SH": {
@@ -3039,7 +3045,7 @@
       "amount": 24821234.0,
       "quoteTimestamp": "2026-11-25T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603876.SH": {
@@ -3055,7 +3061,7 @@
       "amount": 243153897.0,
       "quoteTimestamp": "2026-11-25T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603871.SH": {
@@ -3071,7 +3077,7 @@
       "amount": 81327980.0,
       "quoteTimestamp": "2026-11-25T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603869.SH": {
@@ -3087,7 +3093,7 @@
       "amount": 5882717.0,
       "quoteTimestamp": "2026-11-25T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603868.SH": {
@@ -3103,7 +3109,7 @@
       "amount": 77203273.0,
       "quoteTimestamp": "2026-11-25T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603867.SH": {
@@ -3119,7 +3125,7 @@
       "amount": 103041734.0,
       "quoteTimestamp": "2026-11-25T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603866.SH": {
@@ -3135,7 +3141,7 @@
       "amount": 66010984.0,
       "quoteTimestamp": "2026-11-25T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603863.SH": {
@@ -3151,7 +3157,7 @@
       "amount": 59675535.0,
       "quoteTimestamp": "2026-11-25T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603861.SH": {
@@ -3167,7 +3173,7 @@
       "amount": 73320010.0,
       "quoteTimestamp": "2026-11-25T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603860.SH": {
@@ -3183,7 +3189,7 @@
       "amount": 31683025.0,
       "quoteTimestamp": "2026-11-25T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "SSE_MAIN"
     },
     "603859.SH": {

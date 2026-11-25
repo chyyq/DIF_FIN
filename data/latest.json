@@ -2,9 +2,9 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-25T18:25:37.653875+08:00",
-    "lastSuccessfulAt": "2026-11-25T18:25:37.653875+08:00",
-    "quoteTimestamp": "2026-11-25T16:12:00+08:00",
+    "generatedAt": "2026-11-25T18:27:40.567568+08:00",
+    "lastSuccessfulAt": "2026-11-25T18:27:40.567568+08:00",
+    "quoteTimestamp": "2026-11-25T16:12:01+08:00",
     "tradingDate": "2026-11-25",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
@@ -22,19 +22,33 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "99 symbols received; pagination can be partial and is reported separately"
+        "note": "197 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 2: HTTP Error 502: Bad Gateway",
+      "Eastmoney universe SSE_MAIN page 3: HTTP Error 502: Bad Gateway",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily limits 605090.SH: Remote end closed connection without response",
-      "Daily limits 605488.SH: Remote end closed connection without response",
+      "Daily limits 603885.SH: Remote end closed connection without response",
+      "Daily limits 603926.SH: HTTP Error 502: Bad Gateway",
+      "Daily limits 603955.SH: Remote end closed connection without response",
+      "Daily limits 603939.SH: Remote end closed connection without response",
+      "Daily limits 603890.SH: Remote end closed connection without response",
+      "Daily limits 603881.SH: Remote end closed connection without response",
       "Daily limits 605179.SH: Remote end closed connection without response",
-      "Daily limits 605188.SH: HTTP Error 502: Bad Gateway"
+      "Daily limits 603998.SH: Remote end closed connection without response",
+      "Daily limits 603949.SH: Remote end closed connection without response",
+      "Daily limits 603888.SH: Remote end closed connection without response",
+      "Daily limits 605060.SH: Remote end closed connection without response",
+      "Daily limits 603899.SH: Remote end closed connection without response",
+      "Daily limits 605020.SH: Remote end closed connection without response",
+      "Daily limits 605398.SH: Remote end closed connection without response",
+      "Daily limits 603882.SH: Remote end closed connection without response",
+      "Daily limits 605090.SH: Remote end closed connection without response",
+      "Daily limits 603979.SH: Remote end closed connection without response",
+      "Daily limits 605488.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -1968,7 +1982,7 @@
         "date": "2026-11-25",
         "weekday": 2,
         "firstRecordedAt": "2026-11-25T17:58:45.992954+08:00",
-        "lastUpdatedAt": "2026-11-25T18:25:37.653875+08:00",
+        "lastUpdatedAt": "2026-11-25T18:27:40.567568+08:00",
         "candidates": [
           {
             "strategyId": "LBR_MAIN_V1",
@@ -3285,7 +3299,7 @@
       "limitEventVerified": true,
       "limitEventSource": "Eastmoney reported daily upper/lower limit",
       "amount": 536271328.0,
-      "stale": true,
+      "stale": false,
       "price": 8.48,
       "high": 8.48,
       "low": 7.58,
@@ -3437,8 +3451,7 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "QUOTE_MISSING"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -3449,13 +3462,13 @@
   ],
   "stats": {
     "candidateCount": 7,
-    "eventCount": 502,
-    "quoteCount": 99,
+    "eventCount": 503,
+    "quoteCount": 197,
     "watchCount": 7,
     "readyCount": 0,
     "limitCandidateCount": 3,
     "trendCandidateCount": 4,
-    "historyAnalyzedCount": 142,
+    "historyAnalyzedCount": 149,
     "historyEnrichmentCap": 120
   },
   "learning": {
