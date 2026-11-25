@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-26T01:34:41.516050+08:00",
-    "lastSuccessfulAt": "2026-11-26T01:34:41.516050+08:00",
+    "generatedAt": "2026-11-26T01:38:18.934792+08:00",
+    "lastSuccessfulAt": "2026-11-26T01:38:18.934792+08:00",
     "quoteTimestamp": "2026-11-25T16:12:01+08:00",
     "tradingDate": "2026-11-25",
     "stale": false,
@@ -17,37 +17,14 @@
       {
         "name": "Eastmoney-universe",
         "ok": true,
-        "note": "496 symbols received; pagination can be partial and is reported separately"
-      },
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
+        "note": "297 symbols received; pagination can be partial and is reported separately"
       }
     ],
     "errors": [
       "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 3: Remote end closed connection without response",
+      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 603885.SH: Remote end closed connection without response",
-      "Daily limits 603979.SH: Remote end closed connection without response",
-      "Daily limits 002839.SZ: Remote end closed connection without response",
-      "Daily limits 002928.SZ: Remote end closed connection without response",
-      "Daily limits 002878.SZ: Remote end closed connection without response",
-      "Daily limits 002925.SZ: Remote end closed connection without response",
-      "Daily limits 002946.SZ: Remote end closed connection without response",
-      "Daily limits 002912.SZ: Remote end closed connection without response",
-      "Daily limits 003023.SZ: Remote end closed connection without response",
-      "Daily limits 002906.SZ: Remote end closed connection without response",
-      "Daily limits 003010.SZ: Remote end closed connection without response",
-      "Daily limits 002832.SZ: Remote end closed connection without response",
-      "Daily limits 003030.SZ: Remote end closed connection without response",
-      "Daily limits 002895.SZ: Remote end closed connection without response",
-      "Daily limits 002959.SZ: Remote end closed connection without response",
-      "Daily limits 002841.SZ: Remote end closed connection without response",
-      "Daily limits 002913.SZ: Remote end closed connection without response",
-      "Daily limits 002980.SZ: Remote end closed connection without response"
+      "Eastmoney universe STAR page 1: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -3112,7 +3089,7 @@
       "referencePeak": 3.09,
       "firstObservedAt": "2026-11-24T10:45:14.954581+08:00",
       "amount": 265217759.68,
-      "stale": false,
+      "stale": true,
       "price": 2.94,
       "high": 2.98,
       "low": 2.91,
@@ -3264,7 +3241,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -4013,7 +3991,7 @@
       "referencePeak": 4.9,
       "firstObservedAt": "2026-11-25T02:14:32.389204+08:00",
       "amount": 917224336.49,
-      "stale": false,
+      "stale": true,
       "price": 4.63,
       "high": 4.68,
       "low": 4.58,
@@ -4165,7 +4143,8 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE",
+        "QUOTE_MISSING"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -4358,12 +4337,12 @@
   "stats": {
     "candidateCount": 9,
     "eventCount": 604,
-    "quoteCount": 496,
+    "quoteCount": 297,
     "watchCount": 9,
     "readyCount": 0,
     "limitCandidateCount": 4,
     "trendCandidateCount": 5,
-    "historyAnalyzedCount": 209,
+    "historyAnalyzedCount": 165,
     "historyEnrichmentCap": 120
   },
   "learning": {
