@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-25T18:21:52.087988+08:00",
-    "lastSuccessfulAt": "2026-11-25T18:21:52.087988+08:00",
+    "generatedAt": "2026-11-25T18:25:37.653875+08:00",
+    "lastSuccessfulAt": "2026-11-25T18:25:37.653875+08:00",
     "quoteTimestamp": "2026-11-25T16:12:00+08:00",
     "tradingDate": "2026-11-25",
     "stale": false,
@@ -27,14 +27,14 @@
     ],
     "errors": [
       "Daily history 000001.SH: Remote end closed connection without response",
-      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 2: HTTP Error 502: Bad Gateway",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily limits 605338.SH: Remote end closed connection without response",
-      "Daily limits 605060.SH: Remote end closed connection without response",
-      "Daily limits 605378.SH: HTTP Error 502: Bad Gateway",
-      "Daily limits 605090.SH: Remote end closed connection without response"
+      "Daily limits 605090.SH: Remote end closed connection without response",
+      "Daily limits 605488.SH: Remote end closed connection without response",
+      "Daily limits 605179.SH: Remote end closed connection without response",
+      "Daily limits 605188.SH: HTTP Error 502: Bad Gateway"
     ],
     "automaticOrders": false,
     "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
@@ -1968,7 +1968,7 @@
         "date": "2026-11-25",
         "weekday": 2,
         "firstRecordedAt": "2026-11-25T17:58:45.992954+08:00",
-        "lastUpdatedAt": "2026-11-25T18:21:52.087988+08:00",
+        "lastUpdatedAt": "2026-11-25T18:25:37.653875+08:00",
         "candidates": [
           {
             "strategyId": "LBR_MAIN_V1",
@@ -3455,7 +3455,7 @@
     "readyCount": 0,
     "limitCandidateCount": 3,
     "trendCandidateCount": 4,
-    "historyAnalyzedCount": 138,
+    "historyAnalyzedCount": 142,
     "historyEnrichmentCap": 120
   },
   "learning": {

@@ -1,6 +1,6 @@
 {
   "strategyId": "LBR_MAIN_V1",
-  "generatedAt": "2026-11-25T18:21:52.087988+08:00",
+  "generatedAt": "2026-11-25T18:25:37.653875+08:00",
   "events": [
     {
       "strategyId": "LBR_MAIN_V1",
@@ -13554,6 +13554,7 @@
         "RECENT_PEAK_COLLAPSE",
         "VOLATILITY_TOO_HIGH",
         "EVENT_EXPIRED",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -19930,7 +19931,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -45013,6 +45013,7 @@
       "reasonCodes": [
         "RECENT_PEAK_COLLAPSE",
         "VOLATILITY_TOO_HIGH",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -45060,16 +45061,22 @@
       "eventDayIndex": 2,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 100.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
-        "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "historySessions": 147,
+        "available": true,
+        "passed": true,
+        "ma20": 14.974,
+        "ma60": 14.588167,
+        "atr14": 1.585,
+        "support": 11.7,
+        "score": 100.0,
+        "ma20Slope": 0.003854791673649993,
+        "checks": [
+          true,
+          true,
+          true
+        ]
       },
       "absorption": {
         "available": false,
@@ -45080,44 +45087,122 @@
         "reason": "MISSING_5MIN_BASELINES"
       },
       "volatility": {
-        "available": false,
-        "reason": "VOLATILITY_HISTORY_MISSING",
-        "asOf": null
+        "available": true,
+        "reason": null,
+        "asOf": "2026-11-24",
+        "historySessions": 149,
+        "atr14": 1.648571,
+        "atrPct": 9.053111,
+        "close": 18.21,
+        "ma10": 16.32,
+        "ma20": 15.491500000000002,
+        "support": 14.0,
+        "supportKind": "CONFIRMED_DAILY_PIVOT",
+        "recentPeak": 19.37,
+        "return5Pct": 19.409836,
+        "return10Pct": 5.381944,
+        "realizedDailyVolPct": 7.065465807600805,
+        "consecutiveDeclines": 0,
+        "pullbackMedian": 0.09114569640885428,
+        "pullback75": 0.13492063492063489
       },
       "riskMetrics": {
-        "available": false
+        "available": true,
+        "fiveDayLossLimitPct": 10,
+        "tenDayLossLimitPct": 16,
+        "recentPeakDrawdownPct": 0,
+        "recentPeakLossLimitPct": 22
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 0,
-        "available": false,
-        "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "historySessions": 149,
+        "available": true,
+        "passed": true,
+        "ma20": 15.4915,
+        "ma60": 14.840167,
+        "atr14": 1.648571,
+        "support": 11.7,
+        "score": 100.0,
+        "ma20Slope": 0.032216151385927594,
+        "checks": [
+          true,
+          true,
+          true
+        ]
       },
-      "buyLevels": [],
-      "riskVetoReasons": [],
+      "buyLevels": [
+        {
+          "id": "A",
+          "drawdownPct": 10.034948,
+          "triggerPrice": 18.02,
+          "maxBuyPrice": 18.18,
+          "tp1": 18.78,
+          "tp2": 19.26,
+          "tp1Pct": 3.30033,
+          "tp2Pct": 5.940594,
+          "plannedStop": 13.17,
+          "rewardRisk": 0.167665,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 1.648571,
+          "supportReference": 14.0,
+          "supportConfluence": false,
+          "nearestDailySupport": 16.32,
+          "structurePlanValid": true,
+          "reachableToday": true,
+          "status": "WAIT_CONFIRM",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": true,
+          "payoffPassed": false
+        },
+        {
+          "id": "B",
+          "drawdownPct": 14.028957,
+          "triggerPrice": 17.22,
+          "maxBuyPrice": 17.38,
+          "tp1": 18.29,
+          "tp2": 18.95,
+          "tp1Pct": 5.235903,
+          "tp2Pct": 9.033372,
+          "plannedStop": 13.17,
+          "rewardRisk": 0.294537,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 1.648571,
+          "supportReference": 14.0,
+          "supportConfluence": false,
+          "nearestDailySupport": 16.32,
+          "structurePlanValid": true,
+          "reachableToday": true,
+          "status": "WAIT_CONFIRM",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": false,
+          "payoffPassed": false
+        }
+      ],
+      "riskVetoReasons": [
+        "VOLATILITY_TOO_HIGH"
+      ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
-        "trend": false,
+        "universe": false,
+        "trend": true,
         "setup": true,
         "limitEvent": true,
-        "dailyHistory": false,
+        "dailyHistory": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "VOLATILITY_TOO_HIGH"
+      ],
       "reasonCodes": [
-        "VOLATILITY_HISTORY_MISSING",
-        "DAILY_HISTORY_STALE_OR_UNVERIFIED",
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "VOLATILITY_TOO_HIGH",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -45687,16 +45772,22 @@
       "eventDayIndex": 2,
       "expiresOn": null,
       "drawdownPct": 13.138881,
-      "trendScore": null,
+      "trendScore": 33.33,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 147,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 46.187,
+        "ma60": 41.499833,
+        "atr14": 4.523571,
+        "support": 31.79,
+        "score": 33.33,
+        "ma20Slope": -0.03177997190952342,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -45707,44 +45798,135 @@
         "reason": "MISSING_5MIN_BASELINES"
       },
       "volatility": {
-        "available": false,
-        "reason": "VOLATILITY_HISTORY_MISSING",
-        "asOf": null
+        "available": true,
+        "reason": null,
+        "asOf": "2026-11-24",
+        "historySessions": 149,
+        "atr14": 4.414286,
+        "atrPct": 12.378816,
+        "close": 35.66,
+        "ma10": 41.013,
+        "ma20": 45.36600000000001,
+        "support": 40.03,
+        "supportKind": "CONFIRMED_DAILY_PIVOT",
+        "recentPeak": 57.47,
+        "return5Pct": -15.777043,
+        "return10Pct": -34.688645,
+        "realizedDailyVolPct": 7.237139457559663,
+        "consecutiveDeclines": 0,
+        "pullbackMedian": 0.11291687353552088,
+        "pullback75": 0.19155129744431648
       },
       "riskMetrics": {
-        "available": false
+        "available": true,
+        "fiveDayLossLimitPct": 10,
+        "tenDayLossLimitPct": 16,
+        "recentPeakDrawdownPct": 43.518357403862886,
+        "recentPeakLossLimitPct": 22
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 45.366,
+        "ma60": 41.378,
+        "atr14": 4.414286,
+        "support": 30.11,
+        "score": 33.33,
+        "ma20Slope": -0.04386954001791454,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
-      "buyLevels": [],
-      "riskVetoReasons": [],
+      "buyLevels": [
+        {
+          "id": "A",
+          "drawdownPct": 10.008028,
+          "triggerPrice": 33.63,
+          "maxBuyPrice": 34.07,
+          "tp1": 35.05,
+          "tp2": 35.94,
+          "tp1Pct": 2.876431,
+          "tp2Pct": 5.4887,
+          "plannedStop": 31.42,
+          "rewardRisk": 0.537736,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 4.414286,
+          "supportReference": 40.03,
+          "supportConfluence": false,
+          "nearestDailySupport": null,
+          "structurePlanValid": false,
+          "reachableToday": true,
+          "status": "BELOW_STRUCTURE_SUPPORT",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": true,
+          "payoffPassed": false
+        },
+        {
+          "id": "B",
+          "drawdownPct": 14.021943,
+          "triggerPrice": 32.13,
+          "maxBuyPrice": 32.57,
+          "tp1": 34.13,
+          "tp2": 35.36,
+          "tp1Pct": 4.789684,
+          "tp2Pct": 8.566165,
+          "plannedStop": 29.92,
+          "rewardRisk": 0.820755,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 4.414286,
+          "supportReference": 40.03,
+          "supportConfluence": false,
+          "nearestDailySupport": null,
+          "structurePlanValid": false,
+          "reachableToday": true,
+          "status": "BELOW_STRUCTURE_SUPPORT",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": false,
+          "payoffPassed": false
+        }
+      ],
+      "riskVetoReasons": [
+        "RECENT_RAPID_DECLINE",
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN"
+      ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "setup": true,
         "limitEvent": true,
-        "dailyHistory": false,
+        "dailyHistory": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "RECENT_RAPID_DECLINE",
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN",
+        "CURRENT_TREND_FAILED",
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "VOLATILITY_HISTORY_MISSING",
-        "DAILY_HISTORY_STALE_OR_UNVERIFIED",
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "RECENT_RAPID_DECLINE",
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN",
+        "CURRENT_TREND_FAILED",
+        "TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -45754,8 +45936,8 @@
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "pricePreference": "STANDARD",
       "entryMode": "MANUAL_RECORD_ONLY",
@@ -45791,16 +45973,22 @@
       "eventDayIndex": 2,
       "expiresOn": null,
       "drawdownPct": 14.499299,
-      "trendScore": null,
+      "trendScore": 66.67,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
-        "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "historySessions": 147,
+        "available": true,
+        "passed": true,
+        "ma20": 65.884,
+        "ma60": 64.344667,
+        "atr14": 6.062143,
+        "support": 53.0,
+        "score": 66.67,
+        "ma20Slope": 0.017780730075849904,
+        "checks": [
+          true,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -45811,44 +45999,130 @@
         "reason": "MISSING_5MIN_BASELINES"
       },
       "volatility": {
-        "available": false,
-        "reason": "VOLATILITY_HISTORY_MISSING",
-        "asOf": null
+        "available": true,
+        "reason": null,
+        "asOf": "2026-11-24",
+        "historySessions": 149,
+        "atr14": 6.17,
+        "atrPct": 10.114754,
+        "close": 61.0,
+        "ma10": 65.252,
+        "ma20": 65.879,
+        "support": 66.09,
+        "supportKind": "CONFIRMED_DAILY_PIVOT",
+        "recentPeak": 77.77,
+        "return5Pct": -9.62963,
+        "return10Pct": -11.195225,
+        "realizedDailyVolPct": 6.674235576476371,
+        "consecutiveDeclines": 0,
+        "pullbackMedian": 0.08007535950464995,
+        "pullback75": 0.13405523194318508
       },
       "riskMetrics": {
-        "available": false
+        "available": true,
+        "fiveDayLossLimitPct": 10,
+        "tenDayLossLimitPct": 16,
+        "recentPeakDrawdownPct": 29.407226436929403,
+        "recentPeakLossLimitPct": 22
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 65.879,
+        "ma60": 64.436167,
+        "atr14": 6.17,
+        "support": 51.5,
+        "score": 33.33,
+        "ma20Slope": -0.0011598729446368194,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
-      "buyLevels": [],
-      "riskVetoReasons": [],
+      "buyLevels": [
+        {
+          "id": "A",
+          "drawdownPct": 10.014017,
+          "triggerPrice": 57.78,
+          "maxBuyPrice": 58.39,
+          "tp1": 60.23,
+          "tp2": 61.75,
+          "tp1Pct": 3.151225,
+          "tp2Pct": 5.75441,
+          "plannedStop": 54.69,
+          "rewardRisk": 0.702703,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 6.17,
+          "supportReference": 66.09,
+          "supportConfluence": false,
+          "nearestDailySupport": null,
+          "structurePlanValid": false,
+          "reachableToday": true,
+          "status": "BELOW_STRUCTURE_SUPPORT",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": true,
+          "payoffPassed": false
+        },
+        {
+          "id": "B",
+          "drawdownPct": 14.000934,
+          "triggerPrice": 55.22,
+          "maxBuyPrice": 55.83,
+          "tp1": 58.65,
+          "tp2": 60.77,
+          "tp1Pct": 5.051048,
+          "tp2Pct": 8.848289,
+          "plannedStop": 52.13,
+          "rewardRisk": 1.048649,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 6.17,
+          "supportReference": 66.09,
+          "supportConfluence": false,
+          "nearestDailySupport": null,
+          "structurePlanValid": false,
+          "reachableToday": true,
+          "status": "BELOW_STRUCTURE_SUPPORT",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": true,
+          "payoffPassed": false
+        }
+      ],
+      "riskVetoReasons": [
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN"
+      ],
       "riskLevel": "DEEP",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "setup": true,
         "limitEvent": true,
-        "dailyHistory": false,
+        "dailyHistory": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN",
+        "CURRENT_TREND_FAILED"
+      ],
       "reasonCodes": [
-        "VOLATILITY_HISTORY_MISSING",
-        "DAILY_HISTORY_STALE_OR_UNVERIFIED",
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN",
+        "CURRENT_TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -48183,6 +48457,7 @@
       "reasonCodes": [
         "RECENT_PEAK_COLLAPSE",
         "VOLATILITY_TOO_HIGH",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -49569,16 +49844,22 @@
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 100.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
-        "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "historySessions": 148,
+        "available": true,
+        "passed": true,
+        "ma20": 15.2325,
+        "ma60": 14.705667,
+        "atr14": 1.625,
+        "support": 11.7,
+        "score": 100.0,
+        "ma20Slope": 0.014114044139675652,
+        "checks": [
+          true,
+          true,
+          true
+        ]
       },
       "absorption": {
         "available": false,
@@ -49589,45 +49870,122 @@
         "reason": "MISSING_5MIN_BASELINES"
       },
       "volatility": {
-        "available": false,
-        "reason": "VOLATILITY_HISTORY_MISSING",
-        "asOf": null
+        "available": true,
+        "reason": null,
+        "asOf": "2026-11-24",
+        "historySessions": 149,
+        "atr14": 1.648571,
+        "atrPct": 9.053111,
+        "close": 18.21,
+        "ma10": 16.32,
+        "ma20": 15.491500000000002,
+        "support": 14.0,
+        "supportKind": "CONFIRMED_DAILY_PIVOT",
+        "recentPeak": 19.37,
+        "return5Pct": 19.409836,
+        "return10Pct": 5.381944,
+        "realizedDailyVolPct": 7.065465807600805,
+        "consecutiveDeclines": 0,
+        "pullbackMedian": 0.09114569640885428,
+        "pullback75": 0.13492063492063489
       },
       "riskMetrics": {
-        "available": false
+        "available": true,
+        "fiveDayLossLimitPct": 10,
+        "tenDayLossLimitPct": 16,
+        "recentPeakDrawdownPct": 0,
+        "recentPeakLossLimitPct": 22
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 0,
-        "available": false,
-        "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "historySessions": 149,
+        "available": true,
+        "passed": true,
+        "ma20": 15.4915,
+        "ma60": 14.840167,
+        "atr14": 1.648571,
+        "support": 11.7,
+        "score": 100.0,
+        "ma20Slope": 0.032216151385927594,
+        "checks": [
+          true,
+          true,
+          true
+        ]
       },
-      "buyLevels": [],
-      "riskVetoReasons": [],
+      "buyLevels": [
+        {
+          "id": "A",
+          "drawdownPct": 10.034948,
+          "triggerPrice": 18.02,
+          "maxBuyPrice": 18.18,
+          "tp1": 18.78,
+          "tp2": 19.26,
+          "tp1Pct": 3.30033,
+          "tp2Pct": 5.940594,
+          "plannedStop": 13.17,
+          "rewardRisk": 0.167665,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 1.648571,
+          "supportReference": 14.0,
+          "supportConfluence": false,
+          "nearestDailySupport": 16.32,
+          "structurePlanValid": true,
+          "reachableToday": true,
+          "status": "WAIT_CONFIRM",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": true,
+          "payoffPassed": false
+        },
+        {
+          "id": "B",
+          "drawdownPct": 14.028957,
+          "triggerPrice": 17.22,
+          "maxBuyPrice": 17.38,
+          "tp1": 18.29,
+          "tp2": 18.95,
+          "tp1Pct": 5.235903,
+          "tp2Pct": 9.033372,
+          "plannedStop": 13.17,
+          "rewardRisk": 0.294537,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 1.648571,
+          "supportReference": 14.0,
+          "supportConfluence": false,
+          "nearestDailySupport": 16.32,
+          "structurePlanValid": true,
+          "reachableToday": true,
+          "status": "WAIT_CONFIRM",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": false,
+          "payoffPassed": false
+        }
+      ],
+      "riskVetoReasons": [
+        "VOLATILITY_TOO_HIGH"
+      ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
-        "trend": false,
-        "setup": false,
+        "universe": false,
+        "trend": true,
+        "setup": true,
         "limitEvent": null,
-        "dailyHistory": false,
+        "dailyHistory": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "VOLATILITY_TOO_HIGH"
+      ],
       "reasonCodes": [
-        "VOLATILITY_HISTORY_MISSING",
-        "DAILY_HISTORY_STALE_OR_UNVERIFIED",
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
-        "TREND_SETUP_UNVERIFIED",
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "VOLATILITY_TOO_HIGH",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -51514,7 +51872,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -69450,16 +69807,22 @@
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 6.820513,
-      "trendScore": null,
+      "trendScore": 0.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 148,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 18.4395,
+        "ma60": 20.399167,
+        "atr14": 1.134286,
+        "support": 16.16,
+        "score": 0.0,
+        "ma20Slope": -0.025705378843918547,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -69470,55 +69833,132 @@
         "reason": "MISSING_5MIN_BASELINES"
       },
       "volatility": {
-        "available": false,
-        "reason": "VOLATILITY_HISTORY_MISSING",
-        "asOf": null
+        "available": true,
+        "reason": null,
+        "asOf": "2026-11-24",
+        "historySessions": 149,
+        "atr14": 1.195714,
+        "atrPct": 6.163476,
+        "close": 19.4,
+        "ma10": 18.872,
+        "ma20": 18.4925,
+        "support": 17.2,
+        "supportKind": "CONFIRMED_DAILY_PIVOT",
+        "recentPeak": 21.66,
+        "return5Pct": 0.46608,
+        "return10Pct": 5.492115,
+        "realizedDailyVolPct": 4.410738128103002,
+        "consecutiveDeclines": 0,
+        "pullbackMedian": 0.05567226890756305,
+        "pullback75": 0.09533702677746997
       },
       "riskMetrics": {
-        "available": false
+        "available": true,
+        "fiveDayLossLimitPct": 10,
+        "tenDayLossLimitPct": 16,
+        "recentPeakDrawdownPct": 16.112650046168042,
+        "recentPeakLossLimitPct": 22
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 18.4925,
+        "ma60": 20.400667,
+        "atr14": 1.195714,
+        "support": 16.16,
+        "score": 0.0,
+        "ma20Slope": -0.019823496673998964,
+        "checks": [
+          false,
+          false,
+          false
+        ]
       },
-      "buyLevels": [],
+      "buyLevels": [
+        {
+          "id": "A",
+          "drawdownPct": 9.230769,
+          "triggerPrice": 17.7,
+          "maxBuyPrice": 17.81,
+          "tp1": 18.38,
+          "tp2": 18.81,
+          "tp1Pct": 3.200449,
+          "tp2Pct": 5.614823,
+          "plannedStop": 16.6,
+          "rewardRisk": 0.64876,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 1.195714,
+          "supportReference": 17.2,
+          "supportConfluence": true,
+          "nearestDailySupport": 17.2,
+          "structurePlanValid": true,
+          "reachableToday": true,
+          "status": "WAIT_CONFIRM",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": false,
+          "payoffPassed": false
+        },
+        {
+          "id": "B",
+          "drawdownPct": 14.0,
+          "triggerPrice": 16.77,
+          "maxBuyPrice": 16.88,
+          "tp1": 17.81,
+          "tp2": 18.45,
+          "tp1Pct": 5.509479,
+          "tp2Pct": 9.300948,
+          "plannedStop": 16.17,
+          "rewardRisk": 1.760563,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 1.195714,
+          "supportReference": 17.2,
+          "supportConfluence": true,
+          "nearestDailySupport": 17.2,
+          "structurePlanValid": true,
+          "reachableToday": false,
+          "status": "UNREACHABLE_TODAY",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": false,
+          "payoffPassed": true
+        }
+      ],
       "riskVetoReasons": [],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "setup": true,
         "limitEvent": true,
-        "dailyHistory": false,
+        "dailyHistory": true,
         "structure": false,
         "absorption": false,
-        "payoff": false
+        "payoff": true
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "CURRENT_TREND_FAILED",
+        "TREND_FAILED"
+      ],
       "reasonCodes": [
-        "VOLATILITY_HISTORY_MISSING",
-        "DAILY_HISTORY_STALE_OR_UNVERIFIED",
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "CURRENT_TREND_FAILED",
+        "TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "pricePreference": "PREFERRED",
       "entryMode": "MANUAL_RECORD_ONLY",
@@ -69554,16 +69994,22 @@
       "eventDayIndex": 1,
       "expiresOn": null,
       "drawdownPct": 14.499299,
-      "trendScore": null,
+      "trendScore": 66.67,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
-        "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "historySessions": 148,
+        "available": true,
+        "passed": true,
+        "ma20": 65.8015,
+        "ma60": 64.365667,
+        "atr14": 6.225,
+        "support": 51.5,
+        "score": 66.67,
+        "ma20Slope": 0.0038137952602153025,
+        "checks": [
+          true,
+          true,
+          false
+        ]
       },
       "absorption": {
         "available": false,
@@ -69574,44 +70020,130 @@
         "reason": "MISSING_5MIN_BASELINES"
       },
       "volatility": {
-        "available": false,
-        "reason": "VOLATILITY_HISTORY_MISSING",
-        "asOf": null
+        "available": true,
+        "reason": null,
+        "asOf": "2026-11-24",
+        "historySessions": 149,
+        "atr14": 6.17,
+        "atrPct": 10.114754,
+        "close": 61.0,
+        "ma10": 65.252,
+        "ma20": 65.879,
+        "support": 66.09,
+        "supportKind": "CONFIRMED_DAILY_PIVOT",
+        "recentPeak": 77.77,
+        "return5Pct": -9.62963,
+        "return10Pct": -11.195225,
+        "realizedDailyVolPct": 6.674235576476371,
+        "consecutiveDeclines": 0,
+        "pullbackMedian": 0.08007535950464995,
+        "pullback75": 0.13405523194318508
       },
       "riskMetrics": {
-        "available": false
+        "available": true,
+        "fiveDayLossLimitPct": 10,
+        "tenDayLossLimitPct": 16,
+        "recentPeakDrawdownPct": 29.407226436929403,
+        "recentPeakLossLimitPct": 22
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 0,
-        "available": false,
+        "historySessions": 149,
+        "available": true,
         "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "ma20": 65.879,
+        "ma60": 64.436167,
+        "atr14": 6.17,
+        "support": 51.5,
+        "score": 33.33,
+        "ma20Slope": -0.0011598729446368194,
+        "checks": [
+          false,
+          true,
+          false
+        ]
       },
-      "buyLevels": [],
-      "riskVetoReasons": [],
+      "buyLevels": [
+        {
+          "id": "A",
+          "drawdownPct": 10.014017,
+          "triggerPrice": 57.78,
+          "maxBuyPrice": 58.39,
+          "tp1": 60.23,
+          "tp2": 61.75,
+          "tp1Pct": 3.151225,
+          "tp2Pct": 5.75441,
+          "plannedStop": 54.69,
+          "rewardRisk": 0.702703,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 6.17,
+          "supportReference": 66.09,
+          "supportConfluence": false,
+          "nearestDailySupport": null,
+          "structurePlanValid": false,
+          "reachableToday": true,
+          "status": "BELOW_STRUCTURE_SUPPORT",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": true,
+          "payoffPassed": false
+        },
+        {
+          "id": "B",
+          "drawdownPct": 14.000934,
+          "triggerPrice": 55.22,
+          "maxBuyPrice": 55.83,
+          "tp1": 58.65,
+          "tp2": 60.77,
+          "tp1Pct": 5.051048,
+          "tp2Pct": 8.848289,
+          "plannedStop": 52.13,
+          "rewardRisk": 1.048649,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 6.17,
+          "supportReference": 66.09,
+          "supportConfluence": false,
+          "nearestDailySupport": null,
+          "structurePlanValid": false,
+          "reachableToday": true,
+          "status": "BELOW_STRUCTURE_SUPPORT",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": true,
+          "payoffPassed": false
+        }
+      ],
+      "riskVetoReasons": [
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN"
+      ],
       "riskLevel": "DEEP",
       "gates": {
-        "universe": true,
+        "universe": false,
         "trend": false,
         "setup": true,
         "limitEvent": true,
-        "dailyHistory": false,
+        "dailyHistory": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN",
+        "CURRENT_TREND_FAILED"
+      ],
       "reasonCodes": [
-        "VOLATILITY_HISTORY_MISSING",
-        "DAILY_HISTORY_STALE_OR_UNVERIFIED",
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "RECENT_PEAK_COLLAPSE",
+        "VOLATILITY_TOO_HIGH",
+        "DAILY_SUPPORT_BROKEN",
+        "CURRENT_TREND_FAILED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -69621,8 +70153,8 @@
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "pricePreference": "STANDARD",
       "entryMode": "MANUAL_RECORD_ONLY",
@@ -71354,16 +71886,22 @@
       "eventDayIndex": 0,
       "expiresOn": null,
       "drawdownPct": 0.0,
-      "trendScore": null,
+      "trendScore": 100.0,
       "metrics": {
-        "historySessions": 0,
-        "available": false,
-        "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "historySessions": 149,
+        "available": true,
+        "passed": true,
+        "ma20": 15.4915,
+        "ma60": 14.840167,
+        "atr14": 1.648571,
+        "support": 11.7,
+        "score": 100.0,
+        "ma20Slope": 0.032216151385927594,
+        "checks": [
+          true,
+          true,
+          true
+        ]
       },
       "absorption": {
         "available": false,
@@ -71374,44 +71912,122 @@
         "reason": "MISSING_5MIN_BASELINES"
       },
       "volatility": {
-        "available": false,
-        "reason": "VOLATILITY_HISTORY_MISSING",
-        "asOf": null
+        "available": true,
+        "reason": null,
+        "asOf": "2026-11-24",
+        "historySessions": 149,
+        "atr14": 1.648571,
+        "atrPct": 9.053111,
+        "close": 18.21,
+        "ma10": 16.32,
+        "ma20": 15.491500000000002,
+        "support": 14.0,
+        "supportKind": "CONFIRMED_DAILY_PIVOT",
+        "recentPeak": 19.37,
+        "return5Pct": 19.409836,
+        "return10Pct": 5.381944,
+        "realizedDailyVolPct": 7.065465807600805,
+        "consecutiveDeclines": 0,
+        "pullbackMedian": 0.09114569640885428,
+        "pullback75": 0.13492063492063489
       },
       "riskMetrics": {
-        "available": false
+        "available": true,
+        "fiveDayLossLimitPct": 10,
+        "tenDayLossLimitPct": 16,
+        "recentPeakDrawdownPct": 0,
+        "recentPeakLossLimitPct": 22
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 0,
-        "available": false,
-        "passed": false,
-        "ma20": null,
-        "ma60": null,
-        "atr14": null,
-        "support": null,
-        "score": null
+        "historySessions": 149,
+        "available": true,
+        "passed": true,
+        "ma20": 15.4915,
+        "ma60": 14.840167,
+        "atr14": 1.648571,
+        "support": 11.7,
+        "score": 100.0,
+        "ma20Slope": 0.032216151385927594,
+        "checks": [
+          true,
+          true,
+          true
+        ]
       },
-      "buyLevels": [],
-      "riskVetoReasons": [],
+      "buyLevels": [
+        {
+          "id": "A",
+          "drawdownPct": 10.034948,
+          "triggerPrice": 18.02,
+          "maxBuyPrice": 18.18,
+          "tp1": 18.78,
+          "tp2": 19.26,
+          "tp1Pct": 3.30033,
+          "tp2Pct": 5.940594,
+          "plannedStop": 13.17,
+          "rewardRisk": 0.167665,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 1.648571,
+          "supportReference": 14.0,
+          "supportConfluence": false,
+          "nearestDailySupport": 16.32,
+          "structurePlanValid": true,
+          "reachableToday": true,
+          "status": "WAIT_CONFIRM",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": false,
+          "payoffPassed": false
+        },
+        {
+          "id": "B",
+          "drawdownPct": 14.028957,
+          "triggerPrice": 17.22,
+          "maxBuyPrice": 17.38,
+          "tp1": 18.29,
+          "tp2": 18.95,
+          "tp1Pct": 5.235903,
+          "tp2Pct": 9.033372,
+          "plannedStop": 13.17,
+          "rewardRisk": 0.294537,
+          "priceMethod": "ATR14_SWING_SUPPORT",
+          "atr14": 1.648571,
+          "supportReference": 14.0,
+          "supportConfluence": false,
+          "nearestDailySupport": 16.32,
+          "structurePlanValid": true,
+          "reachableToday": true,
+          "status": "WAIT_CONFIRM",
+          "sellSplit": [
+            0.5,
+            0.5
+          ],
+          "touched": false,
+          "payoffPassed": false
+        }
+      ],
+      "riskVetoReasons": [
+        "VOLATILITY_TOO_HIGH"
+      ],
       "riskLevel": "NORMAL",
       "gates": {
-        "universe": true,
-        "trend": false,
+        "universe": false,
+        "trend": true,
         "setup": true,
         "limitEvent": true,
-        "dailyHistory": false,
+        "dailyHistory": true,
         "structure": false,
         "absorption": false,
         "payoff": false
       },
-      "hardVetoReasons": [],
+      "hardVetoReasons": [
+        "VOLATILITY_TOO_HIGH"
+      ],
       "reasonCodes": [
-        "VOLATILITY_HISTORY_MISSING",
-        "DAILY_HISTORY_STALE_OR_UNVERIFIED",
-        "INSUFFICIENT_HISTORY",
-        "TREND_UNAVAILABLE",
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
+        "VOLATILITY_TOO_HIGH",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -71421,8 +72037,8 @@
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "CANCEL",
+      "action": "CANCEL_PENDING_BUY",
       "compositeScore": null,
       "pricePreference": "PREFERRED",
       "entryMode": "MANUAL_RECORD_ONLY",
@@ -71600,6 +72216,7 @@
       "reasonCodes": [
         "RECENT_PEAK_COLLAPSE",
         "VOLATILITY_TOO_HIGH",
+        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
