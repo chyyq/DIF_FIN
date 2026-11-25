@@ -2,41 +2,35 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-26T00:05:25.046936+08:00",
-    "lastSuccessfulAt": "2026-11-26T00:05:25.046936+08:00",
-    "quoteTimestamp": "2026-11-25T16:12:00+08:00",
+    "generatedAt": "2026-11-26T00:42:01.138532+08:00",
+    "lastSuccessfulAt": "2026-11-26T00:42:01.138532+08:00",
+    "quoteTimestamp": "2026-11-25T16:15:00+08:00",
     "tradingDate": "2026-11-25",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
       {
-        "name": "Eastmoney",
-        "ok": true,
-        "note": "Public delayed quote endpoint responded; metadata remains unverified"
-      },
-      {
-        "name": "Eastmoney-universe",
-        "ok": true,
-        "note": "99 symbols received; pagination can be partial and is reported separately"
-      },
-      {
         "name": "Tencent-history",
         "ok": true,
         "note": "Actual historical daily bars; no intraday confirmation"
+      },
+      {
+        "name": "Tencent",
+        "ok": true,
+        "note": "5105 requested symbols received with reported daily limits; security/account metadata unverified"
+      },
+      {
+        "name": "Sina-universe",
+        "ok": true,
+        "note": "Enumerated 5350 symbols; complete=True; explicit board exclusions complete=True"
       }
     ],
     "errors": [
-      "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
-      "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
-      "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 605188.SH: Remote end closed connection without response",
-      "Daily limits 605090.SH: Remote end closed connection without response",
-      "Daily limits 605378.SH: Remote end closed connection without response",
-      "Daily limits 605179.SH: Remote end closed connection without response"
+      "Daily history 000001.SH: Remote end closed connection without response",
+      "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response"
     ],
     "automaticOrders": false,
-    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "47ff8cb84caea615",
     "parameterVersion": "1.3.0",
     "dataLimits": [
@@ -855,7 +849,7 @@
       "2026-11-24",
       "2026-11-25"
     ],
-    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-11-25",
     "futureDatesEstimated": false
@@ -2943,15 +2937,14 @@
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "EXPIRE",
+      "action": "EXPIRE_UNFILLED",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "eventType": "LIMIT_UP",
-      "stale": true,
+      "stale": false,
       "volatility": {
         "available": false,
         "reason": "VOLATILITY_HISTORY_MISSING",
@@ -3048,15 +3041,14 @@
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
         "LIQUIDITY_FLOOR_FAILED",
         "EXTREME_DRAWDOWN_NO_NEW_ENTRY",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
-      "status": "WATCH",
-      "action": "WATCH_NO_BROKER_ORDER",
+      "status": "EXPIRE",
+      "action": "EXPIRE_UNFILLED",
       "compositeScore": null,
       "entryMode": "MANUAL_RECORD_ONLY",
       "eventType": "LIMIT_UP",
-      "stale": true,
+      "stale": false,
       "volatility": {
         "available": false,
         "reason": "VOLATILITY_HISTORY_MISSING",
@@ -3098,7 +3090,7 @@
       "referencePeak": 3.09,
       "firstObservedAt": "2026-11-24T10:45:14.954581+08:00",
       "amount": 265220000.0,
-      "stale": true,
+      "stale": false,
       "price": 2.94,
       "high": 2.98,
       "low": 2.91,
@@ -3161,15 +3153,15 @@
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 149,
+        "historySessions": 150,
         "available": true,
         "passed": true,
-        "ma20": 2.98,
-        "ma60": 2.9545,
-        "atr14": 0.061429,
+        "ma20": 2.984,
+        "ma60": 2.954333,
+        "atr14": 0.062143,
         "support": 2.85,
         "score": 100.0,
-        "ma20Slope": 0.010340735717918381,
+        "ma20Slope": 0.009130875887723988,
         "checks": [
           true,
           true,
@@ -3250,8 +3242,7 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "QUOTE_MISSING"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -3278,7 +3269,7 @@
       "referencePeak": 16.27,
       "firstObservedAt": "2026-11-24T02:27:39.895675+08:00",
       "amount": 218500000.0,
-      "stale": true,
+      "stale": false,
       "price": 14.78,
       "high": 15.7,
       "low": 14.71,
@@ -3341,15 +3332,15 @@
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 149,
+        "historySessions": 150,
         "available": true,
         "passed": true,
-        "ma20": 14.8685,
-        "ma60": 14.662667,
-        "atr14": 0.615,
+        "ma20": 14.933,
+        "ma60": 14.663667,
+        "atr14": 0.64,
         "support": 13.27,
         "score": 100.0,
-        "ma20Slope": 0.02164427800872648,
+        "ma20Slope": 0.021723512709109993,
         "checks": [
           true,
           true,
@@ -3431,8 +3422,7 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
-        "QUOTE_MISSING"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -3459,7 +3449,7 @@
       "referencePeak": 21.69,
       "firstObservedAt": "2026-11-24T10:45:14.954581+08:00",
       "amount": 488410000.0,
-      "stale": true,
+      "stale": false,
       "price": 21.25,
       "high": 21.46,
       "low": 20.49,
@@ -3522,15 +3512,15 @@
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 149,
+        "historySessions": 150,
         "available": true,
         "passed": true,
-        "ma20": 20.3935,
-        "ma60": 19.012,
-        "atr14": 0.795,
+        "ma20": 20.5335,
+        "ma60": 19.059333,
+        "atr14": 0.798571,
         "support": 18.12,
         "score": 100.0,
-        "ma20Slope": 0.028338754002470656,
+        "ma20Slope": 0.028577869057756722,
         "checks": [
           true,
           true,
@@ -3611,8 +3601,7 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "QUOTE_MISSING"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -3638,12 +3627,12 @@
       "trendSetupVerified": true,
       "referencePeak": 15.2,
       "firstObservedAt": "2026-11-24T19:12:03.782928+08:00",
-      "amount": 79301946.0,
+      "amount": 79300000.0,
       "stale": false,
       "price": 14.66,
       "high": 15.02,
       "low": 14.55,
-      "quoteTimestamp": "2026-11-25T16:11:54+08:00",
+      "quoteTimestamp": "2026-11-25T16:15:00+08:00",
       "limitDownPrice": 13.49,
       "eventDayIndex": 1,
       "expiresOn": null,
@@ -3785,7 +3774,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -3822,7 +3810,7 @@
       "limitEventVerified": true,
       "limitEventSource": "Eastmoney reported daily upper/lower limit",
       "amount": 536270000.0,
-      "stale": true,
+      "stale": false,
       "price": 8.48,
       "high": 8.48,
       "low": 7.58,
@@ -3885,15 +3873,15 @@
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 149,
+        "historySessions": 150,
         "available": true,
         "passed": true,
-        "ma20": 7.636,
-        "ma60": 8.341667,
-        "atr14": 0.462857,
+        "ma20": 7.689,
+        "ma60": 8.328333,
+        "atr14": 0.499286,
         "support": 6.88,
         "score": 66.67,
-        "ma20Slope": 0.005464480874317168,
+        "ma20Slope": 0.010779545155777503,
         "checks": [
           true,
           false,
@@ -3974,8 +3962,7 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "QUOTE_MISSING"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -4001,7 +3988,7 @@
       "referencePeak": 4.9,
       "firstObservedAt": "2026-11-25T02:14:32.389204+08:00",
       "amount": 917220000.0,
-      "stale": true,
+      "stale": false,
       "price": 4.63,
       "high": 4.68,
       "low": 4.58,
@@ -4064,15 +4051,15 @@
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 149,
+        "historySessions": 150,
         "available": true,
         "passed": true,
-        "ma20": 4.7035,
-        "ma60": 4.469333,
-        "atr14": 0.133571,
+        "ma20": 4.7065,
+        "ma60": 4.4805,
+        "atr14": 0.130714,
         "support": 4.54,
         "score": 66.67,
-        "ma20Slope": 0.0059886643139772655,
+        "ma20Slope": 0.004910857264865953,
         "checks": [
           true,
           true,
@@ -4153,8 +4140,7 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "QUOTE_MISSING"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -4182,7 +4168,7 @@
       "limitEventVerified": true,
       "limitEventSource": "Tencent reported daily upper/lower limit fields 47/48",
       "amount": 250110000.0,
-      "stale": true,
+      "stale": false,
       "price": 6.41,
       "high": 6.41,
       "low": 5.73,
@@ -4245,15 +4231,15 @@
       },
       "pricingMethod": "ATR14_SWING_SUPPORT",
       "currentTrend": {
-        "historySessions": 149,
+        "historySessions": 150,
         "available": true,
         "passed": true,
-        "ma20": 5.6645,
-        "ma60": 6.2285,
-        "atr14": 0.360714,
+        "ma20": 5.698,
+        "ma60": 6.224333,
+        "atr14": 0.392143,
         "support": 5.18,
         "score": 66.67,
-        "ma20Slope": 0.00452207838269203,
+        "ma20Slope": 0.009388839681133687,
         "checks": [
           true,
           false,
@@ -4334,8 +4320,7 @@
         "SECTOR_UNVERIFIED",
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
-        "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "QUOTE_MISSING"
+        "INTRADAY_CONFIRMATION_UNAVAILABLE"
       ],
       "status": "WATCH",
       "action": "WATCH_NO_BROKER_ORDER",
@@ -4347,12 +4332,12 @@
   "stats": {
     "candidateCount": 9,
     "eventCount": 596,
-    "quoteCount": 99,
-    "watchCount": 9,
+    "quoteCount": 5105,
+    "watchCount": 7,
     "readyCount": 0,
     "limitCandidateCount": 4,
     "trendCandidateCount": 5,
-    "historyAnalyzedCount": 45,
+    "historyAnalyzedCount": 217,
     "historyEnrichmentCap": 120
   },
   "learning": {
