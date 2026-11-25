@@ -2,13 +2,18 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-25T18:07:56.531118+08:00",
-    "lastSuccessfulAt": "2026-11-25T18:07:56.531118+08:00",
+    "generatedAt": "2026-11-25T18:21:52.087988+08:00",
+    "lastSuccessfulAt": "2026-11-25T18:21:52.087988+08:00",
     "quoteTimestamp": "2026-11-25T16:12:00+08:00",
     "tradingDate": "2026-11-25",
     "stale": false,
     "mode": "public-delayed-manual-monitor",
     "sourceHealth": [
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
+      },
       {
         "name": "Eastmoney",
         "ok": true,
@@ -18,23 +23,21 @@
         "name": "Eastmoney-universe",
         "ok": true,
         "note": "99 symbols received; pagination can be partial and is reported separately"
-      },
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
     "errors": [
+      "Daily history 000001.SH: Remote end closed connection without response",
       "Eastmoney universe SSE_MAIN page 2: Remote end closed connection without response",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
       "Eastmoney universe STAR page 1: Remote end closed connection without response",
-      "Daily history 605378.SH: Remote end closed connection without response",
-      "Daily limits 605488.SH: HTTP Error 502: Bad Gateway"
+      "Daily limits 605338.SH: Remote end closed connection without response",
+      "Daily limits 605060.SH: Remote end closed connection without response",
+      "Daily limits 605378.SH: HTTP Error 502: Bad Gateway",
+      "Daily limits 605090.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
-    "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "calendarSource": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "47ff8cb84caea615",
     "parameterVersion": "1.3.0",
     "dataLimits": [
@@ -853,7 +856,7 @@
       "2026-11-24",
       "2026-11-25"
     ],
-    "source": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
+    "source": "Tencent index actual daily-bar dates (observed, no future schedule)",
     "verified": true,
     "coverageThrough": "2026-11-25",
     "futureDatesEstimated": false
@@ -1965,7 +1968,7 @@
         "date": "2026-11-25",
         "weekday": 2,
         "firstRecordedAt": "2026-11-25T17:58:45.992954+08:00",
-        "lastUpdatedAt": "2026-11-25T18:07:56.531118+08:00",
+        "lastUpdatedAt": "2026-11-25T18:21:52.087988+08:00",
         "candidates": [
           {
             "strategyId": "LBR_MAIN_V1",
@@ -3446,13 +3449,13 @@
   ],
   "stats": {
     "candidateCount": 7,
-    "eventCount": 501,
+    "eventCount": 502,
     "quoteCount": 99,
     "watchCount": 7,
     "readyCount": 0,
     "limitCandidateCount": 3,
     "trendCandidateCount": 4,
-    "historyAnalyzedCount": 107,
+    "historyAnalyzedCount": 138,
     "historyEnrichmentCap": 120
   },
   "learning": {
