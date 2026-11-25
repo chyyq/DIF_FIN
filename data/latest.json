@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-26T01:38:18.934792+08:00",
-    "lastSuccessfulAt": "2026-11-26T01:38:18.934792+08:00",
+    "generatedAt": "2026-11-26T04:58:11.718970+08:00",
+    "lastSuccessfulAt": "2026-11-26T04:58:11.718970+08:00",
     "quoteTimestamp": "2026-11-25T16:12:01+08:00",
     "tradingDate": "2026-11-25",
     "stale": false,
@@ -18,13 +18,19 @@
         "name": "Eastmoney-universe",
         "ok": true,
         "note": "297 symbols received; pagination can be partial and is reported separately"
+      },
+      {
+        "name": "Tencent-history",
+        "ok": true,
+        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
     "errors": [
       "Eastmoney universe SSE_MAIN page 4: Remote end closed connection without response",
       "Eastmoney universe SZSE_MAIN page 1: Remote end closed connection without response",
       "Eastmoney universe CHINEXT page 1: Remote end closed connection without response",
-      "Eastmoney universe STAR page 1: Remote end closed connection without response"
+      "Eastmoney universe STAR page 1: Remote end closed connection without response",
+      "Daily history 603683.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -4342,7 +4348,7 @@
     "readyCount": 0,
     "limitCandidateCount": 4,
     "trendCandidateCount": 5,
-    "historyAnalyzedCount": 165,
+    "historyAnalyzedCount": 200,
     "historyEnrichmentCap": 120
   },
   "learning": {
