@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-27T01:07:52.184584+08:00",
-    "lastSuccessfulAt": "2026-11-27T01:07:52.184584+08:00",
+    "generatedAt": "2026-11-27T01:16:09.409060+08:00",
+    "lastSuccessfulAt": "2026-11-27T01:16:09.409060+08:00",
     "quoteTimestamp": "2026-11-26T16:15:00+08:00",
     "tradingDate": "2026-11-26",
     "stale": false,
@@ -32,7 +32,7 @@
     ],
     "errors": [
       "Eastmoney universe SSE_MAIN page 1: Remote end closed connection without response",
-      "Daily history 603565.SH: Remote end closed connection without response"
+      "Daily history 603528.SH: Remote end closed connection without response"
     ],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
@@ -5972,7 +5972,7 @@
     "readyCount": 0,
     "limitCandidateCount": 4,
     "trendCandidateCount": 8,
-    "historyAnalyzedCount": 134,
+    "historyAnalyzedCount": 201,
     "historyEnrichmentCap": 120
   },
   "learning": {
