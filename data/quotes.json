@@ -1,7 +1,7 @@
 {
   "meta": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-27T23:26:32.490539+08:00",
+    "generatedAt": "2026-11-27T23:35:42.300648+08:00",
     "quoteTimestamp": "2026-11-27T16:12:01+08:00",
     "tradingDate": "2026-11-27",
     "stale": false,
@@ -24,7 +24,9 @@
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 16.01,
+      "limitDownPrice": 13.1
     },
     "605598.SH": {
       "symbol": "605598.SH",
@@ -104,7 +106,9 @@
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 22.65,
+      "limitDownPrice": 18.53
     },
     "605567.SH": {
       "symbol": "605567.SH",
@@ -296,7 +300,9 @@
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 14.63,
+      "limitDownPrice": 11.97
     },
     "605377.SH": {
       "symbol": "605377.SH",
@@ -440,7 +446,9 @@
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 23.34,
+      "limitDownPrice": 19.1
     },
     "605337.SH": {
       "symbol": "605337.SH",
@@ -808,7 +816,9 @@
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 19.35,
+      "limitDownPrice": 15.83
     },
     "605218.SH": {
       "symbol": "605218.SH",
@@ -1176,7 +1186,9 @@
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 8.21,
+      "limitDownPrice": 6.71
     },
     "605133.SH": {
       "symbol": "605133.SH",
@@ -1656,7 +1668,9 @@
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 13.95,
+      "limitDownPrice": 11.41
     },
     "605016.SH": {
       "symbol": "605016.SH",
@@ -1928,7 +1942,9 @@
       "quoteTimestamp": "2026-11-27T16:11:55+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 18.92,
+      "limitDownPrice": 15.48
     },
     "603989.SH": {
       "symbol": "603989.SH",
@@ -2264,9 +2280,7 @@
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 6.45,
-      "limitDownPrice": 5.27
+      "segment": "SSE_MAIN"
     },
     "603955.SH": {
       "symbol": "603955.SH",
@@ -2314,7 +2328,9 @@
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 13.09,
+      "limitDownPrice": 10.71
     },
     "603948.SH": {
       "symbol": "603948.SH",
@@ -2330,7 +2346,9 @@
       "quoteTimestamp": "2026-11-27T16:11:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 22.11,
+      "limitDownPrice": 18.09
     },
     "603939.SH": {
       "symbol": "603939.SH",
@@ -2458,7 +2476,9 @@
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 12.38,
+      "limitDownPrice": 10.13
     },
     "603927.SH": {
       "symbol": "603927.SH",
@@ -2490,7 +2510,9 @@
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 20.3,
+      "limitDownPrice": 16.61
     },
     "603922.SH": {
       "symbol": "603922.SH",
@@ -2698,7 +2720,9 @@
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 10.02,
+      "limitDownPrice": 8.2
     },
     "603900.SH": {
       "symbol": "603900.SH",
@@ -2746,7 +2770,9 @@
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 16.42,
+      "limitDownPrice": 13.44
     },
     "603897.SH": {
       "symbol": "603897.SH",
@@ -2874,7 +2900,9 @@
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 9.8,
+      "limitDownPrice": 8.02
     },
     "603886.SH": {
       "symbol": "603886.SH",
@@ -2906,7 +2934,9 @@
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 11.17,
+      "limitDownPrice": 9.14
     },
     "603883.SH": {
       "symbol": "603883.SH",
@@ -2922,7 +2952,9 @@
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 15.8,
+      "limitDownPrice": 12.92
     },
     "603882.SH": {
       "symbol": "603882.SH",
@@ -3050,7 +3082,9 @@
       "quoteTimestamp": "2026-11-27T16:12:01+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 12.74,
+      "limitDownPrice": 10.42
     },
     "603869.SH": {
       "symbol": "603869.SH",
@@ -3802,7 +3836,9 @@
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 5.59,
+      "limitDownPrice": 4.57
     },
     "603777.SH": {
       "symbol": "603777.SH",
@@ -3882,7 +3918,9 @@
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 13.42,
+      "limitDownPrice": 10.98
     },
     "603766.SH": {
       "symbol": "603766.SH",
@@ -3898,7 +3936,9 @@
       "quoteTimestamp": "2026-11-27T16:11:39+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 17.62,
+      "limitDownPrice": 14.42
     },
     "603759.SH": {
       "symbol": "603759.SH",
@@ -4122,7 +4162,9 @@
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 10.14,
+      "limitDownPrice": 8.3
     },
     "603722.SH": {
       "symbol": "603722.SH",
@@ -4154,7 +4196,9 @@
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 18.5,
+      "limitDownPrice": 15.14
     },
     "603719.SH": {
       "symbol": "603719.SH",
@@ -4330,7 +4374,9 @@
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 23.27,
+      "limitDownPrice": 19.04
     },
     "603703.SH": {
       "symbol": "603703.SH",
@@ -4570,7 +4616,9 @@
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 13.29,
+      "limitDownPrice": 10.87
     },
     "603682.SH": {
       "symbol": "603682.SH",
@@ -5482,7 +5530,9 @@
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 17.38,
+      "limitDownPrice": 14.22
     },
     "603586.SH": {
       "symbol": "603586.SH",
@@ -5674,7 +5724,9 @@
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 13.24,
+      "limitDownPrice": 10.84
     },
     "603559.SH": {
       "symbol": "603559.SH",
@@ -5866,9 +5918,7 @@
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 6.48,
-      "limitDownPrice": 5.3
+      "segment": "SSE_MAIN"
     },
     "603527.SH": {
       "symbol": "603527.SH",
@@ -6188,7 +6238,9 @@
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 15.75,
+      "limitDownPrice": 12.89
     },
     "603468.SH": {
       "symbol": "603468.SH",
@@ -6908,9 +6960,7 @@
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 9.9,
-      "limitDownPrice": 8.1
+      "segment": "SSE_MAIN"
     },
     "603365.SH": {
       "symbol": "603365.SH",
@@ -7438,7 +7488,9 @@
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 4.88,
+      "limitDownPrice": 4.0
     },
     "603322.SH": {
       "symbol": "603322.SH",
@@ -7518,7 +7570,9 @@
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 7.51,
+      "limitDownPrice": 6.15
     },
     "603317.SH": {
       "symbol": "603317.SH",
@@ -7534,7 +7588,9 @@
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 15.73,
+      "limitDownPrice": 12.87
     },
     "603316.SH": {
       "symbol": "603316.SH",
@@ -8462,7 +8518,9 @@
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 23.01,
+      "limitDownPrice": 18.83
     },
     "603232.SH": {
       "symbol": "603232.SH",
@@ -8606,7 +8664,9 @@
       "quoteTimestamp": "2026-11-27T16:11:51+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 9.25,
+      "limitDownPrice": 7.57
     },
     "603222.SH": {
       "symbol": "603222.SH",
@@ -8878,7 +8938,9 @@
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 16.51,
+      "limitDownPrice": 13.51
     },
     "603205.SH": {
       "symbol": "603205.SH",
@@ -9166,7 +9228,9 @@
       "quoteTimestamp": "2026-11-27T16:11:36+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 11.25,
+      "limitDownPrice": 9.21
     },
     "603186.SH": {
       "symbol": "603186.SH",
@@ -10574,7 +10638,9 @@
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.01,
+      "limitDownPrice": 1.65
     },
     "603076.SH": {
       "symbol": "603076.SH",
@@ -11230,7 +11296,9 @@
       "quoteTimestamp": "2026-11-27T16:11:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 6.39,
+      "limitDownPrice": 5.23
     },
     "603027.SH": {
       "symbol": "603027.SH",
@@ -12270,7 +12338,9 @@
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 1.6,
+      "limitDownPrice": 1.31
     },
     "601878.SH": {
       "symbol": "601878.SH",
@@ -12350,7 +12420,9 @@
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.45,
+      "limitDownPrice": 2.01
     },
     "601866.SH": {
       "symbol": "601866.SH",
@@ -13246,7 +13318,9 @@
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 4.05,
+      "limitDownPrice": 3.31
     },
     "601598.SH": {
       "symbol": "601598.SH",
@@ -14126,7 +14200,9 @@
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 4.84,
+      "limitDownPrice": 3.96
     },
     "601187.SH": {
       "symbol": "601187.SH",
@@ -15742,7 +15818,9 @@
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 3.84,
+      "limitDownPrice": 3.14
     },
     "600962.SH": {
       "symbol": "600962.SH",
@@ -16590,7 +16668,9 @@
       "quoteTimestamp": "2026-11-27T16:11:42+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.12,
+      "limitDownPrice": 1.74
     },
     "600869.SH": {
       "symbol": "600869.SH",
@@ -16958,7 +17038,9 @@
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.82,
+      "limitDownPrice": 2.3
     },
     "600843.SH": {
       "symbol": "600843.SH",
@@ -17022,7 +17104,9 @@
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 9.71,
+      "limitDownPrice": 7.95
     },
     "600835.SH": {
       "symbol": "600835.SH",
@@ -17134,7 +17218,9 @@
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 3.87,
+      "limitDownPrice": 3.17
     },
     "600827.SH": {
       "symbol": "600827.SH",
@@ -17310,7 +17396,9 @@
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.43,
+      "limitDownPrice": 1.99
     },
     "600815.SH": {
       "symbol": "600815.SH",
@@ -17406,7 +17494,9 @@
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.26,
+      "limitDownPrice": 1.85
     },
     "600807.SH": {
       "symbol": "600807.SH",
@@ -18686,7 +18776,9 @@
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.92,
+      "limitDownPrice": 2.39
     },
     "600714.SH": {
       "symbol": "600714.SH",
@@ -18974,7 +19066,9 @@
       "quoteTimestamp": "2026-11-27T16:11:42+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.68,
+      "limitDownPrice": 2.2
     },
     "600690.SH": {
       "symbol": "600690.SH",
@@ -19742,7 +19836,9 @@
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 7.02,
+      "limitDownPrice": 5.74
     },
     "600626.SH": {
       "symbol": "600626.SH",
@@ -19982,7 +20078,9 @@
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 7.15,
+      "limitDownPrice": 5.85
     },
     "600609.SH": {
       "symbol": "600609.SH",
@@ -20014,7 +20112,9 @@
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 1.22,
+      "limitDownPrice": 1.0
     },
     "600605.SH": {
       "symbol": "600605.SH",
@@ -20462,7 +20562,9 @@
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 5.23,
+      "limitDownPrice": 4.28
     },
     "600575.SH": {
       "symbol": "600575.SH",
@@ -21198,7 +21300,9 @@
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 1.39,
+      "limitDownPrice": 1.13
     },
     "600517.SH": {
       "symbol": "600517.SH",
@@ -21614,7 +21718,9 @@
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 4.74,
+      "limitDownPrice": 3.88
     },
     "600487.SH": {
       "symbol": "600487.SH",
@@ -21854,7 +21960,9 @@
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 4.36,
+      "limitDownPrice": 3.56
     },
     "600463.SH": {
       "symbol": "600463.SH",
@@ -22608,7 +22716,9 @@
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 1.95,
+      "limitDownPrice": 1.59
     },
     "600382.SH": {
       "symbol": "600382.SH",
@@ -23328,7 +23438,9 @@
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 5.13,
+      "limitDownPrice": 4.19
     },
     "600326.SH": {
       "symbol": "600326.SH",
@@ -23360,7 +23472,9 @@
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 1.84,
+      "limitDownPrice": 1.5
     },
     "600323.SH": {
       "symbol": "600323.SH",
@@ -23712,7 +23826,9 @@
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 3.28,
+      "limitDownPrice": 2.68
     },
     "600292.SH": {
       "symbol": "600292.SH",
@@ -24464,7 +24580,9 @@
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 6.55,
+      "limitDownPrice": 5.36
     },
     "600228.SH": {
       "symbol": "600228.SH",
@@ -24496,7 +24614,9 @@
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 3.91,
+      "limitDownPrice": 3.2
     },
     "600226.SH": {
       "symbol": "600226.SH",
@@ -24528,7 +24648,9 @@
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 6.07,
+      "limitDownPrice": 4.97
     },
     "600222.SH": {
       "symbol": "600222.SH",
@@ -24560,7 +24682,9 @@
       "quoteTimestamp": "2026-11-27T16:11:36+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 1.28,
+      "limitDownPrice": 1.04
     },
     "600219.SH": {
       "symbol": "600219.SH",
@@ -25168,7 +25292,9 @@
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.2,
+      "limitDownPrice": 1.8
     },
     "600169.SH": {
       "symbol": "600169.SH",
@@ -25360,7 +25486,9 @@
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 1.46,
+      "limitDownPrice": 1.2
     },
     "600156.SH": {
       "symbol": "600156.SH",
@@ -26032,7 +26160,9 @@
       "quoteTimestamp": "2026-11-27T16:12:01+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 4.57,
+      "limitDownPrice": 3.74
     },
     "600101.SH": {
       "symbol": "600101.SH",
@@ -26160,9 +26290,7 @@
       "quoteTimestamp": "2026-11-27T16:11:58+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN",
-      "limitUpPrice": 4.61,
-      "limitDownPrice": 3.77
+      "segment": "SSE_MAIN"
     },
     "600089.SH": {
       "symbol": "600089.SH",
@@ -26930,7 +27058,9 @@
       "quoteTimestamp": "2026-11-27T16:11:39+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 1.29,
+      "limitDownPrice": 1.05
     },
     "600021.SH": {
       "symbol": "600021.SH",
@@ -27090,7 +27220,9 @@
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SSE_MAIN"
+      "segment": "SSE_MAIN",
+      "limitUpPrice": 2.02,
+      "limitDownPrice": 1.66
     },
     "600009.SH": {
       "symbol": "600009.SH",
@@ -27300,9 +27432,7 @@
       "quoteTimestamp": "2026-11-27T15:34:00+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 9.25,
-      "limitDownPrice": 7.57
+      "segment": "SZSE_MAIN"
     },
     "003037.SZ": {
       "symbol": "003037.SZ",
@@ -28102,7 +28232,9 @@
       "quoteTimestamp": "2026-11-27T15:34:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 14.1,
+      "limitDownPrice": 11.54
     },
     "002983.SZ": {
       "symbol": "002983.SZ",
@@ -28374,7 +28506,9 @@
       "quoteTimestamp": "2026-11-27T15:34:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 11.18,
+      "limitDownPrice": 9.14
     },
     "002965.SZ": {
       "symbol": "002965.SZ",
@@ -28762,7 +28896,9 @@
       "quoteTimestamp": "2026-11-27T15:34:15+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 7.41,
+      "limitDownPrice": 6.07
     },
     "002938.SZ": {
       "symbol": "002938.SZ",
@@ -28924,7 +29060,9 @@
       "quoteTimestamp": "2026-11-27T15:34:30+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 6.63,
+      "limitDownPrice": 5.43
     },
     "002927.SZ": {
       "symbol": "002927.SZ",
@@ -29260,7 +29398,9 @@
       "quoteTimestamp": "2026-11-27T15:34:36+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 8.65,
+      "limitDownPrice": 7.07
     },
     "002903.SZ": {
       "symbol": "002903.SZ",
@@ -30204,7 +30344,9 @@
       "quoteTimestamp": "2026-11-27T15:34:45+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 7.73,
+      "limitDownPrice": 6.33
     },
     "002839.SZ": {
       "symbol": "002839.SZ",
@@ -31854,7 +31996,9 @@
       "quoteTimestamp": "2026-11-27T15:34:06+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.6,
+      "limitDownPrice": 2.12
     },
     "002719.SZ": {
       "symbol": "002719.SZ",
@@ -32302,9 +32446,7 @@
       "quoteTimestamp": "2026-11-27T15:34:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 6.16,
-      "limitDownPrice": 5.04
+      "segment": "SZSE_MAIN"
     },
     "002686.SZ": {
       "symbol": "002686.SZ",
@@ -33472,7 +33614,9 @@
       "quoteTimestamp": "2026-11-27T15:34:09+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 1.64,
+      "limitDownPrice": 1.34
     },
     "002606.SZ": {
       "symbol": "002606.SZ",
@@ -34608,7 +34752,9 @@
       "quoteTimestamp": "2026-11-27T15:34:27+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.32,
+      "limitDownPrice": 1.9
     },
     "002534.SZ": {
       "symbol": "002534.SZ",
@@ -35040,7 +35186,9 @@
       "quoteTimestamp": "2026-11-27T15:34:30+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.18,
+      "limitDownPrice": 1.78
     },
     "002501.SZ": {
       "symbol": "002501.SZ",
@@ -35280,7 +35428,9 @@
       "quoteTimestamp": "2026-11-27T15:34:39+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.74,
+      "limitDownPrice": 2.24
     },
     "002485.SZ": {
       "symbol": "002485.SZ",
@@ -35504,7 +35654,9 @@
       "quoteTimestamp": "2026-11-27T15:34:33+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 1.93,
+      "limitDownPrice": 1.58
     },
     "002469.SZ": {
       "symbol": "002469.SZ",
@@ -36128,7 +36280,9 @@
       "quoteTimestamp": "2026-11-27T15:34:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.1,
+      "limitDownPrice": 1.72
     },
     "002425.SZ": {
       "symbol": "002425.SZ",
@@ -37408,7 +37562,9 @@
       "quoteTimestamp": "2026-11-27T15:34:09+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 7.66,
+      "limitDownPrice": 6.26
     },
     "002342.SZ": {
       "symbol": "002342.SZ",
@@ -37664,7 +37820,9 @@
       "quoteTimestamp": "2026-11-27T15:34:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 8.31,
+      "limitDownPrice": 6.8
     },
     "002323.SZ": {
       "symbol": "002323.SZ",
@@ -37712,7 +37870,9 @@
       "quoteTimestamp": "2026-11-27T15:34:24+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 1.97,
+      "limitDownPrice": 1.61
     },
     "002320.SZ": {
       "symbol": "002320.SZ",
@@ -37888,7 +38048,9 @@
       "quoteTimestamp": "2026-11-27T15:34:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.53,
+      "limitDownPrice": 2.07
     },
     "002309.SZ": {
       "symbol": "002309.SZ",
@@ -37904,7 +38066,9 @@
       "quoteTimestamp": "2026-11-27T15:34:45+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.43,
+      "limitDownPrice": 1.99
     },
     "002307.SZ": {
       "symbol": "002307.SZ",
@@ -37920,7 +38084,9 @@
       "quoteTimestamp": "2026-11-27T15:34:42+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.78,
+      "limitDownPrice": 2.28
     },
     "002306.SZ": {
       "symbol": "002306.SZ",
@@ -38592,7 +38758,9 @@
       "quoteTimestamp": "2026-11-27T15:34:21+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.81,
+      "limitDownPrice": 2.3
     },
     "002262.SZ": {
       "symbol": "002262.SZ",
@@ -38784,7 +38952,9 @@
       "quoteTimestamp": "2026-11-27T15:34:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 6.88,
+      "limitDownPrice": 5.63
     },
     "002248.SZ": {
       "symbol": "002248.SZ",
@@ -38944,7 +39114,9 @@
       "quoteTimestamp": "2026-11-27T15:34:39+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.41,
+      "limitDownPrice": 1.97
     },
     "002238.SZ": {
       "symbol": "002238.SZ",
@@ -39986,7 +40158,9 @@
       "quoteTimestamp": "2026-11-27T15:34:00+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 5.63,
+      "limitDownPrice": 4.61
     },
     "002171.SZ": {
       "symbol": "002171.SZ",
@@ -40274,7 +40448,9 @@
       "quoteTimestamp": "2026-11-27T15:34:21+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 3.56,
+      "limitDownPrice": 2.92
     },
     "002153.SZ": {
       "symbol": "002153.SZ",
@@ -40402,7 +40578,9 @@
       "quoteTimestamp": "2026-11-27T15:34:45+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 4.03,
+      "limitDownPrice": 3.29
     },
     "002144.SZ": {
       "symbol": "002144.SZ",
@@ -40450,7 +40628,9 @@
       "quoteTimestamp": "2026-11-27T15:34:21+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 5.1,
+      "limitDownPrice": 4.18
     },
     "002140.SZ": {
       "symbol": "002140.SZ",
@@ -41428,7 +41608,9 @@
       "quoteTimestamp": "2026-11-27T15:34:54+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 1.91,
+      "limitDownPrice": 1.57
     },
     "002075.SZ": {
       "symbol": "002075.SZ",
@@ -41508,9 +41690,7 @@
       "quoteTimestamp": "2026-11-27T15:34:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 4.04,
-      "limitDownPrice": 3.3
+      "segment": "SZSE_MAIN"
     },
     "002068.SZ": {
       "symbol": "002068.SZ",
@@ -42006,7 +42186,9 @@
       "quoteTimestamp": "2026-11-27T15:34:42+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 5.62,
+      "limitDownPrice": 4.6
     },
     "002037.SZ": {
       "symbol": "002037.SZ",
@@ -43222,7 +43404,9 @@
       "quoteTimestamp": "2026-11-27T15:34:57+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 5.59,
+      "limitDownPrice": 4.57
     },
     "001328.SZ": {
       "symbol": "001328.SZ",
@@ -44150,7 +44334,9 @@
       "quoteTimestamp": "2026-11-27T15:34:45+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.33,
+      "limitDownPrice": 1.91
     },
     "001226.SZ": {
       "symbol": "001226.SZ",
@@ -44710,7 +44896,9 @@
       "quoteTimestamp": "2026-11-27T15:34:12+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.11,
+      "limitDownPrice": 1.73
     },
     "000980.SZ": {
       "symbol": "000980.SZ",
@@ -44726,7 +44914,9 @@
       "quoteTimestamp": "2026-11-27T15:34:30+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 1.58,
+      "limitDownPrice": 1.3
     },
     "000978.SZ": {
       "symbol": "000978.SZ",
@@ -46774,7 +46964,9 @@
       "quoteTimestamp": "2026-11-27T15:34:15+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.09,
+      "limitDownPrice": 1.71
     },
     "000783.SZ": {
       "symbol": "000783.SZ",
@@ -47254,7 +47446,9 @@
       "quoteTimestamp": "2026-11-27T15:34:21+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.01,
+      "limitDownPrice": 1.65
     },
     "000726.SZ": {
       "symbol": "000726.SZ",
@@ -47430,7 +47624,9 @@
       "quoteTimestamp": "2026-11-27T15:34:21+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 5.24,
+      "limitDownPrice": 4.28
     },
     "000713.SZ": {
       "symbol": "000713.SZ",
@@ -47478,7 +47674,9 @@
       "quoteTimestamp": "2026-11-27T15:34:09+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 4.53,
+      "limitDownPrice": 3.71
     },
     "000710.SZ": {
       "symbol": "000710.SZ",
@@ -47510,7 +47708,9 @@
       "quoteTimestamp": "2026-11-27T15:34:48+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.01,
+      "limitDownPrice": 1.65
     },
     "000708.SZ": {
       "symbol": "000708.SZ",
@@ -48054,7 +48254,9 @@
       "quoteTimestamp": "2026-11-27T15:34:57+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 1.03,
+      "limitDownPrice": 0.85
     },
     "000655.SZ": {
       "symbol": "000655.SZ",
@@ -48870,7 +49072,9 @@
       "quoteTimestamp": "2026-11-27T15:34:18+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 3.86,
+      "limitDownPrice": 3.16
     },
     "000565.SZ": {
       "symbol": "000565.SZ",
@@ -48902,7 +49106,9 @@
       "quoteTimestamp": "2026-11-27T15:34:21+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 1.33,
+      "limitDownPrice": 1.09
     },
     "000563.SZ": {
       "symbol": "000563.SZ",
@@ -49062,7 +49268,9 @@
       "quoteTimestamp": "2026-11-27T15:34:15+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 2.39,
+      "limitDownPrice": 1.95
     },
     "000551.SZ": {
       "symbol": "000551.SZ",
@@ -50006,7 +50214,9 @@
       "quoteTimestamp": "2026-11-27T15:34:36+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN"
+      "segment": "SZSE_MAIN",
+      "limitUpPrice": 3.89,
+      "limitDownPrice": 3.19
     },
     "000404.SZ": {
       "symbol": "000404.SZ",
@@ -50214,9 +50424,7 @@
       "quoteTimestamp": "2026-11-27T15:34:36+08:00",
       "source": "Eastmoney",
       "stale": false,
-      "segment": "SZSE_MAIN",
-      "limitUpPrice": 7.46,
-      "limitDownPrice": 6.1
+      "segment": "SZSE_MAIN"
     },
     "000155.SZ": {
       "symbol": "000155.SZ",
@@ -80039,7 +80247,7 @@
       "amount": 18499520945.0,
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688255.SH": {
@@ -80055,7 +80263,7 @@
       "amount": 60665764.0,
       "quoteTimestamp": "2026-11-27T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688253.SH": {
@@ -80071,7 +80279,7 @@
       "amount": 123793161.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688252.SH": {
@@ -80087,7 +80295,7 @@
       "amount": 151796775.0,
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688251.SH": {
@@ -80103,7 +80311,7 @@
       "amount": 62293648.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688249.SH": {
@@ -80119,7 +80327,7 @@
       "amount": 1614296247.0,
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688248.SH": {
@@ -80135,7 +80343,7 @@
       "amount": 180859654.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688247.SH": {
@@ -80151,7 +80359,7 @@
       "amount": 34442535.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688246.SH": {
@@ -80167,7 +80375,7 @@
       "amount": 68155819.0,
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688244.SH": {
@@ -80183,7 +80391,7 @@
       "amount": 98914539.0,
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688239.SH": {
@@ -80199,7 +80407,7 @@
       "amount": 282727851.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688238.SH": {
@@ -80215,7 +80423,7 @@
       "amount": 125561848.0,
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688237.SH": {
@@ -80231,7 +80439,7 @@
       "amount": 124702307.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688236.SH": {
@@ -80247,7 +80455,7 @@
       "amount": 26305972.0,
       "quoteTimestamp": "2026-11-27T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688235.SH": {
@@ -80263,7 +80471,7 @@
       "amount": 1329513746.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688234.SH": {
@@ -80279,7 +80487,7 @@
       "amount": 917135964.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688233.SH": {
@@ -80295,7 +80503,7 @@
       "amount": 595389181.0,
       "quoteTimestamp": "2026-11-27T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688232.SH": {
@@ -80311,7 +80519,7 @@
       "amount": 73547765.0,
       "quoteTimestamp": "2026-11-27T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688231.SH": {
@@ -80327,7 +80535,7 @@
       "amount": 102667169.0,
       "quoteTimestamp": "2026-11-27T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688230.SH": {
@@ -80343,7 +80551,7 @@
       "amount": 146755424.0,
       "quoteTimestamp": "2026-11-27T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688229.SH": {
@@ -80359,7 +80567,7 @@
       "amount": 36633207.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688228.SH": {
@@ -80375,7 +80583,7 @@
       "amount": 188890074.0,
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688227.SH": {
@@ -80391,7 +80599,7 @@
       "amount": 447791818.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688226.SH": {
@@ -80407,7 +80615,7 @@
       "amount": 111602040.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688225.SH": {
@@ -80423,7 +80631,7 @@
       "amount": 73328803.0,
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688223.SH": {
@@ -80439,7 +80647,7 @@
       "amount": 364913223.0,
       "quoteTimestamp": "2026-11-27T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688222.SH": {
@@ -80455,7 +80663,7 @@
       "amount": 670180241.0,
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688221.SH": {
@@ -80471,7 +80679,7 @@
       "amount": 112126724.0,
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688220.SH": {
@@ -80487,7 +80695,7 @@
       "amount": 1049507892.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688219.SH": {
@@ -80503,7 +80711,7 @@
       "amount": 43655703.0,
       "quoteTimestamp": "2026-11-27T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688218.SH": {
@@ -80519,7 +80727,7 @@
       "amount": 125311384.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688217.SH": {
@@ -80535,7 +80743,7 @@
       "amount": 17840335.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688216.SH": {
@@ -80551,7 +80759,7 @@
       "amount": 176187199.0,
       "quoteTimestamp": "2026-11-27T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688215.SH": {
@@ -80567,7 +80775,7 @@
       "amount": 69666616.0,
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688213.SH": {
@@ -80583,7 +80791,7 @@
       "amount": 2246307778.0,
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688212.SH": {
@@ -80599,7 +80807,7 @@
       "amount": 62609798.0,
       "quoteTimestamp": "2026-11-27T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688211.SH": {
@@ -80615,7 +80823,7 @@
       "amount": 14819582.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688210.SH": {
@@ -80631,7 +80839,7 @@
       "amount": 101514885.0,
       "quoteTimestamp": "2026-11-27T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688209.SH": {
@@ -80647,7 +80855,7 @@
       "amount": 336194783.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688208.SH": {
@@ -80663,7 +80871,7 @@
       "amount": 247881783.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688207.SH": {
@@ -80679,7 +80887,7 @@
       "amount": 130723223.0,
       "quoteTimestamp": "2026-11-27T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688206.SH": {
@@ -80695,7 +80903,7 @@
       "amount": 332930068.0,
       "quoteTimestamp": "2026-11-27T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688205.SH": {
@@ -80711,7 +80919,7 @@
       "amount": 1172232667.0,
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688203.SH": {
@@ -80727,7 +80935,7 @@
       "amount": 304635744.0,
       "quoteTimestamp": "2026-11-27T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688202.SH": {
@@ -80743,7 +80951,7 @@
       "amount": 424402666.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688201.SH": {
@@ -80759,7 +80967,7 @@
       "amount": 23583166.0,
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688200.SH": {
@@ -80775,7 +80983,7 @@
       "amount": 1616760943.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688199.SH": {
@@ -80791,7 +80999,7 @@
       "amount": 161941164.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688198.SH": {
@@ -80807,7 +81015,7 @@
       "amount": 22224241.0,
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688197.SH": {
@@ -80823,7 +81031,7 @@
       "amount": 57108715.0,
       "quoteTimestamp": "2026-11-27T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688196.SH": {
@@ -80839,7 +81047,7 @@
       "amount": 57567921.0,
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688195.SH": {
@@ -80855,7 +81063,7 @@
       "amount": 1106965872.0,
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688193.SH": {
@@ -80871,7 +81079,7 @@
       "amount": 26065441.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688192.SH": {
@@ -80887,7 +81095,7 @@
       "amount": 398256891.0,
       "quoteTimestamp": "2026-11-27T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688191.SH": {
@@ -80903,7 +81111,7 @@
       "amount": 89181520.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688190.SH": {
@@ -80919,7 +81127,7 @@
       "amount": 62110260.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688189.SH": {
@@ -80935,7 +81143,7 @@
       "amount": 12856106.0,
       "quoteTimestamp": "2026-11-27T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688188.SH": {
@@ -80951,7 +81159,7 @@
       "amount": 341700563.0,
       "quoteTimestamp": "2026-11-27T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688187.SH": {
@@ -80967,7 +81175,7 @@
       "amount": 404188911.0,
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688186.SH": {
@@ -80983,7 +81191,7 @@
       "amount": 34571493.0,
       "quoteTimestamp": "2026-11-27T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688185.SH": {
@@ -80999,7 +81207,7 @@
       "amount": 293127728.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688184.SH": {
@@ -81015,7 +81223,7 @@
       "amount": 7205683.0,
       "quoteTimestamp": "2026-11-27T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688183.SH": {
@@ -81031,7 +81239,7 @@
       "amount": 2641411135.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688182.SH": {
@@ -81047,7 +81255,7 @@
       "amount": 154296706.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688181.SH": {
@@ -81063,7 +81271,7 @@
       "amount": 218587599.0,
       "quoteTimestamp": "2026-11-27T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688180.SH": {
@@ -81079,7 +81287,7 @@
       "amount": 342675941.0,
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688179.SH": {
@@ -81095,7 +81303,7 @@
       "amount": 171710206.0,
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688178.SH": {
@@ -81111,7 +81319,7 @@
       "amount": 41012188.0,
       "quoteTimestamp": "2026-11-27T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688177.SH": {
@@ -81127,7 +81335,7 @@
       "amount": 57197316.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688176.SH": {
@@ -81143,7 +81351,7 @@
       "amount": 82488213.0,
       "quoteTimestamp": "2026-11-27T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688175.SH": {
@@ -81159,7 +81367,7 @@
       "amount": 113531837.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688173.SH": {
@@ -81175,7 +81383,7 @@
       "amount": 92438389.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688172.SH": {
@@ -81191,7 +81399,7 @@
       "amount": 1230924295.0,
       "quoteTimestamp": "2026-11-27T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688171.SH": {
@@ -81207,7 +81415,7 @@
       "amount": 60014777.0,
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688170.SH": {
@@ -81223,7 +81431,7 @@
       "amount": 215926188.0,
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688169.SH": {
@@ -81239,7 +81447,7 @@
       "amount": 1060160321.0,
       "quoteTimestamp": "2026-11-27T16:11:36+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688168.SH": {
@@ -81255,7 +81463,7 @@
       "amount": 130637958.0,
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688167.SH": {
@@ -81271,7 +81479,7 @@
       "amount": 1827624814.0,
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688166.SH": {
@@ -81287,7 +81495,7 @@
       "amount": 244658479.0,
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688165.SH": {
@@ -81303,7 +81511,7 @@
       "amount": 203010979.0,
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688163.SH": {
@@ -81319,7 +81527,7 @@
       "amount": 24024343.0,
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688162.SH": {
@@ -81335,7 +81543,7 @@
       "amount": 31632804.0,
       "quoteTimestamp": "2026-11-27T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688161.SH": {
@@ -81351,7 +81559,7 @@
       "amount": 29152246.0,
       "quoteTimestamp": "2026-11-27T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688160.SH": {
@@ -81367,7 +81575,7 @@
       "amount": 219173815.0,
       "quoteTimestamp": "2026-11-27T16:11:33+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688159.SH": {
@@ -81383,7 +81591,7 @@
       "amount": 80367105.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688158.SH": {
@@ -81399,7 +81607,7 @@
       "amount": 749640308.0,
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688157.SH": {
@@ -81415,7 +81623,7 @@
       "amount": 50157750.0,
       "quoteTimestamp": "2026-11-27T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688156.SH": {
@@ -81431,7 +81639,7 @@
       "amount": 54498677.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688155.SH": {
@@ -81447,7 +81655,7 @@
       "amount": 87898095.0,
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688153.SH": {
@@ -81463,7 +81671,7 @@
       "amount": 96477437.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688152.SH": {
@@ -81479,7 +81687,7 @@
       "amount": 147181113.0,
       "quoteTimestamp": "2026-11-27T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688151.SH": {
@@ -81495,7 +81703,7 @@
       "amount": 32522573.0,
       "quoteTimestamp": "2026-11-27T16:12:00+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688150.SH": {
@@ -81511,7 +81719,7 @@
       "amount": 254021064.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688148.SH": {
@@ -81527,7 +81735,7 @@
       "amount": 61291370.0,
       "quoteTimestamp": "2026-11-27T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688147.SH": {
@@ -81543,7 +81751,7 @@
       "amount": 744520167.0,
       "quoteTimestamp": "2026-11-27T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688146.SH": {
@@ -81559,7 +81767,7 @@
       "amount": 2279061257.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688143.SH": {
@@ -81575,7 +81783,7 @@
       "amount": 1555093566.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688141.SH": {
@@ -81591,7 +81799,7 @@
       "amount": 1487827205.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688139.SH": {
@@ -81607,7 +81815,7 @@
       "amount": 119041409.0,
       "quoteTimestamp": "2026-11-27T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688138.SH": {
@@ -81623,7 +81831,7 @@
       "amount": 344525802.0,
       "quoteTimestamp": "2026-11-27T16:11:57+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688137.SH": {
@@ -81639,7 +81847,7 @@
       "amount": 829610374.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688136.SH": {
@@ -81655,7 +81863,7 @@
       "amount": 71899985.0,
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688135.SH": {
@@ -81671,7 +81879,7 @@
       "amount": 706387972.0,
       "quoteTimestamp": "2026-11-27T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688133.SH": {
@@ -81687,7 +81895,7 @@
       "amount": 53300049.0,
       "quoteTimestamp": "2026-11-27T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688132.SH": {
@@ -81703,7 +81911,7 @@
       "amount": 20323122.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688131.SH": {
@@ -81719,7 +81927,7 @@
       "amount": 516890253.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688130.SH": {
@@ -81735,7 +81943,7 @@
       "amount": 59375202.0,
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688129.SH": {
@@ -81751,7 +81959,7 @@
       "amount": 25521855.0,
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688128.SH": {
@@ -81767,7 +81975,7 @@
       "amount": 70336606.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688127.SH": {
@@ -81783,7 +81991,7 @@
       "amount": 455254923.0,
       "quoteTimestamp": "2026-11-27T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688126.SH": {
@@ -81799,7 +82007,7 @@
       "amount": 1910832774.0,
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688125.SH": {
@@ -81815,7 +82023,7 @@
       "amount": 93000881.0,
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688123.SH": {
@@ -81831,7 +82039,7 @@
       "amount": 887102517.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688122.SH": {
@@ -81847,7 +82055,7 @@
       "amount": 516467474.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688121.SH": {
@@ -81863,7 +82071,7 @@
       "amount": null,
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688120.SH": {
@@ -81879,7 +82087,7 @@
       "amount": 2653413967.0,
       "quoteTimestamp": "2026-11-27T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688119.SH": {
@@ -81895,7 +82103,7 @@
       "amount": 39903244.0,
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688118.SH": {
@@ -81911,7 +82119,7 @@
       "amount": 45146018.0,
       "quoteTimestamp": "2026-11-27T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688117.SH": {
@@ -81927,7 +82135,7 @@
       "amount": 91408179.0,
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688116.SH": {
@@ -81943,7 +82151,7 @@
       "amount": 300441044.0,
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688115.SH": {
@@ -81959,7 +82167,7 @@
       "amount": 193966084.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688114.SH": {
@@ -81975,7 +82183,7 @@
       "amount": 312214830.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688113.SH": {
@@ -81991,7 +82199,7 @@
       "amount": 26465553.0,
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688112.SH": {
@@ -82007,7 +82215,7 @@
       "amount": 266993389.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688111.SH": {
@@ -82023,7 +82231,7 @@
       "amount": 1419957090.0,
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688110.SH": {
@@ -82039,7 +82247,7 @@
       "amount": 1484201287.0,
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688109.SH": {
@@ -82055,7 +82263,7 @@
       "amount": 45423228.0,
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688108.SH": {
@@ -82071,7 +82279,7 @@
       "amount": 150856175.0,
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688107.SH": {
@@ -82087,7 +82295,7 @@
       "amount": 157298125.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688106.SH": {
@@ -82103,7 +82311,7 @@
       "amount": 267248889.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688105.SH": {
@@ -82119,7 +82327,7 @@
       "amount": 139172190.0,
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688103.SH": {
@@ -82135,7 +82343,7 @@
       "amount": 126461289.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688102.SH": {
@@ -82151,7 +82359,7 @@
       "amount": 387948882.0,
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688101.SH": {
@@ -82167,7 +82375,7 @@
       "amount": 31131010.0,
       "quoteTimestamp": "2026-11-27T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688100.SH": {
@@ -82183,7 +82391,7 @@
       "amount": 88185653.0,
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688099.SH": {
@@ -82199,7 +82407,7 @@
       "amount": 1612085464.0,
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688098.SH": {
@@ -82215,7 +82423,7 @@
       "amount": 17525465.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688097.SH": {
@@ -82231,7 +82439,7 @@
       "amount": 424615472.0,
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688096.SH": {
@@ -82247,7 +82455,7 @@
       "amount": 52697724.0,
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688095.SH": {
@@ -82263,7 +82471,7 @@
       "amount": 180558898.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688093.SH": {
@@ -82279,7 +82487,7 @@
       "amount": 39421873.0,
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688092.SH": {
@@ -82295,7 +82503,7 @@
       "amount": 36996409.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688091.SH": {
@@ -82311,7 +82519,7 @@
       "amount": 88721761.0,
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688090.SH": {
@@ -82327,7 +82535,7 @@
       "amount": 460809427.0,
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688089.SH": {
@@ -82343,7 +82551,7 @@
       "amount": 35435733.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688088.SH": {
@@ -82359,7 +82567,7 @@
       "amount": 212423331.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688087.SH": {
@@ -82375,7 +82583,7 @@
       "amount": 44840465.0,
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688085.SH": {
@@ -82391,7 +82599,7 @@
       "amount": 43590024.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688084.SH": {
@@ -82407,7 +82615,7 @@
       "amount": 68095063.0,
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688083.SH": {
@@ -82423,7 +82631,7 @@
       "amount": 200206589.0,
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688082.SH": {
@@ -82439,7 +82647,7 @@
       "amount": 1510947865.0,
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688081.SH": {
@@ -82455,7 +82663,7 @@
       "amount": 32727362.0,
       "quoteTimestamp": "2026-11-27T16:11:37+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688080.SH": {
@@ -82471,7 +82679,7 @@
       "amount": 34736635.0,
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688079.SH": {
@@ -82487,7 +82695,7 @@
       "amount": 163554601.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688078.SH": {
@@ -82503,7 +82711,7 @@
       "amount": 96882839.0,
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688077.SH": {
@@ -82519,7 +82727,7 @@
       "amount": 49660973.0,
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688076.SH": {
@@ -82535,7 +82743,7 @@
       "amount": 89654287.0,
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688075.SH": {
@@ -82551,7 +82759,7 @@
       "amount": 15002808.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688073.SH": {
@@ -82567,7 +82775,7 @@
       "amount": 171644367.0,
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688072.SH": {
@@ -82583,7 +82791,7 @@
       "amount": 4405383852.0,
       "quoteTimestamp": "2026-11-27T16:11:34+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688071.SH": {
@@ -82599,7 +82807,7 @@
       "amount": 314894867.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688070.SH": {
@@ -82615,7 +82823,7 @@
       "amount": 51760993.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688069.SH": {
@@ -82631,7 +82839,7 @@
       "amount": 87764646.0,
       "quoteTimestamp": "2026-11-27T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688068.SH": {
@@ -82647,7 +82855,7 @@
       "amount": 178778231.0,
       "quoteTimestamp": "2026-11-27T16:11:32+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688067.SH": {
@@ -82663,7 +82871,7 @@
       "amount": 25393171.0,
       "quoteTimestamp": "2026-11-27T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688066.SH": {
@@ -82679,7 +82887,7 @@
       "amount": 91668134.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688065.SH": {
@@ -82695,7 +82903,7 @@
       "amount": 192908976.0,
       "quoteTimestamp": "2026-11-27T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688063.SH": {
@@ -82711,7 +82919,7 @@
       "amount": 214228698.0,
       "quoteTimestamp": "2026-11-27T16:12:01+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688062.SH": {
@@ -82727,7 +82935,7 @@
       "amount": 164714764.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688061.SH": {
@@ -82743,7 +82951,7 @@
       "amount": 69260809.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688060.SH": {
@@ -82759,7 +82967,7 @@
       "amount": 18909278.0,
       "quoteTimestamp": "2026-11-27T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688059.SH": {
@@ -82775,7 +82983,7 @@
       "amount": 706159239.0,
       "quoteTimestamp": "2026-11-27T16:11:59+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688058.SH": {
@@ -82791,7 +82999,7 @@
       "amount": 29605396.0,
       "quoteTimestamp": "2026-11-27T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688057.SH": {
@@ -82807,7 +83015,7 @@
       "amount": 78138285.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688056.SH": {
@@ -82823,7 +83031,7 @@
       "amount": 44383590.0,
       "quoteTimestamp": "2026-11-27T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688055.SH": {
@@ -82839,7 +83047,7 @@
       "amount": 27299375.0,
       "quoteTimestamp": "2026-11-27T16:11:58+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688053.SH": {
@@ -82855,7 +83063,7 @@
       "amount": 62534270.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688052.SH": {
@@ -82871,7 +83079,7 @@
       "amount": 479618513.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688051.SH": {
@@ -82887,7 +83095,7 @@
       "amount": 35694984.0,
       "quoteTimestamp": "2026-11-27T16:11:54+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688050.SH": {
@@ -82903,7 +83111,7 @@
       "amount": 185956708.0,
       "quoteTimestamp": "2026-11-27T16:11:56+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688049.SH": {
@@ -82919,7 +83127,7 @@
       "amount": 595930685.0,
       "quoteTimestamp": "2026-11-27T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688048.SH": {
@@ -82935,7 +83143,7 @@
       "amount": 1835599645.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688047.SH": {
@@ -82951,7 +83159,7 @@
       "amount": 603770851.0,
       "quoteTimestamp": "2026-11-27T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688046.SH": {
@@ -82967,7 +83175,7 @@
       "amount": 224353909.0,
       "quoteTimestamp": "2026-11-27T16:11:55+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688045.SH": {
@@ -82983,7 +83191,7 @@
       "amount": 171057079.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688041.SH": {
@@ -82999,7 +83207,7 @@
       "amount": 7376521666.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688039.SH": {
@@ -83015,7 +83223,7 @@
       "amount": 108179872.0,
       "quoteTimestamp": "2026-11-27T16:11:51+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688038.SH": {
@@ -83031,7 +83239,7 @@
       "amount": 25705615.0,
       "quoteTimestamp": "2026-11-27T16:11:53+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688037.SH": {
@@ -83047,7 +83255,7 @@
       "amount": 2392989270.0,
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688036.SH": {
@@ -83063,7 +83271,7 @@
       "amount": 1294756986.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688035.SH": {
@@ -83079,7 +83287,7 @@
       "amount": 451976335.0,
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688033.SH": {
@@ -83095,7 +83303,7 @@
       "amount": 42872991.0,
       "quoteTimestamp": "2026-11-27T16:11:52+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688032.SH": {
@@ -83111,7 +83319,7 @@
       "amount": 70359559.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688031.SH": {
@@ -83127,7 +83335,7 @@
       "amount": 422855646.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688030.SH": {
@@ -83143,7 +83351,7 @@
       "amount": 55991191.0,
       "quoteTimestamp": "2026-11-27T16:11:48+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688029.SH": {
@@ -83159,7 +83367,7 @@
       "amount": 225699261.0,
       "quoteTimestamp": "2026-11-27T16:11:50+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688028.SH": {
@@ -83175,7 +83383,7 @@
       "amount": 725160038.0,
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688027.SH": {
@@ -83191,7 +83399,7 @@
       "amount": 714568349.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688026.SH": {
@@ -83207,7 +83415,7 @@
       "amount": 124474030.0,
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688025.SH": {
@@ -83223,7 +83431,7 @@
       "amount": 1844575947.0,
       "quoteTimestamp": "2026-11-27T16:11:49+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688023.SH": {
@@ -83239,7 +83447,7 @@
       "amount": 107019074.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688022.SH": {
@@ -83255,7 +83463,7 @@
       "amount": 13295291.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688021.SH": {
@@ -83271,7 +83479,7 @@
       "amount": 32214904.0,
       "quoteTimestamp": "2026-11-27T16:11:45+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688020.SH": {
@@ -83287,7 +83495,7 @@
       "amount": 279047978.0,
       "quoteTimestamp": "2026-11-27T16:11:47+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688019.SH": {
@@ -83303,7 +83511,7 @@
       "amount": 2242832979.0,
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688018.SH": {
@@ -83319,7 +83527,7 @@
       "amount": 2375966141.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688017.SH": {
@@ -83335,7 +83543,7 @@
       "amount": 2478559406.0,
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688016.SH": {
@@ -83351,7 +83559,7 @@
       "amount": 191130306.0,
       "quoteTimestamp": "2026-11-27T16:11:46+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688015.SH": {
@@ -83367,7 +83575,7 @@
       "amount": 40200775.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688013.SH": {
@@ -83383,7 +83591,7 @@
       "amount": 26613336.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688012.SH": {
@@ -83399,7 +83607,7 @@
       "amount": 8714252316.0,
       "quoteTimestamp": "2026-11-27T16:11:42+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688011.SH": {
@@ -83415,7 +83623,7 @@
       "amount": 150055619.0,
       "quoteTimestamp": "2026-11-27T16:11:44+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688010.SH": {
@@ -83431,7 +83639,7 @@
       "amount": 106189282.0,
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688009.SH": {
@@ -83447,7 +83655,7 @@
       "amount": 202722637.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688008.SH": {
@@ -83463,7 +83671,7 @@
       "amount": 7012664181.0,
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688007.SH": {
@@ -83479,7 +83687,7 @@
       "amount": 64835977.0,
       "quoteTimestamp": "2026-11-27T16:11:43+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688006.SH": {
@@ -83495,7 +83703,7 @@
       "amount": 142304766.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688005.SH": {
@@ -83511,7 +83719,7 @@
       "amount": 276141730.0,
       "quoteTimestamp": "2026-11-27T16:11:35+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688004.SH": {
@@ -83527,7 +83735,7 @@
       "amount": 257135185.0,
       "quoteTimestamp": "2026-11-27T16:11:39+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688003.SH": {
@@ -83543,7 +83751,7 @@
       "amount": 307993931.0,
       "quoteTimestamp": "2026-11-27T16:11:41+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688002.SH": {
@@ -83559,7 +83767,7 @@
       "amount": 1994711871.0,
       "quoteTimestamp": "2026-11-27T16:11:40+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "688001.SH": {
@@ -83575,7 +83783,7 @@
       "amount": 395200988.0,
       "quoteTimestamp": "2026-11-27T16:11:38+08:00",
       "source": "Eastmoney",
-      "stale": true,
+      "stale": false,
       "segment": "STAR"
     },
     "000584.SZ": {

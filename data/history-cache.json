@@ -545861,8 +545861,9 @@
       "high": 10.74,
       "low": 10.31,
       "volume": 100291.0,
-      "amount": 106141053.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-21",
@@ -545871,8 +545872,9 @@
       "high": 10.77,
       "low": 10.49,
       "volume": 72573.0,
-      "amount": 77048474.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-22",
@@ -545881,8 +545883,9 @@
       "high": 10.73,
       "low": 10.5,
       "volume": 76571.0,
-      "amount": 81193227.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-23",
@@ -545891,8 +545894,9 @@
       "high": 10.7,
       "low": 10.53,
       "volume": 65426.0,
-      "amount": 69346878.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-24",
@@ -545901,8 +545905,9 @@
       "high": 10.61,
       "low": 10.39,
       "volume": 78311.0,
-      "amount": 82179125.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-27",
@@ -545911,8 +545916,9 @@
       "high": 10.92,
       "low": 10.41,
       "volume": 106178.0,
-      "amount": 113765890.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-28",
@@ -545921,8 +545927,9 @@
       "high": 11.19,
       "low": 10.85,
       "volume": 140182.0,
-      "amount": 154635674.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-29",
@@ -545931,8 +545938,9 @@
       "high": 10.99,
       "low": 10.77,
       "volume": 88127.0,
-      "amount": 95823735.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-30",
@@ -545941,8 +545949,9 @@
       "high": 11.08,
       "low": 10.74,
       "volume": 74622.0,
-      "amount": 81630567.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-06",
@@ -545951,8 +545960,9 @@
       "high": 11.16,
       "low": 10.94,
       "volume": 81205.0,
-      "amount": 89843254.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-07",
@@ -545961,8 +545971,9 @@
       "high": 11.14,
       "low": 10.94,
       "volume": 69633.0,
-      "amount": 76720904.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-08",
@@ -545971,8 +545982,9 @@
       "high": 11.11,
       "low": 11.02,
       "volume": 59024.0,
-      "amount": 65368683.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-11",
@@ -545981,8 +545993,9 @@
       "high": 11.15,
       "low": 10.86,
       "volume": 78461.0,
-      "amount": 86306574.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-12",
@@ -545991,8 +546004,9 @@
       "high": 11.09,
       "low": 10.85,
       "volume": 69774.0,
-      "amount": 76439949.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-13",
@@ -546001,8 +546015,9 @@
       "high": 11.04,
       "low": 10.84,
       "volume": 76604.0,
-      "amount": 83679904.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-14",
@@ -546011,8 +546026,9 @@
       "high": 10.94,
       "low": 10.56,
       "volume": 86126.0,
-      "amount": 91875513.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-15",
@@ -546021,8 +546037,9 @@
       "high": 10.98,
       "low": 10.5,
       "volume": 92156.0,
-      "amount": 98909299.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-18",
@@ -546031,8 +546048,9 @@
       "high": 10.56,
       "low": 10.22,
       "volume": 76626.0,
-      "amount": 79287070.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-19",
@@ -546041,8 +546059,9 @@
       "high": 10.75,
       "low": 10.44,
       "volume": 71141.0,
-      "amount": 75354955.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-20",
@@ -546051,8 +546070,9 @@
       "high": 10.57,
       "low": 10.18,
       "volume": 59910.0,
-      "amount": 61720215.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-21",
@@ -546061,8 +546081,9 @@
       "high": 10.33,
       "low": 9.8,
       "volume": 77229.0,
-      "amount": 77818676.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-22",
@@ -546071,8 +546092,9 @@
       "high": 10.09,
       "low": 9.61,
       "volume": 88398.0,
-      "amount": 87138250.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-25",
@@ -546081,8 +546103,9 @@
       "high": 10.55,
       "low": 9.76,
       "volume": 127296.0,
-      "amount": 127415398.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-26",
@@ -546091,8 +546114,9 @@
       "high": 10.02,
       "low": 9.51,
       "volume": 78103.0,
-      "amount": 75917984.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-27",
@@ -546101,8 +546125,9 @@
       "high": 9.7,
       "low": 9.48,
       "volume": 76999.0,
-      "amount": 73621715.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-28",
@@ -546111,8 +546136,9 @@
       "high": 9.58,
       "low": 9.18,
       "volume": 72513.0,
-      "amount": 68043182.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-29",
@@ -546121,8 +546147,9 @@
       "high": 9.65,
       "low": 9.33,
       "volume": 88985.0,
-      "amount": 84422201.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-01",
@@ -546131,8 +546158,9 @@
       "high": 10.32,
       "low": 9.2,
       "volume": 205907.0,
-      "amount": 204762087.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-02",
@@ -546141,8 +546169,9 @@
       "high": 10.05,
       "low": 9.38,
       "volume": 141124.0,
-      "amount": 134630793.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-03",
@@ -546151,8 +546180,9 @@
       "high": 9.43,
       "low": 9.08,
       "volume": 110243.0,
-      "amount": 101419105.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-04",
@@ -546161,8 +546191,9 @@
       "high": 9.24,
       "low": 8.88,
       "volume": 88120.0,
-      "amount": 79523989.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-05",
@@ -546171,8 +546202,9 @@
       "high": 9.15,
       "low": 8.81,
       "volume": 93713.0,
-      "amount": 84073856.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-08",
@@ -546181,8 +546213,9 @@
       "high": 9.03,
       "low": 8.53,
       "volume": 83295.0,
-      "amount": 72879630.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-09",
@@ -546191,8 +546224,9 @@
       "high": 8.79,
       "low": 8.54,
       "volume": 66017.0,
-      "amount": 57099557.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-10",
@@ -546201,8 +546235,9 @@
       "high": 8.64,
       "low": 8.28,
       "volume": 67950.0,
-      "amount": 57201914.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-11",
@@ -546211,8 +546246,9 @@
       "high": 8.4,
       "low": 8.09,
       "volume": 72271.0,
-      "amount": 59165330.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-12",
@@ -546221,8 +546257,9 @@
       "high": 8.37,
       "low": 8.05,
       "volume": 70516.0,
-      "amount": 58190290.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-15",
@@ -546231,8 +546268,9 @@
       "high": 8.49,
       "low": 8.21,
       "volume": 65067.0,
-      "amount": 54060724.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-16",
@@ -546241,8 +546279,9 @@
       "high": 8.28,
       "low": 8.06,
       "volume": 60845.0,
-      "amount": 49474530.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-17",
@@ -546251,8 +546290,9 @@
       "high": 8.17,
       "low": 7.86,
       "volume": 72177.0,
-      "amount": 57247905.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-18",
@@ -546261,8 +546301,9 @@
       "high": 7.95,
       "low": 7.75,
       "volume": 63191.0,
-      "amount": 49440684.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-22",
@@ -546271,8 +546312,9 @@
       "high": 7.87,
       "low": 7.53,
       "volume": 86798.0,
-      "amount": 66627520.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-23",
@@ -546281,8 +546323,9 @@
       "high": 7.98,
       "low": 7.76,
       "volume": 69148.0,
-      "amount": 54570167.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-24",
@@ -546291,8 +546334,9 @@
       "high": 7.83,
       "low": 7.43,
       "volume": 82288.0,
-      "amount": 62142925.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-25",
@@ -546301,8 +546345,9 @@
       "high": 7.52,
       "low": 7.27,
       "volume": 79569.0,
-      "amount": 58776973.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-26",
@@ -546311,8 +546356,9 @@
       "high": 7.35,
       "low": 7.11,
       "volume": 82331.0,
-      "amount": 59201951.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-29",
@@ -546321,8 +546367,9 @@
       "high": 7.22,
       "low": 6.89,
       "volume": 101645.0,
-      "amount": 71888159.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-30",
@@ -546331,8 +546378,9 @@
       "high": 7.25,
       "low": 7.0,
       "volume": 84684.0,
-      "amount": 60239905.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-01",
@@ -546341,8 +546389,9 @@
       "high": 7.4,
       "low": 7.13,
       "volume": 89852.0,
-      "amount": 65309580.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-02",
@@ -546351,8 +546400,9 @@
       "high": 7.53,
       "low": 7.28,
       "volume": 100641.0,
-      "amount": 74260266.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-03",
@@ -546361,8 +546411,9 @@
       "high": 7.48,
       "low": 7.29,
       "volume": 75691.0,
-      "amount": 56023340.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-06",
@@ -546371,8 +546422,9 @@
       "high": 7.55,
       "low": 7.33,
       "volume": 63150.0,
-      "amount": 46794967.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-07",
@@ -546381,8 +546433,9 @@
       "high": 7.41,
       "low": 7.14,
       "volume": 52323.0,
-      "amount": 37693963.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-08",
@@ -546391,8 +546444,9 @@
       "high": 7.21,
       "low": 7.03,
       "volume": 56462.0,
-      "amount": 40168197.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-09",
@@ -546401,8 +546455,9 @@
       "high": 7.22,
       "low": 6.94,
       "volume": 65045.0,
-      "amount": 45974209.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-10",
@@ -546411,8 +546466,9 @@
       "high": 7.42,
       "low": 6.96,
       "volume": 88149.0,
-      "amount": 64142121.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-13",
@@ -546421,8 +546477,9 @@
       "high": 7.44,
       "low": 7.11,
       "volume": 99141.0,
-      "amount": 71783242.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-14",
@@ -546431,8 +546488,9 @@
       "high": 7.39,
       "low": 7.16,
       "volume": 104272.0,
-      "amount": 75952234.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-15",
@@ -546441,8 +546499,9 @@
       "high": 7.6,
       "low": 7.26,
       "volume": 91596.0,
-      "amount": 68749944.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-16",
@@ -546451,8 +546510,9 @@
       "high": 7.77,
       "low": 7.4,
       "volume": 94510.0,
-      "amount": 72521416.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-17",
@@ -546461,8 +546521,9 @@
       "high": 7.88,
       "low": 7.36,
       "volume": 116085.0,
-      "amount": 88157338.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-20",
@@ -546471,8 +546532,9 @@
       "high": 7.65,
       "low": 7.26,
       "volume": 103934.0,
-      "amount": 77641026.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-21",
@@ -546481,8 +546543,9 @@
       "high": 7.41,
       "low": 7.04,
       "volume": 115291.0,
-      "amount": 82965408.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-22",
@@ -546491,8 +546554,9 @@
       "high": 7.29,
       "low": 7.1,
       "volume": 65576.0,
-      "amount": 47109899.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-23",
@@ -546501,8 +546565,9 @@
       "high": 7.37,
       "low": 7.08,
       "volume": 69035.0,
-      "amount": 49869633.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-24",
@@ -546511,8 +546576,9 @@
       "high": 7.35,
       "low": 7.05,
       "volume": 59449.0,
-      "amount": 42544640.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-27",
@@ -546521,8 +546587,9 @@
       "high": 7.41,
       "low": 7.01,
       "volume": 84038.0,
-      "amount": 61362608.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-28",
@@ -546531,8 +546598,9 @@
       "high": 7.64,
       "low": 7.3,
       "volume": 77595.0,
-      "amount": 58654065.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-29",
@@ -546541,8 +546609,9 @@
       "high": 8.36,
       "low": 7.54,
       "volume": 133301.0,
-      "amount": 104382573.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-30",
@@ -546551,8 +546620,9 @@
       "high": 8.19,
       "low": 7.87,
       "volume": 276929.0,
-      "amount": 222439443.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-31",
@@ -546561,8 +546631,9 @@
       "high": 8.15,
       "low": 7.71,
       "volume": 166018.0,
-      "amount": 133195824.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-03",
@@ -546571,8 +546642,9 @@
       "high": 8.29,
       "low": 7.99,
       "volume": 110232.0,
-      "amount": 89320653.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-04",
@@ -546581,8 +546653,9 @@
       "high": 8.25,
       "low": 8.08,
       "volume": 97796.0,
-      "amount": 79999706.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-05",
@@ -546591,8 +546664,9 @@
       "high": 8.31,
       "low": 8.14,
       "volume": 93612.0,
-      "amount": 77017773.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-06",
@@ -546601,8 +546675,9 @@
       "high": 8.35,
       "low": 8.14,
       "volume": 81932.0,
-      "amount": 67484861.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-07",
@@ -546611,8 +546686,9 @@
       "high": 8.3,
       "low": 8.01,
       "volume": 80000.0,
-      "amount": 65219348.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-10",
@@ -546621,8 +546697,9 @@
       "high": 8.52,
       "low": 8.18,
       "volume": 98386.0,
-      "amount": 82758956.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-11",
@@ -546631,8 +546708,9 @@
       "high": 8.54,
       "low": 8.4,
       "volume": 63328.0,
-      "amount": 53662867.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-12",
@@ -546641,8 +546719,9 @@
       "high": 8.59,
       "low": 8.41,
       "volume": 61723.0,
-      "amount": 52579589.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-13",
@@ -546651,8 +546730,9 @@
       "high": 8.58,
       "low": 8.31,
       "volume": 68909.0,
-      "amount": 58181875.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-14",
@@ -546661,8 +546741,9 @@
       "high": 8.86,
       "low": 8.21,
       "volume": 165742.0,
-      "amount": 139713862.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-17",
@@ -546671,8 +546752,9 @@
       "high": 8.37,
       "low": 8.11,
       "volume": 99024.0,
-      "amount": 82065471.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-18",
@@ -546681,8 +546763,9 @@
       "high": 8.4,
       "low": 8.11,
       "volume": 80554.0,
-      "amount": 65894651.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-19",
@@ -546691,8 +546774,9 @@
       "high": 8.11,
       "low": 7.83,
       "volume": 81192.0,
-      "amount": 64260767.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-20",
@@ -546701,8 +546785,9 @@
       "high": 8.38,
       "low": 7.88,
       "volume": 121982.0,
-      "amount": 99592295.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-21",
@@ -546711,8 +546796,9 @@
       "high": 8.28,
       "low": 7.96,
       "volume": 80004.0,
-      "amount": 64445002.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-24",
@@ -546721,8 +546807,9 @@
       "high": 8.14,
       "low": 7.86,
       "volume": 62519.0,
-      "amount": 49703400.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-25",
@@ -546731,8 +546818,9 @@
       "high": 8.22,
       "low": 7.78,
       "volume": 69067.0,
-      "amount": 55819591.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-26",
@@ -546741,8 +546829,9 @@
       "high": 8.27,
       "low": 8.08,
       "volume": 57673.0,
-      "amount": 47019218.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-27",
@@ -546751,8 +546840,9 @@
       "high": 8.2,
       "low": 8.09,
       "volume": 46658.0,
-      "amount": 38056724.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-28",
@@ -546761,8 +546851,9 @@
       "high": 8.43,
       "low": 8.13,
       "volume": 85163.0,
-      "amount": 70780513.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-31",
@@ -546771,8 +546862,9 @@
       "high": 8.41,
       "low": 8.26,
       "volume": 59522.0,
-      "amount": 49535852.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-01",
@@ -546781,8 +546873,9 @@
       "high": 8.66,
       "low": 8.37,
       "volume": 91419.0,
-      "amount": 78395110.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-02",
@@ -546791,8 +546884,9 @@
       "high": 8.75,
       "low": 8.45,
       "volume": 86259.0,
-      "amount": 74195500.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-03",
@@ -546801,8 +546895,9 @@
       "high": 9.15,
       "low": 8.51,
       "volume": 187951.0,
-      "amount": 164228533.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-04",
@@ -546811,8 +546906,9 @@
       "high": 8.84,
       "low": 8.55,
       "volume": 152446.0,
-      "amount": 132944399.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-07",
@@ -546821,8 +546917,9 @@
       "high": 8.76,
       "low": 8.59,
       "volume": 86205.0,
-      "amount": 74828442.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-08",
@@ -546831,8 +546928,9 @@
       "high": 8.91,
       "low": 8.7,
       "volume": 95458.0,
-      "amount": 84252700.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-09",
@@ -546841,8 +546939,9 @@
       "high": 8.88,
       "low": 8.67,
       "volume": 80431.0,
-      "amount": 70125478.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-10",
@@ -546851,8 +546950,9 @@
       "high": 8.69,
       "low": 8.55,
       "volume": 59843.0,
-      "amount": 51512277.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-11",
@@ -546861,8 +546961,9 @@
       "high": 8.6,
       "low": 8.32,
       "volume": 60681.0,
-      "amount": 51020980.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-14",
@@ -546871,8 +546972,9 @@
       "high": 8.51,
       "low": 8.24,
       "volume": 43576.0,
-      "amount": 36522511.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-15",
@@ -546881,8 +546983,9 @@
       "high": 8.45,
       "low": 8.1,
       "volume": 54402.0,
-      "amount": 44665187.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-16",
@@ -546891,8 +546994,9 @@
       "high": 8.37,
       "low": 8.04,
       "volume": 54442.0,
-      "amount": 45033874.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-17",
@@ -546901,8 +547005,9 @@
       "high": 8.53,
       "low": 8.21,
       "volume": 54126.0,
-      "amount": 45505043.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-18",
@@ -546911,8 +547016,9 @@
       "high": 8.61,
       "low": 8.42,
       "volume": 53236.0,
-      "amount": 45402509.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-21",
@@ -546921,8 +547027,9 @@
       "high": 8.64,
       "low": 8.38,
       "volume": 59388.0,
-      "amount": 50734582.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-22",
@@ -546931,8 +547038,9 @@
       "high": 8.72,
       "low": 8.52,
       "volume": 62459.0,
-      "amount": 53746845.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-23",
@@ -546941,8 +547049,9 @@
       "high": 8.59,
       "low": 8.4,
       "volume": 55804.0,
-      "amount": 47256700.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-24",
@@ -546951,8 +547060,9 @@
       "high": 8.55,
       "low": 8.39,
       "volume": 43299.0,
-      "amount": 36715541.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-28",
@@ -546961,8 +547071,9 @@
       "high": 9.3,
       "low": 8.46,
       "volume": 226338.0,
-      "amount": 199748999.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-29",
@@ -546971,8 +547082,9 @@
       "high": 9.3,
       "low": 8.49,
       "volume": 308846.0,
-      "amount": 275336334.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-30",
@@ -546981,8 +547093,9 @@
       "high": 8.99,
       "low": 8.6,
       "volume": 219037.0,
-      "amount": 190960396.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-08",
@@ -546991,8 +547104,9 @@
       "high": 8.78,
       "low": 8.51,
       "volume": 116506.0,
-      "amount": 100378167.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-09",
@@ -547001,8 +547115,9 @@
       "high": 9.44,
       "low": 8.55,
       "volume": 170605.0,
-      "amount": 158789251.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-12",
@@ -547011,8 +547126,9 @@
       "high": 10.38,
       "low": 10.38,
       "volume": 41135.0,
-      "amount": 42697922.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-13",
@@ -547021,8 +547137,9 @@
       "high": 11.42,
       "low": 10.9,
       "volume": 316348.0,
-      "amount": 359252876.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-14",
@@ -547031,8 +547148,9 @@
       "high": 12.56,
       "low": 10.28,
       "volume": 917978.0,
-      "amount": 1033351447.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-15",
@@ -547041,8 +547159,9 @@
       "high": 10.18,
       "low": 9.4,
       "volume": 697547.0,
-      "amount": 681489698.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-16",
@@ -547051,8 +547170,9 @@
       "high": 9.61,
       "low": 8.88,
       "volume": 629973.0,
-      "amount": 576289137.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-19",
@@ -547061,8 +547181,9 @@
       "high": 9.5,
       "low": 8.53,
       "volume": 492418.0,
-      "amount": 444689234.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-20",
@@ -547071,8 +547192,9 @@
       "high": 8.95,
       "low": 8.52,
       "volume": 433702.0,
-      "amount": 377341679.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-21",
@@ -547081,8 +547203,9 @@
       "high": 9.4,
       "low": 8.74,
       "volume": 545398.0,
-      "amount": 496957040.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-22",
@@ -547091,8 +547214,9 @@
       "high": 8.99,
       "low": 8.5,
       "volume": 327409.0,
-      "amount": 284295350.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-23",
@@ -547101,8 +547225,9 @@
       "high": 8.59,
       "low": 7.94,
       "volume": 304456.0,
-      "amount": 250733299.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-26",
@@ -547111,8 +547236,9 @@
       "high": 8.88,
       "low": 8.31,
       "volume": 262827.0,
-      "amount": 226255888.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-27",
@@ -547121,8 +547247,9 @@
       "high": 8.92,
       "low": 8.5,
       "volume": 230257.0,
-      "amount": 200860676.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-28",
@@ -547131,8 +547258,9 @@
       "high": 8.84,
       "low": 8.31,
       "volume": 238096.0,
-      "amount": 206791921.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-29",
@@ -547141,8 +547269,9 @@
       "high": 8.75,
       "low": 8.43,
       "volume": 176807.0,
-      "amount": 151084791.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-30",
@@ -547151,8 +547280,9 @@
       "high": 8.56,
       "low": 8.17,
       "volume": 177978.0,
-      "amount": 148186912.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-02",
@@ -547161,8 +547291,9 @@
       "high": 8.85,
       "low": 7.88,
       "volume": 231310.0,
-      "amount": 196048331.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-03",
@@ -547171,8 +547302,9 @@
       "high": 8.92,
       "low": 8.58,
       "volume": 162552.0,
-      "amount": 142528103.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-04",
@@ -547181,8 +547313,9 @@
       "high": 8.68,
       "low": 8.36,
       "volume": 167875.0,
-      "amount": 143508848.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-05",
@@ -547191,8 +547324,9 @@
       "high": 8.88,
       "low": 8.55,
       "volume": 149748.0,
-      "amount": 131602782.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-06",
@@ -547201,8 +547335,9 @@
       "high": 8.81,
       "low": 8.55,
       "volume": 124820.0,
-      "amount": 108271320.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-09",
@@ -547211,8 +547346,9 @@
       "high": 8.76,
       "low": 8.55,
       "volume": 116688.0,
-      "amount": 100827611.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-10",
@@ -547221,8 +547357,9 @@
       "high": 8.88,
       "low": 8.55,
       "volume": 142424.0,
-      "amount": 125033550.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-11",
@@ -547231,8 +547368,9 @@
       "high": 8.95,
       "low": 8.75,
       "volume": 116421.0,
-      "amount": 103131834.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-12",
@@ -547241,8 +547379,9 @@
       "high": 9.08,
       "low": 8.76,
       "volume": 149411.0,
-      "amount": 133012105.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-13",
@@ -547251,8 +547390,9 @@
       "high": 8.83,
       "low": 8.45,
       "volume": 118397.0,
-      "amount": 101553223.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-16",
@@ -547261,8 +547401,9 @@
       "high": 8.61,
       "low": 8.3,
       "volume": 97324.0,
-      "amount": 82036335.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-17",
@@ -547271,8 +547412,9 @@
       "high": 8.37,
       "low": 7.88,
       "volume": 118802.0,
-      "amount": 95654514.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-18",
@@ -547281,8 +547423,9 @@
       "high": 7.99,
       "low": 7.55,
       "volume": 93209.0,
-      "amount": 71903815.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-19",
@@ -547291,8 +547434,9 @@
       "high": 7.65,
       "low": 7.26,
       "volume": 91046.0,
-      "amount": 67495113.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-20",
@@ -547301,8 +547445,9 @@
       "high": 7.26,
       "low": 6.9,
       "volume": 136411.0,
-      "amount": 95745782.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-23",
@@ -547311,8 +547456,9 @@
       "high": 7.09,
       "low": 6.55,
       "volume": 129530.0,
-      "amount": 88469522.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-24",
@@ -547321,8 +547467,9 @@
       "high": 7.54,
       "low": 7.09,
       "volume": 156325.0,
-      "amount": 114489081.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-25",
@@ -547331,8 +547478,9 @@
       "high": 7.85,
       "low": 7.1,
       "volume": 86945.0,
-      "amount": 66477954.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-26",
@@ -547341,8 +547489,9 @@
       "high": 8.03,
       "low": 7.25,
       "volume": 477416.0,
-      "amount": 361474976.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-27",
@@ -547351,8 +547500,9 @@
       "high": 7.7,
       "low": 7.16,
       "volume": 403518.0,
-      "amount": 302168610.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     }
   ],
   "603777.SH": [
@@ -777899,8 +778049,9 @@
       "high": 17.31,
       "low": 15.76,
       "volume": 670359.0,
-      "amount": 1132412577.73,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-21",
@@ -777909,8 +778060,9 @@
       "high": 17.7,
       "low": 16.93,
       "volume": 783648.0,
-      "amount": 1344353191.08,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-22",
@@ -777919,8 +778071,9 @@
       "high": 17.7,
       "low": 17.2,
       "volume": 627681.0,
-      "amount": 1092151560.89,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-23",
@@ -777929,8 +778082,9 @@
       "high": 17.42,
       "low": 16.72,
       "volume": 477144.0,
-      "amount": 811048316.42,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-24",
@@ -777939,8 +778093,9 @@
       "high": 16.87,
       "low": 16.33,
       "volume": 400845.0,
-      "amount": 663548519.99,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-27",
@@ -777949,8 +778104,9 @@
       "high": 15.83,
       "low": 14.78,
       "volume": 494919.0,
-      "amount": 737594478.15,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-28",
@@ -777959,8 +778115,9 @@
       "high": 15.75,
       "low": 14.5,
       "volume": 614123.0,
-      "amount": 928496512.47,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-29",
@@ -777969,8 +778126,9 @@
       "high": 15.07,
       "low": 14.47,
       "volume": 365827.0,
-      "amount": 541753352.27,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-04-30",
@@ -777979,8 +778137,9 @@
       "high": 15.25,
       "low": 14.46,
       "volume": 328425.0,
-      "amount": 483400823.39,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-06",
@@ -777989,8 +778148,9 @@
       "high": 15.35,
       "low": 14.77,
       "volume": 395381.0,
-      "amount": 598407903.5,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-07",
@@ -777999,8 +778159,9 @@
       "high": 15.48,
       "low": 15.03,
       "volume": 239854.0,
-      "amount": 367090627.16,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-08",
@@ -778009,8 +778170,9 @@
       "high": 16.08,
       "low": 15.2,
       "volume": 453596.0,
-      "amount": 713499814.78,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-11",
@@ -778019,8 +778181,9 @@
       "high": 16.2,
       "low": 15.59,
       "volume": 382558.0,
-      "amount": 604362476.95,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-12",
@@ -778029,8 +778192,9 @@
       "high": 15.89,
       "low": 15.25,
       "volume": 275572.0,
-      "amount": 424772076.36,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-13",
@@ -778039,8 +778203,9 @@
       "high": 15.49,
       "low": 15.22,
       "volume": 239809.0,
-      "amount": 367603742.43,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-14",
@@ -778049,8 +778214,9 @@
       "high": 15.36,
       "low": 14.38,
       "volume": 348700.0,
-      "amount": 512366006.89,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-15",
@@ -778059,8 +778225,9 @@
       "high": 14.72,
       "low": 14.23,
       "volume": 245469.0,
-      "amount": 354873544.38,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-18",
@@ -778069,8 +778236,9 @@
       "high": 14.56,
       "low": 13.95,
       "volume": 237671.0,
-      "amount": 340416429.83,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-19",
@@ -778079,8 +778247,9 @@
       "high": 14.7,
       "low": 14.27,
       "volume": 190754.0,
-      "amount": 275578823.28,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-20",
@@ -778089,8 +778258,9 @@
       "high": 14.4,
       "low": 13.87,
       "volume": 287241.0,
-      "amount": 403500549.09,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-21",
@@ -778099,8 +778269,9 @@
       "high": 14.26,
       "low": 13.39,
       "volume": 238914.0,
-      "amount": 330752774.87,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-22",
@@ -778109,8 +778280,9 @@
       "high": 13.68,
       "low": 13.33,
       "volume": 169417.0,
-      "amount": 229096485.6,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-25",
@@ -778119,8 +778291,9 @@
       "high": 13.73,
       "low": 13.32,
       "volume": 170477.0,
-      "amount": 229304084.28,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-26",
@@ -778129,8 +778302,9 @@
       "high": 13.48,
       "low": 13.18,
       "volume": 190178.0,
-      "amount": 253479925.23,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-27",
@@ -778139,8 +778313,9 @@
       "high": 13.44,
       "low": 12.83,
       "volume": 188794.0,
-      "amount": 246803318.83,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-28",
@@ -778149,8 +778324,9 @@
       "high": 13.06,
       "low": 12.67,
       "volume": 158572.0,
-      "amount": 204053680.26,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-05-29",
@@ -778159,8 +778335,9 @@
       "high": 13.06,
       "low": 12.26,
       "volume": 210162.0,
-      "amount": 263042511.19,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-01",
@@ -778169,8 +778346,9 @@
       "high": 12.54,
       "low": 12.29,
       "volume": 146245.0,
-      "amount": 181632870.48,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-02",
@@ -778179,8 +778357,9 @@
       "high": 12.55,
       "low": 12.0,
       "volume": 167940.0,
-      "amount": 205331163.21,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-03",
@@ -778189,8 +778368,9 @@
       "high": 12.37,
       "low": 12.03,
       "volume": 146688.0,
-      "amount": 179471018.31,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-04",
@@ -778199,8 +778379,9 @@
       "high": 12.14,
       "low": 11.8,
       "volume": 159892.0,
-      "amount": 190609133.9,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-05",
@@ -778209,8 +778390,9 @@
       "high": 12.49,
       "low": 11.61,
       "volume": 270084.0,
-      "amount": 327181076.37,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-08",
@@ -778219,8 +778401,9 @@
       "high": 12.18,
       "low": 11.45,
       "volume": 230040.0,
-      "amount": 271652372.05,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-09",
@@ -778229,8 +778412,9 @@
       "high": 12.04,
       "low": 11.7,
       "volume": 213927.0,
-      "amount": 254196966.5,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-10",
@@ -778239,8 +778423,9 @@
       "high": 12.18,
       "low": 11.76,
       "volume": 231779.0,
-      "amount": 278078948.57,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-11",
@@ -778249,8 +778434,9 @@
       "high": 12.05,
       "low": 11.58,
       "volume": 147377.0,
-      "amount": 172562170.84,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-12",
@@ -778259,8 +778445,9 @@
       "high": 12.37,
       "low": 11.71,
       "volume": 236270.0,
-      "amount": 284684617.46,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-15",
@@ -778269,8 +778456,9 @@
       "high": 12.87,
       "low": 12.13,
       "volume": 313723.0,
-      "amount": 393306306.68,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-16",
@@ -778279,8 +778467,9 @@
       "high": 13.41,
       "low": 12.78,
       "volume": 324861.0,
-      "amount": 425494116.76,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-17",
@@ -778289,8 +778478,9 @@
       "high": 13.42,
       "low": 12.9,
       "volume": 226121.0,
-      "amount": 297691207.46,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-18",
@@ -778299,8 +778489,9 @@
       "high": 13.45,
       "low": 13.06,
       "volume": 211891.0,
-      "amount": 280099566.55,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-22",
@@ -778309,8 +778500,9 @@
       "high": 13.13,
       "low": 12.4,
       "volume": 343080.0,
-      "amount": 435467200.35,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-23",
@@ -778319,8 +778511,9 @@
       "high": 13.35,
       "low": 12.79,
       "volume": 291224.0,
-      "amount": 382794396.8,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-24",
@@ -778329,8 +778522,9 @@
       "high": 13.14,
       "low": 12.66,
       "volume": 218186.0,
-      "amount": 280426334.92,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-25",
@@ -778339,8 +778533,9 @@
       "high": 12.91,
       "low": 12.41,
       "volume": 224685.0,
-      "amount": 284426398.85,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-26",
@@ -778349,8 +778544,9 @@
       "high": 12.54,
       "low": 12.02,
       "volume": 217018.0,
-      "amount": 266115500.09,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-29",
@@ -778359,8 +778555,9 @@
       "high": 12.26,
       "low": 11.49,
       "volume": 230432.0,
-      "amount": 270395876.07,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-06-30",
@@ -778369,8 +778566,9 @@
       "high": 12.21,
       "low": 11.5,
       "volume": 171339.0,
-      "amount": 204637155.36,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-01",
@@ -778379,8 +778577,9 @@
       "high": 12.5,
       "low": 11.92,
       "volume": 230123.0,
-      "amount": 281292005.43,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-02",
@@ -778389,8 +778588,9 @@
       "high": 12.43,
       "low": 11.87,
       "volume": 199726.0,
-      "amount": 242611171.14,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-03",
@@ -778399,8 +778599,9 @@
       "high": 12.24,
       "low": 11.83,
       "volume": 196998.0,
-      "amount": 237611038.47,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-06",
@@ -778409,8 +778610,9 @@
       "high": 12.14,
       "low": 11.42,
       "volume": 200499.0,
-      "amount": 234786120.71,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-07",
@@ -778419,8 +778621,9 @@
       "high": 11.75,
       "low": 10.89,
       "volume": 203740.0,
-      "amount": 228792549.96,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-08",
@@ -778429,8 +778632,9 @@
       "high": 10.95,
       "low": 10.45,
       "volume": 193069.0,
-      "amount": 204846685.1,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-09",
@@ -778439,8 +778643,9 @@
       "high": 10.49,
       "low": 9.96,
       "volume": 234708.0,
-      "amount": 240112417.73,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-10",
@@ -778449,8 +778654,9 @@
       "high": 11.02,
       "low": 10.21,
       "volume": 275679.0,
-      "amount": 292031017.5,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-13",
@@ -778459,8 +778665,9 @@
       "high": 10.41,
       "low": 9.63,
       "volume": 255721.0,
-      "amount": 253648508.56,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-14",
@@ -778469,8 +778676,9 @@
       "high": 9.76,
       "low": 9.36,
       "volume": 189653.0,
-      "amount": 181152657.72,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-15",
@@ -778479,8 +778687,9 @@
       "high": 9.87,
       "low": 9.46,
       "volume": 167333.0,
-      "amount": 162355409.31,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-16",
@@ -778489,8 +778698,9 @@
       "high": 9.8,
       "low": 9.46,
       "volume": 151014.0,
-      "amount": 145025850.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-17",
@@ -778499,8 +778709,9 @@
       "high": 9.6,
       "low": 8.99,
       "volume": 206112.0,
-      "amount": 190773203.08,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-20",
@@ -778509,8 +778720,9 @@
       "high": 9.2,
       "low": 8.52,
       "volume": 239333.0,
-      "amount": 211616343.32,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-21",
@@ -778519,8 +778731,9 @@
       "high": 8.97,
       "low": 8.44,
       "volume": 229777.0,
-      "amount": 201303054.12,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-22",
@@ -778529,8 +778742,9 @@
       "high": 8.86,
       "low": 8.53,
       "volume": 224131.0,
-      "amount": 194236684.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-23",
@@ -778539,8 +778753,9 @@
       "high": 8.72,
       "low": 8.45,
       "volume": 232769.0,
-      "amount": 200287394.53,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-24",
@@ -778549,8 +778764,9 @@
       "high": 8.88,
       "low": 8.18,
       "volume": 353263.0,
-      "amount": 297845517.47,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-27",
@@ -778559,8 +778775,9 @@
       "high": 8.69,
       "low": 8.1,
       "volume": 359403.0,
-      "amount": 305908205.18,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-28",
@@ -778569,8 +778786,9 @@
       "high": 8.92,
       "low": 8.57,
       "volume": 320651.0,
-      "amount": 281394180.06,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-29",
@@ -778579,8 +778797,9 @@
       "high": 9.0,
       "low": 8.46,
       "volume": 327555.0,
-      "amount": 286987088.37,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-30",
@@ -778589,8 +778808,9 @@
       "high": 9.04,
       "low": 8.77,
       "volume": 252559.0,
-      "amount": 224922903.33,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-07-31",
@@ -778599,8 +778819,9 @@
       "high": 9.12,
       "low": 8.94,
       "volume": 274874.0,
-      "amount": 248633228.02,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-03",
@@ -778609,8 +778830,9 @@
       "high": 9.28,
       "low": 8.98,
       "volume": 202073.0,
-      "amount": 186114139.25,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-04",
@@ -778619,8 +778841,9 @@
       "high": 9.47,
       "low": 9.26,
       "volume": 189698.0,
-      "amount": 178266369.76,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-05",
@@ -778629,8 +778852,9 @@
       "high": 9.56,
       "low": 9.36,
       "volume": 201305.0,
-      "amount": 190958350.7,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-06",
@@ -778639,8 +778863,9 @@
       "high": 9.48,
       "low": 9.21,
       "volume": 186462.0,
-      "amount": 174023486.88,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-07",
@@ -778649,8 +778874,9 @@
       "high": 9.41,
       "low": 9.12,
       "volume": 180097.0,
-      "amount": 167190914.09,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-10",
@@ -778659,8 +778885,9 @@
       "high": 9.55,
       "low": 9.32,
       "volume": 150798.0,
-      "amount": 142081682.03,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-11",
@@ -778669,8 +778896,9 @@
       "high": 9.49,
       "low": 9.29,
       "volume": 125242.0,
-      "amount": 117572850.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-12",
@@ -778679,8 +778907,9 @@
       "high": 9.55,
       "low": 9.35,
       "volume": 123388.0,
-      "amount": 116814711.48,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-13",
@@ -778689,8 +778918,9 @@
       "high": 9.58,
       "low": 9.26,
       "volume": 146193.0,
-      "amount": 137704976.83,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-14",
@@ -778699,8 +778929,9 @@
       "high": 9.35,
       "low": 9.19,
       "volume": 119746.0,
-      "amount": 110998212.03,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-17",
@@ -778709,8 +778940,9 @@
       "high": 9.54,
       "low": 9.23,
       "volume": 177196.0,
-      "amount": 166724806.52,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-18",
@@ -778719,8 +778951,9 @@
       "high": 9.55,
       "low": 9.25,
       "volume": 165663.0,
-      "amount": 154790103.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-19",
@@ -778729,8 +778962,9 @@
       "high": 9.32,
       "low": 8.79,
       "volume": 205081.0,
-      "amount": 183859963.46,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-20",
@@ -778739,8 +778973,9 @@
       "high": 8.98,
       "low": 8.85,
       "volume": 111064.0,
-      "amount": 99205465.96,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-21",
@@ -778749,8 +778984,9 @@
       "high": 9.0,
       "low": 8.73,
       "volume": 121544.0,
-      "amount": 108239263.22,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-24",
@@ -778759,8 +778995,9 @@
       "high": 9.15,
       "low": 8.85,
       "volume": 128578.0,
-      "amount": 115233181.97,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-25",
@@ -778769,8 +779006,9 @@
       "high": 9.04,
       "low": 8.72,
       "volume": 168395.0,
-      "amount": 150079933.28,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-26",
@@ -778779,8 +779017,9 @@
       "high": 9.13,
       "low": 8.89,
       "volume": 121163.0,
-      "amount": 109455627.92,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-27",
@@ -778789,8 +779028,9 @@
       "high": 9.2,
       "low": 8.93,
       "volume": 145432.0,
-      "amount": 132425415.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-28",
@@ -778799,8 +779039,9 @@
       "high": 9.85,
       "low": 9.16,
       "volume": 423131.0,
-      "amount": 406032669.8,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-08-31",
@@ -778809,8 +779050,9 @@
       "high": 9.58,
       "low": 9.28,
       "volume": 320285.0,
-      "amount": 300701768.2,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-01",
@@ -778819,8 +779061,9 @@
       "high": 9.44,
       "low": 9.25,
       "volume": 188460.0,
-      "amount": 175830133.71,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-02",
@@ -778829,8 +779072,9 @@
       "high": 9.33,
       "low": 9.13,
       "volume": 151231.0,
-      "amount": 139791203.12,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-03",
@@ -778839,8 +779083,9 @@
       "high": 9.37,
       "low": 9.05,
       "volume": 177945.0,
-      "amount": 163042349.27,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-04",
@@ -778849,8 +779094,9 @@
       "high": 9.25,
       "low": 8.95,
       "volume": 160278.0,
-      "amount": 146143233.44,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-07",
@@ -778859,8 +779105,9 @@
       "high": 9.7,
       "low": 8.97,
       "volume": 426915.0,
-      "amount": 399208280.01,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-08",
@@ -778869,8 +779116,9 @@
       "high": 9.8,
       "low": 9.23,
       "volume": 593380.0,
-      "amount": 569701510.5,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-09",
@@ -778879,8 +779127,9 @@
       "high": 9.73,
       "low": 9.4,
       "volume": 366946.0,
-      "amount": 349784511.9,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-10",
@@ -778889,8 +779138,9 @@
       "high": 9.37,
       "low": 9.15,
       "volume": 230024.0,
-      "amount": 212328248.8,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-11",
@@ -778899,8 +779149,9 @@
       "high": 9.07,
       "low": 8.7,
       "volume": 280999.0,
-      "amount": 249328573.62,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-14",
@@ -778909,8 +779160,9 @@
       "high": 9.0,
       "low": 8.78,
       "volume": 162853.0,
-      "amount": 145037399.91,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-15",
@@ -778919,8 +779171,9 @@
       "high": 9.22,
       "low": 8.91,
       "volume": 209667.0,
-      "amount": 190827166.59,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-16",
@@ -778929,8 +779182,9 @@
       "high": 9.23,
       "low": 8.89,
       "volume": 168327.0,
-      "amount": 152814583.77,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-17",
@@ -778939,8 +779193,9 @@
       "high": 9.24,
       "low": 9.03,
       "volume": 166324.0,
-      "amount": 152158326.4,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-18",
@@ -778949,8 +779204,9 @@
       "high": 9.29,
       "low": 9.14,
       "volume": 148678.0,
-      "amount": 136902442.92,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-21",
@@ -778959,8 +779215,9 @@
       "high": 9.29,
       "low": 9.17,
       "volume": 140470.0,
-      "amount": 129472044.69,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-22",
@@ -778969,8 +779226,9 @@
       "high": 9.28,
       "low": 9.08,
       "volume": 181153.0,
-      "amount": 166035738.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-23",
@@ -778979,8 +779237,9 @@
       "high": 9.23,
       "low": 9.09,
       "volume": 100633.0,
-      "amount": 92042054.35,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-24",
@@ -778989,8 +779248,9 @@
       "high": 9.3,
       "low": 8.97,
       "volume": 181012.0,
-      "amount": 164824963.4,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-28",
@@ -778999,8 +779259,9 @@
       "high": 8.95,
       "low": 8.57,
       "volume": 186695.0,
-      "amount": 162516168.66,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-29",
@@ -779009,8 +779270,9 @@
       "high": 8.9,
       "low": 8.6,
       "volume": 157043.0,
-      "amount": 138504499.25,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-09-30",
@@ -779019,8 +779281,9 @@
       "high": 8.98,
       "low": 8.76,
       "volume": 106366.0,
-      "amount": 94141802.76,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-08",
@@ -779029,8 +779292,9 @@
       "high": 9.04,
       "low": 8.66,
       "volume": 205803.0,
-      "amount": 182432223.28,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-09",
@@ -779039,8 +779303,9 @@
       "high": 8.83,
       "low": 8.36,
       "volume": 303970.0,
-      "amount": 262291048.44,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-12",
@@ -779049,8 +779314,9 @@
       "high": 8.76,
       "low": 8.47,
       "volume": 192002.0,
-      "amount": 165041326.96,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-13",
@@ -779059,8 +779325,9 @@
       "high": 8.51,
       "low": 8.17,
       "volume": 224850.0,
-      "amount": 187365803.3,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-14",
@@ -779069,8 +779336,9 @@
       "high": 8.46,
       "low": 8.16,
       "volume": 150681.0,
-      "amount": 124720502.44,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-15",
@@ -779079,8 +779347,9 @@
       "high": 8.07,
       "low": 7.88,
       "volume": 188744.0,
-      "amount": 150245365.08,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-16",
@@ -779089,8 +779358,9 @@
       "high": 8.16,
       "low": 7.82,
       "volume": 184261.0,
-      "amount": 147239463.22,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-19",
@@ -779099,8 +779369,9 @@
       "high": 8.11,
       "low": 7.91,
       "volume": 119863.0,
-      "amount": 96025517.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-20",
@@ -779109,8 +779380,9 @@
       "high": 8.38,
       "low": 8.03,
       "volume": 183101.0,
-      "amount": 151070775.1,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-21",
@@ -779119,8 +779391,9 @@
       "high": 8.42,
       "low": 8.2,
       "volume": 122516.0,
-      "amount": 101643544.66,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-22",
@@ -779129,8 +779402,9 @@
       "high": 8.29,
       "low": 8.08,
       "volume": 117977.0,
-      "amount": 96376012.43,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-23",
@@ -779139,8 +779413,9 @@
       "high": 8.3,
       "low": 7.7,
       "volume": 211377.0,
-      "amount": 168070892.08,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-26",
@@ -779149,8 +779424,9 @@
       "high": 8.33,
       "low": 8.13,
       "volume": 117494.0,
-      "amount": 96551474.67,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-27",
@@ -779159,8 +779435,9 @@
       "high": 8.28,
       "low": 7.87,
       "volume": 116536.0,
-      "amount": 93960565.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-28",
@@ -779169,8 +779446,9 @@
       "high": 8.21,
       "low": 7.85,
       "volume": 171671.0,
-      "amount": 138760168.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-29",
@@ -779179,8 +779457,9 @@
       "high": 8.0,
       "low": 7.72,
       "volume": 230883.0,
-      "amount": 181226250.23,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-10-30",
@@ -779189,8 +779468,9 @@
       "high": 8.56,
       "low": 7.64,
       "volume": 496175.0,
-      "amount": 408655435.87,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-02",
@@ -779199,8 +779479,9 @@
       "high": 8.17,
       "low": 7.72,
       "volume": 454608.0,
-      "amount": 360252649.07,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-03",
@@ -779209,8 +779490,9 @@
       "high": 8.24,
       "low": 7.93,
       "volume": 269995.0,
-      "amount": 218317273.34,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-04",
@@ -779219,8 +779501,9 @@
       "high": 8.22,
       "low": 7.9,
       "volume": 279173.0,
-      "amount": 225579075.97,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-05",
@@ -779229,8 +779512,9 @@
       "high": 8.48,
       "low": 8.12,
       "volume": 291029.0,
-      "amount": 244215465.86,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-06",
@@ -779239,8 +779523,9 @@
       "high": 8.38,
       "low": 8.08,
       "volume": 204112.0,
-      "amount": 168669427.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-09",
@@ -779249,8 +779534,9 @@
       "high": 8.38,
       "low": 8.22,
       "volume": 133359.0,
-      "amount": 110465990.0,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-10",
@@ -779259,8 +779545,9 @@
       "high": 9.06,
       "low": 8.36,
       "volume": 567132.0,
-      "amount": 499559383.52,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-11",
@@ -779269,8 +779556,9 @@
       "high": 9.36,
       "low": 8.86,
       "volume": 876848.0,
-      "amount": 804575851.55,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-12",
@@ -779279,8 +779567,9 @@
       "high": 9.48,
       "low": 9.19,
       "volume": 712531.0,
-      "amount": 665267386.6,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-13",
@@ -779289,8 +779578,9 @@
       "high": 9.41,
       "low": 8.97,
       "volume": 538577.0,
-      "amount": 495461130.5,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-16",
@@ -779299,8 +779589,9 @@
       "high": 9.64,
       "low": 9.04,
       "volume": 701973.0,
-      "amount": 653226507.62,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-17",
@@ -779309,8 +779600,9 @@
       "high": 9.32,
       "low": 8.99,
       "volume": 472878.0,
-      "amount": 432604026.97,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-18",
@@ -779319,8 +779611,9 @@
       "high": 9.17,
       "low": 8.59,
       "volume": 518533.0,
-      "amount": 458470217.51,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-19",
@@ -779329,8 +779622,9 @@
       "high": 8.64,
       "low": 8.09,
       "volume": 421037.0,
-      "amount": 349983080.63,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-20",
@@ -779339,8 +779633,9 @@
       "high": 8.02,
       "low": 7.42,
       "volume": 498776.0,
-      "amount": 384602056.72,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-23",
@@ -779349,8 +779644,9 @@
       "high": 7.82,
       "low": 7.12,
       "volume": 410513.0,
-      "amount": 308606868.95,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-24",
@@ -779359,8 +779655,9 @@
       "high": 8.18,
       "low": 7.77,
       "volume": 364319.0,
-      "amount": 290861711.17,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-25",
@@ -779369,8 +779666,9 @@
       "high": 7.87,
       "low": 7.12,
       "volume": 351901.0,
-      "amount": 262826571.35,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-26",
@@ -779379,8 +779677,9 @@
       "high": 7.84,
       "low": 7.22,
       "volume": 711890.0,
-      "amount": 538102330.25,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     },
     {
       "date": "2026-11-27",
@@ -779389,8 +779688,9 @@
       "high": 7.99,
       "low": 7.31,
       "volume": 703891.0,
-      "amount": 538197720.24,
-      "adjusted": false
+      "amount": null,
+      "adjusted": false,
+      "source": "Tencent historical daily"
     }
   ],
   "002861.SZ": [
