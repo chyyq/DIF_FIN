@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 1,
     "strategyId": "LBR_MAIN_V1",
-    "generatedAt": "2026-11-28T00:00:32.096024+08:00",
-    "lastSuccessfulAt": "2026-11-28T00:00:32.096024+08:00",
+    "generatedAt": "2026-11-28T00:31:07.126477+08:00",
+    "lastSuccessfulAt": "2026-11-28T00:31:07.126477+08:00",
     "quoteTimestamp": "2026-11-27T16:12:01+08:00",
     "tradingDate": "2026-11-27",
     "stale": false,
@@ -18,16 +18,9 @@
         "name": "Eastmoney-universe",
         "ok": true,
         "note": "5221 symbols received; pagination can be partial and is reported separately"
-      },
-      {
-        "name": "Tencent-history",
-        "ok": true,
-        "note": "Actual historical daily bars; no intraday confirmation"
       }
     ],
-    "errors": [
-      "Daily history 603223.SH: No request budget"
-    ],
+    "errors": [],
     "automaticOrders": false,
     "calendarSource": "Eastmoney index actual daily-bar dates (observed, no future schedule)",
     "parameterHash": "47ff8cb84caea615",
@@ -5938,7 +5931,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -6119,7 +6111,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -6299,7 +6290,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -6673,7 +6663,8 @@
         "STRUCTURE_UNVERIFIED",
         "ACCOUNT_STATE_UNSYNCED",
         "INTRADAY_CONFIRMATION_UNAVAILABLE",
-        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT"
+        "PAYOFF_UNAVAILABLE_OR_INSUFFICIENT",
+        "SUPERSEDED_LIMIT_EVENT"
       ],
       "status": "CANCEL",
       "action": "CANCEL_PENDING_BUY",
@@ -7131,7 +7122,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -7668,7 +7658,6 @@
       },
       "hardVetoReasons": [],
       "reasonCodes": [
-        "CURRENT_DAILY_LIMITS_UNVERIFIED",
         "QUOTE_NOT_FRESH_FOR_ENTRY",
         "SECURITY_METADATA_UNVERIFIED",
         "ANNOUNCEMENTS_UNVERIFIED",
@@ -7687,13 +7676,13 @@
   ],
   "stats": {
     "candidateCount": 14,
-    "eventCount": 748,
+    "eventCount": 750,
     "quoteCount": 5221,
     "watchCount": 10,
     "readyCount": 0,
     "limitCandidateCount": 4,
     "trendCandidateCount": 10,
-    "historyAnalyzedCount": 194,
+    "historyAnalyzedCount": 136,
     "historyEnrichmentCap": 120
   },
   "learning": {
